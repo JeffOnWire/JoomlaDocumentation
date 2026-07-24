@@ -1,0 +1,50 @@
+<p>The Custom Module allows you to create and display custom content using Joomla's built-in WYSIWYG editor. It's commonly used for simple text messages, images or banners, HTML snippets, and static information such as announcements or contact details. Custom Modules can be placed in any template-defined position, such as sidebars, footers, or custom layout areas.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="content-images/embedding-images-in-article-text">4.1 Images in Articles</a></li>
+</ul>
+<h2>Steps</h2>
+<h3>Create the Module</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Site Modules</strong> and click <strong>New</strong>. <strong>Result:</strong> The <em>Select a Module Type</em> window appears. <strong>Note:</strong> You can also start from the Home Dashboard by selecting <strong>Modules &gt; New</strong>.</li>
+<li>Click <strong>Custom</strong>. <strong>Result:</strong> The module editing screen appears.
+<ul>
+<li><strong>Title:</strong> <em>Sidebar Announcement</em></li>
+<li><strong>Module Content:</strong>
+<ul>
+<li><strong>Add text:</strong> <em>This site is powered by Joomla</em></li>
+<li><strong>Insert an image:</strong> navigate to <strong>Content &gt; Media</strong>, then insert <em>powered_by.png</em>.</li>
+</ul>
+</li>
+<li><strong>Position:</strong> <em>sidebar-right</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>View the site. <strong>Result:</strong> The module appears in the right sidebar, below <em>Main Menu</em>.<br><br>
+<figure class="image"><img src="images/articles/348/module_sidebar_right.png" alt="Custom module appears in the right sidebar under Menu Items" width="960" height="649" loading="lazy" data-path="local-images:/articles/348/module_sidebar_right.png">
+<figcaption>Custom module appears in the right sidebar under Menu Items</figcaption>
+</figure>
+<br><br>
+</li>
+</ol>
+<h3>Change the Module Order</h3>
+<p>By default, a new module is added to the bottom of its position. We want <em>Sidebar Announcement</em> to appear above the <em>Main Menu</em> module instead.</p>
+<ol>
+<li>Switch to the backend and navigate to <strong>Content &gt; Site Modules</strong>.</li>
+<li>Click <strong>Filter Options</strong>. <strong>Result:</strong> The filter options appear.</li>
+<li>Set <strong>- Select Position -</strong> to <em>sidebar-right</em>. <strong>Result:</strong> The list refreshes to display only the modules in the right sidebar. <strong>Note:</strong> This is required to change their order.</li>
+<li>Click the up/down arrow icon in the column heading between the checkbox and <strong>Status</strong> columns. <strong>Result:</strong> A drag handle (three dots) appears for each module.</li>
+<li>Click the drag handle next to <em>Sidebar Announcement</em> and drag it to the top of the list.<br><br>
+<figure class="image"><img src="images/articles/348/ordering.png" alt="Steps to reorder the modules" width="960" height="541" loading="lazy" data-path="local-images:/articles/348/ordering.png">
+<figcaption>Steps to reorder the modules: 1 &amp; 2 Filter the modules by the position they occupy; 3 click the up/down icon; 4 drag by the three dots.</figcaption>
+</figure>
+<br><br>
+</li>
+<li>View the site and refresh the page. <strong>Result:</strong> <em>Sidebar Announcement</em> now appears above <em>Main Menu</em>.</li>
+</ol>
+<h2>Concepts</h2>
+<p>Publishing can be controlled: <strong>Status</strong> can be <em>Published</em>, <em>Unpublished</em>, or <em>Trashed</em>, and <strong>Start Publishing</strong> and <strong>Finish Publishing</strong> are optional fields for scheduling when a module becomes visible and when it stops displaying.</p>
+<p>Modules can appear on all pages (default) or on selected pages by configuring the <strong>Menu Assignment</strong> tab when editing the module.</p>
+<p>Permissions for modules can be set under the <strong>Permissions</strong> tab when editing the module, if the module is targeted at specific audiences.</p>
+<p>As you no doubt noticed when adding this custom module, many other types of modules are available in a basic Joomla installation.</p>

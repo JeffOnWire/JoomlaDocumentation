@@ -1,55 +1,161 @@
-<h2>How to Create a Split Menu</h2>
-<p>A split menu in Joomla! allows you to isolate and display different levels of a single menu tree in completely separate module positions on your website. For instance, you can render your primary, top-level navigation items horizontally across a header module position while simultaneously reflecting the corresponding secondary child items vertically inside a sidebar.</p>
-<p>This clean layout strategy keeps your main layout uncluttered without forcing you to manually build and sync separate menu lists. Joomla handles the contextual relationship entirely out of the box using a single menu structure.</p>
-<h3>Prerequisites</h3>
-<p>Administrator access to a Joomla site (version 5 or above). See 1.0 Admin Login.</p>
-<h3>Create a Multi-Level Menu Structure</h3>
-<p>Before configuring your frontend layouts, you need a single menu hierarchy containing both parent and child elements.</p>
-<ol>
-<li>Navigate to <strong>Menus→Manage </strong>and open your targeted menu (e.g., Main Menu).</li>
-<li>Click <strong>New </strong>to create your top-level parent pages.</li>
-<li>Give your new menu item a Title and select some sort of <strong>Menu Item Type </strong>other than a <em>System Link</em>.</li>
-<li>Since this item will be in your top-level menu, set the Parent Item in the right sidebar to "<em>- No parent -</em>"<br><img class="float-none" style="display: inline; margin: 10px auto 10px auto;" src="images/articles/363/MenuItemParent.png" width="428" height="187" loading="lazy" data-path="local-images:/articles/363/MenuItemParent.png"></li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
-<li>Create additional menu items to serve as subpages by repeating the above steps as needed to provide access to the desired content.
+<p>A split menu displays different levels of a single menu hierarchy in two separate module positions—for example, top-level items across a horizontal navigation bar, with each section's child items appearing in a sidebar that updates depending on which top-level item is active. This avoids maintaining separate, hand-built menus for the top navigation and the sidebar; Joomla keeps them in sync automatically from one underlying menu structure.</p>
+<h2>Prerequisites</h2>
 <ul>
-<li>For these subpages, locate the Parent Item dropdown menu on the right panel and select the respective top-level item.</li>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
 </ul>
-</li>
-</ol>
-<h3>Configure the Top-Level Menu Module</h3>
-<p>Next, you must create a dedicated module that targets exclusively the top tier of your menu tree.</p>
+<h2>Setup</h2>
+<h3>Create the Articles</h3>
 <ol>
-<li>Navigate to <strong>Content→Site Modules</strong>.</li>
-<li>Click the <strong>New </strong>button and select <strong>Menu </strong>as your module type.</li>
-<li>Title the module appropriately (e.g., <em>Main Navigation - Top</em>).</li>
-<li>Under the <strong>Module </strong>tab settings:
-<ul style="list-style-type: circle;">
-<li><strong>Select Menu</strong>: Choose the multi-level menu you built in Step 1.</li>
-<li><strong>Start Level</strong>: Set this to <strong>1</strong>.</li>
-<li><strong>End Level</strong>: Set this to <strong>1</strong> (this forces it to ignore children).</li>
-<li><strong>Show Submenu Items</strong>: Toggle to <strong>No</strong>.</li>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click <strong>New</strong>. <strong>Result:</strong> A new article form opens.
+<ul>
+<li><strong>Title:</strong> <em>Coffee</em></li>
+<li><strong>Article Text:</strong> <em>Rich, roasted, and endlessly customizable—explore our coffee drinks below.</em></li>
 </ul>
 </li>
-<li>Assign a layout position suitable for primary site navigation, such as menu or navbar.<br><img class="float-none" style="margin: 10px auto; display: inline;" src="images/articles/363/MainMenuModule-Split.png" width="762" height="400" loading="lazy" data-path="local-images:/articles/363/MainMenuModule-Split.png"></li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Espresso</em></li>
+<li><strong>Article Text:</strong> <em>A concentrated shot of coffee, brewed under pressure for a bold, rich flavor.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Latte</em></li>
+<li><strong>Article Text:</strong> <em>Espresso combined with steamed milk and a light layer of foam.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Tea</em></li>
+<li><strong>Article Text:</strong> <em>Light, aromatic, and steeped to order—explore our tea varieties below.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Green Tea</em></li>
+<li><strong>Article Text:</strong> <em>A lightly oxidized tea with a fresh, grassy flavor.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Black Tea</em></li>
+<li><strong>Article Text:</strong> <em>A fully oxidized tea with a bold, robust flavor.</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
-<h3>Configure the Secondary Submenu Module</h3>
-<p>The final step is establishing the second module that dynamically outputs subpage links depending on which top-level item a user clicks.</p>
+<h2>Steps</h2>
+<h3>Create a Multi-Level Menu</h3>
 <ol>
-<li>Click <strong>New </strong>in the <strong>Site Modules </strong>dashboard and select <strong>Menu </strong>again.</li>
-<li>Title this module according to its location (e.g., <em>Sidebar Submenu</em>).</li>
-<li>Adjust the <strong>Module </strong>tab parameters to capture child levels:
-<ul style="list-style-type: circle;">
-<li><strong>Select Menu</strong>: Choose the exact same parent menu as your top module.</li>
-<li><strong>Base Item</strong>: Keep it at <strong>Current </strong>so it responds dynamically to the active section.</li>
-<li><strong>Start Level</strong>: Set this to <strong>2</strong>.</li>
-<li><strong>End Level</strong>: Set this to <strong>All </strong>(or a deeper specific number if you have tier-3 pages).</li>
-<li><strong>Show Submenu Items</strong>: Toggle to <strong>Yes</strong>.</li>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong> and click <strong>New</strong>. <strong>Result:</strong> A new menu item form opens.
+<ul>
+<li><strong>Title:</strong> <em>Coffee</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Coffee</em></li>
+<li><strong>Parent Item:</strong> <em>- No parent -</em></li>
+</ul>
+<br>
+<figure class="image"><img src="images/articles/363/main_navigation_top.png" alt="Configuration of the main menu module" width="640" height="382" loading="lazy" data-path="local-images:/articles/363/main_navigation_top.png">
+<figcaption>Configuration of the main menu module.</figcaption>
+</figure>
+<br>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Tea</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Tea</em></li>
+<li><strong>Parent Item:</strong> <em>- No parent -</em></li>
 </ul>
 </li>
-<li>Set the <strong>Position </strong>box to your secondary region, such as sidebar-left or sidebar-right.<br><img class="float-none" style="margin: 10px auto; display: inline;" src="images/articles/363/MainSubMenuModule-Split.png" width="1050" height="574" loading="lazy" data-path="local-images:/articles/363/MainSubMenuModule-Split.png"></li>
-<li>Go to the <strong>Menu Assignment </strong>tab and choose <strong>Only on the pages selected </strong>if you want to explicitly hide this module on flat areas like the landing homepage.</li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Espresso</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Espresso</em></li>
+<li><strong>Parent Item:</strong> <em>Coffee</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Latte</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Latte</em></li>
+<li><strong>Parent Item:</strong> <em>Coffee</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Green Tea</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Green Tea</em></li>
+<li><strong>Parent Item:</strong> <em>Tea</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Black Tea</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Black Tea</em></li>
+<li><strong>Parent Item:</strong> <em>Tea</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
-<p>Now, when visitors choose a top item on your website, the sidebar module will automatically trigger and surface only the child items living directly underneath that specific section.</p>
+<h3>Configure the Top Menu</h3>
+<p>This module displays only the top-level items (<em>Coffee</em>, <em>Tea</em>) horizontally, ignoring their children.</p>
+<ol>
+<li>Navigate to <strong>Content &gt; Site Modules</strong> and click <strong>New</strong>. <strong>Result:</strong> The <em>Select a Module Type</em> window appears.</li>
+<li>Click <strong>Menu</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Main Navigation - Top</em></li>
+<li><strong>Select Menu:</strong> <em>Main Menu</em></li>
+<li><strong>Start Level:</strong> <em>1</em></li>
+<li><strong>End Level:</strong> <em>1</em></li>
+<li><strong>Sub-menu Items:</strong> <em>Hide</em></li>
+<li><strong>Position:</strong> <em>menu</em></li>
+</ul>
+<br>
+<figure class="image"><img src="images/articles/363/MainMenuModule-Split.png" alt="Top-level menu module configured with Start Level and End Level set to 1" width="762" height="400" loading="lazy" data-path="local-images:/articles/363/MainMenuModule-Split.png">
+<figcaption>The top-level menu module configuration</figcaption>
+</figure>
+<br>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>Configure the Sub-menu</h3>
+<p>This module displays the children of whichever top-level item is currently active, updating dynamically as visitors move between sections.</p>
+<ol>
+<li>Navigate to <strong>Content &gt; Site Modules</strong> and click <strong>New</strong>. <strong>Result:</strong> The <em>Select a Module Type</em> window appears.</li>
+<li>Click <strong>Menu</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Sidebar Sub-menu</em></li>
+<li><strong>Select Menu:</strong> <em>Main Menu</em></li>
+<li><strong>Base Item:</strong> leave blank.</li>
+<li><strong>Start Level:</strong> <em>2</em></li>
+<li><strong>End Level:</strong> <em>All</em></li>
+<li><strong>Sub-menu Items:</strong> <em>Show</em></li>
+<li><strong>Position:</strong> <em>Sidebar left [sidebar-left]</em></li>
+</ul>
+<br>
+<figure class="image"><img src="images/articles/363/sub_menu.png" alt="Configuration of the sub menu" width="640" height="363" loading="lazy" data-path="local-images:/articles/363/sub_menu.png">
+<figcaption>Configuration of the sub-menu</figcaption>
+</figure>
+<br>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>View the Results</h3>
+<ol>
+<li>View the site and click <strong>Coffee</strong> in the top navigation. <strong>Result:</strong> The <em>Coffee</em> article appears, and the sidebar sub-menu shows <em>Espresso</em> and <em>Latte</em>.</li>
+<li>Click <strong>Tea</strong> in the top navigation. <strong>Result:</strong> The <em>Tea</em> article appears, and the sidebar sub-menu updates to show <em>Green Tea</em> and <em>Black Tea</em>.<br>
+<figure class="image"><img src="images/articles/363/menu_front_end.png" alt="Split menus in the frontend" width="960" height="505" loading="lazy" data-path="local-images:/articles/363/menu_front_end.png">
+<figcaption>Split menus in the frontend</figcaption>
+</figure>
+<br>
+</li>
+</ol>
+<h2>Concepts</h2>
+<p>A split menu relies on two separate menu modules pointing at the same underlying menu, each configured to show a different slice of it. The <strong>Start Level</strong> and <strong>End Level</strong> settings control which levels of the hierarchy a module displays; setting both to <em>1</em> shows only top-level items, while a <strong>Start Level</strong> of <em>2</em> with an <strong>End Level</strong> of <em>All</em> shows every level below the top.</p>
+<p>Leaving <strong>Base Item</strong> blank makes a module dynamic: instead of always showing the children of one fixed menu item, it shows the children of whichever top-level section the visitor is currently in.</p>
+<p>Menu Assignment can be used to hide the secondary module on pages where it wouldn't apply, such as the homepage, by setting it to <em>Only on the Pages Selected</em> and choosing specific pages.</p>

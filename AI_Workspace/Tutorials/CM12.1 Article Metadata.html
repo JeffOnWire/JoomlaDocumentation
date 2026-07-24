@@ -1,0 +1,59 @@
+<p>Metadata is information about a web page contained in the HTML, the code behind an article. Most of this information is not seen by site visitors, but it is used by search engines to provide appropriate results for search requests. Important metadata elements include <strong>Title</strong> (the title of your article) and <strong>Description</strong>, a brief description of your article's content.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li>Some familiarity with HTML is helpful.</li>
+<li>Ability to view the page source (the HTML of a web page) in your browser. How to do this depends on your particular browser.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create an Article</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click <strong>New</strong>. <strong>Result:</strong> A new article form opens.
+<ul>
+<li><strong>Title:</strong> enter a title and some body text.</li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>Uncategorised</em></li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h2>Steps</h2>
+<h3>Verify the Setup</h3>
+<p>The <strong>Title</strong> metadata element is identical to the article title, and is set automatically by Joomla.</p>
+<ol>
+<li>View the site. <strong>Result:</strong> The homepage appears with your article listed as a featured item.</li>
+<li>View the page source and find the <em>&lt;head&gt;</em> tag at the top of the file. <strong>Result:</strong> The <em>&lt;title&gt;</em> tag appears, matching your article's title. <strong>Note:</strong> The screenshot below shows several metadata elements that may not appear for you yet.<br><br>
+<figure class="image"><img src="images/articles/345/article_html_metadata.png" alt="Meta elements in the head tag of the webpage with several tags highlighted" width="1846" height="1346" loading="lazy" data-path="local-images:/articles/345/article_html_metadata.webp">
+<figcaption>Page source HTML showing several metadata elements highlighted.</figcaption>
+</figure>
+<br><br>
+</li>
+<li>Switch to the backend.</li>
+</ol>
+<h3>Change the Title</h3>
+<ol>
+<li>Edit the article and change the title (for example, add a word or a few random characters).</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Switch to the page source and refresh. <strong>Result:</strong> The <em>&lt;title&gt;</em> tag is updated with the new title.</li>
+</ol>
+<h3>Set a Description</h3>
+<ol>
+<li>Edit the article and select the <strong>Publishing</strong> tab.
+<ul>
+<li><strong>Meta Description:</strong> enter a brief description of your article.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Switch to the page source and refresh. <strong>Result:</strong> The description now appears in the metadata.</li>
+<li>Edit the article again, under the <strong>Publishing</strong> tab:
+<ul>
+<li><strong>Robots:</strong> <em>Index, Follow</em>. <strong>Note:</strong> This instructs search engines to read and index your page.</li>
+<li><strong>Author:</strong> enter an author name.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Switch to the page source and refresh. <strong>Result:</strong> The new metadata has been added.</li>
+</ol>
+<h2>Concepts</h2>
+<p>There are other forms of metadata such as Open Graph Data used by Facebook and schemas used to describe specific types of page such as Person, Place or Product.</p>
