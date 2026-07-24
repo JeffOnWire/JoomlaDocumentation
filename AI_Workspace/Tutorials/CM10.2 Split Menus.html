@@ -1,0 +1,55 @@
+<h2>How to Create a Split Menu</h2>
+<p>A split menu in Joomla! allows you to isolate and display different levels of a single menu tree in completely separate module positions on your website. For instance, you can render your primary, top-level navigation items horizontally across a header module position while simultaneously reflecting the corresponding secondary child items vertically inside a sidebar.</p>
+<p>This clean layout strategy keeps your main layout uncluttered without forcing you to manually build and sync separate menu lists. Joomla handles the contextual relationship entirely out of the box using a single menu structure.</p>
+<h3>Prerequisites</h3>
+<p>Administrator access to a Joomla site (version 5 or above). See 1.0 Admin Login.</p>
+<h3>Create a Multi-Level Menu Structure</h3>
+<p>Before configuring your frontend layouts, you need a single menu hierarchy containing both parent and child elements.</p>
+<ol>
+<li>Navigate to <strong>Menus→Manage </strong>and open your targeted menu (e.g., Main Menu).</li>
+<li>Click <strong>New </strong>to create your top-level parent pages.</li>
+<li>Give your new menu item a Title and select some sort of <strong>Menu Item Type </strong>other than a <em>System Link</em>.</li>
+<li>Since this item will be in your top-level menu, set the Parent Item in the right sidebar to "<em>- No parent -</em>"<br><img class="float-none" style="display: inline; margin: 10px auto 10px auto;" src="images/articles/363/MenuItemParent.png" width="428" height="187" loading="lazy" data-path="local-images:/articles/363/MenuItemParent.png"></li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>Create additional menu items to serve as subpages by repeating the above steps as needed to provide access to the desired content.
+<ul>
+<li>For these subpages, locate the Parent Item dropdown menu on the right panel and select the respective top-level item.</li>
+</ul>
+</li>
+</ol>
+<h3>Configure the Top-Level Menu Module</h3>
+<p>Next, you must create a dedicated module that targets exclusively the top tier of your menu tree.</p>
+<ol>
+<li>Navigate to <strong>Content→Site Modules</strong>.</li>
+<li>Click the <strong>New </strong>button and select <strong>Menu </strong>as your module type.</li>
+<li>Title the module appropriately (e.g., <em>Main Navigation - Top</em>).</li>
+<li>Under the <strong>Module </strong>tab settings:
+<ul style="list-style-type: circle;">
+<li><strong>Select Menu</strong>: Choose the multi-level menu you built in Step 1.</li>
+<li><strong>Start Level</strong>: Set this to <strong>1</strong>.</li>
+<li><strong>End Level</strong>: Set this to <strong>1</strong> (this forces it to ignore children).</li>
+<li><strong>Show Submenu Items</strong>: Toggle to <strong>No</strong>.</li>
+</ul>
+</li>
+<li>Assign a layout position suitable for primary site navigation, such as menu or navbar.<br><img class="float-none" style="margin: 10px auto; display: inline;" src="images/articles/363/MainMenuModule-Split.png" width="762" height="400" loading="lazy" data-path="local-images:/articles/363/MainMenuModule-Split.png"></li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>Configure the Secondary Submenu Module</h3>
+<p>The final step is establishing the second module that dynamically outputs subpage links depending on which top-level item a user clicks.</p>
+<ol>
+<li>Click <strong>New </strong>in the <strong>Site Modules </strong>dashboard and select <strong>Menu </strong>again.</li>
+<li>Title this module according to its location (e.g., <em>Sidebar Submenu</em>).</li>
+<li>Adjust the <strong>Module </strong>tab parameters to capture child levels:
+<ul style="list-style-type: circle;">
+<li><strong>Select Menu</strong>: Choose the exact same parent menu as your top module.</li>
+<li><strong>Base Item</strong>: Keep it at <strong>Current </strong>so it responds dynamically to the active section.</li>
+<li><strong>Start Level</strong>: Set this to <strong>2</strong>.</li>
+<li><strong>End Level</strong>: Set this to <strong>All </strong>(or a deeper specific number if you have tier-3 pages).</li>
+<li><strong>Show Submenu Items</strong>: Toggle to <strong>Yes</strong>.</li>
+</ul>
+</li>
+<li>Set the <strong>Position </strong>box to your secondary region, such as sidebar-left or sidebar-right.<br><img class="float-none" style="margin: 10px auto; display: inline;" src="images/articles/363/MainSubMenuModule-Split.png" width="1050" height="574" loading="lazy" data-path="local-images:/articles/363/MainSubMenuModule-Split.png"></li>
+<li>Go to the <strong>Menu Assignment </strong>tab and choose <strong>Only on the pages selected </strong>if you want to explicitly hide this module on flat areas like the landing homepage.</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+</ol>
+<p>Now, when visitors choose a top item on your website, the sidebar module will automatically trigger and surface only the child items living directly underneath that specific section.</p>

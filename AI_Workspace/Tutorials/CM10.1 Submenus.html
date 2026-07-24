@@ -1,0 +1,218 @@
+<p>A <em>menu</em> is a container that holds a list of <em>menu items</em>, such as links to articles. A <em>menu module</em> is used to display menus on a website. Submenus are menus in which the menu items are organized in a hierarchy. In this tutorial we will create articles for different dogs and cats and link to them using a menu containing a hierarchy of menu items.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create the Articles</h3>
+<p>Create seven simple articles. Each article will have a title only.</p>
+<ol>
+<li>Log in to the administrative area then navigate to articles (<strong>Content &gt; Articles</strong>).</li>
+<li>Click on <strong>New</strong>. A new-article form appears.</li>
+<li>Enter a title: <em>Animals</em></li>
+<li>Choose <strong>Save &amp; New</strong> (an option under the <strong>Save &amp; Close</strong> button). The article is saved and a new-article form appears.</li>
+<li>Repeat to create all seven articles:
+<ul>
+<li>Animals</li>
+<li>Dogs</li>
+<li>Collies</li>
+<li>Pomeranians</li>
+<li>Cats</li>
+<li>Burmese</li>
+<li>Russian Blues</li>
+</ul>
+</li>
+<li>After entering the last article, click <strong>Save &amp; Close</strong> to return to the article list.</li>
+<li>Verify that the seven articles appear in the list.</li>
+</ol>
+<figure class="image"><img class="float-none" src="images/articles/354/article_list.png" alt="List of 7 articles" width="2704" height="1924" loading="lazy" data-path="local-images:/articles/354/article_list.webp">
+<figcaption>List of articles</figcaption>
+</figure>
+<h3>Create a Menu</h3>
+<ol>
+<li>Navigate to <strong>Menus &gt; Manage</strong> and click <strong>New</strong>. <strong>Result:</strong> The <em>New Menu</em> form appears.
+<ul>
+<li><strong>Title:</strong> <em>Animals</em></li>
+<li><strong>Unique Name:</strong> <em>animal-menu</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<p>The Animals menu now appears under <strong>Menus &gt; Site</strong> on the left. Click on the <em>Animals</em> menu. An empty list of menu items is displayed.</p>
+<h3>Add Menu Items</h3>
+<ol>
+<li>Click <strong>New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Animals</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Animals</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Cats</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Cats</em></li>
+<li><strong>Parent Item:</strong> <em>Animals</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Dogs</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Dogs</em></li>
+<li><strong>Parent Item:</strong> <em>Animals</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Burmese</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Burmese</em></li>
+<li><strong>Parent Item:</strong> <em>Cats</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Russian Blues</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Russian Blues</em></li>
+<li><strong>Parent Item:</strong> <em>Cats</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Collies</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Collies</em></li>
+<li><strong>Parent Item:</strong> <em>Dogs</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>
+<ul>
+<li><strong>Title:</strong> <em>Pomeranians</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
+<li><strong>Select Article:</strong> <em>Pomeranians</em></li>
+<li><strong>Parent Item:</strong> <em>Dogs</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+</ol>
+<p>We now have a menu with menu items linked to our articles, arranged in a hierarchical order — Dogs and Cats under Animals, and each breed under its respective heading. Next we'll create menu modules so the menu appears on the frontend.</p>
+<figure class="image"><img class="float-none" src="images/articles/354/menu_items_list.png" alt="List of menu items in a hierarchy" width="2700" height="2108" loading="lazy" data-path="local-images:/articles/354/menu_items_list.webp">
+<figcaption>The list of menu items appears in a hierarchy in the <em>Animals</em> menu </figcaption>
+</figure>
+<h2>Steps</h2>
+<h3>Create Menu Modules</h3>
+<p>We'll create four site modules to display four different views of the menu:</p>
+<ul>
+<li><strong>All Animals</strong>: appears on the homepage with a complete list of links to the entire Animals menu.</li>
+<li><strong>Animals</strong>: appears with the Animals article, showing links only to Cats and Dogs.</li>
+<li><strong>Dogs</strong>: contains only dog breeds and appears only in articles about dogs.</li>
+<li><strong>Cats</strong>: contains only cat breeds and appears only in articles about cats.</li>
+</ul>
+<ol>
+<li>Navigate to <strong>Content &gt; Site Modules</strong>. You may see site modules for <em>Breadcrumbs</em>, <em>Main Menu</em>, and <em>Login Form</em>. These are standard with a new Joomla installation and appear on the homepage.</li>
+<li>Click <strong>New</strong>.
+<ul>
+<li><strong>Select Module Type:</strong> <em>Menu</em></li>
+<li><strong>Title:</strong> <em>All Animals</em></li>
+<li><strong>Select Menu:</strong> <em>Animals</em></li>
+<li><strong>Base Item:</strong> <em>Animals</em></li>
+<li><strong>Start Level:</strong> <em>1</em></li>
+<li><strong>End Level:</strong> <em>All</em></li>
+<li><strong>Position:</strong> <em>Sidebar Left</em></li>
+<li>Click <strong>Menu Assignment</strong>:
+<ul>
+<li><strong>Module Assignment:</strong> <em>Only on the Pages Selected</em></li>
+<li>Click <strong>None</strong> to clear checkboxes, then check: <em>Home</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Select Module Type:</strong> <em>Menu</em></li>
+<li><strong>Title:</strong> <em>Animals</em></li>
+<li><strong>Select Menu:</strong> <em>Animals</em></li>
+<li><strong>Base Item:</strong> <em>Animals</em></li>
+<li><strong>Start Level:</strong> <em>2</em></li>
+<li><strong>End Level:</strong> <em>2</em> (Cats and Dogs will be the only items displayed)</li>
+<li><strong>Position:</strong> <em>Sidebar Left</em></li>
+<li>Click <strong>Menu Assignment</strong>:
+<ul>
+<li><strong>Module Assignment:</strong> <em>Only on the Pages Selected</em></li>
+<li>Click <strong>None</strong> to clear checkboxes, then check: <em>Animals &gt; Animals</em>, <em>Main Menu &gt; Animals</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Select Module Type:</strong> <em>Menu</em></li>
+<li><strong>Title:</strong> <em>Dogs</em></li>
+<li><strong>Select Menu:</strong> <em>Animals</em></li>
+<li><strong>Base Item:</strong> <em>Dogs</em></li>
+<li><strong>Start Level:</strong> <em>3</em></li>
+<li><strong>End Level:</strong> <em>All</em></li>
+<li><strong>Position:</strong> <em>Sidebar Left</em></li>
+<li>Click <strong>Menu Assignment</strong>:
+<ul>
+<li><strong>Module Assignment:</strong> <em>Only on the Pages Selected</em></li>
+<li>Click <strong>None</strong> to clear checkboxes, then click the dropdown arrow to the right of <em>Dogs</em> and choose <strong>Select</strong>. This selects <em>Dogs</em>, <em>Collies</em>, and <em>Pomeranians</em>.</li>
+</ul>
+</li>
+</ul>
+<figure class="image"><img class="float-none" src="images/articles/354/dogs-menu-assignment.png" alt="Menu assignment showing dogs, collies, and pomeranians checked" width="2706" height="1970" loading="lazy" data-path="local-images:/articles/354/dogs-menu-assignment.webp">
+<figcaption>Menu assignment for Dogs</figcaption>
+</figure>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Select Module Type:</strong> <em>Menu</em></li>
+<li><strong>Title:</strong> <em>Cats</em></li>
+<li><strong>Select Menu:</strong> <em>Animals</em></li>
+<li><strong>Base Item:</strong> <em>Cats</em></li>
+<li><strong>Start Level:</strong> <em>3</em></li>
+<li><strong>End Level:</strong> <em>All</em></li>
+<li><strong>Position:</strong> <em>Sidebar Left</em></li>
+<li>Click <strong>Menu Assignment</strong>:
+<ul>
+<li><strong>Module Assignment:</strong> <em>Only on the Pages Selected</em></li>
+<li>Click <strong>None</strong> to clear checkboxes, then click the dropdown arrow to the right of <em>Cats</em> and choose <strong>Select</strong>. <em>Cats</em>, <em>Burmese</em>, and <em>Russian Blues</em> should all be checked.</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+</ul>
+</li>
+</ol>
+<figure class="image"><img class="float-none" src="images/articles/354/site_modules_list.png" alt="List of site modules" width="2710" height="1434" loading="lazy" data-path="local-images:/articles/354/site_modules_list.webp">
+<figcaption>List of site modules</figcaption>
+</figure>
+<h3>View the Results</h3>
+<ol>
+<li>View the site. <strong>Result:</strong> The <em>All Animals</em> module appears in the left sidebar of the homepage, displaying the entire Animals menu.<br><br>
+<figure class="image"><img class="float-none" src="images/articles/354/all-animals-menu.png" alt="The All Animals menu on the homepage" width="2704" height="1206" loading="lazy" data-path="local-images:/articles/354/all-animals-menu.webp">
+<figcaption>The <em>All Animals</em> menu on the homepage along with the other menu site modules (Main, Login, and Breadcrumbs under the banner).</figcaption>
+</figure>
+<br><br>
+</li>
+<li>Click <strong>Animals</strong>. <strong>Result:</strong> The Animals article appears on the right, with the Animals module in the left sidebar showing links to Dogs and Cats.<br><br>
+<figure class="image"><img class="float-none" src="images/articles/354/animals-menu.png" alt="Animals menu displaying links for Dogs and Cats" width="1336" height="878" loading="lazy" data-path="local-images:/articles/354/animals-menu.webp">
+<figcaption>The <em>Animals </em>menu site module with the <em>Animals</em> article is configured to simplify the menu choices.</figcaption>
+</figure>
+<br><br>
+</li>
+<li>Click <strong>Dogs</strong>. <strong>Result:</strong> The Dogs article appears on the right, with the Dogs module in the left sidebar showing links to Collies and Pomeranians.</li>
+<li>Click <strong>Cats</strong>. <strong>Result:</strong> The Cats article appears on the right, with the Cats module in the left sidebar showing links to Burmese and Russian Blues.<br><br>
+<figure class="image"><img class="float-none" src="images/articles/354/cats_menu_site_module.png" alt="Cats menu module showing links to the breeds of cats. The breadcrumb menu at the top provides navigation back up the hierarchy." width="1546" height="926" loading="lazy" data-path="local-images:/articles/354/cats_menu_site_module.webp">
+<figcaption>All cat-related articles display the <em>Cats</em> menu. The breadcrumb menu provides navigation back up the hierarchy.</figcaption>
+</figure>
+<br><br>
+</li>
+<li>Click <strong>Pomeranians</strong>. <strong>Result:</strong> The Pomeranians article appears on the right with the Dogs module on the left. <strong>Note:</strong> The breadcrumbs menu above the article links back to Dogs, Animals, and Home.</li>
+</ol>
+<p>We created seven articles for our menu to link to, then created the menu as an empty container. We added menu items to the menu in a hierarchy by setting each item's parent. Finally, we created four menu site modules to display the menu on the website in different ways: an all-inclusive menu on the homepage, and context-sensitive menus showing relevant links for the Animals, Dogs, and Cats sections.</p>
+<h2>Concepts</h2>
+<p>A single menu contains submenu items arranged in a hierarchy, and is used to display multiple context-appropriate submenus on the website. This can be especially helpful with large hierarchies containing many menu items.</p>
+<p>Large dropdown menus can be confusing and difficult to navigate. Using submenus can simplify navigation while using a single large and complex menu.</p>

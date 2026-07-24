@@ -1,0 +1,90 @@
+<p>Content tags can be assigned to articles to group a set of articles that share the same criteria. For example, if you're writing a series of articles describing courses offered on a website, you can assign the same tag to several articles that each cover a different aspect of a similar topic. A single article can also carry multiple tags, identifying several aspects of a topic area. For example, the tag <em>Cargo</em> could be used for articles covering cargo insurance, cargo transportation, and cargo theft. Unlike a category, which an article can only belong to one of, an article can have as many tags as apply to it.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create Tags</h3>
+<ol>
+<li>Navigate to <strong>Components &gt; Tags</strong> and click <strong>New</strong>. <strong>Result:</strong> A new tag form opens.
+<ul>
+<li><strong>Title:</strong> <em>Cargo</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Insurance</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>Create Three Articles</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click <strong>New</strong>. <strong>Result:</strong> A new article form opens.
+<ul>
+<li><strong>Title:</strong> <em>Cargo Transportation</em></li>
+<li><strong>Tags:</strong> <em>Cargo</em></li>
+</ul>
+<strong>Note:</strong> Select from the dropdown or type a new tag name into the <strong>Tags</strong> field and press Enter to add it.<br><br>
+<figure class="image"><img class="float-none" src="images/articles/349/taginarticle.png" alt="Adding tags to an article" width="1243" height="561" loading="lazy" data-path="local-images:/articles/349/taginarticle.png">
+<figcaption>Adding a tag to an article</figcaption>
+</figure>
+<br><br>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>General Liability Insurance</em></li>
+<li><strong>Tags:</strong> <em>Insurance</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Cargo Insurance</em></li>
+<li><strong>Tags:</strong> <em>Cargo</em>, <em>Insurance</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h2>Steps</h2>
+<h3>Create a Tag Menu Item</h3>
+<ol>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong> and click <strong>New</strong>. <strong>Result:</strong> A new menu item form opens.
+<ul>
+<li><strong>Title:</strong> <em>Cargo</em></li>
+<li><strong>Menu Item Type:</strong> <em>Tags &gt; Tagged Items</em></li>
+<li><strong>Tag:</strong> <em>Cargo</em></li>
+</ul>
+<br><br>
+<figure class="image"><img class="float-none" src="images/articles/349/tag2.png" alt="Selecting the Tagged Items menu item type" width="1097" height="495" loading="lazy" data-path="local-images:/articles/349/tag2.png">
+<figcaption>Choosing the <em>Tagged Items</em> menu item type</figcaption>
+</figure>
+<br><br>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>View the site and click <strong>Cargo</strong> in the main menu. <strong>Result:</strong> A list appears showing the two articles tagged <em>Cargo</em>: <em>Cargo Transportation</em> and <em>Cargo Insurance</em>.</li>
+</ol>
+<h3>Modify the Tag Menu Item</h3>
+<ol>
+<li>Switch to the backend and navigate to <strong>Menus &gt; Main Menu</strong>.</li>
+<li>Click <strong>Cargo</strong> to edit it.
+<ul>
+<li><strong>Tags:</strong> <em>Cargo</em>, <em>Insurance</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Switch to the frontend and click <strong>Cargo</strong> in the main menu again. <strong>Result:</strong> All three articles now appear in the list, including <em>General Liability Insurance</em>, since the menu item now matches either tag.</li>
+</ol>
+<h3>Filter Articles by Tag in the Backend</h3>
+<ol>
+<li>Switch to the backend and navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Click <strong>Filter Options</strong>. <strong>Result:</strong> A set of filter category dropdowns appears.</li>
+<li>Set <strong>- Select Tag -</strong> to <em>Insurance</em>. <strong>Result:</strong> The list narrows to the two articles tagged <em>Insurance</em>: <em>General Liability Insurance</em> and <em>Cargo Insurance</em>.<br><br>
+<figure class="image"><img class="float-none" src="images/articles/349/filter.png" alt="Filtering articles by tag" width="1150" height="185" loading="lazy" data-path="local-images:/articles/349/filter.png">
+<figcaption>Filtering the article list by tag</figcaption>
+</figure>
+<br><br>
+</li>
+</ol>
+<h2>Concepts</h2>
+<p>Tags created anywhere in Joomla—whether typed directly into an article's <strong>Tags</strong> field or created ahead of time under <strong>Components &gt; Tags</strong>—all appear together in the same tags list, and can be used to filter articles from the backend article list.</p>
+<p>Unlike categories, which an article can only belong to one of, an article can carry as many tags as apply to it. A Tagged Items menu item can also be configured to match more than one tag, as this tutorial demonstrated by adding <em>Insurance</em> to the <em>Cargo</em> menu item.</p>

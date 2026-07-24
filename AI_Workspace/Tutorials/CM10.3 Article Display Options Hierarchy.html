@@ -1,0 +1,94 @@
+<p>Article information such as author, hits, article date, article category, and more is displayed when viewing and article and when viewing a list of articles. These details may be turned on or off; most are turned on by default. The control originates in the system configuration (also known as the <em>global</em> setting) which applies to all menu items and articles which can either adopt (inherit) or override the global setting. This tutorial demonstrates how this inheritance works by focusing on how the <em>Author</em> setting is controlled. </p>
+<figure class="image"><img class="float-none" src="images/articles/333/author_location_article_list.png" alt="Location of the Author in a list of articles" width="2836" height="1928" loading="lazy" data-path="local-images:/articles/333/author_location_article_list.webp">
+<figcaption>Location of the <em>Author</em> field in a list of articles</figcaption>
+</figure>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create a New Category</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Categories</strong> and click on the <strong>New</strong> button. <strong>Result:</strong> A new category form opens.
+<ul>
+<li><strong>Title:</strong> <em>Sundial Software</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create Two Articles</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click on the <strong>New</strong> button. <strong>Result:</strong> A new article form opens.
+<ul>
+<li><strong>Title:</strong> <em>Sun Daze Companion</em></li>
+<li><strong>Category:</strong> <em>Sundial Software</em></li>
+<li>Click the <strong>Options</strong> tab. Observe that <strong>Author</strong> is set to <em>Use Global (Show)</em>, indicating that the author will appear when viewing articles.</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Olympus Solar Calculator</em></li>
+<li><strong>Category:</strong> <em>Sundial Software</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create a Category Blog Menu Item</h3>
+<p>The menu item will display our articles in a list. Visitors will then click on one to view an individual article.</p>
+<ol>
+<li>Click on <strong>Menus</strong> and then <strong>Main Menu</strong>.</li>
+<li>Click the <strong>New</strong> button and configure:
+<ul>
+<li><strong>Title:</strong> <em>Sundial Software Blog</em></li>
+<li><strong>Menu Item Type:</strong> <em>Category Blog</em></li>
+<li><strong>Choose a Category:</strong> <em>Sundial Software</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<h3>Demonstrate Global Inheritance</h3>
+<p>The articles and menu items normally inherit from the global setting.</p>
+<ol>
+<li>Navigate to <strong>System &gt; Global Configuration</strong>.</li>
+<li>Click <strong>Articles</strong> under <strong>Component</strong>. <strong>Result:</strong> The article options appear, including the <strong>Author</strong> field, set to <em>Show</em>. <strong>Note:</strong> If it isn't, set it to <em>Show</em> now and save.</li>
+<li>View the site and click <strong>Sundial Software Blog</strong> in the main menu. <strong>Result:</strong> The author appears in the list of articles, under the heading <em>Written by</em>.</li>
+<li>View one of the articles. <strong>Result:</strong> The author appears here as well.</li>
+<li>Switch to the backend and navigate to <strong>System &gt; Global Configuration</strong>.</li>
+<li>Click <strong>Articles</strong> under <strong>Component</strong>.</li>
+<li>Change the <strong>Author</strong> setting to <em>Hide</em> and save.</li>
+<li>Switch to the frontend and click <strong>Sundial Software Blog</strong> again. <strong>Result:</strong> The author no longer appears in the list of articles.</li>
+<li>View one of the articles. <strong>Result:</strong> The author is hidden here as well.</li>
+</ol>
+<p>Both the menu item and the articles are using the global setting to show or hide the author.</p>
+<h3>Override the Global Setting</h3>
+<p>Switch to the backend and edit the category blog menu item:</p>
+<ol>
+<li>Click <strong>Menus</strong> and then <strong>Main Menu</strong>.</li>
+<li>Click <strong>Sundial Software Blog</strong>.</li>
+<li>Under the <strong>Options</strong> tab, change the <strong>Author</strong> setting to <em>Show</em> and save.</li>
+<li>Switch to the frontend and click <strong>Sundial Software Blog</strong> again. <strong>Result:</strong> The author is displayed. <strong>Note:</strong> The menu item is no longer inheriting from the global configuration.</li>
+<li>View one of the articles. <strong>Result:</strong> The author is shown as well. <strong>Note:</strong> The article is inheriting its setting from the menu item.</li>
+</ol>
+<h3>Override the Menu Setting</h3>
+<p>Switch to the backend and edit one of the articles:</p>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Click one of the articles to edit it.</li>
+<li>Under the <strong>Options</strong> tab, change the <strong>Author</strong> setting to <em>Hide</em> and save.</li>
+<li>Switch to the frontend and click <strong>Sundial Software Blog</strong>. <strong>Result:</strong> The author is shown for both articles in the list — this is the menu setting.</li>
+<li>View the articles. <strong>Result:</strong> One article displays the author while the one just edited does not. <strong>Note:</strong> The article has overridden the menu setting.</li>
+</ol>
+<h3>Inherit from the Article</h3>
+<p>There is one more setting to look at, where the menu item inherits its setting from the article.</p>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Under the <strong>Options</strong> tab, set the <strong>Author</strong> setting to <em>Show</em> in one article and <em>Hide</em> in the other, and save both.</li>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong>.</li>
+<li>Click <strong>Sundial Software Blog</strong> to edit it.</li>
+<li>Under the <strong>Options</strong> tab, change the <strong>Author</strong> setting to <em>Use Article Settings</em> and save.</li>
+<li>Switch to the frontend and click <strong>Sundial Software Blog</strong>. <strong>Result:</strong> One article in the list displays the author, while it remains hidden in the other. <strong>Note:</strong> The menu item is inheriting from the article setting.</li>
+</ol>
+<h2>Concepts</h2>
+<p>Inheriting settings from a single point in the system configuration establishes a consistent look across the entire website, and a single point to update. </p>
+<p>Overrides provide the means to individualize menus and articles when needed.</p>
