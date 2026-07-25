@@ -1,0 +1,94 @@
+<p>A URL is an address the browser uses to find an article. You might create an article on your website and send the URL to someone in an email. Joomla calculates an article's URL dynamically, and that URL can change. The purpose of this tutorial is to explore a few ways that an article's URL can change, and one way to deal with obsolete URLs.</p>
+<p>This tutorial will not examine URLs in detail; it <span style="text-decoration: underline;">will</span> use a text editor to record and compare changes to an article's URL throughout the tutorial—changes that will be obvious without a detailed understanding of how they work.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create a New Category</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Categories</strong> and click <strong>New</strong>.</li>
+<li>Title: Sundial Software</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create an Article</h3>
+<ol>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click <strong>New</strong>.</li>
+<li>Title: Sun Daze Companion. Add some body text.</li>
+<li>Set <strong>Featured</strong> to <em>Yes</em>.</li>
+<li>Set <strong>Category</strong> to <em>Sundial Software</em>.</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Recording the URL</h3>
+<p>Throughout the tutorial you will be asked to record a URL by copying it out of your browser's address field and pasting it into a text editor.</p>
+<h2>Steps</h2>
+<h3>Record the Original URL</h3>
+<ol>
+<li>View the site using the <strong>View Site</strong> link. <strong>Result:</strong> The <em>Sun Daze Companion</em> article appears on the homepage as a featured item.</li>
+<li>Click on the article, then copy the article URL from the browser's address field and paste it into the text editor. Annotate this as the <em>Original URL</em>.
+<figure class="image"><img class="float-none" src="images/articles/332/article_urls_text_editor.png" alt="Image of a text editor with several URLs" width="1206" height="664" loading="lazy" data-path="local-images:/articles/332/article_urls_text_editor.webp">
+<figcaption>URLs recorded in a text editor for comparison.</figcaption>
+</figure>
+</li>
+</ol>
+<h3>Create a Category Blog Menu Item</h3>
+<ol>
+<li>Close the tab, returning to the administrator tab.</li>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong> and click <strong>New</strong>.</li>
+<li>Title: Sundial Software Blog</li>
+<li>Type: <strong>Articles &gt; Category Blog</strong></li>
+<li>Category: <em>Sundial Software</em></li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site and click on the <em>Sundial Software Blog</em> menu item in the main menu. <strong>Result:</strong> The <em>Sun Daze Companion</em> article is displayed.</li>
+<li>Click to view the article and record the URL, annotating it <em>Category Blog URL</em>. <strong>Note:</strong> Joomla updated the URL when the Category Blog menu item was created.</li>
+<li>Close the tab and return to the administrator tab.</li>
+</ol>
+<h3>Single Article Menu Item</h3>
+<p>Imagine this article is a new blog entry that you want to promote. You've made it a featured item, but you also want to temporarily add a link from the main menu so that visitors can find it no matter where they go on your site. After some time, you plan to remove this menu item.</p>
+<ol>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong> and click <strong>New</strong>.</li>
+<li>Title: Sun Daze Companion App</li>
+<li>Type: <strong>Articles &gt; Single Article</strong></li>
+<li>Select <em>Sun Daze Companion</em>.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site and click on the <em>Sun Daze Companion App</em> menu item in the main menu. Copy the URL and paste it into the text editor, annotating it <em>Single Article URL</em>. <strong>Note:</strong> Joomla has updated the URL again, now that the Single Article menu item exists.</li>
+<li>Bookmark this article, just as a visitor to your website might.</li>
+</ol>
+<p>Imagine that some time has passed, and it's now time to remove the <em>Sun Daze Companion App</em> menu item from the main menu.</p>
+<ol>
+<li>Close the tab, returning to the administrator tab, to unpublish the menu item.</li>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong>.</li>
+<li>Click the status icon to unpublish the <em>Sun Daze Companion App</em> menu item.</li>
+<li>View the site. <strong>Result:</strong> The <em>Sun Daze Companion App</em> link is gone from the main menu.</li>
+<li>Click on the article. <strong>Result:</strong> It displays normally.</li>
+<li>Click on your bookmark for the article. <strong>Result:</strong> An error occurs—the article is no longer available at that URL. <strong>Note:</strong> Joomla has once again updated the URL, now that the Single Article menu item has been unpublished.</li>
+</ol>
+<h3>Create a Redirect</h3>
+<p>When the Single Article menu item was unpublished, its URL stopped working. Joomla's Redirect plugin can recognize the old URL and redirect a visitor to the article.</p>
+<ol>
+<li>Navigate to <strong>System</strong>, then <strong>Redirects</strong> (under the <em>Manage</em> heading). Enable the plugin if necessary.</li>
+<li>Click <strong>New</strong> to create a new redirect.</li>
+<li>Expired URL: paste the <em>Single Article URL</em> from the text editor.</li>
+<li>New URL: paste the <em>Original URL</em> from the text editor.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>Click on your bookmark for the article. <strong>Result:</strong> The bookmark is functional again.
+<ul>
+<li>The redirect plugin recognized the old link and forwarded you to the article's original URL.</li>
+<li>Joomla recognized the original URL and forwarded you to the most current URL (the <em>Category Blog URL</em>).</li>
+</ul>
+</li>
+</ol>
+<h3>Search Engine Friendly URLs</h3>
+<p>By default, Joomla uses Search Engine Optimization (SEO) friendly URLs, which use aliases based on article, menu, and category titles to shorten URLs and make them more readable.</p>
+<ol>
+<li><strong>Warning:</strong> Do not attempt this exercise on a live website. Only proceed if you are using a non-production website for this tutorial.</li>
+<li>Navigate to <strong>System</strong>, then <strong>Global Configuration</strong>.</li>
+<li>Scroll down to the <strong>SEO</strong> section and set <strong>Search Engine Friendly URLs</strong> to <em>No</em>.</li>
+<li>Save the settings by clicking the button at the top of the page.</li>
+<li>View the article on the site and record the URL in the text editor as <em>Non-SEO URL</em>. Compare it to the previously recorded URLs.</li>
+<li>Return the <strong>Search Engine Friendly URLs</strong> setting to <em>Yes</em> and save.</li>
+</ol>
+<h2>Concepts</h2>
+<p>Joomla is a sophisticated, highly-configurable content management system that dynamically generates article URLs based on their category, related menu items, and other factors. URLs can change or become inoperable as the configuration changes.</p>
+<p>Joomla uses SEO-friendly URLs, which enhance an article's performance in search engines and make the URL more human-recognizable.</p>
+<p>Joomla's redirect plugin can be programmed to recognize inoperable URLs and redirect visitors automatically to functional URLs.</p>

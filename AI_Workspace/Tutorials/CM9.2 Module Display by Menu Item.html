@@ -1,0 +1,85 @@
+<p>A module is a small, self-contained block of reusable content or functionality (such as a menu, login form, or custom bit of text). Joomla is structured by menu items, which are synonymous with pages. Modules are configured to appear on all menu items (pages) by default, but can be set to appear (or not appear) on discrete menu items. This tutorial demonstrates how to do that.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create an Article</h3>
+<ol>
+<li>Log in to the backend.</li>
+<li>Navigate to <strong>Content &gt; Articles</strong> and click <strong>New</strong>.
+<ul>
+<li><strong>Title:</strong> Snails</li>
+<li><strong>Article Text:</strong> Leave blank, enter random text, or ask AI for a paragraph on snails and paste in the results.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create a Menu Item for the Article</h3>
+<ol>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong> and click <strong>New</strong>.
+<ul>
+<li><strong>Title:</strong> Snails</li>
+<li><strong>Type: Articles &gt; Single Article</strong></li>
+<li><strong>Article:</strong> <em>Snails</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create Two Custom Modules</h3>
+<p>One will have a fun fact about snails and appear only on the <em>Snails</em> menu item (the Snails article); the other will be a notice of site maintenance and appear on every menu item (every page on the site).</p>
+<ol>
+<li>Navigate to <strong>Content &gt; Site Modules</strong>, click <strong>New</strong>, then select <strong>Custom</strong>.
+<ul>
+<li><strong>Title:</strong> Fun Fact</li>
+<li>Enter a fun snail fact into the text editor, e.g. "The average garden snail moves at a pace of roughly 3.6 to 47 meters per hour, depending on the species and conditions."</li>
+<li><strong>Position: Sidebar Left [sidebar-left]</strong></li>
+</ul>
+</li>
+<li>Click on the <strong>Menu Assignment</strong> tab.
+<ul>
+<li><strong>Module Assignment: Only on pages selected</strong></li>
+<li>Tick <em>Snails</em>.</li>
+</ul>
+</li>
+<li><strong>Save &amp; New</strong>. <strong>Result:</strong> The form saves and a new, blank module form appears with the <strong>Menu Assignment</strong> tab selected. <strong>Note:</strong> The module assignment defaults to <em>On all pages</em>.</li>
+<li>Click on the <strong>Module</strong> tab.
+<ul>
+<li><strong>Title:</strong> Site Maintenance</li>
+<li>Enter a message into the text editor, e.g. "Our site will be offline for maintenance this evening."</li>
+<li><strong>Position: Sidebar Left [sidebar-left]</strong></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<figure class="image"><img class="float-none" src="images/articles/357/snail_module_assignment.png" alt="Fun fact module assigned only on the snail menu item" width="2310" height="1536" loading="lazy" data-path="local-images:/articles/357/snail_module_assignment.webp">
+<figcaption><em>Fun Fact</em> module is configured to display only on the <em>Snails</em> menu item.</figcaption>
+</figure>
+<h2>Steps</h2>
+<h3>View the Site</h3>
+<ol>
+<li>View the site. <strong>Result:</strong> The homepage displays the <em>Site Maintenance</em> module, a <em>Login Form</em> module, and a breadcrumb module (<em>You are here: Home</em>); the main menu includes a link to <em>Snails</em>.</li>
+<li>Click on <strong>Snails</strong> in the main menu. <strong>Result:</strong> Both the <em>Fun Fact</em> and <em>Site Maintenance</em> modules appear, along with the <em>Login Form</em> and breadcrumb modules.</li>
+</ol>
+<h3>Remove the Login Module</h3>
+<p>For this site, the login module should appear everywhere except the <em>Snails</em> article.</p>
+<ol>
+<li>Return to the backend.</li>
+<li>Navigate to <strong>Content &gt; Site Modules</strong> and click on the <em>Login Form</em> module.</li>
+<li>Click on the <strong>Menu Assignment</strong> tab.
+<ul>
+<li><strong>Module Assignment: On all pages except those selected</strong></li>
+<li>Uncheck <em>Home</em> (leave <em>Snails</em> checked).</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the <em>Snails</em> article. <strong>Result:</strong> The login form appears everywhere except on the <em>Snails</em> article.
+<figure class="image"><img class="float-none" src="images/articles/357/login_module_assignment.png" alt="Login module configured to not appear on the Snail menu item" width="2220" height="1526" loading="lazy" data-path="local-images:/articles/357/login_module_assignment.webp">
+<figcaption>Login module configured to be excluded from the <em>Snails</em> menu item.</figcaption>
+</figure>
+</li>
+</ol>
+<p>Using the module assignment feature, we created a <em>Fun Fact</em> module to appear only on the <em>Snails</em> page, created a <em>Site Maintenance</em> module to appear on all pages, and reconfigured the <em>Login Form</em> module to appear everywhere except the <em>Snails</em> menu item.</p>
+<h2>Concepts</h2>
+<p>Modules are assigned to all menu items by default, but can be configured to appear only on selected pages, or to be excluded from selected pages.</p>
+<p>In Joomla, menu items are synonymous with pages. Assigning a module to a menu item is effectively assigning it to a page.</p>

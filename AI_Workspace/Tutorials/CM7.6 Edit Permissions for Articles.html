@@ -1,0 +1,219 @@
+<p>Joomla provides a rich framework allowing users in different roles to contribute content. This tutorial explores three user roles—Author, Editor, and Publisher—and the permissions that govern them. Authors have permission to create and edit their own content; Editors have additional permissions to edit all articles; and Publishers have additional permissions allowing them to publish content to the site.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h3>Create an <em>Article List</em> Menu Item</h3>
+<p>This will give you a location on the frontend to create and edit articles.</p>
+<ol>
+<li>Navigate to <strong>Menus &gt; Main Menu</strong></li>
+<li>Click <strong>New</strong> to create a new menu item</li>
+<li>Title: Article List</li>
+<li>Type: <strong>Articles &gt; Category List</strong></li>
+<li>Category: Uncategorized</li>
+<li>Access: Registered (only logged-in, registered users will be able to see this menu item)</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create Two User Accounts</h3>
+<p>These will be used to examine the effects of different permissions (user roles).</p>
+<ol>
+<li>Navigate to <strong>Users &gt; Manage</strong></li>
+<li>Click <strong>New</strong>
+<ul>
+<li>Name: Joe Bloggs</li>
+<li>Login Name (Username): joe</li>
+<li>Password/Confirm Password: make up a password</li>
+<li>Email: <a href="mailto:jb@joomla.test">jb@joomla.test</a> (fictitious; will not be used)</li>
+<li>Click the <strong>Assigned User Groups</strong> tab</li>
+<li>Tick <strong>Author</strong> (Registered and Author should both be ticked)</li>
+</ul>
+</li>
+<li>Select <strong>Save &amp; New</strong> from the dropdown
+<ul>
+<li>Name: Erika Mustermann</li>
+<li>Login Name (Username): erika</li>
+<li>Password/Confirm Password: make up a password</li>
+<li>Email: <a href="mailto:em@joomla.test">em@joomla.test</a> (fictitious; will not be used)</li>
+<li>Click the <strong>Assigned User Groups</strong> tab</li>
+<li>Tick <strong>Author</strong> (Registered and Author should both be ticked)</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<p>Logging in to the backend and the frontend are two separate things. You logged in to the backend of the site (the administrative area) to perform the setup, but you are not logged in to the frontend (public-facing side) of the site.</p>
+<p>This tutorial will have you view the site (which opens a new tab), then log in to the frontend using the accounts you set up for Joe and Erika. When you do, you remain logged in to the backend with your administrator account in the first tab. Switching between the frontend and backend is just a matter of switching tabs, and you will not need to log in each time.</p>
+<p>Users with Author, Editor, and Publisher accounts can log in to the frontend of the site; Administrators and Super Users can log in to both the frontend and the backend of the site.</p>
+<h3>Create an Article from the Frontend</h3>
+<ol>
+<li>View the site using the <strong>View Site</strong> link in the header. Observe that the <em>Article List</em> menu item does not appear in the main menu (the access was set for registered users).</li>
+<li>Log in as Joe with the username and password you created for that account.
+<ul>
+<li>The page refreshes and the Login Form is replaced by a friendly message with Joe's name and a <em>Log out</em> button, and the <em>Article List</em> link appears in the main menu.</li>
+</ul>
+</li>
+<li>Click on the <strong>Article List</strong> link. The article list is empty (there are not yet any articles).</li>
+<li>Click the <strong>New Article</strong> button to create a new article.
+<ul>
+<li>Title: Dogs</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.
+<ul>
+<li>An alert notifies you that the article has been submitted.</li>
+<li>New articles created by Authors are initially unpublished, and Authors do not have sufficient permissions to view unpublished content, so the article list is empty.</li>
+</ul>
+</li>
+</ol>
+<h3>Publish Joe's Article</h3>
+<ol>
+<li>Switch back to the backend where you are logged in as an administrator.</li>
+<li>Navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Click the <em>Status</em> icon next to the <em>Dogs</em> article.
+<ul>
+<li>The list refreshes and the status icon becomes a green checkmark.</li>
+</ul>
+</li>
+</ol>
+<h3>Edit Joe's Article</h3>
+<ol>
+<li>Switch back to the frontend where you are logged in as Joe, and refresh the page.</li>
+<li>The <em>Dogs</em> article now appears and you are free to view and edit it. Edit the article and enter a few words into the body.</li>
+<li>Create another article titled <em>Fish</em>. Again, the article is submitted and unavailable until it is published.</li>
+</ol>
+<h3>Switch Users</h3>
+<ol>
+<li>Log out, then log in as Erika using the username and password you created for this account.</li>
+<li>On the <em>Article List</em> page, note that you can see Joe's published article. You are able to view the article but not edit it.</li>
+<li>Create your own article:
+<ul>
+<li>Click the <strong>New Article</strong> button to create a new article.</li>
+<li>Title: Cats</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.
+<ul>
+<li>An alert notifies you that the article has been submitted.</li>
+<li>New articles created by Authors are initially unpublished, and Authors do not have sufficient permissions to view unpublished content, so the article list is empty.</li>
+</ul>
+</li>
+</ol>
+<h3>Publish Erika's Article</h3>
+<ol>
+<li>Switch back to the backend where you are logged in as an administrator.</li>
+<li>Navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Click the <em>Status</em> icon next to the <em>Cats</em> article.
+<ul>
+<li>The list refreshes and the status icon becomes a green checkmark.</li>
+<li>Do <strong><span style="text-decoration: underline;">not</span></strong> publish the <em>Fish</em> article yet.</li>
+</ul>
+</li>
+</ol>
+<h3>Edit Erika's Article</h3>
+<ol>
+<li>Switch back to the frontend where you are logged in as Erika, and refresh the page.</li>
+<li>The <em>Cats</em> article now appears and you are free to view and edit it. Edit the article and enter a few words into the body.</li>
+</ol>
+<p>Authors can create articles and view all published articles, but can only edit their own articles.</p>
+<figure class="image"><img class="float-none" src="images/articles/358/article_list.png" alt="Article List page showing the login form two articles only one of which can be edited by the current user" width="2116" height="938" loading="lazy" data-path="local-images:/articles/358/article_list.webp">
+<figcaption>The Article List with Erika logged in. Erika can see both articles but only edit her own.</figcaption>
+</figure>
+<h3>The Editor User Role</h3>
+<ol>
+<li>Return to the backend and upgrade Erika to an <em>Editor</em> role.
+<ul>
+<li>Navigate to <strong>Users &gt; Manage</strong></li>
+<li>Click on Erika's profile to edit.</li>
+<li>Under the <strong>Assigned User Groups</strong> tab, uncheck <em>Author</em> and check <em>Editor</em>.</li>
+<li><strong>Save</strong> (but don't close; you're coming right back).</li>
+</ul>
+</li>
+<li>Return to the frontend where you are logged in as Erika and refresh the <em>Article List</em> page. The <em>Fish</em> article now appears as an unpublished item along with <em>Cats</em> and <em>Dogs</em>.</li>
+<li>As an <em>Editor</em>, you are able to edit any article. Edit the <em>Fish</em> article:
+<ul>
+<li>Add a few words to the body.</li>
+<li>Click on the <em>Options</em> tab and observe that the article status is <em>Unpublished</em>.</li>
+<li>Verify that you are unable to change the status—clicking on the dropdown does nothing.</li>
+<li><strong>Save &amp; Close</strong> the article.</li>
+</ul>
+</li>
+</ol>
+<figure class="image"><img class="float-none" src="images/articles/358/article_list_editor_view.png" alt="Article list with an editor logged in with the ability to view and edit all articles." width="2128" height="1016" loading="lazy" data-path="local-images:/articles/358/article_list_editor_view.webp">
+<figcaption>The Article List when the user has an Editor role and can view and edit all articles.</figcaption>
+</figure>
+<h3>The Publisher User Role</h3>
+<ol>
+<li>Return to the backend and upgrade Erika to a <em>Publisher</em> role.
+<ul>
+<li>Under the <strong>Assigned User Groups</strong> tab, check <em>Publisher</em>.</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ul>
+</li>
+<li>Return to the frontend where you are still logged in as Erika.</li>
+<li>Publish the <em>Fish</em> article:
+<ul>
+<li>Edit the article.</li>
+<li>Click on the <em>Options</em> tab and change the <em>Status</em> to <em>Published</em>.</li>
+<li><strong>Save &amp; Close</strong> the article.</li>
+</ul>
+</li>
+<li>Log out, then log in as Joe again.</li>
+<li>Verify that you see all three articles and can edit <em>Dogs</em> and <em>Fish</em>.</li>
+</ol>
+<h3>Permissions for Individual Articles</h3>
+<ol>
+<li>Return to the backend and view the <em>Dogs</em> article permissions.</li>
+<li>Navigate to <strong>Content &gt; Articles</strong>.</li>
+<li>Click on the <em>Dogs</em> article to edit it.</li>
+<li>Click on the <strong>Permissions</strong> tab.
+<ul>
+<li>All of the permissions here are inherited from settings that apply to all articles. This is the default, and the other two articles are the same.</li>
+<li>The user groups appear on the left, and the selected group's permissions appear on the right.</li>
+</ul>
+</li>
+<li>Click on <em>Publisher</em>.
+<ul>
+<li>Publishers can change the state (status) of an article to publish it, and they can edit the article.</li>
+</ul>
+</li>
+<li>Click on <em>Editor</em>.
+<ul>
+<li>Editors are allowed to edit the article, but not its state.</li>
+<li>When Erika was in the Editor role, she could edit any article, but not publish them.</li>
+</ul>
+</li>
+<li>Click on <em>Author</em>.
+<ul>
+<li>Authors are not allowed to edit the article.</li>
+<li>However, Joe and Erika (before becoming an Editor or Publisher) were able to edit their own articles. That permission is set at a higher level, in the settings for <em>all</em> articles.</li>
+</ul>
+</li>
+<li>As an administrator, you can override these inherited permissions when needed.</li>
+<li><strong>Close</strong> the article without saving.</li>
+</ol>
+<h3>Permissions for All Articles</h3>
+<ol>
+<li>From the <strong>Content &gt; Articles</strong> list, click on the <strong>Options</strong> button in the upper right.</li>
+<li>Select <strong>Articles</strong> on the left to highlight it.</li>
+<li>Click on the <strong>Permissions</strong> tab.
+<ul>
+<li>The user groups appear on the left, and the permissions of the highlighted group appear on the right.</li>
+</ul>
+</li>
+<li>Click on the <strong>Author</strong> group.
+<ul>
+<li>Observe that Authors are not allowed to edit articles generally (all articles).</li>
+<li>But they are allowed to Create and "Edit Own," meaning they can create new articles and edit any articles they created.</li>
+<li>This is the permission that allows Joe and Erika to edit their own articles.</li>
+</ul>
+</li>
+</ol>
+<figure class="image"><img class="float-none" src="images/articles/358/single_article_author_permissions.png" alt="Single article permissions indicating Authors do not have edit permissions" width="1900" height="750" loading="lazy" data-path="local-images:/articles/358/single_article_author_permissions.webp">
+<figcaption>Permissions for an individual article indicate Authors are unable to edit.</figcaption>
+</figure>
+<figure class="image"><img class="float-none" src="images/articles/358/all_articles_author_permissions.png" alt="The all-articles permissions showing where Authors can edit their own articles" width="1894" height="1350" loading="lazy" data-path="local-images:/articles/358/all_articles_author_permissions.webp">
+<figcaption>In the permissions for all articles, the <em>Author</em> group is where the Author's <em>Edit Own</em> permission is found.</figcaption>
+</figure>
+<h2>Concepts</h2>
+<p>Joomla provides a basic framework for authors, editors, and publishers to collaborate on creating and publishing content.</p>
+<p>The "Edit Own" permission is derived from settings that control all articles; viewing the permissions for a single article, where it appears that authors have no editing permissions, can be misleading.</p>

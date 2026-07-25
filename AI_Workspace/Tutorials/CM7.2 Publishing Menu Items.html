@@ -1,0 +1,138 @@
+<p>Menu Items provide access to articles, not unlike picture frames display artworks that are otherwise stored in the backroom of a museum. This tutorial demonstrates the use of menus and explores the relationship between menus, articles and categories. </p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create a New Category</h3>
+<ol>
+<li>Log in to the Joomla backend.</li>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Categories</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-category form appears.
+<ul>
+<li>Title: <strong>History</strong>.</li>
+<li>Status: <strong>Published</strong> (default).</li>
+</ul>
+</li>
+<li style="font-weight: bold;"><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create Two Articles</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Articles</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-article form appears.
+<ul>
+<li>Title: <strong>The Roman Empire</strong></li>
+<li>Category: <strong>History</strong> (default).</li>
+</ul>
+</li>
+<li><strong>Save &amp; <u>Add New</u></strong>
+<ul>
+<li>Title: <strong>Medieval Europe</strong></li>
+<li>Category: <strong>History</strong></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create Menu Items</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, click on <strong>Menus</strong> then <strong>Main Menu</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-menu-item form appears.
+<ul>
+<li>Title: <strong>The Romans</strong></li>
+<li>Menu Item Type: <strong>Single Article</strong> (Articles &gt; Single Article)</li>
+<li>Article: <strong>The Roman Empire</strong> (default).</li>
+</ul>
+</li>
+<li><strong>Save &amp; <u>New</u></strong>
+<ul>
+<li>Title: <strong>History Blog</strong></li>
+<li>Menu Item Type: <strong>Category Blog</strong> (Articles &gt; Category Blog)</li>
+<li>Category: <strong>History</strong>.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<h3>Verify the Setup</h3>
+<ol>
+<li>View the frontend.
+<ul>
+<li>The <strong>Main Menu</strong> contains links for <strong>The Romans</strong> and <strong>History Blog</strong>.</li>
+</ul>
+</li>
+<li>Click on <strong>The Romans</strong>.
+<ul>
+<li><strong>The Roman Empire</strong> article appears.</li>
+</ul>
+</li>
+<li>Click on <strong>History Blog</strong>.
+<ul>
+<li>Both articles appear</li>
+</ul>
+</li>
+</ol>
+<h3>Unpublishing Menu Item</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Menus</strong> and click on <strong>Main Menu</strong></li>
+<li>Click on the status icon for <strong>History Blog</strong> and <strong>The Romans</strong>, changing their status to <strong>Unpublished</strong>. </li>
+<li>View the website and observe these menu item no longer appear.
+<ul>
+<li>Our articles are inaccessible.  </li>
+<li>Menu items must be published to appear in the website.</li>
+<li>Articles need published menu items.</li>
+</ul>
+</li>
+<li>Republish the menu items.</li>
+</ol>
+<h3>Effect of Unpublished Articles on Menu Items</h3>
+<ol>
+<li>In the backend <strong>Administrator Menu</strong>, view the article list (<strong>Content &gt; Articles</strong>).</li>
+<li>Unpublish <strong>The Roman Empire</strong> and <strong>History Blog</strong> by clicking on their status icons.</li>
+<li>View the website and observe that both menu items still appear in the main menu. </li>
+<li>Click on <strong>The Romans</strong>.
+<ul>
+<li>An error message is displayed.</li>
+<li>This single-article menu item is still active, but the unpublished article is inaccessible.</li>
+</ul>
+</li>
+<li>Click on <strong>History Blog</strong>.
+<ul>
+<li>An empty list appears.</li>
+<li>The category-blog menu item is active, but will only display its published articles.</li>
+</ul>
+</li>
+<li>Return to the articles list and republish both articles.</li>
+</ol>
+<h3>Effect of Unpublishing a Category on Menu Items</h3>
+<ol>
+<li>In the backend <strong>Administrator Menu</strong>, view the article list (<strong>Content &gt; Categories</strong>).</li>
+<li>Unpublish the <strong>History</strong> category by clicking on its status icon.</li>
+<li>View the website and observe that both menu items still appear in the main menu. </li>
+<li>Click on <strong>The Romans</strong>.
+<ul>
+<li>An error message is displayed.</li>
+<li>This single-article menu item is still active, but the unpublished article is inaccessible because its category is unpublished.</li>
+</ul>
+</li>
+<li>Click on <strong>History Blog</strong>.
+<ul>
+<li>An error message is displayed.</li>
+<li>The category-blog menu item is active, but it requires a published category to function.</li>
+</ul>
+</li>
+<li>Return to the articles list and republish the <strong>History</strong> category.</li>
+</ol>
+<h3>Effect of Unpublishing Menu Items</h3>
+<ol>
+<li>In the backend <strong>Administrator Menu</strong>, view the article list (<strong>Menus &gt; Main Menu</strong>).</li>
+<li>Unpublish our two menu items, <strong>The Romans</strong> and <strong>History Blog</strong> by clicking on their status icons.</li>
+<li>View the website and observe the menu items are no longer visible. </li>
+<li>Return to the articles list and republish the menu items.</li>
+</ol>
+<h2>Concepts</h2>
+<ul>
+<li>Menu Items, Articles, and Categories are interdependent. Menu Items provide access to Articles; Articles and some Menu Items require Categories. </li>
+<li>Menu Items can be thought of as the picture frames in which Articles, and lists of Articles (Featured Items, Blogs, etc.) appear. </li>
+<li>Menu Item can appear even when the lists or articles they link to have issues.</li>
+</ul>
+<p> </p>

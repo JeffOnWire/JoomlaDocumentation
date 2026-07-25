@@ -1,0 +1,114 @@
+<p>A key part of a Content Management System (CMS) is its ability to deliver content to selected users for selected periods. Joomla! does that with Access levels and publishing start and finish dates.</p>
+<p>Start and finish dates can be set for Featured articles and Unfeatured articles alike. For example, a new article could be featured for a set period, say 30 days, after which it would become an ordinary unfeatured article. It would disappear from Featured article layouts but still appear in other Blog or Single article layouts.</p>
+<p>Mostly, articles are published on the day they are created and remain so until unpublished, archived or deleted.</p>
+<p>Menu Items provide access to articles, not unlike picture frames display artworks that are otherwise stored in the backroom of a museum. This tutorial demonstrates the use of menus and explores the relationship between menus, articles and categories. </p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<p>Log into the Joomla backend..</p>
+<h3>Set the Server Time Zone</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong> click on <strong>System</strong>. </li>
+<li>Click on <strong>Global</strong> Configuration (under <strong>Setup</strong>).</li>
+<li>In the tabs above the content area click on the <strong>Server</strong> tab.</li>
+<li>Under <strong>Location</strong> take note of the <strong>Website Time Zone</strong> (we'll want to restore this at the end of the tutorial).</li>
+<li>Adjust the <strong>Website Time Zone</strong> to your local time zone. </li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>Create a Category Blog Menu Item</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong> click on <strong>Menus &gt; Main Menu</strong>. </li>
+<li>Click on the <strong>New</strong> button to create a new menu item
+<ul>
+<li>Title: <strong>Time Standards</strong></li>
+<li>Menu Item Type: <strong>Category Blog</strong></li>
+<li>Choose <strong>Uncategorised</strong><em>.</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h3>Create an Article</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong> click on <strong>Content</strong> then <strong>Articles</strong>.</li>
+<li>Click on <strong>New</strong> to add a new article.
+<ul>
+<li>Title: <strong>Time Zones</strong></li>
+<li>Article Text: Worldwide time zones were standardized following the International Meridian Conference in October 1884, after North American railroads first adopted standard hourly zones on November 18, 1883.</li>
+<li>Status: <strong>Published</strong></li>
+<li>Category: <strong>Uncategorised</strong></li>
+<li>Featured: <strong>Yes</strong></li>
+</ul>
+</li>
+<li style="font-weight: bold;"><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<h3>Verify the Setup</h3>
+<ol>
+<li>View the frontend. The homepage appears with your article listed as a featured article. </li>
+<li>Observe that <strong>Time Zones</strong> is a featured article, and so it appears on the homepage.</li>
+<li>Click on <strong>Time Standards</strong> in the <strong>Main Menu</strong>.</li>
+<li>The <strong>Time Zones</strong> article appears in the blog.</li>
+<li>Return to the backend and click on <strong>Contents &gt; Articles</strong>. Observe the <strong>Time Zones</strong> article has a gold star icon indicating it is a featured item, and a green check icon indicating it is published.</li>
+</ol>
+<h3>Set the Publication Time</h3>
+<ol>
+<li>Edit the article and select the <strong>Publishing</strong> tab.</li>
+<li>Enter a <strong>Start Publishing</strong> time for a few minutes in the future.
+<ul>
+<li>Note that the time and date are in ISO 8601 format, YYYY-MM-DD HH:MM:SS, e.g. 2026-04-16 14:13:27 representing 2:13 p.m. and 27 seconds on April 16, 2026.</li>
+</ul>
+</li>
+<li><strong>Save &amp; close</strong>.</li>
+<li>Observe in the article list that the status icon has changed. Hover over the status icon and observe the popup message.</li>
+<li>The article is unpublished but will be published at the start-publishing time set earlier.</li>
+<li>View the site before the start publishing time you entered.
+<ul>
+<li>Check the homepage and the category blog page to verify that your article does not yet appear.</li>
+</ul>
+</li>
+<li>When the start-publishing time has elapsed then recheck the homepage and category blog page, refreshing the pages if necessary. Verify that your article appears in both places.</li>
+<li>Return to the article list in the backend. Observe that the (now published) article appears with a green check status icon.</li>
+</ol>
+<h3>Control the Featured Item Time</h3>
+<ol>
+<li>Edit the article</li>
+<li>Select the <strong>Publishing</strong> tab.</li>
+<li>Enter a <strong>Start Featured</strong> time for a few minutes in the future.</li>
+<li>Enter a <strong>Finish Featured</strong> time for a minute or two beyond the <strong>Start Featured</strong> time.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>Observe in the article list that the featured icon has changed. Hover over the status icon and observe the popup message.</li>
+<li>View the site and very that the article does not appear on the homepage (as a featured item) but still appears on the category-blog page.</li>
+<li>When the <strong>Start Featured</strong> time has elapsed recheck the homepage (refreshing if necessary). Verify that the <strong>Time Zones</strong> article appears as a featured item.</li>
+<li>Quickly return to the articles list and observe that your (now now featured) article appears with a gold star <em>featured</em> icon.</li>
+<li>Hover over the icon to read the popup message.</li>
+<li>When the <strong>Finish Featured</strong> time has elapsed, view the site, refresh the homepage, and verify that the <strong>Time Zones</strong> article no longer appears as a featured item.</li>
+<li> Verify that the <strong>Time Zones</strong> article still appears in the <strong>Time Standards</strong> blog.</li>
+<li>Return to the backend again and inspect the <em>Featured</em> icon and hover over it to view the popup message.</li>
+</ol>
+<h3>Set the Finish Publication Time</h3>
+<ol>
+<li>Edit the article</li>
+<li>Select the <strong>Publishing</strong> tab.</li>
+<li>Enter a <strong>Finish Publication</strong> time for a few minutes in the future.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>Visit the site and verify that the article remains active on the category-blog page.</li>
+<li>When the finish-publishing time has elapsed refresh the <strong>Time Standards</strong> blog page. Verify that the article is no longer available.</li>
+<li>Return to the backend and inspect the <em>Status</em> icon and hover over it to view the popup message.</li>
+</ol>
+<h3>Reset the Server Time Zone</h3>
+<ol>
+<li>Navigate to <em>System</em> &gt; <em>Global Configuration.</em></li>
+<li>In the tabs above the content area click on the <em>Server</em> tab.</li>
+<li>Adjust the <em>Website Time Zone</em> to its original time zone (default is UTC). </li>
+<li>Save and Close.</li>
+</ol>
+<h2>Concepts</h2>
+<ul>
+<li>These settings make it convenient to: set the precise time that an article is published; set the time and duration the article appears as a featured item; and automatically remove content at a specific date and time in the future. All helpful tools for controlling website content.  </li>
+<li>The timed publication controls allow you to control when articles are available on your website.</li>
+<li>The Start Publishing and End Publishing settings control when an article appears on the website. If blank, an article appears as soon as it is created.</li>
+<li>If the article is featured (n <em>Featured</em> is set to <em>Yes </em>in the article settings) the Start Featured and End Featured settings control when an article appears as a featured item. </li>
+<li>Start and end times are relative to the website time zone settings, which may be different than your local time zone and may not adjust for daylight savings time. </li>
+</ul>

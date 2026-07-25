@@ -1,0 +1,85 @@
+<p>The only limit on the length of an article in Joomla is the size of the database field used to contain the article text. That is very large! Long articles may contain many images and and take time to process, which may prove an inconvenience for the reader and the website. Pagination is a simple mechanism to break long articles into separate pages.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create an Article</h3>
+<ul>
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong><em>.</em></li>
+<li>Return to the <strong>Home Dashboard. </strong>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Articles</strong>.</li>
+<ul>
+<li>Title: Animals</li>
+<li>Article Text: The article should be lengthy and can be simple "Lorem Ipsum" if desired. For this tutorial we asked AI to create an article on animals with the following instructions:
+<ul>
+<li style="font-style: italic;"><em>"Write a simple article on the types of animals. There should be two introductory paragraphs and then a heading for each type of animal, mammals, reptiles, birds, fish with three paragraphs of general information under each heading, and finally a summary heading with a paragraph summarizing the article. Don't include any HR tags."</em></li>
+</ul>
+</li>
+</ul>
+<li><strong>Save &amp; Close</strong></li>
+</ul>
+<h3>Create a Link to the Article</h3>
+<p>Create a link to the article from the main menu.</p>
+<ul>
+<li>Navigate to <strong>Content &gt; Menus</strong></li>
+<li>Click on the <strong>Main Menu</strong></li>
+<li>Click on <strong>New</strong> to add a new menu item
+<ul>
+<li>Title: Types of Animals</li>
+<li>Menu Type: Articles &gt; Single Article</li>
+<li>Select the Animals Article</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ul>
+<h2>Steps</h2>
+<p>View the website and click on the link to the article in the main menu.</p>
+<p>The article appears normally.</p>
+<h3>Divide the Article into Pages</h3>
+<p>Return to the admin area and edit the article.</p>
+<ul>
+<li>Position the cursor below the first section and before the next section heading, adding a line break if necessary.</li>
+<li>Extend the <strong>CMS Content</strong> menu from the editor toolbar and select <strong>Page Break</strong>.</li>
+<li>A page-break form appears:
+<ul>
+<li>Page Title: A title that will appear in the page heading, e.g. <em>Warm Blooded Mammals</em></li>
+<li>Table of Contents Alias: A title that will appear in a pagination table of contents, e.g. <em>Mammals</em></li>
+<li>Click <strong>Insert Page Break</strong></li>
+</ul>
+</li>
+<li>The form closes and a horizontal line appears indicating where the page break has been inserted.</li>
+<li>Enter a page break before every section.</li>
+<li>Save the article. </li>
+</ul>
+<figure class="image"><img class="float-none" src="images/articles/355/page_break_control.png" alt="Article editor highlighting the insert-page-break control and the resulting page break in the article text." width="900" height="684" loading="lazy" data-path="local-images:/articles/355/page_break_control.webp">
+<figcaption>(1) <em>Page Break</em> control under the <em>CMS Content</em> menu. (2) The resulting page break appears as a horizontal line in the editor.</figcaption>
+</figure>
+<figure class="image"><img class="float-none" src="images/articles/355/page_break_detail_form.png" alt="The insert-page-break form" width="900" height="296" loading="lazy" data-path="local-images:/articles/355/page_break_detail_form.webp">
+<figcaption>The insert-page-break form with <em>Page Title</em> and <em>Table of Contents Alias</em>.</figcaption>
+</figure>
+<h3>View the Article</h3>
+<p>View the article on the website, refreshing the page if necessary. The first page of the article appears with a page heading, a table of contents embedded in the article, and <em>Previous</em> and <em>Next</em> navigation controls below the article. </p>
+<figure class="image"><img class="float-none" src="images/articles/355/ui_features.png" alt="Page break controls when viewing the article: (1) Page Heading (2) page indicator (3) table of contents (4) the all-pages link (5) navigation controls" width="900" height="817" loading="lazy" data-path="local-images:/articles/355/ui_features.webp">
+<figcaption>Page break controls when viewing the article: (1) Page Heading (2) page indicator (3) table of contents (4) the all-pages link (5) navigation controls</figcaption>
+</figure>
+<p>Note the following features:</p>
+<ol>
+<li>A page indicator appears at the top of the article.</li>
+<li>A page location indicator.</li>
+<li>The table of contents with links to each page, and . . .</li>
+<li>a link to display <em>All Pages</em>.</li>
+<li>Navigation controls. </li>
+</ol>
+<h3>Modify the Page Breaks</h3>
+<p>Edit the article and delete a page break by clicking on the page break to highlight, and then delete. </p>
+<p>To move or modify a page break, delete it then add another in the desired location. </p>
+<h2>Concepts</h2>
+<p>Page breaks provide a way to divide long or complex articles into smaller sections which can make them easier for some visitors to read.</p>
+<p>In the tutorial we established page breaks before headings, but they may be inserted anywhere in the article.</p>
+<p>They are easily added in the Joomla article editor and appear as horizontal lines in the editor.</p>
+<p>The table of contents includes a link for <em>All Pages</em> so that visitors can view or print an article in its entirety. </p>
+<p>Page breaks are HTML HR tags with special attributes that appear only in the editor and may be viewed and manipulated in source code by advanced users </p>
+<figure class="image"><img class="float-none" src="images/articles/355/page_break_source_code.png" alt="The page break HR tag in the script editor." width="900" height="588" loading="lazy" data-path="local-images:/articles/355/page_break_source_code.webp">
+<figcaption>The page-break HR tag embedded in the article HTML</figcaption>
+</figure>
+<p> </p>

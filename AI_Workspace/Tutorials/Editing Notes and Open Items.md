@@ -78,6 +78,26 @@ Resolved:
 
 CM10.2 has no remaining open items — fully edited.
 
+## Site structure — resolved
+
+The site is organized into numbered sections (Section 1, etc.), each with an overview page linking to all tutorials in that section. CM1 "Tutorial Introduction.html" is the Section 1 overview page, linking to its 3 tutorials: CM1.1 Admin Login, CM1.2 Site Login, CM1.3 Viewing the Site.
+
+Resolved: the `href="1-introduction"` link used across every tutorial's Prerequisites (CM9.1, CM10.1, CM10.2, CM10.3, CM10.4, CM11.1, CM12.1, and the Style Guide's own example) was already pointing to the right place — it turned out to be a correct guess, not a placeholder. Per Jeff: prerequisites in sections 2–12 should always point to the Tutorial Introduction page, which itself is meant to signal that everything on it — including 1.1, 1.2, and 1.3 — is a required prerequisite. Updated the description text on that link bullet (all 8 files) from "covers where to run your tutorial and administrative access" to "covers where to run your tutorial, and includes the required frontend/backend login and site-viewing tutorials (1.1, 1.2, 1.3)" to make that explicit.
+
+CM1.3's Prerequisites is the exception, by design — it's part of Section 1 itself, so it links directly to CM1.1 and CM1.2 (its actual specific prerequisites) rather than to the CM1 overview.
+
+CM1, CM1.1, CM1.2, CM1.3 are now fully edited:
+- CM1: login→log in fix, link list converted from padded paragraph to proper `<ul>`, trailing empty `<p>` removed, "behaviors"→"behaviours" (see British spelling below).
+- CM1.1: Prerequisites as `<ul>`, Log In/Log Out/User Menu/Toggle Menu bolded, Result: labels added, screenshot spacing fixed to single `<br>`, login/log in verb fixed. Image mismatch resolved — Jeff confirmed login-screen_2.png is correct; resized to 960×539 (proportional) to match the site convention. "Explore the Layout" rewritten from descriptive paragraphs into directive numbered steps (Toggle Menu, expand a menu heading, select a submenu item, note the header) per Jeff's request. Concepts replaced with Jeff's own three-paragraph version (administrative area/permissions/frontend-backend login distinction), with "login"→"log in" verb fix applied.
+- CM1.2: Prerequisites as `<ul>`, Log In/Log Out bolded, Result: label folded in, typo fix ("users. controls"→"users, controls"), Log In/Log Out capitalization fixed in figcaption, login/log in verb fixed, Concepts to prose.
+- CM1.3: Result: label colon-placement fix.
+
+No remaining open items for CM1/CM1.1/CM1.2/CM1.3.
+
+## British spelling — resolved
+
+Jeff confirmed: use British spelling throughout (Joomla platform and its docs use British spelling). Added to the Style Guide. Full sweep done across all edited files for stray American spellings (-ize/-or endings): "behaviors"→"behaviours" (CM1), "minimizes"→"minimises" (CM1.1), "organized"→"organised" (CM10.1), "customizable"→"customisable" and "flavor"→"flavour" ×3 (CM10.2), "individualize"→"individualise" (CM10.3), "recognize"→"recognise" and "italicize"→"italicise" (Style Guide), "standardized"→"standardised" and "recognizable"→"recognisable" (Glossary). No remaining American spellings found.
+
 ## Pending / blocked
 
 - **"Article URLs" tutorial**: Jeff pasted this content early in the session thinking it was the Style Guide (it had overwritten the real style guide document in Joomla). Not saved anywhere yet — Jeff is checking Joomla's version history for the correct/most recent version before we do anything with it.
@@ -93,6 +113,63 @@ CM10.2 has no remaining open items — fully edited.
 Always an unordered list, always begins with the link to 1 Tutorial Introduction (that tutorial covers site type, frontend/backend login, viewing the site, and switching tabs, so no need to restate). Additional bullets can reference other required tutorials in the same format, or state other tutorial-specific requirements. Style guide updated; applied to CM10.1 and CM10.3 (CM10.3's second bullet about the Main Menu/featured homepage was removed — a fresh Joomla install has these by default, and the Tutorial Introduction is meant to instruct the user to start from a fresh install, so this is already covered). CM10.2 not touched yet (still paused, needs content work first).
 
 Note for whenever "1 Tutorial Introduction" itself gets written/reviewed: it needs to instruct the user to use a fresh Joomla installation (which by default has a Main Menu and a featured-item homepage), plus site type, frontend/backend login, viewing the site, and switching tabs.
+
+## Section 2 (CM2, CM2.1–CM2.5)
+
+Jeff saved the section 2 overview page (CM2 "First Steps.html") and its 5 tutorials for editing.
+
+Resolved: CM2's original content was a copy/paste error (it had CM1.3's frontend/backend-switching content) — Jeff replaced it with the real section 2 overview, a link list to 2.1–2.5 using `index.php?Itemid=NNN` hrefs.
+
+Resolved: CM2.4's "In the Administrator Menu, expand Content and click on Menus > Menu Items" was wrong navigation (Content and Menus are separate top-level admin items) — Jeff confirmed, "expand Content and" removed.
+
+Resolved: CM2.5's Concepts section (about the Page Display tab / Show Page Heading field) didn't match the tutorial's actual topic (the Save to Menu shortcut) — likely leftover/misplaced content. Removed entirely per Jeff; he's filing an issue to come back and write real Concepts content for this tutorial once he's reviewed the article.
+
+Resolved: Jeff provided the real published URLs for CM2 and CM2.1–2.5. Fixed all `index.php?Itemid=NNN` links in CM2 (overview list) and CM2.5 (intro paragraph, Prerequisites, "Save to Menu for Categories") to the real slugs, all under `content-management-first-steps/`: 2.1 `create-an-article-and-menu-item`, 2.2 `category`, 2.3 `category-menu-item`, 2.4 `featured-articles`, 2.5 `save-to-menu`. Standardized the link text used everywhere a tutorial references these siblings to "2.1 Article & Menu Item" / "2.2 Creating a Category" / "2.3 Category Menu Item" (previously worded inconsistently between CM2, CM2.3, and CM2.5).
+
+Checked section 1's own `href="1-introduction"` link against the real URL Jeff uses — it was already correct (no fix needed there). Section 1 uses a numbered slug while section 2 uses a descriptive one; Jeff is looking into why that's inconsistent on the live site, separately from this editing pass.
+
+Full mechanical style pass done across CM2/CM2.1–2.5: Concepts converted to prose throughout; Result:/Note: labels added inline (CM2.3 previously used a different pattern — nested `<ul>` bullets describing outcomes instead of inline Result: labels — standardized to match every other tutorial); bold/italic field-value convention applied (field name bold, literal value italic); breadcrumb bolding consolidated (e.g. "expand X and click Y" → "click X > Y"); screenshot spacing fixed to single `<br>` before/after; CM2.5's bare `<img>` tags (no figure/figcaption, unlike every other tutorial) wrapped properly; British spelling applied (organizes→organises, characterized→characterised, etc.); "tap"→"click" standardized (CM2.5 had touch-device wording, inconsistent with the rest of the corpus); "menu-item"→"menu item" (no hyphen) standardized; various HTML cleanup (broken/overlapping `<strong>` tags in CM2.4, garbled nested `<em>` tags in CM2.5's "Save to Menu a</em><em>s</em> Blog", stray non-breaking spaces, a bolded-empty-space artifact in CM2.2, missing alt text, CM2.3's "Creating a Category List Layout" h2 fixed to h3 for parallelism with its sibling heading).
+
+CM2/CM2.1–2.5 have no remaining open items, aside from Jeff's planned follow-up to write real Concepts content for CM2.5 (see above).
+
+## Section 3 (CM3, CM3.1–CM3.5)
+
+Jeff sent real URLs for CM3 and CM3.1–3.5 (all under `wysiwyg-editor/`). While confirming CM1.3's URL, discovered it needed a numbered prefix Jeff hadn't mentioned before: `1-introduction/1-3-viewing-the-site`, not the `1-introduction/viewing-the-site` guess used in CM1's overview — fixed. CM1.1 and CM1.2 were re-confirmed as already correct (`1-introduction/admin-login`, `1-introduction/site-login`), no fix needed.
+
+Built `Tutorial URL Reference.xlsx` in the Tutorials folder — a running reference of every tutorial's filename and href/URL, color-coded Confirmed (green) / Guessed-unconfirmed (yellow) / Not started (gray), so Jeff can fill in real URLs in one pass instead of one-at-a-time chat questions. While building it, discovered section 4 (CM4 Images, CM4.1–4.3) and section 5 (CM5 Delete/Archive/Filter, CM5.1–5.3) already exist as draft files in the folder, untouched — logged in the spreadsheet, not edited yet.
+
+CM3.3 Lists has no Concepts section (only tutorial so far without one) — Jeff confirmed leave it out for now rather than draft one.
+
+Full mechanical style pass done across CM3/CM3.1–3.5: real links applied throughout; Concepts converted to prose (except CM3.3, left without one per Jeff); Result:/Note: labels added inline, replacing nested "what happened" bullets in CM3.4 and CM3.5; bold/italic convention applied (systematic italic-for-clickable-elements issue across CM3.2/3.4/3.5 fixed to bold); breadcrumb bolding consolidated, including CM3.3's literal "->" arrow (explicitly disallowed by the style guide) replaced with a bold breadcrumb; "tap"→"press" for keyboard keys (Return, Tab, Escape) and "tap"→"click" for buttons/icons, matching the CM2.5 tap→click precedent; CM3.3's bare `<img>` tags (no figure/figcaption, same issue CM2.5 had) wrapped properly, and missing `class="float-none"` added; British spelling applied (organized→organised, customizations→customisations, emphasize→emphasise, etc.); CM3.4/CM3.5's Prerequisites (previously a bare paragraph before the list, and CM3.4 listing 1.1/1.3 individually) restructured to the standard single Tutorial-Introduction-link format, per Jeff's section 2–12 rule; CM3.5's stray "Tables" h2 (redundant mid-document heading) merged into the opening paragraph; various typo/grammar cleanup (stray "C" character in CM3.1, "1.0 Admin Login"→dropped in favor of the standard intro link, sentence fragments in CM3 and CM3.2's intros, period-inside-em artifacts).
+
+CM3/CM3.1–3.5 have no remaining open items.
+
+## Sections 4–12: all files now in the folder
+
+Jeff added every remaining tutorial file to the Tutorials folder (sections 4–12 complete) and partially filled in the URL Reference spreadsheet's Notes column (confirmed real URLs for sections 4 and 5, and CM6's overview).
+
+Rebuilt `Tutorial URL Reference.xlsx` with every tutorial now present, keeping Jeff's confirmed entries. While researching hrefs, found that several section overview pages (CM6, CM7, CM8, CM9, CM10, CM11, CM12) already contain real-looking slugs in their own sub-tutorial link lists — not Itemid placeholders. Added a new "Found in file" status (distinct blue color) for these, separate from "Confirmed" (Jeff-verified) and "Guess" (no source at all), since they look reliable but haven't been checked against the live site.
+
+Flagged a few things worth Jeff's attention in the spreadsheet Notes, not yet acted on:
+- CM7's overview page only lists 7.1–7.4; it's missing 7.5 (Locking an Article) and 7.6 (Edit Permissions for Articles) entirely — likely an outdated overview page.
+- A few title mismatches between overview link text and actual filenames: CM7.4 ("View Access Restrictions" vs. filename "Restrict Access to Articles"), CM8.2 ("Article URLs" vs. filename "Different URLs for Content"), CM9.1 (overview has a typo, "Cutom Module", and its slug says "adding-text" rather than anything matching "custom-module").
+- CM9.2's found slug (`modules-positions-menus/9-2-menu-item-modules`) matches the link already used in CM10.4's Prerequisites, which was confirmed correct earlier — good cross-check.
+
+Have not started editing sections 4–12's content yet — that's pending, section by section, same as 2 and 3.
+
+## URL reference: fully confirmed
+
+Jeff filled in every remaining row of `Tutorial URL Reference.xlsx` by pasting raw URLs into a new column H ("Raw URL"), rather than typing into the Notes column — a good approach, keeps the two separate. Every tutorial through section 12 is now Status: Confirmed.
+
+Applied the confirmed URLs to fix every remaining broken link found site-wide (grepped for `index.php?Itemid=` and `Itemid=` across all files — zero left): CM4's overview list (4.1/4.2/4.3, previously Itemid placeholders); CM5's overview list (5.1/5.2/5.3, same); CM4.3's Prerequisites reference to "2.1 Article & Menu Item" (was Itemid=469); CM10.4's Prerequisites reference to "2.0 First steps with articles, menu-items and categories" (was Itemid=468, also cleaned the odd "2.0" numbering and wording to "2 First Steps" to match the real tutorial's title).
+
+Confirmed via Jeff's URLs: CM9.1's existing guess for "4.1 Images in Articles" and CM10.4's existing guess for "9.2 Menu Item Modules" were both already correct — no changes needed there.
+
+Resolved: CM7's overview page was missing 7.5 and 7.6 — added both, using their confirmed URLs and short descriptions drawn from each tutorial's own opening paragraph. Updated the spreadsheet Notes accordingly.
+
+Resolved: CM7.4/CM8.2/CM9.1 overview link text mismatches. Jeff confirmed the filenames are the correct titles, not the overview text — updated CM7's "7.4 View Access Restrictions"→"7.4 Restrict Access to Articles", CM8's "8.2 Article URLs"→"8.2 Different URLs for Content", and fixed CM9's "9.1 Cutom Module" typo→"9.1 Custom Module". Spreadsheet Notes updated to match.
+
+Sections 4–12 have no remaining known link/title issues. Still pending: the actual mechanical style pass on sections 4–12's content, section by section, same as 2 and 3.
 
 ## General pattern emerging
 

@@ -1,0 +1,60 @@
+<p>Joomla provides a simple locking strategy to prevent an article from being edited simultaneously by multiple users, where one user's changes might overwrite those of another. The first person to begin editing the article "checks it out," and the article is "locked," temporarily restricting access by other users. When the article is saved, it is said to be "checked in," the lock is removed, and restrictions are lifted. It's possible for a user to accidentally leave an article locked (checked-out) indefinitely. This tutorial explores how this can happen, and how administrators can check in articles.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create an Article</h3>
+<ul>
+<li>Log in to the administrative area, then navigate to articles (<strong>Content &gt; Articles</strong>).</li>
+<li>Click on <strong>New</strong>. A new-article form appears.
+<ul>
+<li>Title: Animals</li>
+<li>Article Text: Leave blank or type a few simple words.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Edit the article you just created (<strong>Content &gt; Articles</strong>, then click on the article).</li>
+<li>Without saving or closing, close the browser tab or window. This simulates a user who is still editing the article.</li>
+<li>Open a new browser tab or window and view the article list (<strong>Content &gt; Articles</strong>).</li>
+<li>The article appears with a lock symbol, indicating that it is checked out and being edited.</li>
+<li>Hover over the lock icon to read the message.
+<ul>
+<li>The message displays the user who checked it out, and the date and time it was checked out.</li>
+</ul>
+<figure class="image"><img class="float-none" title="Hovering over the locked-icon shows the user and what time the article was locked" src="images/articles/356/locked_icon_hover.png" width="2752" height="1000" loading="lazy" data-path="local-images:/articles/356/locked_icon_hover.webp">
+<figcaption>Hovering over the <em>Locked</em> icon displays the user and what time the article was locked.</figcaption>
+</figure>
+</li>
+<li>If you click on the article, Joomla recognizes that you are the person editing it and opens the editor. Other users, even other administrators, attempting to edit the article are denied access with the following message:
+<figure class="image"><img class="float-none" src="images/articles/356/access_denied.png" alt="Error message when trying to edit a locked article" width="2652" height="1056" loading="lazy" data-path="local-images:/articles/356/access_denied.webp">
+<figcaption>Error message displayed when trying to edit a locked article.</figcaption>
+</figure>
+</li>
+<li>As the current editor of the article, you are allowed access. Resume editing the article, then click <strong>Close</strong> to return to the article list.
+<ul>
+<li>Clicking <strong>Close</strong> or <strong>Save &amp; Close</strong> checks the article back in.</li>
+</ul>
+</li>
+<li>Edit the article again and close the browser tab or window, as before, to simulate a user still editing the article.</li>
+<li>Return to the article list and observe the lock symbol.</li>
+<li>As an administrator, you can check in the article by either:
+<ul>
+<li>Clicking on the lock symbol, or</li>
+<li>Checking the article checkbox, then selecting <strong>Actions &gt; Check-In</strong> (useful when checking in multiple items at once).</li>
+</ul>
+</li>
+<li>Choose either method to check the article in.
+<figure class="image"><img class="float-none" src="images/articles/356/check_in.png" alt="An article being checked-in using the checkbox and action menu" width="2754" height="1016" loading="lazy" data-path="local-images:/articles/356/check_in.webp">
+<figcaption>Checking in an article using the checkbox and <em>Action</em> menu.</figcaption>
+</figure>
+</li>
+</ol>
+<h2>Concepts</h2>
+<p>Article locking is intended to prevent multiple authors from editing the same article simultaneously, where one person saving the article may overwrite another person's work.</p>
+<p>An administrator or Super User can override the check-out lock. This can be useful if an editing session is abandoned (e.g. the person closes the browser without saving, or otherwise navigates away from the edit screen without closing or saving). However, this can be risky if the author is still actively editing the article. Administrators must use discretion when checking in articles.</p>
+<p>Article locking is a simple strategy to prevent inadvertent simultaneous editing. Coordination between editors and administrators is advised.</p>
+<p>Permissions for articles can be set discretely, and workflows can be employed to achieve more sophisticated editing protection.</p>

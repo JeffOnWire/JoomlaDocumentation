@@ -1,0 +1,129 @@
+<p>This tutorial walks through a single realistic scenario from start to finish: you run a site with a <strong>Premium Articles</strong> category, and you want logged-in members to see the full articles while everyone else sees only a short teaser with a login prompt.</p>
+<p>By the end, every article in the Premium Articles category will be partially restricted, and you'll know which settings did the work.</p>
+<h2>The Scenario</h2>
+<ul>
+<li>You have a category called <strong>Premium Articles</strong> containing several articles.</li>
+<li>Anonymous visitors should see the article title and a short intro paragraph.</li>
+<li>Logged-in registered users should see the full article.</li>
+<li>Links to premium articles should still appear in listings (so visitors know there's more to read if they sign up).</li>
+</ul>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Create the <em>Premium Articles</em> Category</h3>
+<ol>
+<li>Log in to Joomla backend.</li>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Categories</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-category form appears.
+<ul>
+<li>Title: <strong>Premium Articles</strong></li>
+<li>Description: <strong>Content for our registered users.</strong></li>
+<li>Access: <strong>Public</strong>.</li>
+<li>Status: <strong>Published</strong>.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close <br><br><img style="width: 960px;" src="images/articles/352/0PZ8o7.png" alt="The create-category form with required information" height="778"> </strong></li>
+</ol>
+<p><strong> </strong></p>
+<h3>Add Articles</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Articles</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-article form appears.
+<ul>
+<li>Title: <strong>Investment Tips</strong></li>
+<li>Category: <strong>Premium Articles</strong></li>
+<li>Article Text: Copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="new">Lorem Ipsum</a></li>
+<li>Position your cursor on a blank line after the first paragraph.</li>
+<li>In the toolbar, pull down <strong>CMS Content</strong> and select <strong>Read More</strong>.  <br><br><img style="width: 100%;" src="images/articles/352/6yAl3H.jpg" alt="Step 3 screenshot"><br><br></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; <span style="text-decoration: underline;">Add New</span></strong>. A new-article form appears.
+<ul>
+<li>Title: <strong>Hot Stock Picks</strong></li>
+<li>Category: <strong>Premium Articles</strong></li>
+<li>Article Text: Copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="new">Lorem Ipsum</a></li>
+<li>Position your cursor on a blank line after the first paragraph.</li>
+<li>In the toolbar, pull down <strong>CMS Content</strong> and select <strong>Read More</strong>. </li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; <span style="text-decoration: underline;">Add New</span></strong>. A new-article form appears.
+<ul>
+<li>Title:<strong>Advice for Investors</strong></li>
+<li>Category: <strong>Premium Articles</strong></li>
+<li>Article Text: Copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="new">Lorem Ipsum</a></li>
+<li>Position your cursor on a blank line after the first paragraph.</li>
+<li>In the toolbar, pull down <strong>CMS Content</strong> and select <strong>Read More</strong>. </li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+</ol>
+<h3>Add a Category Blog Menu Item</h3>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Menus</strong> and then <strong>Main Menu</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-menu-item form appears.
+<ul>
+<li>Title:<strong>Premium Blog</strong></li>
+<li>Category: <strong>Premium Articles</strong></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<h3>Verify the Setup and Default Permissions</h3>
+<ol>
+<li>View the site.</li>
+<li>The <strong>Log in</strong> form appears, indicating you are not logged into the frontend.</li>
+<li>Click <strong>Premium Blog<em> </em></strong> in the <strong>Main Menu</strong>.</li>
+<li>Our three articles appear with introductory text and <strong>Read More</strong> links.</li>
+<li>Clicking on a <strong>Read More</strong> link displays the full article.</li>
+</ol>
+<p>The articles are currently available to any visitor on the site.</p>
+<h3>Restrict the Articles to Registered Users</h3>
+<ol>
+<li>Go to the articles list (<strong>Content → Articles</strong>).</li>
+<li>Filter the list for <em>Premium Articles</em>:
+<ul>
+<li>Click <strong>Filter Options</strong>.</li>
+<li>Select <strong>Premium Articles</strong> from the <strong>- Select Category -</strong> dropdown.</li>
+<li>Only articles in the category <em>Premium Articles</em> are listed.</li>
+</ul>
+</li>
+<li>Tick the checkbox in the column header to select all listed articles.</li>
+<li>Pull down the <strong>Actions</strong> dropdown (near the top of the window) and select <strong>Batch</strong>. A popup dialog appears.</li>
+<li>Under <strong>Set Access Level</strong>, choose <strong>Registered</strong>.</li>
+<li>Click <strong>Process</strong>.</li>
+<li>View the site and refresh the <strong>Premium Blog</strong> page.</li>
+<li>The blog is empty.</li>
+<li><strong>Log in</strong> to the frontend and view the blog again.</li>
+<li>The <strong>Premium Articles</strong> require a user to log in to view.</li>
+<li style="font-weight: bold;"><strong>Log out.</strong></li>
+</ol>
+<p>We want the public to be able to see the article titles and introduction text, but not be able to read them unless they are logged in.</p>
+<h3>Enable Unauthorized Links</h3>
+<p>This makes restricted articles still appear in listings for logged-out users, prompting them to log in when they click through.</p>
+<ol>
+<li>Go to <strong>Content → Articles</strong>.</li>
+<li>Click <strong>Options</strong> in the top toolbar.</li>
+<li>On the <strong>Articles</strong> tab, find <strong>Unauthorised Links</strong> and set it to <strong>Yes</strong>.</li>
+<li>Click <strong>Save &amp; Close</strong>. <br><br><img style="width: 960px;" src="images/articles/352/xAtXrq.png" alt="Step 5 screenshot" height="980"></li>
+</ol>
+<h3>Configure the Menu Item</h3>
+<ol>
+<li>Go to <strong>Menus → Main Menu</strong> and click on <strong>Premium Blog</strong>.</li>
+<li>Click on the <strong>Options</strong> tab (below the title).</li>
+<li>Set <strong>Unauthorized Links</strong> to <strong>Yes</strong> (it's at the bottom of the list).</li>
+<li>Click <strong>Save &amp; Close</strong>.<br><br><img style="width: 960px;" src="images/articles/352/iMb78E.png" alt="Step 6 screenshot" height="762"></li>
+</ol>
+<h3>Test It</h3>
+<ol>
+<li>View the site and make sure you are logged out of the frontend (the <strong>Log in</strong> form should be displaying a <strong>Log in</strong> button).</li>
+<li>View the <strong>Premium Blog</strong>. The articles with introduction text should appear, but the <strong>Read More</strong> links should be prompting you to register.</li>
+<li>Click one of the <strong>Read More</strong> links to observe the behavior.</li>
+</ol>
+<h2>Concepts</h2>
+<ul>
+<li>Permissions on menu items and articles give you control over what visitors can access. The <strong>Registered</strong> permission requires visitors to be logged in.</li>
+<li>The <strong>Unauthorized Links</strong> setting is special configuration that allows public users to see that premium content exists, but requires them to log in for full access.</li>
+</ul>

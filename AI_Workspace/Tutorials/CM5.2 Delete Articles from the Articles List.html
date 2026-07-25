@@ -1,0 +1,67 @@
+<p>This article explains how to delete articles from the list. In Joomla, deletion of an article is a two stage process. The first stage sends it to the Trash. You then can remove it permanently from the Trash. </p>
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li>A website with multiple articles. If you haven’t created any articles yet, see <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Creating an Article and Menu Item</a>.</li>
+<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a></li>
+</ul>
+<h2>Setup</h2>
+<h3>Create an Article to be Deleted</h3>
+<ol>
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
+<li>In the <strong>Administrator Menu</strong>, expand <strong>Content</strong> and click on <strong>Articles</strong>.</li>
+<li>Click on the <strong>New</strong> button. A new-article form appears.
+<ul>
+<li>Title: Troubadour</li>
+<li>Article Text: Troubadours were poet-composers who flourished in the Occitania region of southern France and parts of Italy and Spain during the 12th and 13th centuries.</li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+</ol>
+<h2>Steps</h2>
+<h3>Moving the Article to Trash</h3>
+<ol>
+<li>Select the checkbox to select the <strong>Troubador</strong> article.</li>
+<li>This enables the <strong>Actions</strong> button in the toolbar.</li>
+<li>Select <em>Trash</em> from the <strong>Actions</strong> options.<br><br><img class="float-none" src="images/articles/325/article-list-checked-select-action.png" alt="Article list checked select action Trash" width="1086" height="454" loading="lazy" data-path="local-images:/articles/325/article-list-checked-select-action.png"><br><br></li>
+<li>A confirmation message appears.<br><br><img class="float-none" src="images/articles/325/article-list-article-trashed-confirmation.png" alt="Confirmation message Article trashed" width="360" height="162" loading="lazy" data-path="local-images:/articles/325/article-list-article-trashed-confirmation.png"><br><br></li>
+<li>The article has disappeared from the current list of articles (this list does not normally include trashed items).</li>
+</ol>
+<h3>Find Trashed Articles</h3>
+<ol>
+<li>Select the <strong>Filter Options </strong>button to open the list of filters.</li>
+<li>Select <strong>Trashed</strong> from the <strong>- Select Status -</strong> list.<br><br><img class="float-none" style="font-size: 1rem;" src="images/articles/325/article-list-filter-options-trashed.png" alt="Article list filter options Trashed status" width="1086" height="344" loading="lazy" data-path="local-images:/articles/325/article-list-filter-options-trashed.png"><br><br></li>
+<li>The trashed articles appear.<br><br><img class="float-none" src="images/articles/325/article-list-trashed.png" alt="List of trashed articles" width="1086" height="323" loading="lazy" data-path="local-images:/articles/325/article-list-trashed.png"></li>
+</ol>
+<p>Trashed articles can be restored or permanently deleted. We'll restore the article first, then later permanently delete the article.</p>
+<h3>Restoring a Trashed Article</h3>
+<ol>
+<li>Click the <strong>Trashed</strong> symbol in the <strong>Status</strong> column next to the <strong>Trubador</strong> article. <br><br><img class="float-none" src="images/articles/325/article-list-detail-trashed.png" alt="Trash symbol in article list" width="1086" height="173" loading="lazy" data-path="local-images:/articles/325/article-list-detail-trashed.png"><br><br></li>
+<li>The article will return to the <strong>Published</strong> state and disappear from the list of trashed articles.</li>
+</ol>
+<h3>Permanently Delete an Article</h3>
+<ol>
+<li>Clear the filter (<strong>Clear</strong> buttton next to <strong>Filter Articles</strong>).</li>
+<li>Trash the <strong>Trubador</strong> article again.</li>
+<li>Set the filter to display trashed articles (as above).</li>
+<li>Select the <strong>Trubador</strong> article. The <strong>Delete</strong> button in the toolbar appears.<br><br><img src="images/articles/325/article-list-delete.png" alt="Delete button in the toolbar" width="1012" height="565" loading="lazy" data-path="local-images:/articles/325/article-list-delete.png"><br> </li>
+<li>Click the <strong>Delete</strong> button. A warning appears:<br><br><img class="float-none" src="images/articles/325/article-list-delete-warning.png" alt="Warning message upon deleting article" width="1086" height="576" loading="lazy" data-path="local-images:/articles/325/article-list-delete-warning.png"><br><br></li>
+<li>Select Yes to confirm.</li>
+<li>The article has been deleted permanently.</li>
+<li>Click the <em>Clear</em> button next to <em>Filter Options</em> to return to the Articles list.</li>
+</ol>
+<h2>Concepts</h2>
+<ul>
+<li>Similar to a recycling bin on a computer, <em>Trashed</em>is a status for Joomla articles.</li>
+<li>A <em>filter </em>is a way to show articles matching your filter criteria, in this case <em>Trashed</em></li>
+<li>Consider why you want to delete the article:
+<ul>
+<li>Is it no longer needed? Then deletion is most likely the right course of action.</li>
+<li>Is it an article that could be re-used in the future? Archive it instead. It can be very frustrating to know you had an article that would have been a good starting point for another but you deleted it.</li>
+</ul>
+</li>
+<li>Deleting an article is not the same as archiving an article. Once it has been deleted from <em>Trash </em>it’s gone for good.</li>
+<li>Joomla will not let you save more than one article with the same alias. If an article is deleted but left in the Trash, it still exists. So when you try to save a new article and you get an error stating the alias already exists, and you can’t find it, it may very well be in the Trash! In that case you could remove it from Trash or use a different alias for your new article.</li>
+<li>Joomla keeps previous versions of an article (if Versioning is enabled, which is the default setting on most Joomla websites). If you want to delete an article because it somehow "broke", try reverting it back to a previous version instead.</li>
+</ul>
+<p> </p>
