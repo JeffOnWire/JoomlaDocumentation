@@ -171,6 +171,16 @@ Resolved: CM7.4/CM8.2/CM9.1 overview link text mismatches. Jeff confirmed the fi
 
 Sections 4–12 have no remaining known link/title issues. Still pending: the actual mechanical style pass on sections 4–12's content, section by section, same as 2 and 3.
 
+## Section 4 (CM4, CM4.1–CM4.3)
+
+Full mechanical style pass done across all four files: real links already in place from the earlier URL work; Concepts converted to prose (CM4.3 has no Concepts section, consistent with the CM3.3 precedent — not flagged again, just followed it); bold/italic convention applied throughout (CM4.2 and CM4.3 both had systematic italic-for-clickable issues); Result:/Note: labels added inline; breadcrumb bolding; CM4.2's Prerequisites bare `<img>` tags given alt text and cleaned up; CM4.3's bare `<img>` tags wrapped in proper figure/figcaption (same gap CM2.5 and CM3.3 had); British spelling; invalid HTML fixed (a `<ul>` sitting as a direct sibling of `<li>` inside an `<ol>` in CM4.2 — not valid, folded into the preceding `<li>`); malformed nested `<em>` tags spanning images fixed in CM4.3; several small typos (stray unmatched parenthesis, "screens"→"screen", "This the image"→"This is the image", "For this our upcoming article"→"For our upcoming article"); CM3.3-style ASCII arrow ("Content -&gt; Articles") fixed to bold breadcrumb in CM4.3; h3 headings in CM4.3 changed from sentence case to Title Case for consistency with sibling headings elsewhere.
+
+Resolved: CM4.1's Attribution listed three image credits (Crab Nebula, Jupiter, Andromeda Galaxy) though the tutorial only visibly uses one (Crab Nebula), and the Jupiter credit's link pointed to the Crab Nebula URL (copy-paste error). Jeff confirmed all three stay — the extra two images appear in a screenshot, not as tutorial content — and provided the correct Jupiter URL (https://commons.wikimedia.org/wiki/File:Jupiter_rendered_with_Blender.webp), now applied. Also fixed two unrelated attribution typos while in there: "Napoleon II Telescope" → "Napoleon III Telescope" and "Equitorial" → "Equatorial" in CM4.2 (both clear typos against the image's own filename).
+
+Resolved: Jeff confirmed no Troubleshooting section exists or is planned — both "check the Troubleshooting paragraph" references removed from CM4.3.
+
+Section 4 (CM4, CM4.1–4.3) has no remaining open items.
+
 ## General pattern emerging
 
 Some issues are now showing up across multiple tutorials (Setup using `<ul>` instead of `<ol>`, Prerequisites formatting, h4 usage) — worth treating these as settled style guide rules soon rather than re-litigating per tutorial.
