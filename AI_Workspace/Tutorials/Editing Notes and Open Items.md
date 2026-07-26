@@ -244,3 +244,23 @@ CM9.1: only minor fixes needed — added missing `class="float-none"` to two `<i
 CM9.2: fixed several field-list values that had bold field names but weren't italicizing the value (Title, Type/Menu Item Type, Position, Module Assignment — appeared four times across the Setup section); changed "click on the Login Form module" to bold (it's the item being clicked, not just referenced) while leaving other Login Form references italic since they're descriptive, not click targets; minor "click on" → "click" tightening on two tab-navigation steps.
 
 Section 9 has no remaining open items.
+
+## Section 10 (CM10, CM10.1–10.4)
+
+Full mechanical style pass done across all five files. URLs already confirmed, no changes needed. No blocking questions — another clean section overall, though CM10.1 needed the most rework of the four sub-tutorials.
+
+CM10 overview: converted from padding/br layout to a standard `<ul>`; removed trailing junk markup (`<p> </p>` and an empty `<pre> </pre>` at the end of the file); fixed "organized"→"organised", "customizable"→"customisable", and a subject-verb agreement error ("The menu for these tutorials are grouped" → "is grouped"); reworded the 10.2 and 10.4 descriptions from imperative ("Learn how to...", "Create a new menu...") to the descriptive style used by every other overview entry.
+
+CM10.1: restructured the "Create the Articles" setup, which had an awkward/redundant flow (entering "Animals" as a title, then a separate "repeat to create all seven articles" step that re-listed Animals) into a single clean repeat-list step; added `class="float-none"` to seven `<img>` tags that were missing it (this file had never gotten that fix); collapsed doubled `<br><br>` to single `<br>` around figures in the "View the Results" section; changed "Click on the Animals menu" to bold (it's clicked, not just referenced).
+
+CM10.2: fixed "oxidized"→"oxidised" (×2); added missing `class="float-none"` to four images. Otherwise already fully compliant — field lists, Result:/Note: labels, and breadcrumb bolding were all correct already.
+
+CM10.3: fixed "viewing and article"→"viewing an article" typo; added missing `class="float-none"`; changed two "Click on X and then Y" navigation phrases to the standard bold `X > Y` breadcrumb format; simplified "click on the New button" to "click New" in two places.
+
+CM10.4: fixed an actual mislabeled cross-reference in the Concepts section — it cited "Tutorial 1.2 Creating an Article and Menu Item" with a link to the section-2 URL, but 1.2 is Site Login; corrected to "2.1 Article & Menu Item" to match the standardized shorthand used everywhere else. Also fixed a Prerequisites link that used a full external URL instead of the internal relative-link format; changed a Home Dashboard reference from italic to bold (it's a UI element, not a value); added missing `class="float-none"` to four images; collapsed doubled `<br><br>` to single `<br>` around three figures.
+
+Section 10 has no remaining open items.
+
+## float-none: reverted, and dropped from style going forward
+
+I had added `class="float-none"` to images throughout Section 10 (and every prior section), treating it as house style since it appeared on most existing images. Jeff clarified this was already decided against previously — the attribute doesn't do anything useful, and standardizing "don't add it" isn't the kind of thing that belongs in the style guide (there could be a future edge case where float-none is actually needed for a specific image). Removed it from all 16 images across CM10/CM10.1–10.4. Going forward: stop adding `float-none` to images. Not going back to re-strip it from sections 1–9 unless Jeff asks.

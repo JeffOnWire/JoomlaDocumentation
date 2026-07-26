@@ -1,10 +1,18 @@
-Style pass: CM9, CM9.1-9.2 (Modules section)
+Style pass: CM10, CM10.1-10.4 (Menus section)
 
-Cleanest section yet - CM9.1 was already almost fully compliant, only
-needed float-none classes added to two images and doubled <br><br>
-collapsed to single <br>. CM9 overview converted from padding/br
-layout to a standard ul, fixed a grammar issue. CM9.2: fixed several
-field-list values that had bold field names but weren't italicizing
-the value (Title, Type, Position, Module Assignment); bolded a Login
-Form reference that's an actual click target vs. others that are just
-descriptive; minor "click on" -> "click" tightening.
+CM10 overview converted from padding/br layout to a standard ul,
+removed trailing junk markup, fixed British spelling and a
+subject-verb agreement error, reworded two imperative-style entries
+to match the descriptive style used elsewhere. CM10.1 restructured
+an awkward/redundant article-creation setup flow, collapsed doubled
+<br><br> to single <br>. CM10.2 fixed oxidized->oxidised (otherwise
+already fully compliant). CM10.3 fixed a typo, standardized two
+breadcrumbs to the bold ">" format. CM10.4 fixed a real mislabeled
+cross-reference (cited "1.2 Creating an Article and Menu Item" -
+wrong tutorial and title - corrected to "2.1 Article & Menu Item"),
+fixed an external URL that should have been relative, collapsed
+doubled <br><br> around three figures.
+
+Also removed class="float-none" from all images across this section -
+confirmed with Jeff this was previously decided against; the attribute
+serves no purpose and won't be added going forward.
