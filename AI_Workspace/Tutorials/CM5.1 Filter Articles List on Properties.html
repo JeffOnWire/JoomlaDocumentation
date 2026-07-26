@@ -3,88 +3,167 @@
 <ul>
 <li>Status</li>
 <li>Category</li>
-<li>Status, Category and Author (multiple filters at once)</li>
+<li>Status, Category, and Featured (multiple filters at once)</li>
 </ul>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>A website with multiple articles. If you haven't created any articles yet, see <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a>.</li>
 </ul>
-<h2>Steps</h2>
-<h3>Navigate to the Articles List</h3>
+<h2>Setup</h2>
+<h3>Create Categories</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>. <strong>Result:</strong> A list of articles appears.</li>
-<li>Click <strong>Filter Options</strong> at the top of the list. <strong>Result:</strong> The filter options appear.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-open-1.png" alt="Article list with filter options open" width="1086" height="446" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-open-1.png">
-<figcaption>Filter options open above the article list</figcaption>
-</figure>
-<br>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
+<ul>
+<li><strong>Title:</strong> <em>News</em></li>
+</ul>
 </li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Events</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
 </ol>
+<h3>Create Articles</h3>
+<p>This part of the setup moves quickly — each article just needs a title and three quick field selections.</p>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<ul>
+<li><strong>Title:</strong> <em>Product Launch</em></li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>News</em></li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Upcoming Announcement</em></li>
+<li><strong>Status:</strong> <em>Unpublished</em></li>
+<li><strong>Category:</strong> <em>News</em></li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Company Update</em></li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>News</em></li>
+<li><strong>Featured:</strong> <em>No</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Draft Press Release</em></li>
+<li><strong>Status:</strong> <em>Unpublished</em></li>
+<li><strong>Category:</strong> <em>News</em></li>
+<li><strong>Featured:</strong> <em>No</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Annual Conference</em></li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>Events</em></li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Conference Preview</em></li>
+<li><strong>Status:</strong> <em>Unpublished</em></li>
+<li><strong>Category:</strong> <em>Events</em></li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Local Meetup</em></li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>Events</em></li>
+<li><strong>Featured:</strong> <em>No</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Meetup Planning Notes</em></li>
+<li><strong>Status:</strong> <em>Unpublished</em></li>
+<li><strong>Category:</strong> <em>Events</em></li>
+<li><strong>Featured:</strong> <em>No</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong>.</li>
+</ol>
+<h2>Steps</h2>
 <h3>Filtering on Article Status</h3>
 <p>We're going to start by filtering only articles that have a specific status, in our case <em>Unpublished</em>.</p>
 <ol>
-<li>In the <strong>Select Status</strong> dropdown at the top of the article list, select <strong>Unpublished</strong>. <strong>Result:</strong> The list now only shows unpublished articles.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-unpublished.png" alt="Dropdown Select Status Unpublished" width="1260" height="687" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-unpublished.png">
-<figcaption>Selecting Unpublished from the Select Status dropdown</figcaption>
-</figure>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filtered-unpublished.png" alt="Article list filtered on unpublished articles" width="1086" height="418" loading="lazy" data-path="local-images:/articles/324/article-list-filtered-unpublished.png">
-<figcaption>The article list filtered to unpublished articles</figcaption>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>. <strong>Result:</strong> The list of articles appears.</li>
+<li>Click <strong>Filter Options</strong>. <strong>Result:</strong> The filter options appear.<br>
+<figure class="image"><img src="images/articles/324/filter_options.png" alt="Filter options open above the article list, showing all filter dropdowns" width="1184" height="481" loading="lazy" data-path="local-images:/articles/324/filter_options.png">
+<figcaption>The filter options panel, with all filter dropdowns visible and unselected</figcaption>
 </figure>
 <br>
 </li>
+<li>In the <strong>- Select Status -</strong> dropdown at the top of the article list, select <strong>Unpublished</strong>. <strong>Result:</strong> The list narrows to the four unpublished articles — <em>Upcoming Announcement</em>, <em>Draft Press Release</em>, <em>Conference Preview</em>, and <em>Meetup Planning Notes</em>.<br>
+<figure class="image"><img src="images/articles/324/unpublished_articles.png" alt="Select Status dropdown with Unpublished selected, showing the four unpublished articles" width="1182" height="770" loading="lazy" data-path="local-images:/articles/324/unpublished_articles.png">
+<figcaption>Selecting Unpublished from the Select Status dropdown narrows the list to four articles</figcaption>
+</figure>
+<br>
+</li>
+<li>Change the <strong>- Select Status -</strong> dropdown to <strong>Published</strong>. <strong>Result:</strong> The list now shows the four published articles instead.</li>
+<li>Reset the filter by selecting <strong>- Select Status -</strong> from the dropdown. <strong>Result:</strong> The list shows all articles again.</li>
 </ol>
-<p>You can choose one of the statuses (<em>Trashed, Unpublished, Published, Archived, All</em>) to filter your articles list.</p>
-<p>You can reset the filter by selecting <strong>Select Status</strong> instead of <strong>Unpublished</strong>.</p>
 <h3>Filtering on Category</h3>
-<p>Our example website has multiple categories. You can filter on one or more categories. First we'll filter on the <em>Typography</em> category, then we'll add the <em>Blog</em> category as well.</p>
 <ol>
-<li>In the <strong>Select Category</strong> dropdown at the top of the article list, select <strong>Typography</strong>.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-category-1.png" alt="Article list with filter on category selected" width="1086" height="497" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-category-1.png">
-<figcaption>Filtering the article list on the Typography category</figcaption>
+<li>In the <strong>- Select Category -</strong> dropdown at the top of the article list, select <strong>News</strong>. <strong>Result:</strong> The list narrows to the four <em>News</em> articles — a mix of featured, unfeatured, published, and unpublished — and <em>News</em> is shown in the dropdown.</li>
+<li>Add a second category to the filter. Select <strong>Events</strong> from the dropdown. <strong>Result:</strong> Both <em>News</em> and <em>Events</em> are shown in the dropdown, and the list now shows all articles.<br>
+<figure class="image"><img src="images/articles/324/news_and_events_articles.png" alt="Article list filtered on the News and Events categories" width="1184" height="1113" loading="lazy" data-path="local-images:/articles/324/news_and_events_articles.png">
+<figcaption>Adding both News and Events to the category filter shows all eight articles</figcaption>
 </figure>
 <br>
 </li>
-<li><strong>Result:</strong> The list is now shorter, and your selected category is shown in the dropdown.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-category-2.png" alt="Article list filter dropdown with selected category" width="1086" height="539" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-category-2.png">
-<figcaption>The selected category shown in the dropdown</figcaption>
+<li>Remove <strong>Events</strong> from the filter by clicking the small x next to the highlighted category title. <strong>Result:</strong> The list refreshes to show only the four <em>News</em> articles.</li>
+<li>Click <strong>Clear</strong> next to the <strong>Filter Options</strong> button. <strong>Result:</strong> The list refreshes to show all articles, and the filter dropdowns disappear.</li>
+</ol>
+<h3>Filtering on Status, Category, and Featured</h3>
+<p>Filters combine — each additional filter narrows the list further rather than broadening it. Here we'll filter on featured, status, and category together to find one specific article.</p>
+<ol>
+<li>Click <strong>Filter Options</strong> to reveal the filter choices, if not already open. Select the following filter options:
+<ul>
+<li><strong>- Select Featured -:</strong> <em>Featured Articles</em></li>
+<li><strong>- Select Status -:</strong> <em>Published</em></li>
+<li><strong>- Select Category -:</strong> <em>News</em></li>
+</ul>
+<strong>Result:</strong> The list narrows to a single article, <em>Product Launch</em> — the only one that is featured, published, and in the <em>News</em> category.<br>
+<figure class="image"><img src="images/articles/324/published_featured_news_articles.png" alt="Article list filtered by Featured Articles, Published status, and the News category" width="1183" height="541" loading="lazy" data-path="local-images:/articles/324/published_featured_news_articles.png">
+<figcaption>Combining the Featured, Status, and Category filters narrows the list to a single article, Product Launch</figcaption>
 </figure>
 <br>
 </li>
-<li>Add a second category to the filter. Select <strong>Blog</strong> from the dropdown.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-category-3.png" alt="Article list filter options second category chosen" width="1086" height="496" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-category-3.png">
-<figcaption>Adding a second category to the filter</figcaption>
-</figure>
-<br>
-</li>
-<li><strong>Result:</strong> Both <em>Typography</em> and <em>Blog</em> are shown in the dropdown, and the list now has articles from both categories.<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-category-4.png" alt="Article list filtered on two categories" width="1086" height="573" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-category-4.png">
-<figcaption>The article list filtered on two categories</figcaption>
-</figure>
-<br>
-</li>
-<li>Remove <strong>Blog</strong> from the filter by clicking the small x next to the highlighted category title. <strong>Result:</strong> The list refreshes to show only <em>Typography</em> articles.</li>
 <li>Click <strong>Clear</strong> next to the <strong>Filter Options</strong> button. <strong>Result:</strong> The list refreshes to show all articles.</li>
 </ol>
-<h3>Filtering on Status, Category and Author</h3>
-<p>In this example, we'll filter on Status, Category and Author. Like with the categories filter, we can filter on multiple authors. Here we've selected two authors and two categories.</p>
+<h3>Bulk Actions on Filtered Articles</h3>
+<p>Filtering doesn't just help you find articles — it's also a fast way to select a specific group of articles so you can act on all of them at once.</p>
 <ol>
-<li>Click <strong>Filter Options</strong> to reveal the filter choices. Select the following filter options:
+<li>Click <strong>Filter Options</strong> to reveal the filter choices, if not already open. Select the following filter options:
 <ul>
-<li><strong>Status:</strong> <em>Published</em></li>
-<li><strong>Categories:</strong> <em>Blog</em> and <em>Help</em></li>
-<li><strong>Authors:</strong> <em>Joomla Tester</em> and <em>Joombassador</em></li>
+<li><strong>- Select Featured -:</strong> <em>Featured Articles</em></li>
+<li><strong>- Select Status -:</strong> <em>Unpublished</em></li>
 </ul>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/324/article-list-filter-options-multiple-filters.png" alt="Article list with multiple filters enabled" width="1086" height="532" loading="lazy" data-path="local-images:/articles/324/article-list-filter-options-multiple-filters.png">
-<figcaption>Multiple filters applied at once</figcaption>
+<strong>Result:</strong> The list narrows to two articles, <em>Upcoming Announcement</em> and <em>Conference Preview</em>.</li>
+<li>Tick the checkbox in the list column header to select all listed articles. <strong>Result:</strong> Both articles are selected, and the <strong>Actions</strong> button is enabled.</li>
+<li>Pull down the <strong>Actions</strong> dropdown and select <strong>Publish</strong>. <strong>Result:</strong> Both articles are now published.<br>
+<figure class="image"><img src="images/articles/324/bulk_action.png" alt="Actions dropdown open with Publish highlighted, two unpublished featured articles selected" width="1184" height="604" loading="lazy" data-path="local-images:/articles/324/bulk_action.png">
+<figcaption>Selecting Publish from the Actions dropdown publishes both selected articles at once</figcaption>
 </figure>
 <br>
 </li>
+<li>Click <strong>Clear</strong> next to the <strong>Filter Options</strong> button. <strong>Result:</strong> The list refreshes to show all articles, now including the two you just published.</li>
 </ol>
 <h2>Concepts</h2>
-<p><em>Articles</em> in Joomla are the main content types on a web page and can display text and images.</p>
-<p>A <em>category</em> is a way to organise your articles.</p>
-<p>A <em>filter</em> is used to show only content that matches the given criteria.</p>
+<p>A <em>filter</em> is used to show only content that matches the given criteria. Multiple criteria can be combined; each one narrows the results further rather than broadening them.</p>
+<p>Filtering isn't only useful for finding content — it's also a way to select a specific group of articles so you can perform an action on all of them at once, such as publishing or archiving several articles simultaneously.</p>
+<p>Similar filter options appear throughout Joomla, including in the Categories, Menus, and other content list views.</p>

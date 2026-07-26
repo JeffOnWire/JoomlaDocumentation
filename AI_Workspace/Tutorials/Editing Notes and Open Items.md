@@ -225,6 +225,51 @@ Section 7 has one remaining open item: CM7.1's placeholder intro paragraph, trac
 
 **Resolved:** Jeff supplied real intro text for CM7.1: "In this tutorial we will demonstrate that both an article and its category must be published for the article to appear on the website." (tweaked "a website" → "the website" to match house usage). Applied. Section 7 now has no remaining open items, and the whole project (sections 1–12) has no known open items.
 
+## CM5.1 content redesign (post-completion revision)
+
+Jeff requested a content redesign of CM5.1, not a style pass — replacing the Author filter with a Featured filter, and adding a real Setup section (previously this tutorial relied on default Joomla sample content — Typography/Blog/Help categories, Joomla Tester/Joombassador authors — rather than creating its own).
+
+New Setup creates two categories (<em>News</em>, <em>Events</em>) and eight articles — one for every combination of category × featured × published status (a full 2×2×2 matrix): New Product Launch (News/Featured/Published), Upcoming Announcement (News/Featured/Unpublished), Company Update (News/Unfeatured/Published), Draft Press Release (News/Unfeatured/Unpublished), Annual Conference (Events/Featured/Published), Conference Preview (Events/Featured/Unpublished), Local Meetup (Events/Unfeatured/Published), Meetup Planning Notes (Events/Unfeatured/Unpublished).
+
+This matrix makes each filter step return a mixed, predictable result per Jeff's spec: filtering on Status=Unpublished returns all four combinations of category/featured; filtering on Category=News returns all four combinations of featured/published; the final combined filter (Status=Published, Category=News, Featured=Featured) narrows to exactly one article (New Product Launch), demonstrating how combined filters narrow rather than broaden.
+
+Steps restructured: "Navigate to the Articles List" unchanged; "Filtering on Article Status" and "Filtering on Category" keep their original flow/mechanics but now reference the new categories/articles; "Filtering on Status, Category and Author" renamed to "Filtering on Status, Category, and Featured" and redesigned around the new combined-filter demonstration.
+
+**Open items needing Jeff's live-site verification (same pattern as CM9.1/CM10.2/CM11.1's initial drafts):**
+- The Featured filter dropdown is guessed as **- Select Featured -** with values <em>Featured</em>/<em>Unfeatured</em>, matching the naming pattern of the other filter dropdowns (**- Select Status -**, **- Select Category -**). Not yet confirmed against a live install.
+- All eight figures in this file are unchanged from the old version and still reference the old sample content (Typography, Blog, Help, authors) visually, even though captions/alt text have been updated to describe the new content. These screenshots need to be retaken once the new Setup content exists on a live site — same process used for CM10.2's reshoot.
+
+**Planned follow-up:** this same News/Events category pair and eight-article set is meant to carry into CM5.2 (Delete Articles) and CM5.3 (Archive Articles), with their own Setup sections referencing or extending this content as needed, once CM5.1 is confirmed working. Not started yet.
+
+**Round 2 revisions (Jeff's detailed feedback), applied:**
+- Setup field order for each article changed to Title, Status, Category, Featured, matching the actual on-screen form order.
+- Setup headings de-numbered: "Create Two Categories" → "Create Categories", "Create Eight Articles" → "Create Articles" (avoids sounding intimidating). Added a one-line intro under "Create Articles" noting it moves quickly (title + three field selections per article).
+- "Filtering on Article Status": dropped "spanning both categories and both featured states" from the Result sentence; replaced the two trailing prose paragraphs with two real steps — step 2 changes the filter to Published, step 3 resets it via "- Select Status -".
+- "Filtering on Category": dropped the intro sentence; merged the old separate "Result" steps into the steps that produced them (was 6 list items, now 4), keeping the remove-Events and Clear steps as-is.
+- "Filtering on Status, Category, and Featured": step 1's field order changed to Featured, Status, Category to match the real dropdown order on the filter bar (heading/prose order left as Status/Category/Featured — only the literal step matches screen order); added a final step to Clear the filter.
+- New substep added, named "Bulk Actions on Filtered Articles": filters on Featured=Featured + Status=Unpublished (narrows to the two articles that match: Upcoming Announcement, Conference Preview), ticks the select-all checkbox, uses the Actions dropdown to publish both, then clears the filter. No screenshots yet — new content, nothing to reuse.
+- Confirmed "substep" is already an established term — it's defined in the Tutorial Style Guide itself (h3-level subsections within Steps), not something that needed adding.
+- Concepts rebuilt: removed the Articles/Category/Featured-definition paragraphs entirely; kept only the filter paragraph, changing "Multiple filters can be combined" → "Multiple criteria can be combined"; added a new paragraph on filtering as a way to bulk-act on articles (publish/archive multiple at once); added a new paragraph noting similar filter options exist in Categories, Menus, and other content list views.
+
+Confirmed by Jeff: "- Select Featured -" is the real dropdown name (no fix needed). "Bulk Actions on Filtered Articles" confirmed as the substep name.
+
+**Round 4: real screenshots added.** Jeff supplied five screenshots from his live-site run-through, saved to `images/articles/324/`: filter_options.png, unpublished_articles.png, news_and_events_articles.png, published_featured_news_articles.png, bulk_action.png. Read each one directly to get exact pixel dimensions (via PIL) and to verify on-screen content before writing captions/alt text. Placed: filter_options.png after "Filtering on Article Status" step 2 (filter options open); unpublished_articles.png after step 3 (Select Status dropdown + Unpublished + resulting 4-article list, in one shot); news_and_events_articles.png after "Filtering on Category" step 2 (both categories added, all 8 articles); published_featured_news_articles.png after "Filtering on Status, Category, and Featured" step 1 (combined filter narrowing to one article); bulk_action.png after "Bulk Actions on Filtered Articles" step 3 (Actions dropdown, Publish highlighted).
+
+Two corrections surfaced by actually looking at the screenshots against the live site, applied to the file:
+- The article Jeff created was titled **Product Launch**, not "New Product Launch" as I'd drafted — fixed everywhere (Setup and the combined-filter step).
+- The Featured filter dropdown's actual selected-value label is **Featured Articles**, not just "Featured" — fixed in both places it's used as a literal value (combined-filter step, Bulk Actions step). The dropdown's placeholder name, "- Select Featured -," was already correct.
+
+The live filter bar screenshot also confirms the real on-screen dropdown order top-left-to-right is Featured, Status, Category, Access / Author, Checked Out, Tag, Max Levels — matching the Featured→Status→Category order already applied in round 3.
+
+CM5.1 now has real screenshots throughout and no more open items, aside from the still-pending CM5.2/CM5.3 follow-up (reusing this News/Events content).
+
+**Round 3 revisions, applied:**
+- Removed the "for us as authors, not the user" summary paragraph at the end of "Create Articles" (the one explaining the 8-article combination matrix).
+- Dropped the "Navigate to the Articles List" substep entirely; folded its two real actions into "Filtering on Article Status" as its new steps 1–2 (Click Content > Articles → list appears; Click Filter Options → filter options appear). Also dropped the login/Home Dashboard step that used to lead that substep — not requested to keep it, and no other substep in this file has one either.
+- "Filtering on Category" — last step (Clear) now also states the filter dropdowns disappear, not just that the list refreshes.
+- Removed "eight" everywhere it modified "articles" throughout the file — every "Result" now just says "all articles" rather than "all eight articles." (The actual count is still fully specified in Setup, just not repeated as a magic number in Steps.)
+- **All figures removed from the file.** Every existing screenshot showed old sample content (Typography/Blog categories, Author names) that no longer matches this tutorial's Setup, so per Jeff's request I'm treating this as a blank slate and proposing a fresh, prioritized screenshot list instead of leaving stale image references in place. See the recommendation list delivered in chat (also worth copying here once finalized): filter bar overview after "Filtering on Article Status" step 2; Select Status dropdown extended + Unpublished highlighted after step 3; category-filter result list after "Filtering on Category" step 2; the three-dropdown combined-filter view + single-article result after "Filtering on Status, Category, and Featured" step 1; header checkbox + Actions dropdown open on Publish in "Bulk Actions on Filtered Articles" step 2/3. None inserted into the HTML yet — waiting on real screenshots from Jeff's live-site run-through, same as every other tutorial's screenshot cycle.
+
 ## Section 8 (CM8, CM8.1–8.2)
 
 Full mechanical style pass done across all three files. URLs already confirmed, no changes needed. No blocking questions — this was a relatively clean section; CM8.1 in particular was already close to full compliance (bold/italic, figures, and breadcrumb bolding were already correct — only added one Result: label for consistency).

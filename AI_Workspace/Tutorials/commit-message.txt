@@ -1,9 +1,18 @@
-CM7.1: fill in placeholder intro paragraph
+CM5.1: add real screenshots, fix title and filter-value naming
 
-Replaced "Intro text ... t.b.d." with real text from Jeff: "In this
-tutorial we will demonstrate that both an article and its category
-must be published for the article to appear on the website." (tweaked
-"a website" -> "the website" to match house usage).
+Added the five screenshots Jeff shot on the live site
+(images/articles/324/filter_options.png, unpublished_articles.png,
+news_and_events_articles.png, published_featured_news_articles.png,
+bulk_action.png), placed per the agreed plan: filter bar overview,
+Select Status + Unpublished result, both-categories result, the
+combined Featured/Status/Category result, and the Actions-dropdown
+Publish step.
 
-This was the last known open item across the whole project - sections
-1-12 now have no remaining open items.
+Comparing the screenshots against the draft surfaced two mismatches,
+now fixed: the actual article title is "Product Launch" (not "New
+Product Launch"), and the Featured filter's selected-value label is
+"Featured Articles" (not just "Featured") - both corrected everywhere
+they appear as literal values.
+
+CM5.1 is now complete with real screenshots. Still pending: reusing
+this News/Events Setup content in CM5.2 and CM5.3.
