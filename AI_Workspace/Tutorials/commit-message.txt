@@ -1,0 +1,11 @@
+Style pass: CM6, CM6.1-6.2 (Pagination and Read More section)
+
+Concepts converted to prose, Result:/Note: labels added, bold/italic
+convention fixes (including reversed field-name/value bolding in both
+files), breadcrumb bolding, Setup sections converted from unordered to
+numbered steps, screenshot placement and spacing fixes, removed stray
+dir="auto" and underline-span artifacts. CM6 overview list converted
+from padding/br layout to a standard ul with 6.1/6.2 numbering.
+Standardized "2.1 Article & Menu Item" prerequisite link text. Fixed
+"and and" typo, a missing "Click New" step in CM6.1, and realigned a
+features list to match its screenshot's numbered callouts.

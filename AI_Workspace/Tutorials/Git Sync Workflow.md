@@ -16,14 +16,12 @@ Claude's access is limited to the `Tutorials` folder. The actual `.git` repo roo
 Sync from Joomla: CM7.4 Restrict Access to Articles (Joomla version 2026-06-12 16:28:36)
 ```
 
-**2. Claude's edits** — after Claude finishes a meaningful change or batch of changes, Claude provides a ready-to-use commit message summarizing what changed. Jeff commits it as-is:
+**2. Claude's edits** — after Claude finishes a meaningful change or batch of changes, Claude writes the commit message to `Tutorials/commit-message.txt` and gives you the command:
 
 ```
-Style pass: CM3, CM3.1-3.5 (WYSIWYG Editor section)
-
-Applied real links, Concepts converted to prose, Result:/Note: labels,
-bold/italic convention fixes, British spelling, figure/figcaption
-wrapping on CM3.3.
+git add -A
+git commit -F "Tutorials/commit-message.txt"
+git push
 ```
 
 **3. Pushed to Joomla** — after Jeff pastes the updated HTML back into Joomla and saves, a short commit (often just touching a tracking note, or simply noted in the commit message of the next sync) marks that the loop is closed:
@@ -41,6 +39,16 @@ Run `git log --oneline -10` in the `JoomlaDocumentation` folder (not `Tutorials`
 - Not sure if someone (you or a colleague) changed something directly in Joomla without telling Claude → re-copy the HTML from Joomla and commit a fresh "Sync from Joomla" before asking Claude to edit again. Git can't detect this on its own — this is the one place that still relies on you remembering to re-sync.
 
 If you want Claude to check state instead of doing it yourself, paste the output of `git log --oneline -10`, `git status`, or `git diff` into chat.
+
+## Commit messages: use a file, not `-m`
+
+Commit messages often quote literal UI text ("2.1 Article & Menu Item", article titles, etc.), which breaks `git commit -m "..."` the moment the message contains a double quote. Rather than juggling quote types, Claude writes each commit message to `Tutorials/commit-message.txt` and you commit with:
+
+```
+git commit -F "Tutorials/commit-message.txt"
+```
+
+No escaping, no picking single vs. double quotes — the file's contents become the commit message exactly as written. This file gets overwritten each time there's a new commit ready; once you've committed, its old contents are safely preserved in git history, so there's nothing to clean up.
 
 ## Git command cheat sheet
 

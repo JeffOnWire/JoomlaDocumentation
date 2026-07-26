@@ -194,3 +194,15 @@ Section 5 has no remaining open items.
 ## General pattern emerging
 
 Some issues are now showing up across multiple tutorials (Setup using `<ul>` instead of `<ol>`, Prerequisites formatting, h4 usage) — worth treating these as settled style guide rules soon rather than re-litigating per tutorial.
+
+## Section 6 (CM6, CM6.1–CM6.2)
+
+Full mechanical style pass done across all three files. URLs were already confirmed (Tutorial URL Reference.xlsx) and needed no changes. No blocking questions — all fixes were established rules or unambiguous.
+
+CM6 overview: converted the link list from a `<p style="padding-left:40px;">` with `<br>`-separated links into a proper `<ul>`, matching every other overview page; added "6.1"/"6.2" numbering to the link text to match the numbering convention used elsewhere.
+
+CM6.1: Setup sections converted from `<ul>` to `<ol>` (steps convention); fixed invalid nesting where a `<ul>` sat as a sibling of `<li>` instead of inside it; removed a duplicated/dangling "Return to the Home Dashboard" step that didn't match the actual flow (was missing the "Click New" step entirely — added it); converted breadcrumb-style navigation ("expand Content and click on Articles") to the bold `Content > Articles` format; fixed field-list bold/italic direction throughout (field name should be bold, value italic — was reversed); added Result: labels; fixed "and and" duplicated-word typo in the opening paragraph; realigned the "Note the following features" list in the View the Article section so its five items correspond one-to-one with the five numbered callouts in that section's own screenshot caption (previously mismatched — item 1 in the text didn't match callout 1 in the image); moved the two page-break screenshots into the step they illustrate, per the screenshot-placement rule; converted the "Modify the Page Breaks" prose into numbered steps; removed a trailing empty paragraph.
+
+CM6.2: removed leftover `dir="auto"` attributes (copy-paste artifacts) throughout; standardized "2.1 Articles & Menu Item" → "2.1 Article & Menu Item" to match the shorthand used everywhere else; Setup sections' field lists fixed to bold-name/italic-value convention (was reversed, and one sub-list used `<ol>` instead of `<ul>`); breadcrumb bolding applied to "Content > Articles" and "Menus > Main Menu"; removed a stray underline span on "New" in "Save & New"; added Result:/Note: labels throughout Steps; collapsed doubled `<br><br>` before screenshot groups to the single-`<br>` convention; added the missing `class="float-none"` to all `<img>` tags for consistency with every other file; Concepts section converted from a bulleted list to prose paragraphs, matching the pattern used since Section 4/5.
+
+Section 6 has no remaining open items.
