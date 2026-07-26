@@ -6,7 +6,7 @@ How Jeff and Claude keep the working folder, git history, and live Joomla site i
 
 Content moves between three places: Joomla (the live site), this working folder, and whatever Claude just edited. Without a record, there's no way to know which one currently has the "latest" version of an article. Git solves this by turning the folder into a timestamped, diffable history — the answer to "who has the latest copy" becomes "check the log" instead of "try to remember."
 
-Claude's access is limited to the `Tutorials` folder. The actual `.git` repo root is one level up, at `JoomlaDocumentation`, so **Claude cannot run git commands directly** — Jeff runs them, using commit messages Claude provides.
+Claude's access is limited to the `Tutorials` folder. The actual `.git` repo root is two levels up, at `JoomlaDocumentation` (which contains `AI_Workspace`, which contains `Tutorials`), so **Claude cannot run git commands directly** — Jeff runs them, using commit messages Claude provides. Because of this, paths in the commands below are written relative to the repo root, e.g. `AI_Workspace/Tutorials/...`.
 
 ## The three kinds of commits
 
@@ -16,11 +16,11 @@ Claude's access is limited to the `Tutorials` folder. The actual `.git` repo roo
 Sync from Joomla: CM7.4 Restrict Access to Articles (Joomla version 2026-06-12 16:28:36)
 ```
 
-**2. Claude's edits** — after Claude finishes a meaningful change or batch of changes, Claude writes the commit message to `Tutorials/commit-message.txt` and gives you the command:
+**2. Claude's edits** — after Claude finishes a meaningful change or batch of changes, Claude writes the commit message to `AI_Workspace/Tutorials/commit-message.txt` and gives you the command:
 
 ```
 git add -A
-git commit -F "Tutorials/commit-message.txt"
+git commit -F "AI_Workspace/Tutorials/commit-message.txt"
 git push
 ```
 
@@ -42,10 +42,10 @@ If you want Claude to check state instead of doing it yourself, paste the output
 
 ## Commit messages: use a file, not `-m`
 
-Commit messages often quote literal UI text ("2.1 Article & Menu Item", article titles, etc.), which breaks `git commit -m "..."` the moment the message contains a double quote. Rather than juggling quote types, Claude writes each commit message to `Tutorials/commit-message.txt` and you commit with:
+Commit messages often quote literal UI text ("2.1 Article & Menu Item", article titles, etc.), which breaks `git commit -m "..."` the moment the message contains a double quote. Rather than juggling quote types, Claude writes each commit message to `AI_Workspace/Tutorials/commit-message.txt` and you commit with:
 
 ```
-git commit -F "Tutorials/commit-message.txt"
+git commit -F "AI_Workspace/Tutorials/commit-message.txt"
 ```
 
 No escaping, no picking single vs. double quotes — the file's contents become the commit message exactly as written. This file gets overwritten each time there's a new commit ready; once you've committed, its old contents are safely preserved in git history, so there's nothing to clean up.
@@ -58,7 +58,7 @@ Run these from inside the `JoomlaDocumentation` folder (or any subfolder — git
 |---|---|
 | See what's changed since the last commit | `git status` |
 | See the actual line-by-line changes | `git diff` |
-| Stage a specific file | `git add "Tutorials/CM3 WYSIWYG Editor.html"` |
+| Stage a specific file | `git add "AI_Workspace/Tutorials/CM3 WYSIWYG Editor.html"` |
 | Stage everything that changed | `git add -A` |
 | Commit staged changes with a message | `git commit -m "Your message here"` |
 | Send commits to GitHub | `git push` |

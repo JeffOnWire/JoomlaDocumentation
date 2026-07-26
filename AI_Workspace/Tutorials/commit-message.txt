@@ -1,11 +1,22 @@
-Style pass: CM6, CM6.1-6.2 (Pagination and Read More section)
+Style pass: CM7, CM7.1-7.6 (Publishing and Access section)
 
-Concepts converted to prose, Result:/Note: labels added, bold/italic
-convention fixes (including reversed field-name/value bolding in both
-files), breadcrumb bolding, Setup sections converted from unordered to
-numbered steps, screenshot placement and spacing fixes, removed stray
-dir="auto" and underline-span artifacts. CM6 overview list converted
-from padding/br layout to a standard ul with 6.1/6.2 numbering.
-Standardized "2.1 Article & Menu Item" prerequisite link text. Fixed
-"and and" typo, a missing "Click New" step in CM6.1, and realigned a
-features list to match its screenshot's numbered callouts.
+Bold/italic field-list convention fixed throughout (reversed field
+name/value bolding was the most common bug in this section).
+Result:/Note: labels added, arrow breadcrumbs (->) replaced with bold
+">" format, underline-span artifacts removed, Concepts converted to
+prose, British spelling fixes including "Unauthorized"->"Unauthorised"
+and "Uncategorized"->"Uncategorised". CM7 overview converted from
+padding/br layout to a standard ul.
+
+Content fixes: broken/escaped Prerequisites link in CM7.1 replaced
+with standard "2 First Steps" link; "Olympus Solar Companion" typo
+fixed to match "Olympus Solar Calculator" elsewhere in CM7.1; CM7.2
+referenced the wrong entity ("History Blog", a menu item) where it
+meant the "Medieval Europe" article; two bare screenshots in CM7.4
+wrapped in figure/figcaption with descriptive captions; missing
+Setup heading added to CM7.6; CM7.6's flat field lists restructured
+into the standard nested format; CM7.5's Setup list converted from
+unordered to numbered steps. Removed a paragraph in CM7.3 duplicated
+verbatim from CM7.2's intro, unrelated to Timed Publishing (confirmed
+with Jeff). CM7.1's placeholder intro text ("Intro text ... t.b.d.")
+left as-is - Jeff is tracking it separately.

@@ -206,3 +206,19 @@ CM6.1: Setup sections converted from `<ul>` to `<ol>` (steps convention); fixed 
 CM6.2: removed leftover `dir="auto"` attributes (copy-paste artifacts) throughout; standardized "2.1 Articles & Menu Item" → "2.1 Article & Menu Item" to match the shorthand used everywhere else; Setup sections' field lists fixed to bold-name/italic-value convention (was reversed, and one sub-list used `<ol>` instead of `<ul>`); breadcrumb bolding applied to "Content > Articles" and "Menus > Main Menu"; removed a stray underline span on "New" in "Save & New"; added Result:/Note: labels throughout Steps; collapsed doubled `<br><br>` before screenshot groups to the single-`<br>` convention; added the missing `class="float-none"` to all `<img>` tags for consistency with every other file; Concepts section converted from a bulleted list to prose paragraphs, matching the pattern used since Section 4/5.
 
 Section 6 has no remaining open items.
+
+## Section 7 (CM7, CM7.1–7.6)
+
+Full mechanical style pass done across all seven files. URLs were already confirmed and needed no changes.
+
+CM7 overview: converted from the `<p style="padding-left:40px;">`/`<br>` layout to a standard `<ul>`, matching every other overview page (link text already had 7.x numbering, so no change needed there).
+
+Two open questions resolved by Jeff:
+- CM7.1's opening paragraph is literally the placeholder text "Intro text ... t.b.d." — never written. Jeff has logged this as a separate issue for future work; left untouched here, still needs real content.
+- CM7.3 (Timed Publishing) had a 4th intro paragraph (the "picture frames" analogy about menu items/articles/categories) that was word-for-word identical to CM7.2's own intro and unrelated to Timed Publishing — clearly an accidental copy-paste. Removed per Jeff's confirmation.
+
+Across all six sub-tutorials: bold/italic field-list convention fixed everywhere it was reversed (field name should be bold, value italic — this was the single most common bug in this section); Result:/Note: labels added throughout, replacing bare "what happens next" sentences; arrow-based breadcrumbs (→) replaced with the bold `>` format in CM7.4; underline `<span>` styling removed (CM7.2, CM7.4, CM7.6); Concepts sections converted to prose where still bulleted (CM7.1); British spelling fixes, most notably "Unauthorized" → "Unauthorised" standardized throughout CM7.4 (was inconsistent — half the file already had it right) and "Uncategorized" → "Uncategorised" in CM7.6.
+
+Structural/content fixes: CM7.1 had a genuinely broken Prerequisites link (escaped HTML tags rendering as literal text, plus a "contnet" typo) — replaced with the standard `<a href="content-management-first-steps">2 First Steps</a>` format used elsewhere; CM7.1 also had "Olympus Solar Companion" where every other reference in the file said "Olympus Solar Calculator" (typo, fixed); CM7.1 had a malformed `<li>` missing a closing `</strong>` tag. CM7.2 referenced "History Blog" (a menu item) where the sentence was actually about unpublishing the second *article*, which is "Medieval Europe" — fixed. CM7.4 had two bare `<img>` tags with non-descriptive alt text ("Step 3 screenshot", "Step 5 screenshot", "Step 6 screenshot") — wrapped in proper figure/figcaption with descriptive captions, matching the CM2.5/CM3.3/CM4.3 precedent (image dimensions left unset where not previously known, rather than inventing values). CM7.6 was missing its `<h2>Setup</h2>` heading entirely — added; CM7.6's Setup sections also had flat, un-nested field lists ("Title: Article List" as bare list items with no field/value distinction) — restructured into the standard nested-list field format. CM7.5's Setup list converted from `<ul>` to `<ol>` (steps convention).
+
+Section 7 has one remaining open item: CM7.1's placeholder intro paragraph, tracked separately by Jeff.
