@@ -223,6 +223,8 @@ Structural/content fixes: CM7.1 had a genuinely broken Prerequisites link (escap
 
 Section 7 has one remaining open item: CM7.1's placeholder intro paragraph, tracked separately by Jeff.
 
+**Resolved:** Jeff supplied real intro text for CM7.1: "In this tutorial we will demonstrate that both an article and its category must be published for the article to appear on the website." (tweaked "a website" → "the website" to match house usage). Applied. Section 7 now has no remaining open items, and the whole project (sections 1–12) has no known open items.
+
 ## Section 8 (CM8, CM8.1–8.2)
 
 Full mechanical style pass done across all three files. URLs already confirmed, no changes needed. No blocking questions — this was a relatively clean section; CM8.1 in particular was already close to full compliance (bold/italic, figures, and breadcrumb bolding were already correct — only added one Result: label for consistency).

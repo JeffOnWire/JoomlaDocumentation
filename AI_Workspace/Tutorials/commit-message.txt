@@ -1,12 +1,9 @@
-Style pass: CM12, CM12.1 (Metadata section)
+CM7.1: fill in placeholder intro paragraph
 
-Another single-sub-tutorial section, already very close to fully
-compliant. CM12 overview converted from padding/br layout to a
-standard ul, fixed an en dash used as the description separator to
-match the em dash convention used elsewhere, lowercased the
-description's first letter to match every other entry. CM12.1
-collapsed one doubled <br><br> to single <br> around a figure -
-everything else was already correct.
+Replaced "Intro text ... t.b.d." with real text from Jeff: "In this
+tutorial we will demonstrate that both an article and its category
+must be published for the article to appear on the website." (tweaked
+"a website" -> "the website" to match house usage).
 
-This completes the mechanical style pass through Section 12, the
-last section currently in the folder.
+This was the last known open item across the whole project - sections
+1-12 now have no remaining open items.
