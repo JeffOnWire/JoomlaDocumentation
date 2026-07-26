@@ -1,22 +1,10 @@
-Style pass: CM7, CM7.1-7.6 (Publishing and Access section)
+Style pass: CM8, CM8.1-8.2 (URLs section)
 
-Bold/italic field-list convention fixed throughout (reversed field
-name/value bolding was the most common bug in this section).
-Result:/Note: labels added, arrow breadcrumbs (->) replaced with bold
-">" format, underline-span artifacts removed, Concepts converted to
-prose, British spelling fixes including "Unauthorized"->"Unauthorised"
-and "Uncategorized"->"Uncategorised". CM7 overview converted from
-padding/br layout to a standard ul.
-
-Content fixes: broken/escaped Prerequisites link in CM7.1 replaced
-with standard "2 First Steps" link; "Olympus Solar Companion" typo
-fixed to match "Olympus Solar Calculator" elsewhere in CM7.1; CM7.2
-referenced the wrong entity ("History Blog", a menu item) where it
-meant the "Medieval Europe" article; two bare screenshots in CM7.4
-wrapped in figure/figcaption with descriptive captions; missing
-Setup heading added to CM7.6; CM7.6's flat field lists restructured
-into the standard nested format; CM7.5's Setup list converted from
-unordered to numbered steps. Removed a paragraph in CM7.3 duplicated
-verbatim from CM7.2's intro, unrelated to Timed Publishing (confirmed
-with Jeff). CM7.1's placeholder intro text ("Intro text ... t.b.d.")
-left as-is - Jeff is tracking it separately.
+Relatively clean section - CM8.1 was already close to full compliance.
+CM8 overview converted from padding/br layout to a standard ul, fixed
+a "change change" duplicated-word typo and a grammar issue. CM8.2:
+removed a stray underline-span artifact; restructured flat "Title: X"
+field lists into the standard nested bold-name/italic-value format
+throughout Setup and Steps; added Result:/Note: labels; British
+spelling fixes (recognized->recognised, recognizable->recognisable,
+Search Engine Optimization->Optimisation, optimize->optimise).

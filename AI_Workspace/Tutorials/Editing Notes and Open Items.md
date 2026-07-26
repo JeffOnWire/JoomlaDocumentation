@@ -222,3 +222,13 @@ Across all six sub-tutorials: bold/italic field-list convention fixed everywhere
 Structural/content fixes: CM7.1 had a genuinely broken Prerequisites link (escaped HTML tags rendering as literal text, plus a "contnet" typo) — replaced with the standard `<a href="content-management-first-steps">2 First Steps</a>` format used elsewhere; CM7.1 also had "Olympus Solar Companion" where every other reference in the file said "Olympus Solar Calculator" (typo, fixed); CM7.1 had a malformed `<li>` missing a closing `</strong>` tag. CM7.2 referenced "History Blog" (a menu item) where the sentence was actually about unpublishing the second *article*, which is "Medieval Europe" — fixed. CM7.4 had two bare `<img>` tags with non-descriptive alt text ("Step 3 screenshot", "Step 5 screenshot", "Step 6 screenshot") — wrapped in proper figure/figcaption with descriptive captions, matching the CM2.5/CM3.3/CM4.3 precedent (image dimensions left unset where not previously known, rather than inventing values). CM7.6 was missing its `<h2>Setup</h2>` heading entirely — added; CM7.6's Setup sections also had flat, un-nested field lists ("Title: Article List" as bare list items with no field/value distinction) — restructured into the standard nested-list field format. CM7.5's Setup list converted from `<ul>` to `<ol>` (steps convention).
 
 Section 7 has one remaining open item: CM7.1's placeholder intro paragraph, tracked separately by Jeff.
+
+## Section 8 (CM8, CM8.1–8.2)
+
+Full mechanical style pass done across all three files. URLs already confirmed, no changes needed. No blocking questions — this was a relatively clean section; CM8.1 in particular was already close to full compliance (bold/italic, figures, and breadcrumb bolding were already correct — only added one Result: label for consistency).
+
+CM8 overview: converted from padding/br layout to a standard `<ul>`; fixed a duplicated-word typo ("change change"); fixed "how their relation to menu items" grammar; "optimize" → "optimise".
+
+CM8.2: removed a stray underline `<span>` around "will" in the opening paragraph; restructured Setup and Steps field lists from flat "Title: X" bullets into the standard nested bold-name/italic-value format throughout (Create a New Category, Create an Article, Create a Category Blog Menu Item, Single Article Menu Item, Create a Redirect); added Result:/Note: labels; British spelling fixes ("recognized"→"recognised" ×4, "recognizable"→"recognisable", "Search Engine Optimization"→"Search Engine Optimisation").
+
+Section 8 has no remaining open items.
