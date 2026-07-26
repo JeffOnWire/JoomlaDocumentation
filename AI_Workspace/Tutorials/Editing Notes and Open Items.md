@@ -181,6 +181,16 @@ Resolved: Jeff confirmed no Troubleshooting section exists or is planned — bot
 
 Section 4 (CM4, CM4.1–4.3) has no remaining open items.
 
+## Section 5 (CM5, CM5.1–CM5.3)
+
+Full mechanical style pass done across all four files. No blocking questions this time — everything was either an established rule or an unambiguous fix. Applied: Concepts converted to prose; Result:/Note: labels added inline (replacing bare "what happens" sentences and nested nested-bullet nesting); bold/italic convention applied; breadcrumb bolding; screenshot spacing to single `<br>`; curly quotes (copy-paste artifacts) straightened; stray empty `<em>` tags wrapping whitespace/images removed; unnecessary inline `style="font-size: 1rem;"` spans stripped; standardized the "2.1 Article & Menu Item" prerequisite link text to match the shorthand used everywhere else (these three files all had the longer "2.1 Creating an Article and Menu Item" instead); British spelling.
+
+Fixed: "Troubador" (used inconsistently, 4 times) standardized to the correct spelling "Troubadour" throughout CM5.2, matching the one place it was spelled correctly (the Setup section's Title field). Typos: "buttton"→"button", "cateogries"→"categories", "archive"→"archived" (CM5.3), missing "d"/words in a couple of sentences.
+
+Structural fix: CM5.3 had two full Steps-type h3 subsections ("Archiving an Article from the Articles List" and "Archiving via a Menu Item") sitting after the Concepts section — moved them back into Steps, before Concepts, matching every other tutorial's Prerequisites → Steps → Concepts → Attribution ordering.
+
+Section 5 has no remaining open items.
+
 ## General pattern emerging
 
 Some issues are now showing up across multiple tutorials (Setup using `<ul>` instead of `<ol>`, Prerequisites formatting, h4 usage) — worth treating these as settled style guide rules soon rather than re-litigating per tutorial.
