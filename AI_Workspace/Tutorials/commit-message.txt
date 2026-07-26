@@ -1,8 +1,12 @@
-Style pass: CM11, CM11.1 (Tags section)
+Style pass: CM12, CM12.1 (Metadata section)
 
-Smallest section yet - only one sub-tutorial. CM11 overview converted
-from padding/br layout to a standard ul, British spelling fixes
-(organize/organized -> organise/organised). CM11.1 collapsed doubled
-<br><br> to single <br> around three figures (no float-none added,
-per updated guidance) and tidied the placement of one Note: label to
-read as part of its field bullet rather than a floating sentence.
+Another single-sub-tutorial section, already very close to fully
+compliant. CM12 overview converted from padding/br layout to a
+standard ul, fixed an en dash used as the description separator to
+match the em dash convention used elsewhere, lowercased the
+description's first letter to match every other entry. CM12.1
+collapsed one doubled <br><br> to single <br> around a figure -
+everything else was already correct.
+
+This completes the mechanical style pass through Section 12, the
+last section currently in the folder.

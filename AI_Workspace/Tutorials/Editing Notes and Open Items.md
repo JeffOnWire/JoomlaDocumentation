@@ -274,3 +274,13 @@ CM11 overview: converted from padding/br layout to a standard `<ul>`; British sp
 CM11.1: collapsed doubled `<br><br>` to single `<br>` around three figures (no `float-none` added, per the updated guidance); tidied the placement of one Note: label so it reads as part of the Tags field bullet rather than as a floating sentence after the sublist.
 
 Section 11 has no remaining open items.
+
+## Section 12 (CM12, CM12.1)
+
+Full mechanical style pass done across both files (one sub-tutorial). URL already confirmed, no changes needed. No blocking questions — CM12.1 was already very close to fully compliant.
+
+CM12 overview: converted from padding/br layout to a standard `<ul>`; fixed an en dash (–) used as the description separator to the em dash (—) convention used elsewhere; lowercased the description's first letter to match every other overview entry.
+
+CM12.1: collapsed one doubled `<br><br>` to single `<br>` around a figure. Everything else — field lists, Result:/Note: labels, breadcrumb bolding, Concepts prose — was already correct.
+
+Section 12 has no remaining open items. This completes the full mechanical style pass through Section 12, the last section currently in the folder.
