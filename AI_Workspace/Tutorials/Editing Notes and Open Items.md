@@ -264,3 +264,13 @@ Section 10 has no remaining open items.
 ## float-none: reverted, and dropped from style going forward
 
 I had added `class="float-none"` to images throughout Section 10 (and every prior section), treating it as house style since it appeared on most existing images. Jeff clarified this was already decided against previously — the attribute doesn't do anything useful, and standardizing "don't add it" isn't the kind of thing that belongs in the style guide (there could be a future edge case where float-none is actually needed for a specific image). Removed it from all 16 images across CM10/CM10.1–10.4. Going forward: stop adding `float-none` to images. Not going back to re-strip it from sections 1–9 unless Jeff asks.
+
+## Section 11 (CM11, CM11.1)
+
+Full mechanical style pass done across both files (this section has only one sub-tutorial). URL already confirmed, no changes needed. No blocking questions — CM11.1 was already very close to fully compliant.
+
+CM11 overview: converted from padding/br layout to a standard `<ul>`; British spelling fixes ("organize"→"organise", "organized"→"organised").
+
+CM11.1: collapsed doubled `<br><br>` to single `<br>` around three figures (no `float-none` added, per the updated guidance); tidied the placement of one Note: label so it reads as part of the Tags field bullet rather than as a floating sentence after the sublist.
+
+Section 11 has no remaining open items.

@@ -1,18 +1,8 @@
-Style pass: CM10, CM10.1-10.4 (Menus section)
+Style pass: CM11, CM11.1 (Tags section)
 
-CM10 overview converted from padding/br layout to a standard ul,
-removed trailing junk markup, fixed British spelling and a
-subject-verb agreement error, reworded two imperative-style entries
-to match the descriptive style used elsewhere. CM10.1 restructured
-an awkward/redundant article-creation setup flow, collapsed doubled
-<br><br> to single <br>. CM10.2 fixed oxidized->oxidised (otherwise
-already fully compliant). CM10.3 fixed a typo, standardized two
-breadcrumbs to the bold ">" format. CM10.4 fixed a real mislabeled
-cross-reference (cited "1.2 Creating an Article and Menu Item" -
-wrong tutorial and title - corrected to "2.1 Article & Menu Item"),
-fixed an external URL that should have been relative, collapsed
-doubled <br><br> around three figures.
-
-Also removed class="float-none" from all images across this section -
-confirmed with Jeff this was previously decided against; the attribute
-serves no purpose and won't be added going forward.
+Smallest section yet - only one sub-tutorial. CM11 overview converted
+from padding/br layout to a standard ul, British spelling fixes
+(organize/organized -> organise/organised). CM11.1 collapsed doubled
+<br><br> to single <br> around three figures (no float-none added,
+per updated guidance) and tidied the placement of one Note: label to
+read as part of its field bullet rather than a floating sentence.
