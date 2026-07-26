@@ -232,3 +232,15 @@ CM8 overview: converted from padding/br layout to a standard `<ul>`; fixed a dup
 CM8.2: removed a stray underline `<span>` around "will" in the opening paragraph; restructured Setup and Steps field lists from flat "Title: X" bullets into the standard nested bold-name/italic-value format throughout (Create a New Category, Create an Article, Create a Category Blog Menu Item, Single Article Menu Item, Create a Redirect); added Result:/Note: labels; British spelling fixes ("recognized"→"recognised" ×4, "recognizable"→"recognisable", "Search Engine Optimization"→"Search Engine Optimisation").
 
 Section 8 has no remaining open items.
+
+## Section 9 (CM9, CM9.1–9.2)
+
+Full mechanical style pass done across all three files. URLs already confirmed, no changes needed. No blocking questions — the cleanest section yet; CM9.1 was already almost fully compliant.
+
+CM9 overview: converted from padding/br layout to a standard `<ul>`; fixed "Demonstrates modules are used to display menus" grammar to "demonstrates how modules are used...".
+
+CM9.1: only minor fixes needed — added missing `class="float-none"` to two `<img>` tags, and collapsed doubled `<br><br>` around both figures to the single-`<br>` convention.
+
+CM9.2: fixed several field-list values that had bold field names but weren't italicizing the value (Title, Type/Menu Item Type, Position, Module Assignment — appeared four times across the Setup section); changed "click on the Login Form module" to bold (it's the item being clicked, not just referenced) while leaving other Login Form references italic since they're descriptive, not click targets; minor "click on" → "click" tightening on two tab-navigation steps.
+
+Section 9 has no remaining open items.

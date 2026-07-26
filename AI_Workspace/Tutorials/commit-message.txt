@@ -1,10 +1,10 @@
-Style pass: CM8, CM8.1-8.2 (URLs section)
+Style pass: CM9, CM9.1-9.2 (Modules section)
 
-Relatively clean section - CM8.1 was already close to full compliance.
-CM8 overview converted from padding/br layout to a standard ul, fixed
-a "change change" duplicated-word typo and a grammar issue. CM8.2:
-removed a stray underline-span artifact; restructured flat "Title: X"
-field lists into the standard nested bold-name/italic-value format
-throughout Setup and Steps; added Result:/Note: labels; British
-spelling fixes (recognized->recognised, recognizable->recognisable,
-Search Engine Optimization->Optimisation, optimize->optimise).
+Cleanest section yet - CM9.1 was already almost fully compliant, only
+needed float-none classes added to two images and doubled <br><br>
+collapsed to single <br>. CM9 overview converted from padding/br
+layout to a standard ul, fixed a grammar issue. CM9.2: fixed several
+field-list values that had bold field names but weren't italicizing
+the value (Title, Type, Position, Module Assignment); bolded a Login
+Form reference that's an actual click target vs. others that are just
+descriptive; minor "click on" -> "click" tightening.
