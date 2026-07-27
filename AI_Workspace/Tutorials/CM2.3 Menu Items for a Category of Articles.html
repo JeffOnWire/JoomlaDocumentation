@@ -3,63 +3,98 @@
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
 <li><a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a></li>
-<li><a href="content-management-first-steps/category">2.2 Creating a Category</a></li>
+<li><a href="content-management-first-steps/category">2.2 Creating a Category</a> creates the <em>Company</em> category and assigns <em>Company Overview</em> to it. This tutorial's Setup adds two more articles to that category.</li>
 </ul>
+<h2>Setup</h2>
+<h3>Add More Articles to Company</h3>
+<p>The <em>Company</em> category currently has one article. A blog or list layout is more convincing with a few more, so this part of the setup moves quickly — each article just needs a title, category, and a bit of text.</p>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<ul>
+<li><strong>Title:</strong> <em>Our Mission</em></li>
+<li><strong>Category:</strong> <em>Company</em></li>
+<li><strong>Article Text:</strong> <em>Our mission is to deliver reliable products and outstanding service to every customer we serve.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Our History</em></li>
+<li><strong>Category:</strong> <em>Company</em></li>
+<li><strong>Article Text:</strong> <em>Founded with a commitment to quality, our company has grown steadily while staying true to its founding values.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The <em>Company</em> category now has three articles — <em>Company Overview</em>, <em>Our Mission</em>, and <em>Our History</em>.<br>
+<figure class="image"><img src="images/articles/292/new_articles_in_articles_list.png" alt="Articles list showing Our History, Our Mission, Our Locations, Meet the Team, and Company Overview with their categories" width="1051" height="643" loading="lazy" data-path="local-images:/articles/292/new_articles_in_articles_list.png">
+<figcaption>The articles list, showing all five articles created across 2.2 and this Setup, with their categories</figcaption>
+</figure>
+</li>
+</ol>
 <h2>Steps</h2>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>View the frontend of the site. Find the main menu and note the menu items. We will be adding a new menu item.</li>
 </ol>
-<h3>Creating a Menu Item for a Category of Articles</h3>
-<p>This tutorial uses standard Joomla test data in which there are three articles in a category called <em>Joomla</em>. We'll be making a menu item called <em>Joomla Article Blog</em> and <em>Joomla Article List</em> that will display these articles on our website. The tutorial uses the same articles and category to create both layouts (so only one set is required).</p>
-<p>You should choose a category and menu item names that make sense for your site. Make sure there are two or more articles in your chosen category so you can see the result, and each article should contain a couple of paragraphs of content (lorem ipsum is fine).</p>
-<figure class="image"><img class="float-none" src="images/articles/292/category-blog-layout.png" alt="Screenshot of a Category Blog layout" width="960" height="1482" loading="lazy" data-path="local-images:/articles/292/category-blog-ayout.webp">
-<figcaption>Category Blog Layout</figcaption>
-</figure>
-<figure class="image"><img class="float-none" src="images/articles/292/category-list-layout.png" alt="Screenshot of a Category List layout" width="600" height="308" loading="lazy" data-path="local-images:/articles/292/category-list-layout.webp">
-<figcaption>Category List Layout</figcaption>
-</figure>
 <h3>Create a Category Blog Layout</h3>
 <p>The <em>Category Blog</em> menu item creates a page that displays a list of articles in a blog type layout. Each article includes an image, article details (e.g. author name and publication date), and the text of the article.</p>
 <ol>
-<li>In the left side menu of the administrator homepage, click <strong>Menus &gt; Main Menu</strong>. <strong>Result:</strong> A list of menu items is displayed.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-menu-item form appears.
+<li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>. <strong>Result:</strong> A list of menu items is displayed.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
 <ul>
-<li><strong>Title:</strong> a name that makes sense for your site. We chose <em>Joomla Article Blog</em>.</li>
-<li><strong>Menu Item Type:</strong> click <strong>Select</strong>, then in the popup expand <strong>Articles</strong> and click <strong>Category Blog</strong>.</li>
-<li><strong>Choose a Category:</strong> select the category that makes sense for your site. We chose the <em>Joomla</em> category.<br>
-<figure class="image"><img class="float-none" src="images/articles/292/category-blog-menu-form.png" alt="Screenshot of the category blog menu form" width="960" height="511" loading="lazy" data-path="local-images:/articles/292/category-blog-menu-form.webp">
-<figcaption>Menu item configured for type <em>Category Blog</em> with title and category</figcaption>
+<li><strong>Title:</strong> <em>Company Articles Blog</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Category Blog</em></li>
+<li><strong>Choose a Category:</strong> <em>Company</em></li>
+</ul>
+<br>
+<figure class="image"><img src="images/articles/292/company_articles_blog_detail.png" alt="New menu item form with Menu Item Type Category Blog and Choose a Category set to Company" width="1098" height="473" loading="lazy" data-path="local-images:/articles/292/company_articles_blog_detail.png">
+<figcaption>The Company Articles Blog menu item, configured for the Company category</figcaption>
 </figure>
 <br>
 </li>
-</ul>
-</li>
 <li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The form closes and your new menu item appears in the list of main menu items.</li>
 <li>Switch to the frontend.</li>
-<li>Refresh the page then find the new link in the <em>Main Menu</em>. Click to follow it to view a blog layout of the articles in your chosen category. Clicking on the title of any article will take you to the full article.</li>
+<li>Refresh the page then find the new link in the <em>Main Menu</em>. Click to follow it to view a blog layout of the three <em>Company</em> articles. Clicking on the title of any article will take you to the full article. <strong>Note:</strong> The page also includes links to the <em>Team</em> and <em>Locations</em> subcategories, each leading to a page listing the articles in that subcategory.<br>
+<figure class="image"><img src="images/articles/292/company_articles_blog_page.png" alt="Frontend Company Articles Blog page showing Our History, Our Mission, and Company Overview, with a Subcategories section listing Team and Locations" width="1161" height="1088" loading="lazy" data-path="local-images:/articles/292/company_articles_blog_page.png">
+<figcaption>The Company Articles Blog page, with the three Company articles and links to both subcategories</figcaption>
+</figure>
+<br>
+</li>
+<li>Click the <strong>Team</strong> subcategory link. <strong>Result:</strong> The <em>Team</em> subcategory page appears, showing its one article, <em>Meet the Team</em>.<br>
+<figure class="image"><img src="images/articles/292/team_blog_page.png" alt="Frontend Team subcategory page, breadcrumb reading Home / Company Articles Blog / Team, showing the Meet the Team article" width="1160" height="479" loading="lazy" data-path="local-images:/articles/292/team_blog_page.png">
+<figcaption>The Team subcategory page, reached from the Company Articles Blog link</figcaption>
+</figure>
+<br>
+</li>
+<li>Click <strong>Company Articles Blog</strong> in the breadcrumb at the top of the page to return to the category page, then click the <strong>Locations</strong> subcategory link. <strong>Result:</strong> The <em>Locations</em> subcategory page appears, showing its one article, <em>Our Locations</em>.<br>
+<figure class="image"><img src="images/articles/292/locations_blog_page.png" alt="Frontend Locations subcategory page, breadcrumb reading Home / Company Articles Blog / Locations, showing the Our Locations article" width="1159" height="471" loading="lazy" data-path="local-images:/articles/292/locations_blog_page.png">
+<figcaption>The Locations subcategory page, reached the same way</figcaption>
+</figure>
+</li>
 </ol>
 <h3>Create a Category List Layout</h3>
 <p>The <em>Category List</em> menu item creates a page that displays a list of articles in a simple list. Clicking on the title of an article takes you to the full article.</p>
 <ol>
-<li>Return to the backend.</li>
-<li>In the left side menu, click <strong>Menus &gt; Main Menu</strong>. <strong>Result:</strong> A list of menu items is displayed.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-menu-item form appears.
+<li>Return to the backend. In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>. <strong>Result:</strong> A list of menu items is displayed.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
 <ul>
-<li><strong>Title:</strong> a name that makes sense for your site. We chose <em>Joomla Article List</em>.</li>
-<li><strong>Menu Item Type:</strong> click <strong>Select</strong>, then in the popup expand <strong>Articles</strong> and click <strong>Category List</strong>.</li>
-<li><strong>Choose a Category:</strong> select the category that makes sense for your site. We chose the <em>Joomla</em> category.<br>
-<figure class="image"><img class="float-none" src="images/articles/292/category-list-menu-form.png" alt="Screenshot of the category list form" width="960" height="521" loading="lazy" data-path="local-images:/articles/292/category-list-menu-form.webp">
-<figcaption>Menu item configured for type <em>Category List</em> with title and category</figcaption>
+<li><strong>Title:</strong> <em>Company Articles List</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Category List</em></li>
+<li><strong>Choose a Category:</strong> <em>Company</em></li>
+</ul>
+<br>
+<figure class="image"><img src="images/articles/292/company_articles_list_detail.png" alt="New menu item form with Menu Item Type Category List and Choose a Category set to Company" width="1138" height="565" loading="lazy" data-path="local-images:/articles/292/company_articles_list_detail.png">
+<figcaption>The Company Articles List menu item, configured for the Company category</figcaption>
 </figure>
 <br>
 </li>
-</ul>
-</li>
 <li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> Your new menu item appears in the list of main menu items.</li>
 <li>Return to the frontend and refresh the page.</li>
-<li>Find the new link in the <em>Main Menu</em> and follow it to view a list layout of the articles in your chosen category. Clicking on the title of any article will take you to the full article.</li>
+<li>Find the new link in the <em>Main Menu</em> and follow it to view a list layout of the three <em>Company</em> articles. Clicking on the title of any article will take you to the full article. <strong>Note:</strong> As with the blog layout, the page also lists the <em>Team</em> and <em>Locations</em> subcategories — feel free to explore them.<br>
+<figure class="image"><img src="images/articles/292/company_articles_list_page.png" alt="Frontend Company Articles List page listing Our History, Our Mission, and Company Overview, with a Subcategories section listing Team and Locations" width="1161" height="550" loading="lazy" data-path="local-images:/articles/292/company_articles_list_page.png">
+<figcaption>The Company Articles List page, with the three Company articles and links to both subcategories</figcaption>
+</figure>
+</li>
 </ol>
 <h2>Concepts</h2>
 <p>This tutorial demonstrates a powerful capability of Joomla. By organising your articles by category you can easily and quickly make lists of those articles available in either a blog format or as a simple list.</p>
-<p>The nature of the menu link determined the layout; the same articles and category were used for both.</p>
+<p>The nature of the menu link determined the layout; the same articles and category were used for both. Note that <em>Company Overview</em> is now reachable two ways — directly, via the <em>About Us</em> single-article link from 2.1, and as part of the <em>Company</em> category via the links created in this tutorial.</p>

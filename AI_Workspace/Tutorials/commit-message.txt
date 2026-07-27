@@ -1,21 +1,32 @@
-CM5.3: trim Concepts; CM5.2 & CM5.3: add real screenshots
+Section 2 (CM2.1-2.5): add real screenshots, fix text/screenshot
+mismatches found along the way
 
-CM5.3 Concepts trimmed per Jeff's draft - removed the standalone
-definitions of Articles, menu item, module, and Edit mode, plus
-"Archives are structured by year" and the 5.2 cross-reference. Down to
-four focused paragraphs: what Archived does, where to find archived
-articles in the backend, how archiving differs from unpublishing, and
-the two ways to change an article's status.
+Placed all 24 screenshots Jeff shot on the live site across the five
+files (3/4/7/6/4 respectively), verifying each against the drafted
+text before placing it, same process used for every prior section.
 
-Added the real screenshots Jeff shot on the live site: five for CM5.2
-(images/articles/325/ - trash_article, article_trashed_confirmation,
-filter_for_trashed, trashed_icon, confirm_delete) and eight for CM5.3
-(images/articles/326/ - set_to_archived, archive_from_list,
-filter_for_archived_articles, configure_archived_menu_item,
-frontend_archived_articles_menu, filtering_options_archived_only,
-frontend_archived_article_module, article_list_publish_multiple).
+Corrections found and applied:
 
-Viewed every image before placing it; all matched the drafted step
-text, no wording corrections needed. CM5.1, CM5.2, and CM5.3 now all
-have real screenshots throughout - no open items remain on any of the
-three sub-tutorials.
+- CM2.3: confirmed "Choose a Category" is the real field label, and
+  that clicking the category name in the breadcrumb (e.g. "Company
+  Articles Blog") really does navigate back from a subcategory page -
+  both were open items, now resolved.
+- CM2.4: reworded "Observe that the Home menu item is..." to "Look at
+  the Home row... the list already shows..." - the menu type is
+  visible directly in the list without opening the item, which the
+  original phrasing didn't make clear. Added the "Article featured."
+  confirmation message to the list-icon-click step's result.
+- CM2.5: added Category: Company to the Careers article (Jeff's
+  screenshot showed it assigned there; the draft text hadn't set a
+  category, which would have made the screenshot and text disagree).
+  Changed "Select Article: the link to the article" and "Menu: the
+  default menu, most likely Main Menu" to their literal confirmed
+  values, "Careers" and "Main Menu".
+
+Noted one screenshot artifact that didn't need a text fix: CM2.1's
+new-menu-item screenshot shows "Household Pets" in the Ordering
+dropdown, a leftover from the earlier pet-themed test site build.
+Doesn't affect anything the tutorial text claims.
+
+Section 2 is now complete end to end with real, verified screenshots
+throughout - no open items remain.

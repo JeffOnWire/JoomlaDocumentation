@@ -370,3 +370,78 @@ CM5.2's Concepts section is unchanged (general Joomla concepts, not tied to spec
 8. After "select Publish" (Republish Archived Articles) — the Actions dropdown with Publish highlighted, all three archived articles checked.
 
 Open item: once Jeff supplies these images, place them with proper figure/figcaption markup (no `float-none`) and verify field names/values against the real screenshots, same as the CM5.1 verification pass (which caught "Product Launch" vs. "New Product Launch" and "Featured Articles" vs. "Featured").
+
+## Section 2 (CM2.1–2.5): rebuilt on a shared Company/Team business fixture
+
+Applying what we learned from the Section 5 redesign, Jeff asked for the same treatment on Section 2: unify the five sub-tutorials around content that's actually created once and reused/built upon, rather than each tutorial creating disconnected content (or, worse, silently reusing earlier content without crediting it, or reusing Joomla's built-in sample data instead of the tutorial's own).
+
+**Problems found in the old versions:** 2.3 listed 2.1/2.2 as prerequisites but actually used Joomla's built-in sample "Joomla" category instead of anything created in those tutorials. 2.4 reused the *Mammals* category from 2.2 without listing it as a prerequisite. 2.5 introduced yet another disconnected one-off article instead of building on 2.1–2.3, and its category-shortcut half was purely hypothetical (pointed back at 2.2's steps rather than walking through it). 2.5 also had no Concepts section, unlike every other file in the section.
+
+**First pass used a pet theme (Common Pets / Mammals / Dogs), superseded.** Jeff caught a real problem with it: assigning the *Common Pets* article to a *Mammals* category doesn't hold up, since "common pets" naturally includes non-mammals like fish — the fixture itself modeled a bad categorization choice. Redone with a business theme resembling Section 5's News/Events content, chosen specifically so nothing is a categorization stretch:
+
+**New content matrix, built up tutorial by tutorial:**
+
+- **2.1** creates the article *Company Overview* (an About-Us-style page — Article Text: "We are a company dedicated to providing quality products and services to our customers.") and the *About Us* Single Article menu item pointing to it. Kept the original "click Select, expand Articles, choose the type" long-form instruction for Menu Item Type here — it's the first time a reader encounters that popup, so it's spelled out in full. Every later tutorial that sets a Menu Item Type uses the terser `<em>Articles &gt; Type</em>` field-bullet shorthand instead, now that the mechanism has been taught once.
+- **2.2** creates a *Company* category and now **two** sub-categories, *Team* and *Locations*, then assigns *Company Overview* (from 2.1) into *Company* — a natural fit, unlike the pet-theme version. **Revision:** the original draft left *Team* empty and didn't demonstrate any payoff from building the hierarchy, which Jeff flagged as a missed opportunity — creating structure with nothing to show for it. Fixed by adding a second sub-category (*Locations*) and a new "Add Articles to the Sub-categories" substep that creates one article for each (*Meet the Team* in Team, *Our Locations* in Locations), plus a closing paragraph explaining that we've now built a small real structure and pointing ahead to 2.3, where menu items will put it to work on the frontend. This gives the tutorial more to actually do, reinforces why the hierarchy matters, and motivates continuing to the next tutorial for the payoff.
+- **2.3** replaces the Joomla-sample-data approach with a new Setup section, "Add More Articles to Company," which adds *Our Mission* and *Our History* (both Category: Company) so the category has three real, thematically consistent articles — About/Mission/History is a natural trio for a company section. The two menu items are named *Company Articles Blog* and *Company Articles List*, both pointed at *Company*. Concepts now calls out that *Company Overview* is reachable two ways after this tutorial — directly via 2.1's *About Us* link, and as part of the *Company* category listing — a small bonus teaching point that fell out of the redesign. **Revision:** since 2.2 now builds *Team* and *Locations* sub-categories with an article each, "Create a Category Blog Layout" adds two steps exploring that payoff live on the frontend — the blog page also shows links to both subcategories; step 6 clicks into *Team* to see *Meet the Team*, and step 7 uses the breadcrumb to return to *Company Articles Blog* before clicking into *Locations* to see *Our Locations*. This is the frontend payoff 2.2's closing paragraph pointed ahead to. "Create a Category List Layout" gets a lighter touch on the same point — Jeff didn't want a full step-by-step exploration repeated here, so its final step just notes that the list layout also shows the two subcategories and invites the reader to explore them if they like, rather than walking through it again.
+- **2.4** no longer invents a "Marsupials"-style new article — it features *Company Overview* itself (already in *Company* since 2.2), reusing existing content rather than piling on more. Prerequisites now correctly credit 2.1 and 2.2. Renamed the second substep to "Feature the Company Overview Article" to match. **Revision:** dropped the Filter Options step — Jeff felt it wasn't essential here and filtering gets proper coverage in 5.1 Filter Articles (added as a Concepts cross-reference instead of a walked-through step). Added a step after viewing the site noting that the Featured column shows a gold star for Company Overview back in the article list, then a new substep, "Feature a Second Article from the List," which features *Meet the Team* (the Team sub-category article from 2.2) by clicking its Featured-column star directly — demonstrating the list-icon toggle as an alternative to editing the article, and reinforcing that featuring works the same for sub-category articles as it does for the parent category. Ends with a second site view showing both featured articles together.
+- **2.5** makes both shortcut variants concrete instead of one being hypothetical: the article half creates a new *Careers* article via Save to Menu (a plausible new page, distinct from the Company-category trio); the category half actually creates a new *Services* category via *Save to Menu as List*, walking through the real steps end-to-end, with *Save to Menu as Blog* explained as the same process via the alternate dropdown option (to avoid creating a redundant second category just to demonstrate an identical mechanism). Added a Concepts section, which this file was previously missing.
+
+**Style unification applied throughout:** "Click on the New button" → "Click New" (and similar "click on X" → "click X" trims) to match the CM10/CM5 precedent; "In the left side menu of the administrator homepage" / "In the left side menu" → "In the Administrator Menu" for consistency with the standardized term used everywhere else; menu item type fields written as terse `<em>Articles &gt; Type</em>` bullets after the mechanism is taught once in 2.1. All old figures removed pending new screenshots (see recommendations below).
+
+**Image folder numbers confirmed via the Tutorial URL Reference spreadsheet**, which Jeff has now filled in with each article's Joomla ID in column I (images are organized by that ID, same convention as Section 5's 324/325/326): CM2.1 → 282, CM2.2 → 289, CM2.3 → 292, CM2.4 → 309, CM2.5 → 290. These match what the old CM2.2–2.5 files already used, confirming the pattern; 2.1's 282 is newly identified since that file had no screenshots before.
+
+### Screenshot recommendations — CM2.1 (images/articles/282/, no prior screenshots)
+
+1. After the new-article step — the filled-in new-article form (Title: Company Overview, Article Text visible).
+2. After the new-menu-item step — the filled-in new-menu-item form showing the Single Article type popup and Company Overview selected.
+3. After the final step — the frontend About Us page showing the published article.
+
+### Screenshot recommendations — CM2.2 (images/articles/289/)
+
+1. After "Click Save & Close" for Company — the new-category form filled in with Title: Company.
+2. After the Locations sub-category step — the new-category form filled in with Title: Locations, Parent: Company (also shows the Team sub-category form pattern, one step earlier).
+3. After "Set the Category field to Company" — the Company Overview edit form with Category set to Company.
+4. After the Add Articles to the Sub-categories substep — the categories list showing Company with Team and Locations nested under it, each with an article count of 1.
+
+### Screenshot recommendations — CM2.3 (images/articles/292/)
+
+1. (Optional) After the Setup section — the Articles list filtered/sorted to show all three Company articles.
+2. After the Category Blog menu item is configured — the filled-in menu item form (Title: Company Articles Blog, Type: Category Blog, Category: Company).
+3. After "view a blog layout" — the frontend Company Articles Blog page showing all three articles, with the Team and Locations subcategory links visible.
+4. After "Click the Team subcategory link" — the frontend Team subcategory page showing the Meet the Team article.
+5. After "click the Locations subcategory link" — the frontend Locations subcategory page showing the Our Locations article (also a good spot to catch the breadcrumb, e.g. Home / Company Articles Blog / Locations, in the same shot).
+6. After the Category List menu item is configured — the filled-in menu item form (Title: Company Articles List, Type: Category List, Category: Company).
+7. After "view a list layout" — the frontend Company Articles List page showing all three articles and the two subcategory links (no separate subcategory-exploration shots needed here, unlike the Blog layout — the step just mentions they're there).
+
+Open items to verify against the real screenshots: whether the menu item field is actually labeled "Choose a Category" or just "Category" (carried over from the original file without a screenshot to confirm); and whether the subcategory links on the blog page, and the breadcrumb label, read exactly as described (e.g. confirm "Company Articles Blog" is what actually shows in the breadcrumb, not the category name).
+
+### Screenshot recommendations — CM2.4 (images/articles/309/)
+
+1. In "The Home Menu is a Featured Articles Menu Item" — the menu items list showing Home's type as Featured Articles.
+2. After "Set the Featured field to Yes" — the Company Overview edit form with Featured set to Yes.
+3. After "View the site" (first one) — the homepage showing Company Overview as a featured article.
+4. After "Return to the backend article list" — the article list with the gold star visible in the Featured column next to Company Overview (ideally with a not-yet-featured article's hollow/outline star also visible for contrast).
+5. After "click the icon next to Meet the Team" — the article list right after the click, showing the icon now gold for Meet the Team.
+6. After the second "View the site" — the homepage showing both Company Overview and Meet the Team as featured articles.
+
+### Screenshot recommendations — CM2.5 (images/articles/290/)
+
+1. After "select Save to Menu" (Save an Article to a Menu) — the Save & Close dropdown open with Save to Menu highlighted.
+2. After the prefilled-fields step — the prefilled Single Article menu item form for Careers, required fields visible.
+3. After "select Save to Menu as List" (Save a Category to a Menu) — the Save & Close dropdown open on the Services category form, with Save to Menu as List highlighted.
+4. After the prefilled-fields step — the prefilled Category List menu item form for Services.
+
+Open item: once Jeff shoots and supplies these images (folder numbers now confirmed above), place the figures and verify field names/values against the real screenshots (same verification pass as every prior section) — including the "Choose a Category" vs. "Category" label question flagged under CM2.3.
+
+## Section 2: all real screenshots placed and verified
+
+Jeff shot and supplied all remaining images across the section — 3 for CM2.1, 4 for CM2.2, 7 for CM2.3, 6 for CM2.4, 4 for CM2.5 (24 total). Viewed every image before placing it, same verification pass as every prior section. Findings:
+
+- **"Choose a Category" confirmed correct** — visible verbatim in the CM2.3 menu item screenshots, resolving the open item flagged earlier.
+- **CM2.3 breadcrumb confirmed** — the Team/Locations subcategory pages really do show "Company Articles Blog" as a clickable breadcrumb link back to the parent category page, exactly as drafted.
+- **CM2.4 revised, per Jeff's note on the screenshot:** the menu items list already shows "Articles » Featured Articles" beneath the Home title without opening the item — step 3 of "The Home Menu is a Featured Articles Menu Item" reworded from "Observe that..." to "Look at the Home row... the list already shows..." to reflect that this is visible at a glance. Also added the "Article featured." confirmation message to the result of the list-icon-click step, since the screenshot showed it.
+- **CM2.5 revised, per Jeff's notes on the screenshots:** added <strong>Category: Company</strong> to the Careers article's field list in "Save an Article to a Menu" — Jeff's screenshot showed it assigned to Company, and leaving it out of the tutorial text would have made the screenshot and text disagree. Also changed "Select Article: the link to the article" to the literal value "Careers", and "Menu: the default menu, most likely Main Menu" to the literal "Main Menu" — both confirmed by the real screenshot instead of hedged/generic language.
+- **Minor artifact, not corrected:** the CM2.1 new-menu-item screenshot shows "Household Pets" in the Ordering dropdown on the right — a leftover from Jeff's earlier pet-themed test site build, before the re-theme to the Company/Team content. Doesn't affect anything the tutorial text claims (we don't reference menu ordering), so no text change was needed, but flagging it in case Jeff wants to clean up that test site's leftover menu item.
+
+All five Section 2 files are now complete with real, verified screenshots — no open items remain.

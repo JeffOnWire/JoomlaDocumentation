@@ -1,36 +1,82 @@
-<p>Joomla organises web content by a category hierarchy. Categories are like outlines, giving structure and organisation to web content. Each article is associated with a single category or sub-category. Menu elements then leverage categories to easily create lists of articles, blogs, and more. This tutorial describes how to create categories and sub-categories.</p>
+<p>Joomla organises web content by a category hierarchy. Categories are like outlines, giving structure and organisation to web content. Each article is associated with a single category or sub-category. Menu elements then leverage categories to easily create lists of articles, blogs, and more. This tutorial describes how to create a category with two sub-categories, then organise both an existing article and some new ones within that structure.</p>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a> creates the <em>Company Overview</em> article we'll assign to a category in this tutorial.</li>
 </ul>
 <h2>Steps</h2>
+<h3>Create Categories</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-category form appears.
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
 <ul>
-<li><strong>Title:</strong> <em>Mammals</em></li>
+<li><strong>Title:</strong> <em>Company</em></li>
 </ul>
 <br>
-<figure class="image"><img class="float-none" src="images/articles/289/create-category-list.png" alt="Screenshot of the category list" width="900" height="493" loading="lazy" data-path="local-images:/articles/289/create-category-list.webp">
-<figcaption>Navigating to the new-category form</figcaption>
+<figure class="image"><img src="images/articles/289/company_category_detail.png" alt="New category form with Title Company" width="1064" height="541" loading="lazy" data-path="local-images:/articles/289/company_category_detail.png">
+<figcaption>The new-category form filled in for Company</figcaption>
 </figure>
 <br>
 </li>
-<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The categories list returns with <em>Mammals</em> added.</li>
-<li>Add a sub-category. Click on the <strong>New</strong> button again.
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The categories list returns with <em>Company</em> added.</li>
+<li>Add a sub-category. Click <strong>New</strong> again.
 <ul>
-<li><strong>Title:</strong> <em>Dogs</em></li>
-<li><strong>Parent:</strong> <em>Mammals</em></li>
+<li><strong>Title:</strong> <em>Team</em></li>
+<li><strong>Parent:</strong> <em>Company</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>. <strong>Result:</strong> The category is saved, and a fresh new-category form appears.
+<ul>
+<li><strong>Title:</strong> <em>Locations</em></li>
+<li><strong>Parent:</strong> <em>Company</em></li>
 </ul>
 <br>
-<figure class="image"><img class="float-none" src="images/articles/289/new-category-form.png" alt="Screenshot of the new-category form" width="900" height="463" loading="lazy" data-path="local-images:/articles/289/new-category-form.webp">
-<figcaption>Adding a new category</figcaption>
+<figure class="image"><img src="images/articles/289/locations_subcategory_detail.png" alt="New category form with Title Locations and Parent Company selected from the dropdown" width="1061" height="541" loading="lazy" data-path="local-images:/articles/289/locations_subcategory_detail.png">
+<figcaption>Setting the Parent field to Company for the Locations sub-category</figcaption>
 </figure>
 <br>
 </li>
-<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The categories list returns with your new category added as a sub-category.</li>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The categories list returns with <em>Team</em> and <em>Locations</em> added as sub-categories of <em>Company</em>.</li>
 </ol>
+<h3>Assign an Article to a Category</h3>
+<p>Categories are just as useful for organising articles you've already written as they are for new ones. Here we'll move the <em>Company Overview</em> article from 2.1 into the <em>Company</em> category.</p>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <em>Company Overview</em> to open it for editing.</li>
+<li>Set the <strong>Category</strong> field to <em>Company</em>.<br>
+<figure class="image"><img src="images/articles/289/assign_article_to_category.png" alt="Company Overview edit form with the Category field set to Company" width="1062" height="542" loading="lazy" data-path="local-images:/articles/289/assign_article_to_category.png">
+<figcaption>Assigning Company Overview to the Company category</figcaption>
+</figure>
+<br>
+</li>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> <em>Company Overview</em> now appears in the <em>Company</em> category.</li>
+</ol>
+<h3>Add Articles to the Sub-categories</h3>
+<p>An empty sub-category doesn't show you much. Let's put one article in each so there's something to see.</p>
+<ol>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<ul>
+<li><strong>Title:</strong> <em>Meet the Team</em></li>
+<li><strong>Category:</strong> <em>Team</em></li>
+<li><strong>Article Text:</strong> <em>Our team brings together experienced professionals from across the industry, united by a shared commitment to quality.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Our Locations</em></li>
+<li><strong>Category:</strong> <em>Locations</em></li>
+<li><strong>Article Text:</strong> <em>We operate offices in multiple cities, each staffed by local experts ready to help.</em></li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.<br>
+<figure class="image"><img src="images/articles/289/all_categories_list.png" alt="Categories list showing Company with Team and Locations nested underneath, each with one published article" width="1024" height="559" loading="lazy" data-path="local-images:/articles/289/all_categories_list.png">
+<figcaption>Company, Team, and Locations, each now holding one article</figcaption>
+</figure>
+</li>
+</ol>
+<p>We now have a small but real structure: the <em>Company</em> category holds <em>Company Overview</em>, and its two sub-categories each hold an article of their own. In <a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a>, we'll create menu items that put this structure to work, so visitors can browse it on the frontend.</p>
 <h2>Concepts</h2>
 <p>Articles are organised by categories in Joomla, giving structure to your website, making them easier to find and assisting in navigation.</p>
 <p>Sub-categories may have sub-categories.</p>
+<p>An article can be assigned to a category at any time, whether when it's first created or afterward by editing it.</p>
