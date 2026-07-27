@@ -2,18 +2,19 @@
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>A website with multiple articles. If you haven't created any articles yet, see <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a>.</li>
-<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a></li>
+<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a> creates the categories and articles used in this tutorial's Setup.</li>
 </ul>
 <h2>Setup</h2>
-<h3>Create an Article to be Deleted</h3>
+<h3>Create an Article to Delete</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-article form appears.
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
 <ul>
-<li><strong>Title:</strong> <em>Troubadour</em></li>
-<li><strong>Article Text:</strong> <em>Troubadours were poet-composers who flourished in the Occitania region of southern France and parts of Italy and Spain during the 12th and 13th centuries.</em></li>
+<li><strong>Title:</strong> <em>Retired Announcement</em></li>
+<li><strong>Status:</strong> <em>Published</em></li>
+<li><strong>Category:</strong> <em>News</em></li>
+<li><strong>Article Text:</strong> <em>This announcement is no longer relevant and can be safely removed.</em></li>
 </ul>
 </li>
 <li><strong>Save &amp; Close</strong></li>
@@ -21,29 +22,26 @@
 <h2>Steps</h2>
 <h3>Moving the Article to Trash</h3>
 <ol>
-<li>Select the checkbox to select the <strong>Troubadour</strong> article. <strong>Result:</strong> This enables the <strong>Actions</strong> button in the toolbar.</li>
+<li>Select the checkbox to select the <strong>Retired Announcement</strong> article. <strong>Result:</strong> This enables the <strong>Actions</strong> button in the toolbar.</li>
 <li>Select <strong>Trash</strong> from the <strong>Actions</strong> options. <strong>Result:</strong> A confirmation message appears.<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-checked-select-action.png" alt="Article list checked select action Trash" width="1086" height="454" loading="lazy" data-path="local-images:/articles/325/article-list-checked-select-action.png">
-<figcaption>Selecting Trash from the Actions menu</figcaption>
-</figure>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-article-trashed-confirmation.png" alt="Confirmation message Article trashed" width="360" height="162" loading="lazy" data-path="local-images:/articles/325/article-list-article-trashed-confirmation.png">
-<figcaption>Confirmation the article was trashed</figcaption>
+<figure class="image"><img src="images/articles/325/trash_article.png" alt="Actions dropdown open with Trash highlighted, Retired Announcement checked in the list" width="1184" height="426" loading="lazy" data-path="local-images:/articles/325/trash_article.png">
+<figcaption>Selecting Trash from the Actions dropdown</figcaption>
 </figure>
 <br>
 </li>
-<li>The article has disappeared from the current list of articles. <strong>Note:</strong> This list does not normally include trashed items.</li>
+<li>The article has disappeared from the current list of articles. <strong>Note:</strong> This list does not normally include trashed items.<br>
+<figure class="image"><img src="images/articles/325/article_trashed_confirmation.png" alt="Article trashed confirmation message, with Retired Announcement no longer in the list" width="1182" height="332" loading="lazy" data-path="local-images:/articles/325/article_trashed_confirmation.png">
+<figcaption>The confirmation message, and Retired Announcement gone from the list</figcaption>
+</figure>
+<br>
+</li>
 </ol>
 <h3>Find Trashed Articles</h3>
 <ol>
 <li>Click <strong>Filter Options</strong> to open the list of filters.</li>
-<li>Select <strong>Trashed</strong> from the <strong>- Select Status -</strong> list. <strong>Result:</strong> The trashed articles appear.<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-filter-options-trashed.png" alt="Article list filter options Trashed status" width="1086" height="344" loading="lazy" data-path="local-images:/articles/325/article-list-filter-options-trashed.png">
-<figcaption>Filtering the article list by Trashed status</figcaption>
-</figure>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-trashed.png" alt="List of trashed articles" width="1086" height="323" loading="lazy" data-path="local-images:/articles/325/article-list-trashed.png">
-<figcaption>The list of trashed articles</figcaption>
+<li>Select <strong>Trashed</strong> from the <strong>- Select Status -</strong> list. <strong>Result:</strong> The trashed articles appear, including <em>Retired Announcement</em>.<br>
+<figure class="image"><img src="images/articles/325/filter_for_trashed.png" alt="Select Status dropdown set to Trashed, showing Retired Announcement in the trashed list" width="1183" height="510" loading="lazy" data-path="local-images:/articles/325/filter_for_trashed.png">
+<figcaption>Filtering the list on the Trashed status</figcaption>
 </figure>
 <br>
 </li>
@@ -51,9 +49,9 @@
 <p>Trashed articles can be restored or permanently deleted. We'll restore the article first, then later permanently delete it.</p>
 <h3>Restoring a Trashed Article</h3>
 <ol>
-<li>Click the <strong>Trashed</strong> symbol in the <strong>Status</strong> column next to the <strong>Troubadour</strong> article. <strong>Result:</strong> The article returns to the <strong>Published</strong> state and disappears from the list of trashed articles.<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-detail-trashed.png" alt="Trash symbol in article list" width="1086" height="173" loading="lazy" data-path="local-images:/articles/325/article-list-detail-trashed.png">
-<figcaption>The Trashed status symbol in the article list</figcaption>
+<li>Click the <strong>Trashed</strong> symbol in the <strong>Status</strong> column next to the <strong>Retired Announcement</strong> article. <strong>Result:</strong> The article returns to the <strong>Published</strong> state and disappears from the list of trashed articles.<br>
+<figure class="image"><img src="images/articles/325/trashed_icon.png" alt="Trashed status icon with a tooltip reading Trashed, Publish Item" width="1183" height="516" loading="lazy" data-path="local-images:/articles/325/trashed_icon.png">
+<figcaption>The Trashed icon, which restores the article to Published when clicked</figcaption>
 </figure>
 <br>
 </li>
@@ -61,17 +59,12 @@
 <h3>Permanently Delete an Article</h3>
 <ol>
 <li>Clear the filter (<strong>Clear</strong> button next to <strong>Filter Options</strong>).</li>
-<li>Trash the <strong>Troubadour</strong> article again.</li>
+<li>Trash the <strong>Retired Announcement</strong> article again.</li>
 <li>Set the filter to display trashed articles (as above).</li>
-<li>Select the <strong>Troubadour</strong> article. <strong>Result:</strong> The <strong>Delete</strong> button appears in the toolbar.<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-delete.png" alt="Delete button in the toolbar" width="1012" height="565" loading="lazy" data-path="local-images:/articles/325/article-list-delete.png">
-<figcaption>The Delete button in the toolbar</figcaption>
-</figure>
-<br>
-</li>
+<li>Select the <strong>Retired Announcement</strong> article. <strong>Result:</strong> The <strong>Delete</strong> button appears in the toolbar.</li>
 <li>Click the <strong>Delete</strong> button. <strong>Result:</strong> A warning appears.<br>
-<figure class="image"><img class="float-none" src="images/articles/325/article-list-delete-warning.png" alt="Warning message upon deleting article" width="1086" height="576" loading="lazy" data-path="local-images:/articles/325/article-list-delete-warning.png">
-<figcaption>The delete confirmation warning</figcaption>
+<figure class="image"><img src="images/articles/325/confirm_delete.png" alt="Warning dialog asking to confirm permanent deletion, with Yes and No buttons" width="1183" height="509" loading="lazy" data-path="local-images:/articles/325/confirm_delete.png">
+<figcaption>The permanent-deletion warning</figcaption>
 </figure>
 <br>
 </li>

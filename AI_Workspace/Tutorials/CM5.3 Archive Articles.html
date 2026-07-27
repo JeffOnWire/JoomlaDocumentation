@@ -2,8 +2,7 @@
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>A website with multiple articles. If you haven't created any articles yet, see <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a>.</li>
-<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a></li>
+<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a> creates the categories and articles used in this tutorial.</li>
 </ul>
 <h2>Steps</h2>
 <p>Everything we describe here takes place in Joomla's Administrator.</p>
@@ -13,74 +12,97 @@
 </ol>
 <h3>Archiving an Article in Edit Mode</h3>
 <ol>
-<li>Open the article for editing by clicking on its link in the list.</li>
-<li>Set the status to <strong>Archived</strong>.<br>
-<figure class="image"><img class="float-none" src="images/articles/326/article-edit-mode-archived.png" alt="Article status set to archived in edit mode" width="1086" height="503" loading="lazy" data-path="local-images:/articles/326/article-edit-mode-archived.png">
-<figcaption>Setting the article status to Archived</figcaption>
+<li>Click <em>Draft Press Release</em> to open it for editing.</li>
+<li>Set the <strong>Status</strong> field to <em>Archived</em>.<br>
+<figure class="image"><img src="images/articles/326/set_to_archived.png" alt="Status dropdown open in the article editor with Archived highlighted, for Draft Press Release" width="1206" height="590" loading="lazy" data-path="local-images:/articles/326/set_to_archived.png">
+<figcaption>Setting the article's Status field to Archived</figcaption>
 </figure>
 <br>
 </li>
 <li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> Your article is archived and will no longer be visible in the default Articles list.</li>
 </ol>
+<h3>Archiving Multiple Articles from the Articles List</h3>
+<p>You can also archive articles directly from the list, without opening each one for editing.</p>
+<ol>
+<li>Check the box next to <em>Company Update</em> and the box next to <em>Local Meetup</em>. <strong>Result:</strong> The <strong>Actions</strong> button in the toolbar is enabled.</li>
+<li>Select <strong>Archive</strong> from the <strong>Actions</strong> options. <strong>Result:</strong> A confirmation message appears, and both articles disappear from the list.<br>
+<figure class="image"><img src="images/articles/326/archive_from_list.png" alt="Actions dropdown open with Archive highlighted, Local Meetup and Company Update checked in the list" width="1114" height="775" loading="lazy" data-path="local-images:/articles/326/archive_from_list.png">
+<figcaption>Selecting Archive from the Actions dropdown for two checked articles</figcaption>
+</figure>
+<br>
+</li>
+</ol>
 <h3>Finding Archived Articles</h3>
 <p>Archived articles no longer appear in the default Articles list.</p>
 <ol>
-<li>Click <strong>Filter Options</strong>, then select <strong>Archived</strong> from the <strong>- Select Status -</strong> filter. <strong>Result:</strong> The list of archived articles appears, each with an archive icon in front of its title.<br>
-<figure class="image"><img class="float-none" src="images/articles/326/archived-articles-list.png" alt="Archive articles list" width="1086" height="429" loading="lazy" data-path="local-images:/articles/326/archived-articles-list.png">
-<figcaption>The list of archived articles</figcaption>
+<li>Click <strong>Filter Options</strong>, then select <strong>Archived</strong> from the <strong>- Select Status -</strong> filter. <strong>Result:</strong> The list of archived articles appears — <em>Draft Press Release</em>, <em>Company Update</em>, and <em>Local Meetup</em> — each with an archive icon in front of its title.<br>
+<figure class="image"><img src="images/articles/326/filter_for_archived_articles.png" alt="Select Status dropdown set to Archived, showing the three archived articles" width="1138" height="681" loading="lazy" data-path="local-images:/articles/326/filter_for_archived_articles.png">
+<figcaption>Filtering the list on the Archived status</figcaption>
 </figure>
 <br>
 </li>
 </ol>
-<h3>Displaying Archived Articles on Your Website</h3>
-<p>Once articles have been archived, there are several ways to view them from the site frontend.</p>
-<h4>Via a Menu</h4>
-<figure class="image"><img class="float-none" src="images/articles/326/archived-articles-menu.png" alt="Archived articles menu" width="1058" height="673" loading="lazy" data-path="local-images:/articles/326/archived-articles-menu.png">
-<figcaption>An Archived Articles menu item</figcaption>
-</figure>
-<p>Use the <strong>Archived Articles</strong> menu item type to link to archived articles. You can choose one or more categories to display articles from.</p>
-<h4>Via the Articles Module</h4>
-<figure class="image"><img class="float-none" src="images/articles/326/archived-articles-module.png" alt="Articles module set to archived articles" width="985" height="638" loading="lazy" data-path="local-images:/articles/326/archived-articles-module.png">
-<figcaption>The Articles module set to show archived articles</figcaption>
-</figure>
-<p>Use the Articles module and set it to Archived articles only.</p>
-<h3>Un-archive Articles</h3>
-<p>To un-archive an article, the same process applies — just change the status of your article from <strong>Archived</strong> to <strong>Published</strong>.</p>
-<h3>Archiving an Article from the Articles List</h3>
+<h3>Displaying Archived Articles via a Menu</h3>
+<p>Once articles have been archived, you can display them on the site frontend with a dedicated menu item.</p>
 <ol>
-<li>Check the box next to the title of the article (or articles) you want to archive. <strong>Result:</strong> The <strong>Actions</strong> button in the toolbar is enabled.</li>
-<li>Select <strong>Archive</strong> to archive the selected articles. <strong>Result:</strong> A confirmation message appears, and the archived articles disappear from the list. You can find them by filtering the list as demonstrated above.<br>
-<figure class="image"><img class="float-none" src="images/articles/326/article-archive-from-list-dropdown.png" alt="Article list Actions Archive highlighted" width="1086" height="457" loading="lazy" data-path="local-images:/articles/326/article-archive-from-list-dropdown.png">
-<figcaption>Selecting Archive from the Actions menu</figcaption>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
+<ul>
+<li><strong>Title:</strong> <em>Archived News</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Archived Articles</em></li>
+<li><strong>Select Category:</strong> <em>News</em></li>
+</ul>
+<figure class="image"><img src="images/articles/326/configure_archived_menu_item.png" alt="New menu item form with Menu Item Type set to Archived Articles and Category set to News" width="1216" height="520" loading="lazy" data-path="local-images:/articles/326/configure_archived_menu_item.png">
+<figcaption>The Archived News menu item, scoped to the News category</figcaption>
 </figure>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/326/article-archived-confirmation.png" alt="Article archived confirmation" width="1086" height="537" loading="lazy" data-path="local-images:/articles/326/article-archived-confirmation.png">
-<figcaption>Confirmation the articles were archived</figcaption>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site frontend and click the <strong>Archived News</strong> menu item. <strong>Result:</strong> The page lists the archived <em>News</em> articles — <em>Draft Press Release</em> and <em>Company Update</em>. <em>Local Meetup</em> doesn't appear, since it's in the <em>Events</em> category.<br>
+<figure class="image"><img src="images/articles/326/frontend_archived_articles_menu.png" alt="Frontend Archived News page listing Company Update and Draft Press Release" width="1056" height="634" loading="lazy" data-path="local-images:/articles/326/frontend_archived_articles_menu.png">
+<figcaption>The Archived News page on the frontend, showing the two archived News articles</figcaption>
 </figure>
 <br>
 </li>
 </ol>
-<h3>Archiving via a Menu Item</h3>
-<p>If your article is linked in a Single Article menu item type (see <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a>), you can archive it from there.</p>
+<h3>Displaying Archived Articles via the Articles Module</h3>
+<p>You can also surface archived articles anywhere on your site using the Articles module.</p>
 <ol>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Menus</strong>, then click on the menu containing the menu item.</li>
-<li>Select the menu item to edit it.</li>
-<li>The <strong>Select Article</strong> field has an <strong>Edit</strong> option that opens a popup <strong>Edit Article</strong> form.<br>
-<figure class="image"><img class="float-none" src="images/articles/326/edit-menu-item.png" alt="Edit button in single article menu item" width="1086" height="556" loading="lazy" data-path="local-images:/articles/326/edit-menu-item.png">
-<figcaption>The Edit option on the Select Article field</figcaption>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Site Modules</strong>.</li>
+<li>Click <strong>New</strong>, then select <strong>Articles</strong> as the module type. <strong>Result:</strong> A new-module form appears.
+<ul>
+<li><strong>Title:</strong> <em>Archived Articles</em></li>
+<li><strong>Position:</strong> <em>sidebar-right</em></li>
+</ul>
+</li>
+<li>Click the <strong>Filtering Options</strong> tab.</li>
+<li>Set the <strong>Archived Articles</strong> field to <em>Only</em>. <strong>Result:</strong> The module will only pull in archived articles.<br>
+<figure class="image"><img src="images/articles/326/filtering_options_archived_only.png" alt="Filtering Options tab of the module with the Archived Articles field set to Only" width="1036" height="619" loading="lazy" data-path="local-images:/articles/326/filtering_options_archived_only.png">
+<figcaption>Setting the Archived Articles field to Only on the Filtering Options tab</figcaption>
 </figure>
 <br>
 </li>
-<li>Set the <strong>Status</strong> field to <em>Archived</em> (as shown in the screenshot under <em>Archiving an Article in Edit Mode</em> above).</li>
-<li>The menu item will still link to the archived article.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site frontend. <strong>Result:</strong> The <em>Archived Articles</em> module appears in the sidebar, listing <em>Draft Press Release</em>, <em>Company Update</em>, and <em>Local Meetup</em>.<br>
+<figure class="image"><img src="images/articles/326/frontend_archived_article_module.png" alt="Frontend sidebar showing the Archived Articles module listing three articles" width="1038" height="591" loading="lazy" data-path="local-images:/articles/326/frontend_archived_article_module.png">
+<figcaption>The Archived Articles module on the frontend</figcaption>
+</figure>
+<br>
+</li>
+</ol>
+<h3>Republish Archived Articles</h3>
+<ol>
+<li>Click <strong>Filter Options</strong>, then select <strong>Archived</strong> from the <strong>- Select Status -</strong> filter. <strong>Result:</strong> The list narrows to the three archived articles.</li>
+<li>Tick the checkbox in the list column header to select all listed articles. <strong>Result:</strong> All three articles are selected, and the <strong>Actions</strong> button is enabled.</li>
+<li>Pull down the <strong>Actions</strong> dropdown and select <strong>Publish</strong>. <strong>Result:</strong> All three articles are now published again.<br>
+<figure class="image"><img src="images/articles/326/article_list_publish_multiple.png" alt="Actions dropdown open with Publish highlighted, three archived articles checked" width="1026" height="675" loading="lazy" data-path="local-images:/articles/326/article_list_publish_multiple.png">
+<figcaption>Publishing all three archived articles at once from the Actions dropdown</figcaption>
+</figure>
+<br>
+</li>
+<li>Click <strong>Clear</strong> next to <strong>Filter Options</strong> to return to the full articles list.</li>
 </ol>
 <h2>Concepts</h2>
-<p><em>Articles</em> in Joomla are the main content types on a web page and can display text and images.</p>
-<p>A <em>menu item</em> is a link to an article, grouped with other links in a menu.</p>
-<p>A <em>module</em> is a block on your website that you can use to display content.</p>
-<p><em>Archived</em> is a status for content.</p>
-<p>When you open an article for editing (or create a new article), you're in <em>Edit mode</em>.</p>
-<p>Archived articles are filtered from view in the Articles list. You must change the Status filter to Archived to view them.</p>
-<p>Archiving does not unpublish an article.</p>
-<p>Archives are structured by year.</p>
-<p>Articles can be archived by editing the article and updating its status, as demonstrated in this tutorial. It can also be done directly in the article list view. In the last tutorial, <a href="delete-archive-and-filter-articles/delete-articles">5.2 Delete Articles</a>, we set the article status to <em>Trashed</em> directly from the articles list.</p>
+<p><em>Archived</em> is a status that hides older content without deleting it. Some types of menu items and modules can be configured to display archived content on the frontend.</p>
+<p>In the backend, archived articles don't appear in the default Articles list; however, you can filter the list to view them.</p>
+<p>Archiving does not unpublish an article. <em>Unpublished</em> is a specific status that blocks an article from public view.</p>
+<p>Articles can be archived by changing their status, either in the article editor or by using the <strong>Actions</strong> menu in the article list.</p>

@@ -1,18 +1,21 @@
-CM5.1: add real screenshots, fix title and filter-value naming
+CM5.3: trim Concepts; CM5.2 & CM5.3: add real screenshots
 
-Added the five screenshots Jeff shot on the live site
-(images/articles/324/filter_options.png, unpublished_articles.png,
-news_and_events_articles.png, published_featured_news_articles.png,
-bulk_action.png), placed per the agreed plan: filter bar overview,
-Select Status + Unpublished result, both-categories result, the
-combined Featured/Status/Category result, and the Actions-dropdown
-Publish step.
+CM5.3 Concepts trimmed per Jeff's draft - removed the standalone
+definitions of Articles, menu item, module, and Edit mode, plus
+"Archives are structured by year" and the 5.2 cross-reference. Down to
+four focused paragraphs: what Archived does, where to find archived
+articles in the backend, how archiving differs from unpublishing, and
+the two ways to change an article's status.
 
-Comparing the screenshots against the draft surfaced two mismatches,
-now fixed: the actual article title is "Product Launch" (not "New
-Product Launch"), and the Featured filter's selected-value label is
-"Featured Articles" (not just "Featured") - both corrected everywhere
-they appear as literal values.
+Added the real screenshots Jeff shot on the live site: five for CM5.2
+(images/articles/325/ - trash_article, article_trashed_confirmation,
+filter_for_trashed, trashed_icon, confirm_delete) and eight for CM5.3
+(images/articles/326/ - set_to_archived, archive_from_list,
+filter_for_archived_articles, configure_archived_menu_item,
+frontend_archived_articles_menu, filtering_options_archived_only,
+frontend_archived_article_module, article_list_publish_multiple).
 
-CM5.1 is now complete with real screenshots. Still pending: reusing
-this News/Events Setup content in CM5.2 and CM5.3.
+Viewed every image before placing it; all matched the drafted step
+text, no wording corrections needed. CM5.1, CM5.2, and CM5.3 now all
+have real screenshots throughout - no open items remain on any of the
+three sub-tutorials.
