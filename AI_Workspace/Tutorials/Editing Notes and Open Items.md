@@ -445,3 +445,122 @@ Jeff shot and supplied all remaining images across the section — 3 for CM2.1, 
 - **Minor artifact, not corrected:** the CM2.1 new-menu-item screenshot shows "Household Pets" in the Ordering dropdown on the right — a leftover from Jeff's earlier pet-themed test site build, before the re-theme to the Company/Team content. Doesn't affect anything the tutorial text claims (we don't reference menu ordering), so no text change was needed, but flagging it in case Jeff wants to clean up that test site's leftover menu item.
 
 All five Section 2 files are now complete with real, verified screenshots — no open items remain.
+
+## Section 3 (CM3.1–3.5): one running article, replacing five disconnected demos
+
+Jeff asked for the same "business content" theme used in Sections 2 and 5, applied to Section 3 (the WYSIWYG editor tutorials) — plus a much deeper rebuild of CM3.3 (Lists) specifically.
+
+**The problem:** none of the five sub-tutorials kept what they created. CM3.1 ended with Cancel (discarding the practice article). CM3.2 explicitly said "Close the article without saving." CM3.3's list demo article's fate was never specified. CM3.4 never closed its demo article cleanly. CM3.5 explicitly created a demo article "for demonstration purposes, and then delete[d] the article." Nothing persisted, and nothing tied the five tutorials together.
+
+**The fix:** a single article, <em>Our Services</em> (a generic professional-services company), created in 3.1 and reopened and extended in each subsequent tutorial, finishing as a complete, real piece of content by the end of 3.5. Approved by Jeff before implementing, including the article topic, the three service-line names, and the 3.4 hyperlink target.
+
+- **3.1 (Bold, Italic & More):** Keeps the "try every toolbar button" exploration (bold/italic/underline/strikethrough) on throwaway practice text, then writes the article's real opening paragraph with bold on the value-prop phrase and italic on a supporting phrase. Ends with Save &amp; Close instead of Cancel. Concepts gained a note that underline is conventionally reserved for links, so using it elsewhere for emphasis risks confusing readers.
+- **3.2 (Headings):** Replaced the generic "Transportation / Aircraft / Watercraft" example with the real outline: H2 <em>Consulting</em>, <em>Implementation</em>, and <em>Support</em>, each with a short paragraph; <em>Consulting</em> and <em>Implementation</em> each get an H3 sub-heading (<em>What's Included</em> and <em>Getting Started</em>) left empty for 3.3 to fill in. The H1/H2/H3/H4-depth demonstration is preserved as a throwaway aside (create a practice H4, then delete it) so the real article doesn't gain a heading level it doesn't need.
+- **3.3 (Lists):** Full rebuild — see below.
+- **3.4 (Links):** Adds one real hyperlink instead of a disconnected demo article: a sentence appended to the end of the <em>Support</em> paragraph ("This site itself is proudly built on Joomla...") with <em>Joomla</em> linked to https://www.joomla.org. Concepts ties this back to the existing WebAIM link-text citation — linking a meaningful word instead of "click here."
+- **3.5 (Tables):** Adds a final H2, <em>Plans &amp; Pricing</em>, and a 4×4 Basic/Standard/Premium comparison table (consulting hours, implementation support, response time), using the existing table-formatting steps (borders, header row, cell padding) unchanged. The intro no longer says the demo article gets deleted afterward — this is the capstone step, and the closing line cross-references 2.1 Article &amp; Menu Item for anyone who wants to actually publish the finished article.
+
+Also standardized mechanical style across all five files while rewriting them, consistent with prior sections: "Click on the New button" → "Click New" and similar trims, "In the left side menu..." → "In the Administrator Menu" (3.4 and 3.5 both had the old phrasing). 3.4/3.5's Prerequisites also dropped the "Administrator access to a Joomla site (version 5 or above)" boilerplate bullet to match the simpler Prerequisites style used in 3.1–3.3.
+
+**All old figures removed** across all five files — they showed either the wrong content entirely (headings screenshots showed Transportation/Aircraft, not Consulting/Implementation) or, per Jeff's specific complaint about CM3.3, were "extremely small and not the style of other tutorials" (icon-only crops as small as 99×48 and 134×63, versus the full-editor-context screenshots like 1770×1356 used in 3.4/3.5 previously). New screenshots needed throughout — recommendations below, sized and framed like the rest of the project's screenshots (full editor/browser context, not cropped icons).
+
+### CM3.3 (Lists) — the six techniques
+
+Jeff asked for six specific things to be demonstrated, replacing the old structure where "Unordered List" and "Ordered List" were two nearly identical sections (build via paragraphs, select, click icon) with the second just noting "works the same for ordered." The new version distributes all six across the two real lists instead of repeating everything twice:
+
+1. Building a list from separate typed paragraphs, then selecting and converting (the original method, kept) — used for <em>What's Included</em> (Roadmapping / Technology audit / Vendor selection support).
+2. Building a list by typing directly into it (click the list icon on an empty line, then type with Return between items) — used for <em>Getting Started</em>.
+3. Pressing Return twice to exit a list back into a normal paragraph — demonstrated at the end of typing <em>Getting Started</em>.
+4. Highlighting a list and clicking the opposite type's icon to switch it — demonstrated on <em>Getting Started</em> (bullets, then back to numbers, ending in the correct state since these are sequential steps).
+5. Tab / Increase Indent to create sub-items — demonstrated by breaking <em>Environment setup</em> into two nested sub-items.
+6. Unordered sub-items nested inside an ordered list — the same two sub-items get converted to bullets while the parent stays numbered, explicitly called out as the exact pattern this whole documentation project uses (numbered steps, bulleted details).
+
+Concepts closes with the semantic-markup point Jeff wanted: ordered vs. unordered communicates sequence-matters vs. sequence-doesn't, screen readers announce list type and item count, and this documentation's own numbered-steps-with-bulleted-details convention is a real-world example of nesting the two types together. The alternate-numbering-style aside (letters, roman numerals via the dropdown arrow) was kept as a brief closing note rather than a full walkthrough, since it wasn't one of the six requested items.
+
+### Screenshot recommendations — CM3.1 (images/articles/293/)
+
+1. After trying Bold/Italic/Underline/Strikethrough on practice text — the editor showing practice text in all four formats, with the popup toolbar visible.
+2. After the normal paste — the pasted example text showing it kept its bold/italic formatting.
+3. With Paste as text toggled on — the toolbar showing the icon highlighted (similar to the screenshot Jeff already supplied for this note).
+4. After writing the real intro paragraph — the editor showing the finished paragraph with bold and italic phrases visible.
+
+### Screenshot recommendations — CM3.2 (images/articles/294/)
+
+1. After creating the Consulting H2 via the formatting dropdown — dropdown open, Headings > Heading 2 visible.
+2. After creating the What's Included H3 via the popup menu — popup showing H2/H3 icons over the highlighted text.
+3. After all three H2 sections and two H3 sub-headings are in place — full outline visible in the editor.
+4. After clicking Toggle Editor — the HTML source showing the heading tags.
+
+### Screenshot recommendations — CM3.3 (images/articles/285/)
+
+1. After typing the three What's Included items as separate paragraphs.
+2. After converting them to a bulleted list.
+3. After typing the Getting Started list directly (items typed, numbered).
+4. After pressing Return twice — cursor now in a normal paragraph below the finished list.
+5. After switching Getting Started to bullets, then back to numbers (one or two shots, showing the toolbar icons).
+6. After adding and indenting the two Environment setup sub-items, before converting them to bullets.
+7. After converting the sub-items to bullets — the final nested ordered/unordered list.
+
+Please shoot these at full editor width/context, not cropped to just the icon or list — that's the specific complaint about the old versions.
+
+### Screenshot recommendations — CM3.4 (images/articles/296/)
+
+1. The Insert/Edit link form with the URL and Text to display (Joomla) filled in.
+2. The Support paragraph showing the saved Joomla hyperlink in the text.
+3. The right-click context menu (Link / Remove Link / Open Link) over the Joomla link.
+
+### Screenshot recommendations — CM3.5 (images/articles/297/)
+
+1. The table size-picker grid.
+2. The filled-in, unformatted table in Preview (no borders).
+3. The Cell Properties > Advanced border settings (1px, Solid).
+4. The header row formatting (Cell Type = Header Cell, Horizontal align = Center).
+5. The final formatted table in Preview — borders, header row, padding all applied.
+
+Open item: once Jeff shoots and supplies these images, place them and verify field names/values against the real screenshots, same as every prior section.
+
+**CM3.1 revision:** Jeff pointed out steps 4/5 never explained that the TinyMCE toolbar starts collapsed to a single row and needs the ellipsis (⋯) icon clicked to reveal the second row of tools (headings, lists, links, tables, etc.) — a real gap, since 3.4 and 3.5 both already say "expand the toolbar by clicking the ellipsis" as if it's already been taught. Added a step for this in 3.1 (first exposure gets the full explanation, matching the pattern used elsewhere in this project — e.g. Menu Item Type in 2.1), with a note that later tutorials will refer back to this step rather than re-explaining it. 3.4/3.5's existing terse phrasing didn't need to change, since it now correctly assumes the reader has done 3.1 first.
+
+**CM3.1 revision 2:** Jeff's screenshot of the popup toolbar showed more than the three icons the text claimed (bold, italic, underline) — it also had H2/H3 heading shortcuts, a link icon, and a blockquote icon. Reworded to "bold, italic, underline, and a few other commonly-used tools" rather than listing an exact icon set that could vary by version/configuration.
+
+**CM3.1 revision 3:** Jeff asked to add a demonstration of the <strong>Paste as text</strong> tool (a clipboard-with-"T" icon in the expanded toolbar) in place of the old plain "delete the practice text" step. New flow: copy a short bold/italic example phrase given right in the tutorial text, paste it normally (formatting carries over — not always wanted, e.g. pasting from Word or a web page), delete/undo it, toggle Paste as text on, paste the same text again (this time plain, no formatting), toggle it back off, then delete everything before moving on to writing the real opening paragraph (which still gets its formatting applied manually via highlight-and-click, unchanged). Added a matching Concepts paragraph on why Paste as text matters, and folded a mention of it into the intro paragraph. This also gave the toolbar-expansion step from the prior revision an early payoff, since Paste as text lives in the second row.
+
+**CM3.1 revision 4:** Jeff refined the paste demo further — removed the "delete or undo" step that used to sit between the two pastes, and had the second (Paste as text) paste land directly below the first instead of replacing it. Both pastes are now visible on screen at once, stacked, so the formatted-vs-plain difference is obvious without needing to remember what the first one looked like. The final "type the real paragraph" step was also reworded to "Type (or copy and paste as text) the following," inviting the reader to reuse the technique they just learned on the real content, not just the throwaway example.
+
+**CM3.1 revision 5:** Removed the closing Concepts line, "There are a number of very powerful features that are explored in other tutorials." — a vague, generic statement that didn't emphasize or expand on anything actually covered in this tutorial. Concepts now ends on the Paste as text paragraph, which is substantive.
+
+**CM3.1: real screenshots placed.** Jeff supplied all four (images/articles/293/formatting_practice.png, paste_with_formatting.png, paste_without_formatting.png, article_introduction.png). Viewed each before placing. One genuine finding, not an error: the normal-paste screenshot shows the example text landing as a numbered list item, not a plain line — because Jeff copied it straight from this tutorial page, where the example sits inside a numbered step. Rather than treat this as a mismatch to fix, added a Note explaining it: paste carries over more than character formatting, it can carry over structure too (like list numbering), which is actually a stronger demonstration of the point than a plain-text example would have been. The Paste as text screenshot confirms the second paste has no numbering at all, reinforcing the same point. CM3.1 is now complete with real, verified screenshots.
+
+**CM3.2 revision:** Jeff's detailed feedback, all applied:
+- Steps 11 and 14 ("Press Return, set the format to Paragraph, and type...") no longer instruct setting the format manually — Return already reverts to Paragraph after a heading, as already noted at step 7. Step 11 now carries a bullet noting this explicitly ("As in step 7, the format automatically returns to Paragraph..."); step 14 doesn't repeat the note since it's now established.
+- Removed the closing "Clearly we can simply keep going here..." paragraph (including its H4-depth practice demonstration) entirely — Jeff felt it wasn't needed and asked to fold the underlying point into Concepts instead. Added to Concepts: you can nest as many heading levels as an outline needs, and that the popup toolbar only offers H2/H3, so H4 and deeper require the formatting dropdown.
+- Moved "Note the visual differences between the headings..." from a trailing paragraph into Concepts, merged into the existing "headings are specific typographical elements" paragraph.
+- "Click the blue Toggle Editor..." is now a real numbered step (step 17 in the final count) instead of trailing prose, with a new step 18 for toggling back. Added a mention that the editing toolbar disappears in this view. Researched the proper name via web search: Joomla's Toggle Editor button switches between TinyMCE and <em>No Editor</em> mode (a plain textarea showing raw HTML) — used "No Editor" as the name, with a new Concepts paragraph explaining what it's for.
+- New content added as steps 15–16 (kept dense/combined, matching this tutorial's existing step style, so Toggle Editor lands on step 17 as Jeff expected): step 15 covers the toolbar preview icon (rough, unstyled, reflects unsaved editor content); step 16 covers the top-of-page Preview button (styled, reflects last-saved version only) — click it now to see just the 3.1 paragraph, close it, Save (not Save & Close), Preview again to see the full outline. Added matching Concepts paragraph distinguishing the two preview mechanisms. Chose not to break this into its own h3 subsection — doing so would restart the step numbering per this project's established h3-per-tutorial convention, which would prevent Toggle Editor from landing on step 17; used a bolded lead-in ("Preview your progress.") inside step 15 instead, matching the sub-grouping style already used in CM3.5.
+- Combined "Always use heading elements..." and "Never use heading elements to simply emphasise text." into a single Concepts paragraph, per Jeff's suggestion.
+- "Save & Close" also pulled into the ol as step 19 (previously trailing prose), for consistency with CM3.1's ending pattern.
+
+**CM3.3: real screenshots placed.** Jeff supplied all eight (images/articles/285/selecting_list_item_paragraphs.png, clicking_bullet_list_icon.png, typing_numbered_list.png, numbered_list_finished.png, converting_to_unordered_list.png, converting_to_ordered_list.png, indenting_sub_items.png, sub_items_to_bullets.png — the file on disk for the fifth recommendation item is named converting_to_unordered_list.png, not converting_to_numbered_list.png as typed in Jeff's message; used the real filename). Viewed each before placing. One genuine finding: the toolbar icon tooltips read <strong>Bullet list</strong> and <strong>Numbered list</strong>, not "Unordered list" and "Ordered list" as drafted — corrected throughout the Steps and Concepts sections (the surrounding prose describing list *types* as "ordered"/"unordered" was left as-is, only the icon names changed). Also confirmed the sub-item indent behavior exactly as drafted: indenting nests Provision hosting/Configure DNS as their own numbered sub-list, and the parent list renumbers so First milestone review becomes item 3 again. CM3.3 is now complete with real, verified screenshots — no open items remain.
+
+**Heading semantics verified.** Jeff asked to double-check CM3.2's "only one H1, work with H2 and below" claim against the actual rendered page source for 3.3 Lists. Confirmed: within the article body, the heading hierarchy is correct (single H1 from the article title, H2 siblings for Prerequisites/Steps/Concepts, H3 children under Steps only, no skipped levels). Flagged one nuance — the site template itself adds a second H1 outside the article body (the header's logo/site-name link) — but agreed with Jeff this is too much detail for a tutorial and isn't being added to CM3.2. No file changes from this check.
+
+**CM3.4 revisions:**
+- Step 4: removed "itself" from "This site itself is proudly built on Joomla..." — reads more naturally as "This site is proudly built on Joomla...".
+- Steps 5–6: Jeff's screenshot showed that highlighting the word <em>Joomla</em> pops up the same popup toolbar taught in 3.1/3.2 (B/I/U/H2/H3/link/quote icons), and it includes a link icon directly — no need to expand the main toolbar via the ellipsis first. Reworded from "Expand the toolbar by clicking the ellipsis points, then click the Insert/Edit link icon" to two steps: selecting the word (now notes the popup toolbar appears), then clicking the link icon in that popup toolbar. Matches the icon-naming caution from CM3.1/3.3 — didn't invent a tooltip name for it, just called it "the link icon."
+
+**CM3.4: real-world Preview/framing issue found and fixed.** Jeff tried the tutorial's own link on the live site and hit Firefox's "Can't Open This Page" error when clicking the Joomla link from inside Preview — joomla.org refuses to display itself inside a frame, and Joomla's Preview button renders the article inside one. Setting the link's Target to open in a new window fixed it for Jeff. Applied that as a step: added a Target sub-bullet under the URL-entry step (with a Note explaining why), updated the Preview-testing step's Result to reflect the link now opening in a new tab, and extended the Concepts paragraph on new-tab links to cover this as a second reason (alongside the existing "supplemental content" one) — external links are safer opened in a new tab specifically because some sites block framing. Open item: the field name "Target" and value "Open in new window" are a standard-TinyMCE guess, not yet confirmed against this site's actual Insert/Edit Link form — worth checking against the CM3.4 screenshot recommendation #1 (the link form) once Jeff shoots it.
+
+**CM3.4 revision:** Jeff confirmed "click just to the right of the Joomla link, then right-click" was unnecessary — right-clicking the word itself opens the link options regardless of exact cursor placement first. Simplified to "right-click the Joomla link."
+
+**New pattern: incidental UI familiarity steps.** Jeff added a step after "Click Our Services to reopen it for editing" instructing the reader to drag the editor's Resize handle (bottom-right corner of the text area) to see more of the article while working — a genuinely useful habit, not strictly necessary for this tutorial's actual task. Jeff's rationale: on a short tutorial like this one, folding in a small, real, useful UI action (without calling explicit attention to it as its own concept) is a good way to build reader familiarity with the editor over time. He said he'll be watching for more opportunities like this across the remaining tutorials — worth keeping in mind for future edits/reviews, not just applying once here.
+
+**CM3.4 addition:** second incidental-familiarity step added right after the Resize step — toggle the <strong>Fullscreen</strong> icon in the toolbar to expand the editor to fill the browser window, then toggle it back off before continuing. Same rationale as the Resize step: real, useful, not central to this tutorial's actual task (adding a link), folded in without a separate Concepts callout. Jeff confirmed via screenshot: tooltip reads "Fullscreen (⌘⇧F)" — icon description and keyboard shortcut both updated to match exactly.
+
+**CM3.4: real screenshots placed, field-name corrections.** Jeff supplied all three (images/articles/296/insert_edit_link_form.png, joomla_link.png, right_click_link.png). Viewed each before placing — several drafted guesses turned out wrong:
+- The field I'd called <strong>Target</strong> is actually labeled <strong>Open link in...</strong>, and its value is <em>New window</em>, not "Open in new window." Fixed everywhere it's referenced (the URL step, the Preview-testing step's Result).
+- The right-click menu's three options are <strong>Link...</strong> (with a "⌘K" shortcut shown, reopens the Insert/Edit Link form — not a separate "link editing menu"), <strong>Remove link</strong>, and <strong>Open link</strong> — different capitalization than drafted ("Link"/"Remove Link"/"Open Link").
+- The screenshot happened to show the <strong>Title</strong> field filled in (<em>The Joomla Website</em>), which the Concepts section already discusses conceptually but no step had ever demonstrated — added it as a real field-bullet in the URL step so the concept has a matching action, consistent with how CM3.3 gives its "alternate numbering styles" aside a brief hands-on mention too.
+
+CM3.4 is now complete with real, verified screenshots — no open items remain.
+
+**CM3.2: real screenshots placed.** Jeff supplied all four (images/articles/294/applying_h2.png, applying_h3.png, article_in_editor.png, article_html.png). Viewed each before placing. All matched the drafted text with no corrections needed this time: applying_h2.png confirms the formatting dropdown flow (Headings submenu, Heading 2 checked, Consulting typed below); applying_h3.png confirms the popup toolbar's exact icon set — bold, italic, underline, H2, H3, link, quote — matching the "a few other commonly-used tools" wording already used in CM3.1; article_in_editor.png shows the full outline with both sub-headings still empty, placed after step 14 (before the new Preview steps); article_html.png confirms "No Editor" mode shows raw HTML directly in a plain textarea, with the Toggle Editor button still visible/labeled below it — validates the "No Editor" terminology used in the text and Concepts. CM3.2 is now complete with real, verified screenshots — no open items remain, aside from Jeff's live-site confirmation of the preview-icon behavior described in steps 15–16 (not yet visually confirmed by a screenshot).

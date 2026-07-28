@@ -1,32 +1,114 @@
-Section 2 (CM2.1-2.5): add real screenshots, fix text/screenshot
-mismatches found along the way
+Section 3 (CM3, CM3.1-3.5): rebuild around one running article,
+add real screenshots
 
-Placed all 24 screenshots Jeff shot on the live site across the five
-files (3/4/7/6/4 respectively), verifying each against the drafted
-text before placing it, same process used for every prior section.
+Replaced five disconnected demos with a single article, "Our
+Services," created in 3.1 and built up progressively through 3.5,
+matching the running-fixture pattern already used in Sections 2
+and 5. Previously none of the five tutorials kept what they
+created (3.1 ended with Cancel, 3.2 said "close without saving,"
+3.3's demo article's fate was unspecified, 3.4 never closed its
+demo cleanly, 3.5 explicitly deleted its demo afterward).
 
-Corrections found and applied:
+CM3 (overview): added a line noting the section builds a single
+article across all five tutorials.
 
-- CM2.3: confirmed "Choose a Category" is the real field label, and
-  that clicking the category name in the breadcrumb (e.g. "Company
-  Articles Blog") really does navigate back from a subcategory page -
-  both were open items, now resolved.
-- CM2.4: reworded "Observe that the Home menu item is..." to "Look at
-  the Home row... the list already shows..." - the menu type is
-  visible directly in the list without opening the item, which the
-  original phrasing didn't make clear. Added the "Article featured."
-  confirmation message to the list-icon-click step's result.
-- CM2.5: added Category: Company to the Careers article (Jeff's
-  screenshot showed it assigned there; the draft text hadn't set a
-  category, which would have made the screenshot and text disagree).
-  Changed "Select Article: the link to the article" and "Menu: the
-  default menu, most likely Main Menu" to their literal confirmed
-  values, "Careers" and "Main Menu".
+CM3.1 (Bold, Italic & More): keeps the toolbar-exploration practice
+(bold/italic/underline/strikethrough) on throwaway text, then
+writes the article's real opening paragraph with bold/italic
+applied to real content. Ends with Save & Close instead of Cancel.
+Added a step explaining the toolbar's collapse/expand ellipsis
+(first exposure - later tutorials refer back to it). Reworded the
+popup toolbar's icon list after a screenshot showed more icons than
+originally described ("bold, italic, underline, and a few other
+commonly-used tools"). Rebuilt the paste demonstration around the
+Paste as text tool: copy example text, paste normally (formatting
+carries over), toggle Paste as text on, paste again directly below
+the first (now stacked, so the difference is visible at a glance),
+toggle back off. Removed a vague closing Concepts line. Real
+screenshots placed (images/articles/293/): formatting_practice.png,
+paste_with_formatting.png, paste_without_formatting.png,
+article_introduction.png - one genuine finding kept in the text
+rather than corrected: the normal-paste screenshot shows the
+example landing as a numbered list item (copied from within this
+tutorial's own numbered step), used as a stronger demonstration
+that paste carries over structure, not just character formatting.
 
-Noted one screenshot artifact that didn't need a text fix: CM2.1's
-new-menu-item screenshot shows "Household Pets" in the Ordering
-dropdown, a leftover from the earlier pet-themed test site build.
-Doesn't affect anything the tutorial text claims.
+CM3.2 (Headings): replaced the generic Transportation/Aircraft
+example with the real outline (Consulting/Implementation/Support
+as H2, What's Included/Getting Started as H3, left empty for 3.3).
+Per Jeff's detailed feedback: removed redundant "set the format to
+Paragraph" instructions (Return already reverts to Paragraph
+automatically); removed a closing aside about nesting heading
+depth (folded into Concepts instead); moved a paragraph about
+heading style differences into Concepts; converted "click Toggle
+Editor" from trailing prose into two real numbered steps (view
+source, toggle back), naming the destination "No Editor" mode per
+a web search of Joomla's actual terminology; added two new steps
+demonstrating both ways to preview an article (toolbar preview
+icon vs. the top-of-page Preview button, and the unsaved-vs-saved
+distinction between them); combined two related Concepts sentences
+into one paragraph. Real screenshots placed (images/articles/294/):
+applying_h2.png, applying_h3.png, article_in_editor.png,
+article_html.png - all matched the drafted text with no
+corrections needed.
 
-Section 2 is now complete end to end with real, verified screenshots
-throughout - no open items remain.
+CM3.3 (Lists): full rebuild covering six list-editing techniques
+per Jeff's spec - building a list from typed paragraphs then
+converting; typing directly into a list; Return-twice to exit a
+list; switching a list's type via the toolbar; Tab/Increase Indent
+to create sub-items; and nesting an unordered list inside an
+ordered one (tied explicitly to this documentation's own
+numbered-steps-with-bulleted-details convention). Concepts closes
+on the semantic-markup point about list type and screen readers.
+Real screenshots placed (images/articles/285/):
+selecting_list_item_paragraphs.png, clicking_bullet_list_icon.png,
+typing_numbered_list.png, numbered_list_finished.png,
+converting_to_unordered_list.png, converting_to_ordered_list.png,
+indenting_sub_items.png, sub_items_to_bullets.png. One correction
+from the screenshots: the toolbar icons are actually named "Bullet
+list" and "Numbered list," not "Unordered list"/"Ordered list" as
+drafted - fixed throughout Steps and Concepts.
+
+CM3.4 (Links): adds one real hyperlink to the Support paragraph
+("This site is proudly built on Joomla...") instead of a
+disconnected demo article, with Joomla linked to
+https://www.joomla.org. Concepts ties this to the existing WebAIM
+link-text citation. Revisions applied: removed "itself" from the
+Support sentence; reworded the link-creation steps to use the
+popup toolbar's link icon directly instead of expanding the main
+toolbar first; simplified an unnecessarily specific right-click
+instruction ("click just to the right of the link, then
+right-click" - right-clicking the word itself is sufficient); added
+two incidental-familiarity steps after reopening the article (drag
+the editor's Resize handle to see more of the article; toggle the
+Fullscreen icon, confirmed via screenshot as "Fullscreen ⌘⇧F") -
+first use of a pattern Jeff wants to keep applying elsewhere where
+it fits naturally, without a formal Concepts callout. Fixed a real
+usability issue Jeff found testing on the live site: joomla.org
+refuses to display inside a frame, so clicking the link from
+Joomla's Preview (which renders inside a frame) failed with a
+browser error - fixed by setting the link's target to open in a
+new window, added as a step with a Note explaining why, and folded
+into Concepts as a second reason to use new-tab links. Real
+screenshots placed (images/articles/296/): insert_edit_link_form.png,
+joomla_link.png, right_click_link.png - corrected several drafted
+guesses against them: the field is "Open link in..." with value
+"New window" (not "Target"/"Open in new window"); the right-click
+menu's three options are "Link...", "Remove link", "Open link"
+(different capitalization than drafted); added a Title field-bullet
+("The Joomla Website") since the screenshot showed it filled in and
+Concepts already discussed the Title field without a matching step.
+
+CM3.5 (Tables): adds a final Plans & Pricing section with a 4x4
+comparison table, completing the article. Uses the existing
+table-formatting steps (borders, header row, cell padding)
+unchanged. No longer says the demo article gets deleted afterward -
+this is the capstone step, closing with a cross-reference to 2.1
+Article & Menu Item for anyone who wants to publish the finished
+article. Real screenshots not yet placed - pending Jeff's live-site
+run-through (recommendations already logged in Editing Notes).
+
+Also across all five files: standardized "Click on the New button"
+-> "Click New" and similar trims, "In the left side menu..." -> "In
+the Administrator Menu", dropped boilerplate Prerequisites bullets
+in 3.4/3.5 to match the simpler style used in 3.1-3.3.

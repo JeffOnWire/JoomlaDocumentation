@@ -1,52 +1,62 @@
-<p>In this tutorial we will create and save a new article for the purposes of demonstrating a hyperlink.</p>
+<p>In this tutorial we'll add a hyperlink to the <em>Our Services</em> article — pointing to the Joomla project itself, since that's what powers this site.</p>
 <h2>Prerequisites</h2>
 <ul>
-<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial, and includes the required frontend/backend login and site-viewing tutorials (1.1, 1.2, 1.3).</li>
-<li>Administrator access to a Joomla site (version 5 or above).</li>
+<li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="wysiwyg-editor/lists">3.3 Lists</a> creates the <em>Our Services</em> article's <em>What's Included</em> and <em>Getting Started</em> lists this tutorial builds on.</li>
 </ul>
 <h2>Steps</h2>
 <ol>
-<li>Log in to Joomla as an administrator and navigate to the <strong>Home Dashboard</strong>.</li>
-<li>In the left side menu, click <strong>Content &gt; Articles</strong>.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-article form appears.</li>
-<li>Enter a title for your article.</li>
-<li>The text editing area consists of a toolbar and an area in which to enter text.</li>
-<li>Click into the text area, then expand the toolbar by clicking on the ellipsis points and click on the <strong>Insert/Edit link</strong> icon.</li>
-<li>Click on the hyperlink icon. <strong>Result:</strong> The hyperlink editing form appears.</li>
-<li>Enter a URL, e.g. <em>https://www.wikipedia.org</em>.
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <em>Our Services</em> to reopen it for editing.</li>
+<li>Click and drag the <strong>Resize</strong> handle in the bottom-right corner of the text area downward, to display more of the article as you work.</li>
+<li>Click the <strong>Fullscreen</strong> icon in the toolbar (four small arrows pointing to the corners) to expand the editor to fill the browser window — or press <strong>⌘⇧F</strong>. Click it again, or press the same shortcut, to return to normal size.</li>
+<li>Click at the end of the <em>Support</em> paragraph, then type a new sentence: <em>This site is proudly built on Joomla, the content management system behind millions of websites worldwide.</em></li>
+<li>Select the word <em>Joomla</em> within the sentence you just typed. <strong>Result:</strong> The popup toolbar appears.</li>
+<li>Click the link icon in the popup toolbar. <strong>Result:</strong> The hyperlink editing form appears.</li>
+<li>Enter the URL <em>https://www.joomla.org</em>.
 <ul>
-<li>The URL is automatically copied into the <strong>Text to display</strong> field. You may override this if desired.</li>
+<li>The <strong>Text to display</strong> field is already filled in with <em>Joomla</em>, since that's what you had selected. You may override this if desired.</li>
+<li><strong>Title:</strong> <em>The Joomla Website</em></li>
+<li>Set <strong>Open link in...</strong> to <em>New window</em>. <strong>Note:</strong> joomla.org, like many external sites, won't display itself inside a frame — and Joomla's own Preview button opens your article inside one. Without this setting, clicking the link from Preview will fail with a browser error; opening it in a new window avoids the problem entirely.</li>
 </ul>
+<br>
+<figure class="image"><img src="images/articles/296/insert_edit_link_form.png" alt="Insert/Edit Link form with URL, Text to display, Title, and Open link in fields filled in, Open link in set to New window" width="939" height="597" loading="lazy" data-path="local-images:/articles/296/insert_edit_link_form.png">
+<figcaption>The Insert/Edit Link form, filled in and ready to save</figcaption>
+</figure>
+<br>
 </li>
-<li>Click to save the form. <strong>Result:</strong> Your hyperlink appears in the text editing area.</li>
-<li>Click the <strong>Save</strong> button (do not close the article yet) and then click on the <strong>Preview</strong> button after the page refreshes. <strong>Result:</strong> A frame pops up displaying your article.
+<li>Click to save the form. <strong>Result:</strong> <em>Joomla</em> now appears as a hyperlink in the text.<br>
+<figure class="image"><img src="images/articles/296/joomla_link.png" alt="The Support paragraph with Joomla now shown as a hyperlink in the article text" width="924" height="459" loading="lazy" data-path="local-images:/articles/296/joomla_link.png">
+<figcaption>Joomla now appears as a link in the Support paragraph</figcaption>
+</figure>
+<br>
+</li>
+<li>Click the <strong>Save</strong> button (do not close the article yet), then click the <strong>Preview</strong> button after the page refreshes. <strong>Result:</strong> A frame pops up displaying your article.
 <ul>
-<li>Scroll down to view your article and try out the hyperlink.</li>
+<li>Scroll down to the <em>Support</em> section and try out the link. <strong>Result:</strong> Joomla's site opens in a new tab, thanks to the <em>Open link in...</em> setting from the previous step.</li>
 <li>Close the frame to return to your article.</li>
 </ul>
 </li>
 </ol>
 <h3>Editing, Removing, or Testing a Link</h3>
 <ol>
-<li>In the text editor click just to the right of your link, then right-click over the link. <strong>Result:</strong> The link is highlighted, and a menu with three options appears:
+<li>In the text editor, right-click the <em>Joomla</em> link. <strong>Result:</strong> The link is highlighted, and a menu with three options appears:
 <ul>
-<li><strong>Link</strong> opens the link editing menu.</li>
-<li><strong>Remove Link</strong> removes the link but leaves the display text.</li>
-<li><strong>Open Link</strong> opens the link in a new tab or window. Use this to test a link while editing.</li>
+<li><strong>Link...</strong> reopens the Insert/Edit Link form.</li>
+<li><strong>Remove link</strong> removes the link but leaves the display text.</li>
+<li><strong>Open link</strong> opens the link in a new tab or window. Use this to test a link while editing.</li>
 </ul>
+<br>
+<figure class="image"><img src="images/articles/296/right_click_link.png" alt="Right-click context menu over the Joomla link showing Link, Remove link, and Open link options" width="941" height="306" loading="lazy" data-path="local-images:/articles/296/right_click_link.png">
+<figcaption>The right-click menu for editing, removing, or opening the link</figcaption>
+</figure>
+<br>
 </li>
-<li>Press the Escape key to hide the menu.</li>
+<li>Press the <strong>Escape</strong> key to hide the menu.</li>
 </ol>
-<figure class="image"><img class="float-none" src="images/articles/296/link-icon-expanded-toolbar.png" alt="Screenshot highlighting the link icon on the expanded toolbar" width="2248" height="1376" loading="lazy" data-path="local-images:/articles/296/link-icon-expanded-toolbar.webp">
-<figcaption>The <em>Insert/Edit Link</em> icon on the expanded toolbar.</figcaption>
-</figure>
-<figure class="image"><img class="float-none" src="images/articles/296/insert-edit-link-form.png" alt="Screenshot of the insert/edit link form" width="1770" height="1356" loading="lazy" data-path="local-images:/articles/296/insert-edit-link-form.webp">
-<figcaption>Adding the link URL and display text.</figcaption>
-</figure>
-<figure class="image"><img class="float-none" src="images/articles/296/right-click-popup.png" alt="Screenshot showing the link context menu" width="1578" height="896" loading="lazy" data-path="local-images:/articles/296/right-click-popup.webp">
-<figcaption>Clicking immediately to the right of the link, then right-clicking reveals the link context menu.</figcaption>
-</figure>
+<p>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> <em>Our Services</em> now links out to the Joomla project from its Support section.</p>
 <h2>Concepts</h2>
-<p>Hyperlinks can take the user to a different page, or open the page in a new tab or window. This can be selected in the <em>Insert/Edit Link</em> form. Opening a link in a new tab or window is sometimes used for supplemental content, such as reference information.</p>
-<p><a title="Hyperlinks and Accessibility at the AIM Website" href="https://webaim.org/techniques/hypertext/link_text">This reference on hyperlinks and accessibility</a> explains important considerations for those using assistive technology.</p>
+<p>Hyperlinks can take the user to a different page, or open the page in a new tab or window. This can be selected in the <em>Insert/Edit Link</em> form. Opening a link in a new tab or window is sometimes used for supplemental content, such as reference information — and it's also the safer choice for links to sites outside your own, since some external sites refuse to display themselves inside a frame, which is how tools like Joomla's Preview work. Opening in a new window sidesteps that entirely.</p>
+<p><a title="Hyperlinks and Accessibility at the AIM Website" href="https://webaim.org/techniques/hypertext/link_text">This reference on hyperlinks and accessibility</a> explains important considerations for those using assistive technology. Linking a meaningful word like <em>Joomla</em>, rather than generic text like "click here," is part of that — it tells the reader what the link leads to, in and out of context.</p>
 <p>Adding a <em>Title</em> (available in the <em>Insert/Edit Link</em> form) will display a small popup message when the user hovers over a link.</p>
