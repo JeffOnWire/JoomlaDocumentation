@@ -1,77 +1,151 @@
-<p>This tutorial describes how to add images to articles.</p>
+<p>Using Joomla's Media tools, learn how to embed an image directly into an article's text, in a list item, and in a table.</p>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>We will be using this image for the tutorial. Right-click and download to your computer.<br>
-<img class="float-none" src="images/articles/303/Crab_Nebula.jpg" alt="The Crab Nebula" width="240" height="240" loading="lazy" data-path="local-images:/articles/303/Crab_Nebula.jpg">
-<br>
-</li>
+<li><a href="wysiwyg-editor/lists">3.3 Lists</a> covers creating bulleted lists, used later in this tutorial.</li>
+<li><a href="wysiwyg-editor/tables">3.5 Tables</a> covers building and formatting tables, used later in this tutorial.</li>
+<li>We'll use these three images in the tutorial, sized for the web at 720px wide. Right-click each and save to your computer:<br><br><img class="float-none" src="images/articles/303/Crab_Nebula.jpg" alt="The Crab Nebula" width="240" height="240" loading="lazy" data-path="local-images:/articles/303/Crab_Nebula.jpg"> <img class="float-none" src="images/articles/303/Orion_Nebula_Hubble_Space_Telescope.jpg" alt="The Orion Nebula" width="240" height="259" loading="lazy" data-path="local-images:/articles/303/Orion_Nebula_Hubble_Space_Telescope.jpg"> <img class="float-none" style="border-width: 1px; border-style: solid;" src="images/articles/303/The_Hubble_Space_Telescope_and_the_Faint_Object_Spectrograph_heic0112a.jpg" alt="Illustration of the Hubble Space Telescope, with the Faint Object Spectrograph instrument highlighted" width="240" height="186" loading="lazy" data-path="local-images:/articles/303/The_Hubble_Space_Telescope_and_the_Faint_Object_Spectrograph_heic0112a.jpg"></li>
 </ul>
 <h2>Steps</h2>
+<h3>Embed an Image with a Caption</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
-<li>Click on the <strong>New</strong> button. <strong>Result:</strong> A new-article form appears.
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
 <ul>
 <li><strong>Title:</strong> <em>Astronomy</em></li>
 </ul>
 </li>
-<li>Click into the <strong>Article Text</strong> area then select <strong>Media</strong> from the <strong>CMS Content</strong> menu. <strong>Result:</strong> The <em>Media</em> page appears in a popup frame.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/media-menu.png" alt="The Media menu under CMS Content" width="960" height="726" loading="lazy" data-path="local-images:/articles/303/media-menu.webp">
-<figcaption>Link to the <em>Media</em> window under <em>CMS Content</em></figcaption>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The <em>Astronomy</em> category is added.<br>
+<figure class="image"><img src="images/articles/303/astronomy_category_added.png" alt="Categories list showing the new Astronomy category added" width="1021" height="451" loading="lazy" data-path="local-images:/articles/303/astronomy_category_added.png">
+<figcaption>The Astronomy category added</figcaption>
 </figure>
-<br>
 </li>
-<li>Click to add a new folder and name it <strong>Astronomy</strong>. <strong>Result:</strong> The page refreshes with the new folder shown.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/astronomy-folder.png" alt="Creating a folder for the article images" width="960" height="516" loading="lazy" data-path="local-images:/articles/303/astronomy-folder.webp">
-<figcaption>The <em>Astronomy</em> folder is added to contain the images for this article.</figcaption>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<ul>
+<li><strong>Title:</strong> <em>Crab Nebula</em></li>
+<li><strong>Category:</strong> <em>Astronomy</em></li>
+</ul>
+</li>
+<li>Click into the <strong>Article Text</strong> area then select <strong>Media</strong> from the <strong>CMS Content</strong> menu. <strong>Result:</strong> The <em>Media</em> page appears in a popup frame.<br>
+<figure class="image"><img src="images/articles/303/media_page.png" alt="The Media page open in a popup frame" width="1293" height="501" loading="lazy" data-path="local-images:/articles/303/media_page.png">
+<figcaption>The Media page</figcaption>
 </figure>
-<br>
+</li>
+<li>Click to add a new folder and name it <strong>Astronomy</strong>. <strong>Result:</strong> The page refreshes with the new folder shown. <strong>Note:</strong> This is a media folder for organising files — a different thing from the <em>Astronomy</em> category we just created, even though they share a name here.<br>
+<figure class="image"><img src="images/articles/303/media_page_astronomy_folder.png" alt="The Media page showing the new Astronomy folder" width="1294" height="546" loading="lazy" data-path="local-images:/articles/303/media_page_astronomy_folder.png">
+<figcaption>The new Astronomy media folder</figcaption>
+</figure>
 </li>
 <li>In the left-side navigation area, click on the new folder. <strong>Result:</strong> The page refreshes and displays the new folder.</li>
-<li>Add the Crab Nebula images you downloaded earlier to the new folder by drag-and-drop or using the <strong>Upload</strong> button at the top of the page. <strong>Note:</strong> The images are uploaded to the new folder but not yet added to your article.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/uploading-images.png" alt="Uploading images to the new folder" width="960" height="645" loading="lazy" data-path="local-images:/articles/303/uploading-images.webp">
-<figcaption>Uploading images by drag-and-drop. Optionally use the <em>Upload</em> button at the top of the window.</figcaption>
-</figure>
-<br>
-</li>
-<li>Click the image to select it.
+<li>Upload all three images you downloaded earlier — Crab Nebula, Orion Nebula, and the Hubble Space Telescope image — to the new folder, using drag-and-drop or the <strong>Upload</strong> button at the top of the page. <strong>Note:</strong> The images are uploaded to the folder but not yet added to your article.</li>
+<li>Tick the checkbox on the Crab Nebula thumbnail to select it.
 <ul>
 <li>In the <strong>Additional Data</strong> form, add descriptive alternate text, <em>Crab Nebula</em>.</li>
 <li>Click the <strong>Insert Media</strong> button at the top of the form.</li>
 </ul>
 <strong>Result:</strong> The frame closes and the image has been added to the article.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/insert-media.png" alt="Adding alternate text and inserting the image" width="960" height="796" loading="lazy" data-path="local-images:/articles/303/insert-media.webp">
-<figcaption>Select the desired image, add alternate text, and insert the image into the article.</figcaption>
+<figure class="image"><img src="images/articles/303/inserting_crab_nebula_with_alt_text.png" alt="Crab Nebula thumbnail selected in the Media popup, with alternate text entered" width="1280" height="912" loading="lazy" data-path="local-images:/articles/303/inserting_crab_nebula_with_alt_text.png">
+<figcaption>Selecting the Crab Nebula image and adding alternate text</figcaption>
 </figure>
-<br>
 </li>
 <li>Click on the image to select it. <strong>Result:</strong> A blue bounding box appears with square handles at the corners.</li>
-<li>Drag the handles to resize the image.</li>
+<li>Drag a handle to resize the image to approximately <em>600px</em> wide. <strong>Note:</strong> A small popup appears as you drag, showing the image's current size.<br>
+<figure class="image"><img src="images/articles/303/resizing_the_image.png" alt="Dragging a resize handle, with the size popup showing the current width and height" width="913" height="596" loading="lazy" data-path="local-images:/articles/303/resizing_the_image.png">
+<figcaption>Resizing the image, with the size popup visible</figcaption>
+</figure>
+</li>
 <li>Right-click over the image and select <strong>Image</strong>.</li>
-<li>Check the <strong>Show caption</strong> box then click <strong>Save</strong>.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/image-properties.png" alt="The image properties window with the show caption option checked" width="960" height="788" loading="lazy" data-path="local-images:/articles/303/image-properties.webp">
-<figcaption>Choosing to show a caption from image properties form.</figcaption>
+<li>Check the <strong>Show caption</strong> box then click <strong>Save</strong>.</li>
+<li>The image returns with a caption area. Type a caption, <em>The Crab Nebula, a supernova remnant about 6,500 light-years from Earth.</em><br>
+<figure class="image"><img src="images/articles/303/typing_the_caption.png" alt="Typing the caption beneath the Crab Nebula image" width="860" height="788" loading="lazy" data-path="local-images:/articles/303/typing_the_caption.png">
+<figcaption>Typing the image caption</figcaption>
 </figure>
-<br>
 </li>
-<li>The image returns with a caption area. Type a caption, <em>The Crab Nebula</em>.<br>
-<figure class="image"><img class="float-none" src="images/articles/303/adding-caption.png" alt="Typing a caption" width="960" height="890" loading="lazy" data-path="local-images:/articles/303/adding-caption.webp">
-<figcaption>Formatting can be applied to captions.</figcaption>
+<li>Click <strong>Save</strong> (do not close the article yet) — we're not quite done.</li>
+</ol>
+<h3>Add an Image to a List Item</h3>
+<p>Images aren't limited to sitting on their own — they can appear inside a list item too, alongside the item's text.</p>
+<ol>
+<li>Click the image to select it. Click just to the right of the bounding box (or tap the right arrow key once) to move the insertion point past the image, then press <strong>Return</strong> to begin a new line below it.</li>
+<li>Type a short lead-in sentence: <em>Other notable deep-sky objects worth knowing about include:</em></li>
+<li>Press <strong>Return</strong>, then select the <strong>Bulleted List</strong> button in the toolbar, as covered in <a href="wysiwyg-editor/lists">3.3 Lists</a>.</li>
+<li>Type the first list item: <em>Andromeda Galaxy — the nearest large spiral galaxy to the Milky Way.</em></li>
+<li>Press <strong>Return</strong> to start a second list item, then type: <em>Orion Nebula — a bright stellar nursery visible to the naked eye under dark skies.</em></li>
+<li>Press <strong>Shift+Return</strong> twice to add two line breaks within the same list item, placing the cursor on its own line below the text.</li>
+<li>Select <strong>Media</strong> from the <strong>CMS Content</strong> menu.</li>
+<li>Tick the checkbox on the Orion Nebula thumbnail to select it.
+<ul>
+<li>Add alternate text, <em>Orion Nebula</em>.</li>
+<li>Click <strong>Insert Media</strong>.</li>
+</ul>
+<strong>Result:</strong> The image appears on its own line within the list item.<br>
+<figure class="image"><img src="images/articles/303/list_item_image_in_editor.png" alt="The Orion Nebula image inserted within a list item, between the Andromeda Galaxy and Pleiades Cluster items" width="887" height="1093" loading="lazy" data-path="local-images:/articles/303/list_item_image_in_editor.png">
+<figcaption>The Orion Nebula image inline within a list item</figcaption>
 </figure>
-<br>
 </li>
-<li>Save the article by clicking the <strong>Save</strong> button at the top of the screen, then click <strong>Preview</strong> to see how the image will appear in the article.</li>
-<li>Close the preview screen.</li>
+<li>Press <strong>Shift+Return</strong> once to add a line break below the image, still within the same list item.</li>
+<li>Press <strong>Return</strong> to end the current list item and start a new bullet.</li>
+<li>Type the third list item: <em>Pleiades Cluster — a bright, easily visible open star cluster made up of hundreds of young blue stars.</em></li>
+<li>Press <strong>Return</strong> twice to end the list.</li>
+<li>The Orion Nebula image is too large for the list. Right-click it and select <strong>Image</strong>, then under <strong>Width</strong> enter <em>480</em> and press <strong>Tab</strong>. <strong>Result:</strong> The <strong>Height</strong> field updates automatically, since the lock icon keeps the two fields proportional. Click <strong>Save</strong> to update the image.</li>
+<li>Click <strong>Save</strong> to save the article (but don't close the article yet).</li>
+</ol>
+<h3>Add an Image to a Table Cell</h3>
+<p>Tables are meant for structured data, not for controlling page layout — but pairing an image with a short fact in a table cell is a legitimate use. Here we'll build a small table using the Crab Nebula image already uploaded to this article.</p>
+<ol>
+<li>Click below the list, then press <strong>Return</strong> to start a new paragraph.</li>
+<li>Insert a table, as covered in <a href="wysiwyg-editor/tables">3.5 Tables</a>, sized 2 columns by 2 rows — click the <strong>Table</strong> icon in the toolbar, hover over <strong>Table</strong>, then trace out a 2×2 grid.</li>
+<li>In the first row, type <em>Image</em> in the first cell and <em>Fact</em> in the second.</li>
+<li>Click into the second row's first cell, then select <strong>Media</strong> from the <strong>CMS Content</strong> menu.</li>
+<li>Tick the checkbox on the Crab Nebula thumbnail to select it, add the alternate text <em>Crab Nebula</em> then click <strong>Insert Media</strong>. <strong>Note:</strong> This is the same image already used earlier in the article — a single image can appear more than once in an article.</li>
+<li>Right-click the image and select <strong>Image</strong>, then under <strong>Width</strong> enter <em>240</em> and press <strong>Tab</strong>. <strong>Result:</strong> The image now fits the cell better.</li>
+<li>Click into the second row's second cell, then type a fact: <em>About 6,500 light-years from Earth, still expanding at over 1,500 km/s.</em></li>
+<li>Highlight both cells in the first row, right-click, hover over <strong>Cell</strong>, then click <strong>Cell properties</strong>. Under <strong>Cell type</strong> choose <em>Header cell</em>.</li>
+<li>Click <strong>Save</strong> (do not close the article yet).<br>
+<figure class="image"><img src="images/articles/303/table_image_in_editor.png" alt="The finished table with the Crab Nebula thumbnail in one cell and a fact beside it" width="890" height="482" loading="lazy" data-path="local-images:/articles/303/table_image_in_editor.png">
+<figcaption>The table with the Crab Nebula image and its fact</figcaption>
+</figure>
+</li>
+</ol>
+<h3>Add a Bordered Image</h3>
+<p>The Orion Nebula photo earlier in this article was captured by the Hubble Space Telescope, so let's close with an image of Hubble itself.</p>
+<ol>
+<li>Click below the table, then press <strong>Return</strong> to start a new paragraph.</li>
+<li>Type a lead-in sentence: <em>The Orion Nebula photo above was captured by this instrument:</em></li>
+<li>Select <strong>Media</strong> from the <strong>CMS Content</strong> menu.</li>
+<li>Tick the checkbox on the Hubble Space Telescope thumbnail to select it.
+<ul>
+<li>Add alternate text, <em>The Hubble Space Telescope</em>.</li>
+<li>Click <strong>Insert Media</strong>.</li>
+</ul>
+</li>
+<li>Click the image to select it, then right-click and select <strong>Image</strong>. <strong>Result:</strong> The <em>Insert/Edit Image</em> form reopens.</li>
+<li>Click the <strong>Advanced</strong> tab, then under <strong>Border width</strong> enter <em>4</em> and set <strong>Border style</strong> to <em>Double</em>.
+<figure class="image"><img src="images/articles/303/set_hubble_border.png" alt="Insert/Edit Image Advanced tab with Border width set to 4 and Border style set to Double" width="908" height="562" loading="lazy" data-path="local-images:/articles/303/set_hubble_border.png">
+<figcaption>Setting the border on the Hubble Space Telescope image</figcaption>
+</figure>
+</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Click <strong>Save</strong> at the top of the screen, then click <strong>Preview</strong> to see everything together — the captioned image, the list with its inline thumbnail, the table, and the bordered telescope image.<br>
+<figure class="image"><img src="images/articles/303/preview_image_article.png" alt="The finished article in Preview, showing the captioned image, the list with its inline image, the table, and the bordered telescope image" width="831" height="1628" loading="lazy" data-path="local-images:/articles/303/preview_image_article.png">
+<figcaption>The finished article in Preview</figcaption>
+</figure>
+</li>
+<li>Close the preview screen, then click <strong>Save &amp; Close</strong>.</li>
 </ol>
 <h2>Concepts</h2>
-<p>Images can take a long time to download, making your page slow. Optimising images by using appropriate size, resolution, and format can speed up page load time.</p>
-<p>Images are stored separately from articles on the server. A single image can appear in multiple articles. Deleting an article does not delete the image.</p>
+<p>Large images can take a long time to download, making your page slow. Optimising images by using appropriate size, resolution, and format can speed up page load time.</p>
+<p>Images are stored separately from articles on the server. A single image can appear in multiple articles, or more than once in the same article, as we saw when reusing the Crab Nebula image in the table above. Deleting an article does not delete the image.</p>
 <p>Adding alternate text to an image is important for accessibility. More information can be found in this <a href="https://webaim.org/techniques/alttext/" target="_blank" rel="noopener">WebAIM Alternative Text</a> article.</p>
+<p>A caption adds context a reader might not get from the image alone — use one when it genuinely helps. A simple, self-explanatory image often doesn't need one.</p>
+<p>Images work inside list items just as they do in ordinary paragraphs, which is useful when a list mixes visual and text detail.</p>
+<p>A table's job is to present structured, tabular data — not to position unrelated content side by side for the sake of layout. Pairing an image with related facts in a table, as we did above, is a reasonable use; using a table purely to arrange content visually is not.</p>
 <h2>Attribution</h2>
 <p>The images used in this tutorial came from the <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> website and comply with the licensing for each:</p>
 <ul>
 <li><a href="https://commons.wikimedia.org/wiki/File:Crab_Nebula.jpg" target="_blank" rel="noopener">Crab Nebula</a> (NASA)</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:Jupiter_rendered_with_Blender.webp" target="_blank" rel="noopener">Jupiter</a> (Wikideas1)</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:M31-Andromede-16-09-2023-Hamois.jpg" target="_blank" rel="noopener">Andromeda Galaxy</a> (<a href="https://Lucnix.be" target="_blank" rel="noopener">Luc Viatour</a>)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Orion_Nebula_(Hubble_Space_Telescope).jpg" target="_blank" rel="noopener">Orion Nebula</a> (NASA, ESA, Hubble)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:The_Hubble_Space_Telescope_and_the_Faint_Object_Spectrograph_(heic0112a).tiff" target="_blank" rel="noopener">The Hubble Space Telescope and the Faint Object Spectrograph</a> (ESA/Hubble)</li>
 </ul>

@@ -1,9 +1,10 @@
-CM3.5: retake final screenshot for full consistency
+CM4.1: restore dropped step, confirm intentional border edit
 
-Jeff retook inserting_4_by_4_table.png, the one screenshot left
-out of the previous reshoot - now shows "Plans & Pricing" in the
-background, matching every other image and the tutorial text.
-Updated its width/height (945x600 -> 929x593).
+Restored the first step of "Add an Image to a List Item" (click
+image, click right of bounding box, press Return) - Jeff confirmed
+its removal was accidental, not deliberate. This is the specific
+fix for the caption-click trap found earlier this session.
 
-All six CM3.5 screenshots are now fully consistent with each other
-and with the article text. No open items remain in Section 3.
+The inline border added to the third Prerequisites image was
+confirmed intentional - Jeff added it himself, both for looks and
+to help define the image's right-click area. No change needed.

@@ -1,81 +1,104 @@
-<p>The <em>intro image</em> of an article can be shown on a category blog page (a page that shows articles from one or more categories).</p>
-<p>The <em>full article image</em> can be shown in the detailed view of an article.</p>
+<p>Separate from any images embedded in an article's text, every article has two optional images of its own: an <em>intro image</em>, shown when the article appears in a listing like a category blog page, and a <em>full article image</em>, shown at the top of the article itself. The two are independent — an article can use the same image for both, or something different for each.</p>
+<p>In this tutorial we'll add two more articles to the <em>Astronomy</em> category from 4.1, view them together on a category blog page, then set intro and full article images across all three — using different images on one article to see the two settings work independently, and the same image on the other two, which is the more common approach.</p>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>an article. See <a href="content-management-first-steps/create-an-article-and-menu-item">2.1 Article &amp; Menu Item</a>.</li>
-<li>a category blog page. See <a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a> for a category of articles.</li>
+<li><a href="content-images/embedding-images-in-article-text">4.1 Images in Articles</a> creates the <em>Astronomy</em> category and the <em>Crab Nebula</em> article this tutorial builds on.</li>
+<li><a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a> creates the kind of menu item — Category Blog — we'll reuse here.</li>
+<li>We'll use these three images in the tutorial, sized for the web at 720px wide. Right-click each and save it to your computer.<br>
+<img class="float-none" src="images/articles/287/Jupiter.jpg" alt="Jupiter" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Jupiter.jpg">
+<img class="float-none" src="images/articles/287/Andromeda_Galaxy.jpg" alt="The Andromeda Galaxy" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Andromeda_Galaxy.jpg">
+<img class="float-none" src="images/articles/287/Crab_Nebula_Composite.jpg" alt="A multi-telescope composite image of the Crab Nebula" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Crab_Nebula_Composite.jpg">
+<br>
+</li>
 </ul>
 <h2>Steps</h2>
-<h3>Adding Intro and Full Article Images to Your Article Content</h3>
-<p>In this tutorial we will add an <em>intro image</em> and a <em>full article image</em> to your article.</p>
-<p>In our example, our article is called <em>Demo article images</em> and it's in the category <em>Demo Stuff</em>. This category has three articles.</p>
-<p>The menu item is set to show one leading article and four intro articles in two columns. The direction of the columns is set to across. That means intro article #1 will be shown in the left column, intro article #2 in the right column, and if we have a third article, it will be in the left column again.</p>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-category-blog-settings.jpg" alt="Screenshot Joomla backend category blog menu item settings" width="1086" height="383" loading="lazy" data-path="local-images:/articles/287/tutorial-category-blog-settings.jpg">
-<figcaption>Category blog menu item settings</figcaption>
-</figure>
-<p>In the frontend, the page looks like this:</p>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-category-blog-frontend-without-images.jpg" alt="Screenshot Joomla category blog frontend view without images" width="1086" height="352" loading="lazy" data-path="local-images:/articles/287/tutorial-category-blog-frontend-without-images.jpg">
-<figcaption>The category blog page before adding images</figcaption>
-</figure>
-<p>Our articles don't have images yet. We're going to add them now.</p>
-<h3>Intro Image</h3>
-<p>In this part of the tutorial, we'll add the <em>intro image</em>. This is the image shown on the category blog page.</p>
+<h3>Add Two More Articles</h3>
+<p><em>Crab Nebula</em> is currently alone in the <em>Astronomy</em> category. A category blog page with just one article doesn't show much, so let's add two more.</p>
 <ol>
-<li>Create a new article, or go to <strong>Content &gt; Articles</strong> and open the article that needs images.</li>
-<li>Click on the <strong>Images and Links</strong> tab.</li>
-<li>In the top left part you can add the intro image. Click on the <strong>Select</strong> button to add an image.</li>
-<li>A popup shows the images that are already there. In this case, the image we want to use isn't there yet so we will upload it. Click the <strong>Upload</strong> button in the top left corner.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-select-upload-intro-image.jpg" alt="Screenshot of the image folder and the upload button" width="1086" height="502" loading="lazy" data-path="local-images:/articles/287/tutorial-select-upload-intro-image.jpg">
-<figcaption>The Select Image popup with the Upload button</figcaption>
-</figure>
-<br>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
+<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<ul>
+<li><strong>Title:</strong> <em>Jupiter</em></li>
+<li><strong>Category:</strong> <em>Astronomy</em></li>
+<li><strong>Article Text:</strong> <em>The largest planet in our solar system, Jupiter is a gas giant more than twice as massive as all the other planets combined.</em></li>
+</ul>
 </li>
-<li>Upload an image from your computer. <strong>Result:</strong> The image appears in the popup, preselected, with a message confirming it's uploaded.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-image-uploaded.jpg" alt="Screenshot media manager item uploaded and preselected" width="1086" height="512" loading="lazy" data-path="local-images:/articles/287/tutorial-image-uploaded.jpg">
-<figcaption>The uploaded image, preselected</figcaption>
-</figure>
-<br>
+<li>Click <strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Andromeda Galaxy</em></li>
+<li><strong>Category:</strong> <em>Astronomy</em></li>
+<li><strong>Article Text:</strong> <em>The Andromeda Galaxy is the nearest large galaxy to the Milky Way, and on a dark, clear night it's visible to the naked eye.</em></li>
+</ul>
 </li>
-<li>Click <strong>Select</strong> in the top right corner. <strong>Result:</strong> The selected image is added. You can set alt text for your image; if it doesn't have to be read aloud by screen readers, check the box next to <strong>No description</strong>. Leave the other settings as they are.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-intro-image-ready.jpg" alt="Screenshot intro image added with alt-text" width="932" height="728" loading="lazy" data-path="local-images:/articles/287/tutorial-intro-image-ready.jpg">
-<figcaption>The intro image added, with alt text set</figcaption>
-</figure>
-<br>
-</li>
-<li>Save your article. <strong>Result:</strong> Our frontend page now has an image for <em>Demo article images</em>.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-category-blog-frontend-with-image.jpg" alt="Screenshot frontend category blog page with intro image" width="1086" height="470" loading="lazy" data-path="local-images:/articles/287/tutorial-category-blog-frontend-with-image.jpg">
-<figcaption>The category blog page with the intro image added</figcaption>
-</figure>
-<br>
-</li>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The <em>Astronomy</em> category now holds three articles: <em>Crab Nebula</em>, <em>Jupiter</em>, and <em>Andromeda Galaxy</em>.</li>
 </ol>
-<h3>Full Article Image</h3>
-<p>In this part of the tutorial, we'll add the <em>full article image</em>. This is the image shown on the article page.</p>
-<p>At this point, our article <em>Demo article images</em> doesn't have a full article image yet.</p>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-example-article-without-image-frontend.jpg" alt="Screenshot frontend article without image" width="1086" height="335" loading="lazy" data-path="local-images:/articles/287/tutorial-example-article-without-image-frontend.jpg">
-<figcaption>The article page before adding a full article image</figcaption>
-</figure>
+<h3>Create a Category Blog</h3>
+<p>As demonstrated in <a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a>, create a menu item to view the category.</p>
 <ol>
-<li>Create a new article, or go to <strong>Content &gt; Articles</strong> and open the article that needs images.</li>
-<li>Click on the <strong>Images and Links</strong> tab.</li>
-<li>In the bottom left part you can add the full article image. Click on the <strong>Select</strong> button to add an image.</li>
-<li>A popup shows the images that are already there. In this case, the image we want to use is there, so check the image and click <strong>Select</strong> in the top right corner.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-image-select.jpg" alt="Screenshot select and insert image" width="1086" height="564" loading="lazy" data-path="local-images:/articles/287/tutorial-image-select.jpg">
-<figcaption>Selecting an existing image</figcaption>
-</figure>
-<br>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>, then click <strong>New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Astronomy Articles Blog</em></li>
+<li><strong>Menu Item Type:</strong> <em>Category Blog</em></li>
+<li><strong>Category:</strong> <em>Astronomy</em></li>
+</ul>
 </li>
-<li><strong>Result:</strong> The selected image is added. You can set alt text for your image; if it doesn't have to be read aloud by screen readers, check the box next to <strong>No description</strong>. Leave the other settings as they are.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-full-article-image-ready.jpg" alt="Screenshot full article image settings" width="878" height="552" loading="lazy" data-path="local-images:/articles/287/tutorial-full-article-image-ready.jpg">
-<figcaption>The full article image added, with alt text set</figcaption>
-</figure>
-<br>
-</li>
-<li>Save your article. <strong>Result:</strong> Our frontend page now has an image for <em>Demo article images</em>.<br>
-<figure class="image"><img class="float-none" src="images/articles/287/tutorial-full-article-image-frontend1.jpg" alt="Screenshot full article image" width="1086" height="399" loading="lazy" data-path="local-images:/articles/287/tutorial-full-article-image-frontend1.jpg">
-<figcaption>The article page with the full article image added</figcaption>
-</figure>
-<br>
-</li>
+<li>Click <strong>Save &amp; Close</strong>, leaving all other options at their defaults.</li>
+<li>View the site and click the <strong>Astronomy Articles Blog</strong> menu item. <strong>Result:</strong> All three articles are listed, but none has an image yet.</li>
 </ol>
+<h3>Set Different Images on Crab Nebula</h3>
+<p><em>Crab Nebula</em> already has an image embedded in its text from 4.1. Here we'll give it its own intro and full article images too — and deliberately use two different photos, so you can see the two settings are independent of each other and of the article's body content.</p>
+<ol>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>, then click <em>Crab Nebula</em> to open it for editing.</li>
+<li>Click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Full Article Image</strong>, click <strong>Select</strong>. <strong>Result:</strong> A popup shows the images already uploaded to the site.</li>
+<li>Select the Crab Nebula image already in the <em>Astronomy</em> folder (the same one embedded in the article's text), then click <strong>Select</strong> in the popup. <strong>Result:</strong> The image is added as the Full Article Image, with the alt text already carried over.</li>
+<li>Under <strong>Intro Image</strong>, click <strong>Select</strong>, then <strong>Upload</strong> the Crab Nebula composite image you downloaded earlier — a different photo of the same nebula, distinct from the close-up used everywhere else in this article.
+<ul>
+<li>Add alternate text, <em>Crab Nebula composite image</em>.</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> <em>Crab Nebula</em> now shows the composite image in the listing.</li>
+<li>Click into the <em>Crab Nebula</em> article. <strong>Result:</strong> The article page shows a different image at the top — the close-up Full Article Image — followed further down by the same close-up again, embedded in the body text back in 4.1.</li>
+</ol>
+<h3>Set Matching Images on Jupiter and Andromeda Galaxy</h3>
+<p>Using two different images, as we just did, is useful when you want a simpler preview image on a listing page and something more detailed on the article itself. Most of the time, though, the same image works fine for both — as we'll do for the remaining two articles.</p>
+<ol>
+<li>Open <em>Jupiter</em> for editing, then click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Intro Image</strong>, click <strong>Select</strong>, then <strong>Upload</strong> the Jupiter image you downloaded earlier.
+<ul>
+<li>Add alternate text, <em>Jupiter</em>.</li>
+</ul>
+</li>
+<li>Under <strong>Full Article Image</strong>, click <strong>Select</strong>. <strong>Result:</strong> The Jupiter image you just uploaded is already there.</li>
+<li>Select it and click <strong>Select</strong> in the popup, rather than uploading it a second time. <strong>Result:</strong> The same image is now set as both the Intro Image and the Full Article Image.</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>Open <em>Andromeda Galaxy</em> for editing, then repeat the same steps: upload the Andromeda Galaxy image you downloaded earlier as the Intro Image, then select that same image again as the Full Article Image.
+<ul>
+<li>Add alternate text, <em>Andromeda Galaxy</em>.</li>
+<li><strong>Note:</strong> If an image is purely decorative and doesn't need to be read aloud by screen readers, you can check <strong>No description</strong> instead of entering alt text. Since this image is the article's main subject, we've given it real alt text instead.</li>
+</ul>
+</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> All three articles now show an image in the listing. Click into <em>Jupiter</em> or <em>Andromeda Galaxy</em> and the same image appears again at the top — unlike <em>Crab Nebula</em>, where the listing and the article show two different photos.</li>
+</ol>
+<h3>Float the Intro Image</h3>
+<p>An intro image can optionally float beside the article's summary text on a category blog page instead of sitting above it.</p>
+<ol>
+<li>Open <em>Jupiter</em> for editing, then click the <strong>Images and Links</strong> tab.</li>
+<li>Look for a <strong>Float</strong> option near the Intro Image and set it to <em>Left</em> or <em>Right</em>. <strong>Note:</strong> The exact location of this option can vary by Joomla version and template.</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
+<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> The <em>Jupiter</em> image now sits beside its summary text instead of stacked above it, with the text wrapping around it.</li>
+</ol>
+<h2>Concepts</h2>
+<p>The intro image and full article image are independent settings. They're commonly set to the same image for simplicity, but using a different image for each can be useful — for example, a simple thumbnail on a listing page and a more detailed image on the article itself.</p>
+<p>A category blog page (and similar listings) shows an article's intro image. The article's own page shows the full article image, along with anything embedded directly in the article's text.</p>
+<p>As with embedded images, alternate text matters for accessibility. Use <strong>No description</strong> only for images that are purely decorative and add no meaningful information; see the <a href="https://webaim.org/techniques/alttext/" target="_blank" rel="noopener">WebAIM Alternative Text</a> article referenced in 4.1 for more.</p>
+<h2>Attribution</h2>
+<p>The images used in this tutorial came from the <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> website and comply with the licensing for each:</p>
+<ul>
+<li><a href="https://commons.wikimedia.org/wiki/File:Crab_Nebula_NGC_1952_(composite_from_Chandra,_Hubble_and_Spitzer).jpg" target="_blank" rel="noopener">Crab Nebula NGC 1952 (composite from Chandra, Hubble and Spitzer)</a> (NASA, ESA, CXC, JPL-Caltech)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Jupiter_rendered_with_Blender.webp" target="_blank" rel="noopener">Jupiter</a> (Wikideas1)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:M31-Andromede-16-09-2023-Hamois.jpg" target="_blank" rel="noopener">Andromeda Galaxy</a> (<a href="https://Lucnix.be" target="_blank" rel="noopener">Luc Viatour</a>)</li>
+</ul>
