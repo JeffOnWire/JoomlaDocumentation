@@ -1,10 +1,27 @@
-CM4.1: restore dropped step, confirm intentional border edit
+CM4.2: place real images and all six screenshots
 
-Restored the first step of "Add an Image to a List Item" (click
-image, click right of bounding box, press Return) - Jeff confirmed
-its removal was accidental, not deliberate. This is the specific
-fix for the caption-click trap found earlier this session.
+Jeff tested CM4.2 as-is - no text changes needed - and placed the
+three real prerequisite images plus all six planned screenshots.
 
-The inline border added to the third Prerequisites image was
-confirmed intentional - Jeff added it himself, both for looks and
-to help define the image's right-click area. No change needed.
+The real Napoleon III Telescope filename initially came through
+with a comma and an ampersand rather than the placeholder
+underscore-only name used in the draft, so the Prerequisites
+src/data-path were updated to match. Jeff then renamed the file
+himself to drop those characters, back to the original
+underscore-only name - updated src/data-path again to match.
+Attribution's link is unaffected either way, since it points at
+the real external Commons page.
+
+All three telescope images are 1200x900, confirming they're still
+full-size/unresized as intended - the Resizing Images section is
+what shrinks one of them to 720px later in the tutorial.
+Prerequisites thumbnail dimensions (240x180) were already correct.
+
+All six screenshots placed as figure/figcaption pairs at their
+corresponding steps, with real pixel dimensions: the Media
+component/Create New Folder button, the Telescopes folder with its
+two sub-folders, dragging an image into Optical Telescopes, the
+item context menu, the Resize screen at 720px, and the uploaded/
+renamed PDF.
+
+CM4.2 is now fully real end to end - no open items remain.
