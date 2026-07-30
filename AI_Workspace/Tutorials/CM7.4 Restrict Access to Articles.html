@@ -1,68 +1,56 @@
-<p>This tutorial walks through a single realistic scenario from start to finish: you run a site with a <em>Premium Articles</em> category, and you want logged-in members to see the full articles while everyone else sees only a short teaser with a login prompt.</p>
-<p>By the end, every article in the <em>Premium Articles</em> category will be partially restricted, and you'll know which settings did the work.</p>
+<p>This tutorial walks through a single realistic scenario from start to finish: you run a site with a <em>Subscriber Exclusives</em> category, and you want logged-in members to see the full articles while everyone else sees only a short teaser with a login prompt.</p>
+<p>By the end, every article in the <em>Subscriber Exclusives</em> category will be partially restricted, and you'll know which settings did the work.</p>
 <h2>The Scenario</h2>
 <ul>
-<li>You have a category called <em>Premium Articles</em> containing several articles.</li>
+<li>You have a category called <em>Subscriber Exclusives</em> containing several in-depth stories.</li>
 <li>Anonymous visitors should see the article title and a short intro paragraph.</li>
 <li>Logged-in registered users should see the full article.</li>
-<li>Links to premium articles should still appear in listings (so visitors know there's more to read if they sign up).</li>
+<li>Links to subscriber-exclusive articles should still appear in listings (so visitors know there's more to read if they sign up).</li>
 </ul>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
 </ul>
 <h2>Setup</h2>
-<h3>Create the <em>Premium Articles</em> Category</h3>
+<h3>Create the <em>Subscriber Exclusives</em> Category</h3>
 <ol>
-<li>Log in to Joomla backend.</li>
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
 <ul>
-<li><strong>Title:</strong> <em>Premium Articles</em></li>
-<li><strong>Description:</strong> <em>Content for our registered users.</em></li>
+<li><strong>Title:</strong> <em>Subscriber Exclusives</em></li>
+<li><strong>Description:</strong> <em>In-depth reporting for our registered readers.</em></li>
 <li><strong>Access:</strong> <em>Public</em></li>
 <li><strong>Status:</strong> <em>Published</em></li>
 </ul>
 </li>
-<li><strong>Save &amp; Close</strong>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/352/0PZ8o7.png" alt="The completed create-category form for Premium Articles" width="960" height="778" loading="lazy">
-<figcaption>The completed create-category form for <em>Premium Articles</em></figcaption>
-</figure>
-<br>
-</li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Add Articles</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
 <ul>
-<li><strong>Title:</strong> <em>Investment Tips</em></li>
-<li><strong>Category:</strong> <em>Premium Articles</em></li>
-<li><strong>Article Text:</strong> copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener">Lorem Ipsum</a>.</li>
-<li>Position your cursor on a blank line after the first paragraph.</li>
-<li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.
-<br>
-<figure class="image"><img class="float-none" src="images/articles/352/6yAl3H.jpg" alt="Selecting Read More from the CMS Content dropdown while editing the Investment Tips article" loading="lazy">
-<figcaption>Selecting Read More from the CMS Content dropdown</figcaption>
-</figure>
-<br>
-</li>
-</ul>
-</li>
-<li>Click <strong>Save &amp; New</strong>. <strong>Result:</strong> A new-article form appears.
-<ul>
-<li><strong>Title:</strong> <em>Hot Stock Picks</em></li>
-<li><strong>Category:</strong> <em>Premium Articles</em></li>
+<li><strong>Title:</strong> <em>Inside the Trade Talks: What Really Happened in Geneva</em></li>
+<li><strong>Category:</strong> <em>Subscriber Exclusives</em></li>
 <li><strong>Article Text:</strong> copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener">Lorem Ipsum</a>.</li>
 <li>Position your cursor on a blank line after the first paragraph.</li>
 <li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.</li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; New</strong>. <strong>Result:</strong> A new-article form appears.
+<li>Click <strong>Save &amp; New</strong>.
 <ul>
-<li><strong>Title:</strong> <em>Advice for Investors</em></li>
-<li><strong>Category:</strong> <em>Premium Articles</em></li>
+<li><strong>Title:</strong> <em>The Central Bank's Decision, Explained</em></li>
+<li><strong>Category:</strong> <em>Subscriber Exclusives</em></li>
+<li><strong>Article Text:</strong> copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener">Lorem Ipsum</a>.</li>
+<li>Position your cursor on a blank line after the first paragraph.</li>
+<li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.</li>
+</ul>
+</li>
+<li><strong>Save &amp; New</strong>.
+<ul>
+<li><strong>Title:</strong> <em>Special Report: Markets React to the Merger</em></li>
+<li><strong>Category:</strong> <em>Subscriber Exclusives</em></li>
 <li><strong>Article Text:</strong> copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener">Lorem Ipsum</a>.</li>
 <li>Position your cursor on a blank line after the first paragraph.</li>
 <li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.</li>
@@ -75,8 +63,9 @@
 <li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
 <ul>
-<li><strong>Title:</strong> <em>Premium Blog</em></li>
-<li><strong>Category:</strong> <em>Premium Articles</em></li>
+<li><strong>Title:</strong> <em>Subscriber Exclusives</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Category Blog</em></li>
+<li><strong>Category:</strong> <em>Subscriber Exclusives</em></li>
 </ul>
 </li>
 <li><strong>Save &amp; Close</strong></li>
@@ -85,24 +74,24 @@
 <h3>Verify the Setup and Default Permissions</h3>
 <ol>
 <li>View the site. <strong>Result:</strong> The <strong>Log in</strong> form appears, indicating you're not logged in to the frontend.</li>
-<li>Click <em>Premium Blog</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The three articles appear with introductory text and <strong>Read More</strong> links. <strong>Note:</strong> Clicking a <strong>Read More</strong> link displays the full article. The articles are currently available to any visitor on the site.</li>
+<li>Click <em>Subscriber Exclusives</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The three articles appear with introductory text and <strong>Read More</strong> links. <strong>Note:</strong> Clicking a <strong>Read More</strong> link displays the full article. The articles are currently available to any visitor on the site.</li>
 </ol>
 <h3>Restrict the Articles to Registered Users</h3>
 <p>We want the public to be able to see the article titles and introduction text, but not be able to read them unless they're logged in.</p>
 <ol>
 <li>Go to the articles list (<strong>Content &gt; Articles</strong>).</li>
-<li>Filter the list for <em>Premium Articles</em>.
+<li>Filter the list for <em>Subscriber Exclusives</em>.
 <ul>
 <li>Click <strong>Filter Options</strong>.</li>
-<li>Select <em>Premium Articles</em> from the <strong>- Select Category -</strong> dropdown. <strong>Result:</strong> Only articles in the <em>Premium Articles</em> category are listed.</li>
+<li>Select <em>Subscriber Exclusives</em> from the <strong>- Select Category -</strong> dropdown. <strong>Result:</strong> Only articles in the <em>Subscriber Exclusives</em> category are listed.</li>
 </ul>
 </li>
 <li>Tick the checkbox in the column header to select all listed articles.</li>
 <li>Pull down the <strong>Actions</strong> dropdown (near the top of the window) and select <strong>Batch</strong>. <strong>Result:</strong> A popup dialog appears.</li>
 <li>Under <strong>Set Access Level</strong>, choose <em>Registered</em>.</li>
 <li>Click <strong>Process</strong>.</li>
-<li>View the site and refresh the <em>Premium Blog</em> page. <strong>Result:</strong> The blog is empty.</li>
-<li>Log in to the frontend and view the blog again. <strong>Result:</strong> The <em>Premium Articles</em> require a user to log in to view.</li>
+<li>View the site and refresh the <em>Subscriber Exclusives</em> page. <strong>Result:</strong> The blog is empty.</li>
+<li>Log in to the frontend and view the blog again. <strong>Result:</strong> The <em>Subscriber Exclusives</em> articles require a user to log in to view.</li>
 <li><strong>Log out</strong>.</li>
 </ol>
 <h3>Enable Unauthorised Links</h3>
@@ -111,31 +100,19 @@
 <li>Go to <strong>Content &gt; Articles</strong>.</li>
 <li>Click <strong>Options</strong> in the top toolbar.</li>
 <li>On the <strong>Articles</strong> tab, find <strong>Unauthorised Links</strong> and set it to <em>Yes</em>.</li>
-<li><strong>Save &amp; Close</strong>.
-<br>
-<figure class="image"><img class="float-none" src="images/articles/352/xAtXrq.png" alt="The Unauthorised Links option set to Yes on the Articles Options Articles tab" width="960" loading="lazy">
-<figcaption>Setting <strong>Unauthorised Links</strong> to <em>Yes</em> in the Articles component options</figcaption>
-</figure>
-<br>
-</li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Configure the Menu Item</h3>
 <ol>
-<li>Go to <strong>Menus &gt; Main Menu</strong> and click <em>Premium Blog</em>.</li>
+<li>Go to <strong>Menus &gt; Main Menu</strong> and click <em>Subscriber Exclusives</em>.</li>
 <li>Click the <strong>Options</strong> tab (below the title).</li>
 <li>Set <strong>Unauthorised Links</strong> to <em>Yes</em> (it's near the bottom of the list).</li>
-<li><strong>Save &amp; Close</strong>.
-<br>
-<figure class="image"><img class="float-none" src="images/articles/352/iMb78E.png" alt="The Unauthorised Links option set to Yes on the Premium Blog menu item's Options tab" width="960" loading="lazy">
-<figcaption>Setting <strong>Unauthorised Links</strong> to <em>Yes</em> on the menu item</figcaption>
-</figure>
-<br>
-</li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Test It</h3>
 <ol>
 <li>View the site, and make sure you're logged out of the frontend (the <strong>Log in</strong> form should be showing a <strong>Log in</strong> button).</li>
-<li>View <em>Premium Blog</em>. <strong>Result:</strong> The articles appear with introductory text, but the <strong>Read More</strong> links prompt you to register.</li>
+<li>View <em>Subscriber Exclusives</em>. <strong>Result:</strong> The articles appear with introductory text, but the <strong>Read More</strong> links prompt you to register.</li>
 <li>Click one of the <strong>Read More</strong> links to observe the behaviour.</li>
 </ol>
 <h2>Concepts</h2>

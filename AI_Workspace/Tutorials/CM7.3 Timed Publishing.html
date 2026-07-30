@@ -4,37 +4,25 @@
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="publishing-and-access-restrictions/publishing-menu-items">7.2 Publishing Menu Items</a> creates the <em>World News</em> category, its articles, and the <em>World News</em> Category Blog menu item used in this tutorial.</li>
 </ul>
 <h2>Setup</h2>
 <h3>Set the Server Time Zone</h3>
 <ol>
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>In the <strong>Administrator Menu</strong>, click <strong>System &gt; Global Configuration</strong>.</li>
 <li>Click the <strong>Server</strong> tab.</li>
 <li>Under <strong>Location</strong>, note the current <strong>Website Time Zone</strong> value — you'll restore this at the end of the tutorial.</li>
 <li>Adjust <strong>Website Time Zone</strong> to your local time zone.</li>
-<li><strong>Save &amp; Close</strong></li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
 </ol>
-<h3>Create a Category Blog Menu Item</h3>
-<ol>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
-<li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
-<ul>
-<li><strong>Title:</strong> <em>Time Standards</em></li>
-<li><strong>Menu Item Type:</strong> <em>Category Blog</em></li>
-<li><strong>Category:</strong> <em>Uncategorised</em></li>
-</ul>
-</li>
-<li><strong>Save &amp; Close</strong></li>
-</ol>
-<h3>Create an Article</h3>
+<h3>Add an Article to World News</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
 <ul>
-<li><strong>Title:</strong> <em>Time Zones</em></li>
-<li><strong>Article Text:</strong> Worldwide time zones were standardised following the International Meridian Conference in October 1884, after North American railroads first adopted standard hourly zones on November 18, 1883.</li>
-<li><strong>Status:</strong> <em>Published</em></li>
-<li><strong>Category:</strong> <em>Uncategorised</em></li>
+<li><strong>Title:</strong> <em>Merger Talks Confirmed Between Rival Tech Firms</em></li>
+<li><strong>Category:</strong> <em>World News</em></li>
 <li><strong>Featured:</strong> <em>Yes</em></li>
 </ul>
 </li>
@@ -43,9 +31,9 @@
 <h2>Steps</h2>
 <h3>Verify the Setup</h3>
 <ol>
-<li>View the site. <strong>Result:</strong> The homepage appears, with <em>Time Zones</em> listed as a featured article.</li>
-<li>Click <em>Time Standards</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The <em>Time Zones</em> article appears in the blog.</li>
-<li>Return to the backend and click <strong>Content &gt; Articles</strong>. <strong>Result:</strong> The <em>Time Zones</em> article has a gold star icon, indicating it's a featured item, and a green check icon, indicating it's published.</li>
+<li>View the site. <strong>Result:</strong> The homepage appears, with <em>Merger Talks Confirmed Between Rival Tech Firms</em> listed as a featured article.</li>
+<li>Click <em>World News</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The article appears in the blog, alongside the earlier World News stories.</li>
+<li>Return to the backend and click <strong>Content &gt; Articles</strong>. <strong>Result:</strong> The <em>Merger Talks Confirmed Between Rival Tech Firms</em> article has a gold star icon, indicating it's a featured item, and a green check icon, indicating it's published.</li>
 </ol>
 <h3>Set the Publication Time</h3>
 <ol>
@@ -58,10 +46,10 @@
 <li><strong>Save &amp; Close</strong>. <strong>Result:</strong> The status icon in the article list changes. <strong>Note:</strong> Hover over the icon to read the popup message — the article is unpublished but will be published automatically at the start-publishing time you set.</li>
 <li>View the site before the start-publishing time you entered.
 <ul>
-<li>Check the homepage and the category blog page to verify that your article does not yet appear.</li>
+<li>Check the homepage and the <em>World News</em> blog page to verify that your article does not yet appear.</li>
 </ul>
 </li>
-<li>When the start-publishing time has elapsed, recheck the homepage and category blog page, refreshing if necessary. <strong>Result:</strong> Your article appears in both places.</li>
+<li>When the start-publishing time has elapsed, recheck the homepage and blog page, refreshing if necessary. <strong>Result:</strong> Your article appears in both places.</li>
 <li>Return to the article list in the backend. <strong>Result:</strong> The now-published article appears with a green check status icon.</li>
 </ol>
 <h3>Control the Featured Item Time</h3>
@@ -70,10 +58,10 @@
 <li>Enter a <strong>Start Featured</strong> time a few minutes in the future.</li>
 <li>Enter a <strong>Finish Featured</strong> time a minute or two beyond the <strong>Start Featured</strong> time.</li>
 <li><strong>Save &amp; Close</strong>. <strong>Result:</strong> The featured icon in the article list changes. <strong>Note:</strong> Hover over the icon to read the popup message.</li>
-<li>View the site. <strong>Result:</strong> The article does not appear on the homepage as a featured item but still appears on the category-blog page.</li>
-<li>When the <strong>Start Featured</strong> time has elapsed, recheck the homepage (refreshing if necessary). <strong>Result:</strong> The <em>Time Zones</em> article appears as a featured item.</li>
+<li>View the site. <strong>Result:</strong> The article does not appear on the homepage as a featured item but still appears on the <em>World News</em> blog page.</li>
+<li>When the <strong>Start Featured</strong> time has elapsed, recheck the homepage (refreshing if necessary). <strong>Result:</strong> The article appears as a featured item.</li>
 <li>Return to the article list. <strong>Result:</strong> The now-featured article appears with a gold star <em>Featured</em> icon. <strong>Note:</strong> Hover over the icon to read the popup message.</li>
-<li>When the <strong>Finish Featured</strong> time has elapsed, view the site and refresh the homepage. <strong>Result:</strong> The <em>Time Zones</em> article no longer appears as a featured item, but still appears in the <em>Time Standards</em> blog.</li>
+<li>When the <strong>Finish Featured</strong> time has elapsed, view the site and refresh the homepage. <strong>Result:</strong> The article no longer appears as a featured item, but still appears in the <em>World News</em> blog.</li>
 <li>Return to the backend and inspect the <em>Featured</em> icon, hovering over it to view the popup message.</li>
 </ol>
 <h3>Set the Finish Publication Time</h3>
@@ -81,8 +69,8 @@
 <li>Edit the article and click the <strong>Publishing</strong> tab.</li>
 <li>Enter a <strong>Finish Publication</strong> time a few minutes in the future.</li>
 <li><strong>Save &amp; Close</strong></li>
-<li>Visit the site. <strong>Result:</strong> The article remains active on the category-blog page.</li>
-<li>When the finish-publishing time has elapsed, refresh the <em>Time Standards</em> blog page. <strong>Result:</strong> The article is no longer available.</li>
+<li>Visit the site. <strong>Result:</strong> The article remains active on the <em>World News</em> blog page.</li>
+<li>When the finish-publishing time has elapsed, refresh the <em>World News</em> blog page. <strong>Result:</strong> The article is no longer available.</li>
 <li>Return to the backend and inspect the <em>Status</em> icon, hovering over it to view the popup message.</li>
 </ol>
 <h3>Reset the Server Time Zone</h3>
@@ -93,7 +81,7 @@
 <li><strong>Save &amp; Close</strong></li>
 </ol>
 <h2>Concepts</h2>
-<p>These settings make it convenient to set the precise time an article is published, set the time and duration an article appears as a featured item, and automatically remove content at a specific date and time in the future — all helpful tools for controlling website content.</p>
+<p>These settings make it convenient to set the precise time an article is published, set the time and duration an article appears as a featured item, and automatically remove content at a specific date and time in the future — all helpful tools for controlling website content. Newsrooms use exactly this kind of scheduling for embargoed press releases and time-sensitive coverage that should be retired once it's no longer current.</p>
 <p>The timed publication controls allow you to control when articles are available on your website. The <strong>Start Publishing</strong> and <strong>Finish Publishing</strong> settings control when an article appears on the website; if left blank, an article appears as soon as it's created.</p>
 <p>If the article is featured (i.e. <strong>Featured</strong> is set to <em>Yes</em> in the article settings), the <strong>Start Featured</strong> and <strong>Finish Featured</strong> settings control when the article appears as a featured item.</p>
 <p>Start and finish times are relative to the website's time zone setting, which may differ from your local time zone and may not adjust for daylight saving time.</p>

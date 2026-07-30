@@ -1,43 +1,33 @@
-CM4.3: resolve Read More/Image Class questions, confirm licenses,
-add two new project style rules
+Two new style rules: no bare prerequisite links, no repeated
+Result text - applied project-wide
 
-Follow-up to the Attribution/review commit. Jeff resolved both
-flagged content questions:
+Jeff's own edit to CM7.1 replaced "You must understand the content
+management tutorials under 2 First Steps" with the cleaner "2 First
+Steps - covers basics assumed in this tutorial," and asked to
+elevate that pattern everywhere it appears. He also asked that
+"Click New. Result: A new-X form appears." only state the Result
+the first time that action occurs in a tutorial.
 
-- Read More removal for Crab Nebula is intentional - the
-  standardized intro images read clearly on the category blog
-  listing even without it, and he'd rather not introduce Read More
-  before it's formally covered in 6.2.
-- Image Class: none is no longer used anywhere in Steps, so the
-  matching sentence in Concepts was removed too. Reworded the
-  surrounding paragraph to note that full-width images (used
-  throughout this tutorial) aren't affected by the inline-floating
-  behaviour, without describing a fix for a problem no longer shown.
+Added both as rules to the Tutorial Style Guide, then searched the
+whole project rather than just fixing CM7.1:
 
-Also:
+Bare prerequisite links fixed in six files - CM1.3 Viewing the Site
+(1.1/1.2), CM10.4 Adding a New Menu (2 First Steps / 9.2 Menu Item
+Modules), CM2.3 Menu Items for a Category (2.1), CM2.5 Save to Menu
+(2.1/2.2/2.3, kept as three entries since its own intro paragraph
+calls out all three by name), CM6.2 Read More (2.1/2.2/2.3
+consolidated into one "2 First Steps" line, since CM6.2 builds its
+own fresh content rather than reusing those three), and CM9.1
+Custom Module (4.1).
 
-- Moved the floating "Log in to the backend." paragraph into a real
-  first step ("Log in to Joomla backend and navigate to the Home
-  Dashboard"), matching established project phrasing.
-- Corrected the three uncertain Attribution credits with the actual
-  license text Jeff pulled from each Commons page: Crab Nebula is
-  NOIRLab, CC BY 4.0; Jupiter Storms Merging is NASA/JPL-Caltech/
-  SwRI/MSSS, public domain (dropping the earlier CC BY guess);
-  Juice Launch Kit Cover is ESA, CC BY-SA 3.0 IGO.
+Repeated-Result duplicates fixed in three files: CM2.3, CM7.4, and
+CM8.2, each had a second (or third) "Click New"/"Save & New" for
+the same form type still stating the Result.
 
-Two new rules added to the Tutorial Style Guide, both applied to
-this file:
+CM8.2 and CM10.4 are legacy files still on their old placeholder
+themes (Sundial Software, Pets) - only these two style fixes were
+applied to them, no re-theming.
 
-- Log in only once per tutorial, as the very first step.
-- Write "Click" before a repeated action (e.g. Save & Close) only
-  the first time it appears in a tutorial; drop it for every later
-  occurrence of the same action. Applied here: the first Save & New
-  and first Save & Close each now say "Click"; every later Save &
-  Close in the file was already bare.
-
-Noted but deliberately deferred (Jeff wants to stay focused on
-CM4.3 for now): a more scannable visual treatment for Result/Note
-within steps, standardizing the new flex-div image-grid layout
-project-wide, and a PDF thumbnail for CM4.2's downloadable file.
-Logged in Editing Notes as backlog, possibly moving to GitHub
-issues.
+Verified: re-ran the project-wide search for both patterns after
+the fixes - clean. Tag balance checked across all eight touched
+files.

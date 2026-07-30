@@ -1,35 +1,36 @@
-<p>In this tutorial we will demonstrate that both an article and its category must be published for the article to appear on the website.</p>
+<p>In this tutorial we will explore the relationship between an article and its category and demonstrate that both must be published for the article to appear on the website.</p>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li>You must understand the content management tutorials under <a href="content-management-first-steps">2 First Steps</a>.</li>
+<li><a href="content-management-first-steps">2 First Steps</a> — covers basics assumed in this tutorial.</li>
 </ul>
 <h2>Setup</h2>
-<h3>Create a New Category</h3>
+<h3>Create a Category</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
 <ul>
-<li><strong>Title:</strong> <em>Sundial Software</em></li>
+<li><strong>Title:</strong> <em>World News</em></li>
 </ul>
 </li>
 <li>Note that the <strong>Status</strong> field defaults to <em>Published</em>.</li>
-<li><strong>Save &amp; Close</strong></li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Create Two Articles</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
 <ul>
-<li><strong>Title:</strong> <em>Sun Daze Companion</em></li>
+<li><strong>Title:</strong> <em>Weekend Storm Watch: Heavy Rain Expected</em></li>
 <li><strong>Category:</strong> <em>Uncategorised</em> (the default).</li>
+<li><strong>Featured:</strong> <em>Yes</em></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; New</strong>. <strong>Result:</strong> A new-article form appears.
+<li>Click <strong>Save &amp; New</strong>.
 <ul>
-<li><strong>Title:</strong> <em>Olympus Solar Calculator</em></li>
-<li><strong>Category:</strong> <em>Sundial Software</em></li>
+<li><strong>Title:</strong> <em>Trade Summit Ends in New Agreement</em></li>
+<li><strong>Category:</strong> <em>World News</em></li>
 <li><strong>Featured:</strong> <em>Yes</em></li>
 </ul>
 </li>
@@ -38,19 +39,19 @@
 <h2>Steps</h2>
 <h3>Unpublishing an Article</h3>
 <ol>
-<li>View the site by clicking the icon in the header. <strong>Result:</strong> Both articles appear on the homepage as featured articles. <strong>Note:</strong> The article details show the category, and the two articles are in different categories.</li>
+<li>View the site. <strong>Result:</strong> Both articles appear on the homepage as featured articles. <strong>Note:</strong> The article details show the category, and the two articles are in different categories.</li>
 <li>Return to the backend and click <strong>Content &gt; Articles</strong>.</li>
-<li>Click <em>Sun Daze Companion</em> to edit the article.
+<li>Click <em>Weekend Storm Watch: Heavy Rain Expected</em> to edit the article.
 <ul>
 <li>Set <strong>Status</strong> to <em>Unpublished</em>, then click <strong>Save &amp; Close</strong>.</li>
 </ul>
 </li>
-<li>View the site and refresh the homepage. <strong>Result:</strong> <em>Sun Daze Companion</em> no longer appears. <strong>Note:</strong> Articles must be published to appear on the website.</li>
+<li>View the site and refresh the homepage. <strong>Result:</strong> <em>Weekend Storm Watch: Heavy Rain Expected</em> no longer appears. <strong>Note:</strong> Articles must be published to appear on the website.</li>
 <li>Return to the backend and view the article list.
 <ul>
-<li>Observe that the <strong>Status</strong> icon for <em>Sun Daze Companion</em> is a gray X (unpublished), while the icon for <em>Olympus Solar Calculator</em> is a green check (published).</li>
+<li>Observe that the <strong>Status</strong> icon for <em>Weekend Storm Watch: Heavy Rain Expected</em> is a gray X (unpublished), while the icon for <em>Trade Summit Ends in New Agreement</em> is a green check (published).</li>
 <li>Hover over the icons to read the popup messages.</li>
-<li>Click the gray icon to publish <em>Sun Daze Companion</em> again. <strong>Note:</strong> Articles can be published or unpublished from the article list or by editing the article.</li>
+<li>Click the gray icon to publish <em>Weekend Storm Watch: Heavy Rain Expected</em> again. <strong>Note:</strong> Articles can be published or unpublished from the article list or by editing the article.<br><br><img src="images/articles/329/status_in_articles_list.png" alt="Status icon in the articles list" width="1002" height="370" loading="lazy" data-path="local-images:/articles/329/status_in_articles_list.png"><br><br></li>
 </ul>
 </li>
 <li>Confirm that both articles again appear on the homepage (refresh if necessary).</li>
@@ -61,25 +62,20 @@
 <ul>
 <li>Observe that categories have a status icon similar to articles.</li>
 <li>Hover over the icon to read the popup message.</li>
-<li>Unpublish the <em>Sundial Software</em> category by clicking its icon.</li>
+<li>Unpublish the <em>World News</em> category by clicking its icon.</li>
 </ul>
 </li>
-<li>View the site and refresh the homepage. <strong>Result:</strong> The <em>Olympus Solar Calculator</em> article no longer appears. <strong>Note:</strong> An article and its category must both be published for the article to appear on the website.</li>
+<li>View the site and refresh the homepage. <strong>Result:</strong> The <em>Trade Summit Ends in New Agreement</em> article no longer appears. <strong>Note:</strong> An article and its category must both be published for the article to appear on the website.</li>
 <li>In the backend, view the article list (<strong>Content &gt; Articles</strong>).</li>
-<li>Note the status icon for <em>Olympus Solar Calculator</em> is now a gray dash.
+<li>Note the status icon for <em>Trade Summit Ends in New Agreement</em> is now a gray dash.
 <ul>
-<li>Hover over the icon to view the popup message.</li>
-<li>In the article details below the title, observe that the category <em>Sundial Software</em> appears with an <em>(unpublished)</em> indicator.</li>
+<li>Hover over the icon to view the popup message.<br><br><img src="images/articles/329/unpublished_by_category.png" alt="Status icon when category is unpublished" width="1189" height="286" loading="lazy" data-path="local-images:/articles/329/unpublished_by_category.png"><br><br></li>
+<li>In the article details below the title, observe that the category <em>World News</em> appears with an <em>(unpublished)</em> indicator.</li>
 </ul>
-<br>
-<figure class="image"><img class="float-none" src="images/articles/329/unpublished_category_article_list.png" alt="Category-unpublished indicators in the article list" width="960" height="360" loading="lazy" data-path="local-images:/articles/329/unpublished_category_article_list.webp">
-<figcaption>Indications that an article's category is unpublished</figcaption>
-</figure>
-<br>
 </li>
-<li>Edit the article and observe that <em>Sundial Software</em> is selected in the <strong>Category</strong> dropdown, but appears in brackets, indicating that the category is unpublished.</li>
+<li>Edit the article and observe that <em>World News</em> is selected in the <strong>Category</strong> dropdown, but appears in brackets, indicating that the category is unpublished.</li>
 <li>Close the article without saving.</li>
-<li>Return to the category list and click <em>Sundial Software</em> to edit it.
+<li>Return to the category list and click <em>World News</em> to edit it.
 <ul>
 <li>Set <strong>Status</strong> to <em>Published</em>, then click <strong>Save &amp; Close</strong>.</li>
 </ul>

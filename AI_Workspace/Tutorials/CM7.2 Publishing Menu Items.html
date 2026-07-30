@@ -2,52 +2,36 @@
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="publishing-and-access-restrictions/publishing-articles-and-categories">7.1 Publishing Articles and Categories</a> creates the <em>World News</em> category and its <em>Weekend Storm Watch: Heavy Rain Expected</em> and <em>Trade Summit Ends in New Agreement</em> articles used in this tutorial.</li>
 </ul>
 <h2>Setup</h2>
-<h3>Create a New Category</h3>
+<h3>Add an Article to World News</h3>
 <ol>
 <li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
-<li>Click <strong>New</strong>. <strong>Result:</strong> A new-category form appears.
-<ul>
-<li><strong>Title:</strong> <em>History</em></li>
-<li><strong>Status:</strong> <em>Published</em> (default)</li>
-</ul>
-</li>
-<li><strong>Save &amp; Close</strong></li>
-</ol>
-<h3>Create Two Articles</h3>
-<ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
 <ul>
-<li><strong>Title:</strong> <em>The Roman Empire</em></li>
-<li><strong>Category:</strong> <em>History</em> (default)</li>
+<li><strong>Title:</strong> <em>Central Bank Holds Interest Rates Steady</em></li>
+<li><strong>Category:</strong> <em>World News</em></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; New</strong>.
-<ul>
-<li><strong>Title:</strong> <em>Medieval Europe</em></li>
-<li><strong>Category:</strong> <em>History</em></li>
-</ul>
-</li>
-<li><strong>Save &amp; Close</strong></li>
+<li>Click <strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Create Menu Items</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
 <li>Click <strong>New</strong>. <strong>Result:</strong> A new-menu-item form appears.
 <ul>
-<li><strong>Title:</strong> <em>The Romans</em></li>
+<li><strong>Title:</strong> <em>Top Story</em></li>
 <li><strong>Menu Item Type:</strong> <em>Articles &gt; Single Article</em></li>
-<li><strong>Article:</strong> <em>The Roman Empire</em> (default)</li>
+<li><strong>Article:</strong> <em>Trade Summit Ends in New Agreement</em></li>
 </ul>
 </li>
 <li>Click <strong>Save &amp; New</strong>.
 <ul>
-<li><strong>Title:</strong> <em>History Blog</em></li>
+<li><strong>Title:</strong> <em>World News</em></li>
 <li><strong>Menu Item Type:</strong> <em>Articles &gt; Category Blog</em></li>
-<li><strong>Category:</strong> <em>History</em></li>
+<li><strong>Category:</strong> <em>World News</em></li>
 </ul>
 </li>
 <li><strong>Save &amp; Close</strong></li>
@@ -55,39 +39,39 @@
 <h2>Steps</h2>
 <h3>Verify the Setup</h3>
 <ol>
-<li>View the site. <strong>Result:</strong> The <strong>Main Menu</strong> contains links for <em>The Romans</em> and <em>History Blog</em>.</li>
-<li>Click <em>The Romans</em>. <strong>Result:</strong> The <em>The Roman Empire</em> article appears.</li>
-<li>Click <em>History Blog</em>. <strong>Result:</strong> Both articles appear.</li>
+<li>View the site. <strong>Result:</strong> The <strong>Main Menu</strong> contains links for <em>Top Story</em> and <em>World News</em>.</li>
+<li>Click <em>Top Story</em>. <strong>Result:</strong> The <em>Trade Summit Ends in New Agreement</em> article appears.</li>
+<li>Click <em>World News</em>. <strong>Result:</strong> Both articles appear.</li>
 </ol>
 <h3>Unpublishing Menu Items</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
-<li>Click the status icon for <em>History Blog</em> and <em>The Romans</em>, changing their status to <em>Unpublished</em>.</li>
+<li>Click the status icon for <em>World News</em> and <em>Top Story</em>, changing their status to <em>Unpublished</em>.</li>
 <li>View the website. <strong>Result:</strong> The menu items no longer appear. <strong>Note:</strong> Menu items must be published to appear on the website, and articles need a published menu item to be accessible.</li>
 <li>Republish the menu items.</li>
 </ol>
 <h3>Effect of Unpublished Articles on Menu Items</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
-<li>Unpublish <em>The Roman Empire</em> and <em>Medieval Europe</em> by clicking their status icons.</li>
+<li>Unpublish <em>Trade Summit Ends in New Agreement</em> and <em>Central Bank Holds Interest Rates Steady</em> by clicking their status icons.</li>
 <li>View the website. <strong>Result:</strong> Both menu items still appear in the <strong>Main Menu</strong>.</li>
-<li>Click <em>The Romans</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> This single-article menu item is still active, but the unpublished article is inaccessible.</li>
-<li>Click <em>History Blog</em>. <strong>Result:</strong> An empty list appears. <strong>Note:</strong> The category-blog menu item is active, but will only display its published articles.</li>
+<li>Click <em>Top Story</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> This single-article menu item is still active, but the unpublished article is inaccessible.</li>
+<li>Click <em>World News</em>. <strong>Result:</strong> An empty list appears. <strong>Note:</strong> The category-blog menu item is active, but will only display its published articles.</li>
 <li>Return to the articles list and republish both articles.</li>
 </ol>
 <h3>Effect of Unpublishing a Category on Menu Items</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Categories</strong>.</li>
-<li>Unpublish the <em>History</em> category by clicking its status icon.</li>
+<li>Unpublish the <em>World News</em> category by clicking its status icon.</li>
 <li>View the website. <strong>Result:</strong> Both menu items still appear in the <strong>Main Menu</strong>.</li>
-<li>Click <em>The Romans</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> This single-article menu item is still active, but the article is inaccessible because its category is unpublished.</li>
-<li>Click <em>History Blog</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> The category-blog menu item is active, but it requires a published category to function.</li>
-<li>Return to the category list and republish the <em>History</em> category.</li>
+<li>Click <em>Top Story</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> This single-article menu item is still active, but the article is inaccessible because its category is unpublished.</li>
+<li>Click <em>World News</em>. <strong>Result:</strong> An error message is displayed. <strong>Note:</strong> The category-blog menu item is active, but it requires a published category to function.</li>
+<li>Return to the category list and republish the <em>World News</em> category.</li>
 </ol>
 <h3>Effect of Unpublishing Menu Items</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>.</li>
-<li>Unpublish the two menu items, <em>The Romans</em> and <em>History Blog</em>, by clicking their status icons.</li>
+<li>Unpublish the two menu items, <em>Top Story</em> and <em>World News</em>, by clicking their status icons.</li>
 <li>View the website. <strong>Result:</strong> The menu items are no longer visible.</li>
 <li>Return to the menu list and republish the menu items.</li>
 </ol>
