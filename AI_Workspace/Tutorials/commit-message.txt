@@ -1,27 +1,43 @@
-CM4.2: place real images and all six screenshots
+CM4.3: resolve Read More/Image Class questions, confirm licenses,
+add two new project style rules
 
-Jeff tested CM4.2 as-is - no text changes needed - and placed the
-three real prerequisite images plus all six planned screenshots.
+Follow-up to the Attribution/review commit. Jeff resolved both
+flagged content questions:
 
-The real Napoleon III Telescope filename initially came through
-with a comma and an ampersand rather than the placeholder
-underscore-only name used in the draft, so the Prerequisites
-src/data-path were updated to match. Jeff then renamed the file
-himself to drop those characters, back to the original
-underscore-only name - updated src/data-path again to match.
-Attribution's link is unaffected either way, since it points at
-the real external Commons page.
+- Read More removal for Crab Nebula is intentional - the
+  standardized intro images read clearly on the category blog
+  listing even without it, and he'd rather not introduce Read More
+  before it's formally covered in 6.2.
+- Image Class: none is no longer used anywhere in Steps, so the
+  matching sentence in Concepts was removed too. Reworded the
+  surrounding paragraph to note that full-width images (used
+  throughout this tutorial) aren't affected by the inline-floating
+  behaviour, without describing a fix for a problem no longer shown.
 
-All three telescope images are 1200x900, confirming they're still
-full-size/unresized as intended - the Resizing Images section is
-what shrinks one of them to 720px later in the tutorial.
-Prerequisites thumbnail dimensions (240x180) were already correct.
+Also:
 
-All six screenshots placed as figure/figcaption pairs at their
-corresponding steps, with real pixel dimensions: the Media
-component/Create New Folder button, the Telescopes folder with its
-two sub-folders, dragging an image into Optical Telescopes, the
-item context menu, the Resize screen at 720px, and the uploaded/
-renamed PDF.
+- Moved the floating "Log in to the backend." paragraph into a real
+  first step ("Log in to Joomla backend and navigate to the Home
+  Dashboard"), matching established project phrasing.
+- Corrected the three uncertain Attribution credits with the actual
+  license text Jeff pulled from each Commons page: Crab Nebula is
+  NOIRLab, CC BY 4.0; Jupiter Storms Merging is NASA/JPL-Caltech/
+  SwRI/MSSS, public domain (dropping the earlier CC BY guess);
+  Juice Launch Kit Cover is ESA, CC BY-SA 3.0 IGO.
 
-CM4.2 is now fully real end to end - no open items remain.
+Two new rules added to the Tutorial Style Guide, both applied to
+this file:
+
+- Log in only once per tutorial, as the very first step.
+- Write "Click" before a repeated action (e.g. Save & Close) only
+  the first time it appears in a tutorial; drop it for every later
+  occurrence of the same action. Applied here: the first Save & New
+  and first Save & Close each now say "Click"; every later Save &
+  Close in the file was already bare.
+
+Noted but deliberately deferred (Jeff wants to stay focused on
+CM4.3 for now): a more scannable visual treatment for Result/Note
+within steps, standardizing the new flex-div image-grid layout
+project-wide, and a PDF thumbnail for CM4.2's downloadable file.
+Logged in Editing Notes as backlog, possibly moving to GitHub
+issues.

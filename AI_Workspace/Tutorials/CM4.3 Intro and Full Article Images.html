@@ -1,23 +1,47 @@
-<p>Separate from any images embedded in an article's text, every article has two optional images of its own: an <em>intro image</em>, shown when the article appears in a listing like a category blog page, and a <em>full article image</em>, shown at the top of the article itself. The two are independent — an article can use the same image for both, or something different for each.</p>
-<p>In this tutorial we'll add two more articles to the <em>Astronomy</em> category from 4.1, view them together on a category blog page, then set intro and full article images across all three — using different images on one article to see the two settings work independently, and the same image on the other two, which is the more common approach.</p>
+<p>Every article has two optional images: an <em>intro image</em>, which appears in a listing like a category blog page; and a <em>full article image</em>, which appears at the top of the article.</p>
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
-<li><a href="content-images/embedding-images-in-article-text">4.1 Images in Articles</a> creates the <em>Astronomy</em> category and the <em>Crab Nebula</em> article this tutorial builds on.</li>
-<li><a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a> creates the kind of menu item — Category Blog — we'll reuse here.</li>
-<li>We'll use these three images in the tutorial, sized for the web at 720px wide. Right-click each and save it to your computer.<br>
-<img class="float-none" src="images/articles/287/Jupiter.jpg" alt="Jupiter" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Jupiter.jpg">
-<img class="float-none" src="images/articles/287/Andromeda_Galaxy.jpg" alt="The Andromeda Galaxy" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Andromeda_Galaxy.jpg">
-<img class="float-none" src="images/articles/287/Crab_Nebula_Composite.jpg" alt="A multi-telescope composite image of the Crab Nebula" width="240" height="180" loading="lazy" data-path="local-images:/articles/287/Crab_Nebula_Composite.jpg">
-<br>
+<li><a href="content-images/embedding-images-in-article-text">4.1 Images in Articles</a> creates the <em>Astronomy</em> category, <em>Crab Nebula</em> article, and media manager folder used in this tutorial.</li>
+</ul>
+<h2>Setup</h2>
+<h3>Get the Images</h3>
+<p>Upload the following images required for the tutorial.</p>
+<div style="display: flex;">
+<figure class="image"><img src="images/articles/287/Andromeda_Galaxy_Full.jpg" alt="Andromeda Galaxy" width="240" height="135" loading="lazy" data-path="local-images:/articles/287/Andromeda_Galaxy_Full.jpg">
+<figcaption>Andromeda Full</figcaption>
+</figure>
+<figure class="image"><img src="images/articles/287/Andromeda_Galaxy_Intro.jpg" alt="Andromeda Galaxy" width="240" height="135" loading="lazy" data-path="local-images:/articles/287/Andromeda_Galaxy_Intro.jpg">
+<figcaption>Andromeda Intro</figcaption>
+</figure>
+<figure class="image"><img src="images/articles/287/Crab_Nebula_Intro.jpg" alt="Crab Nebula" width="240" height="135" loading="lazy" data-path="local-images:/articles/287/Crab_Nebula_Intro.jpg">
+<figcaption>Crab Nebula Intro</figcaption>
+</figure>
+<figure class="image"><img src="images/articles/287/Jupiter_Full.jpg" alt="Jupiter and the JUICE spacecraft" width="240" height="135" loading="lazy" data-path="local-images:/articles/287/Jupiter_Full.jpg">
+<figcaption>Jupiter Full</figcaption>
+</figure>
+<figure class="image"><img src="images/articles/287/Jupiter_Intro.jpg" alt="Jupiter" width="240" height="135" loading="lazy" data-path="local-images:/articles/287/Jupiter_Intro.jpg">
+<figcaption>Jupiter Intro</figcaption>
+</figure>
+</div>
+<ol>
+<li>Log in to Joomla backend and navigate to the <strong>Home Dashboard</strong>.</li>
+<li>Right-click each image above and save it to your computer.</li>
+<li>After downloading all the images, upload them to the Joomla media manager:
+<ul>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Media</strong>, then navigate to <strong>Images &gt; Astronomy</strong> (Created in 4.1).</li>
+<li>Upload the images to the <em>Astronomy</em> folder, using drag-and-drop or the <strong>Upload</strong> button at the top of the page.<br><br>
+<figure class="image"><img src="images/articles/287/articles_in_media_manager.png" alt="Images in the media manager" width="988" height="534" loading="lazy" data-path="local-images:/articles/287/articles_in_media_manager.png">
+<figcaption>The new images in the <em>Astronomy</em> folder along with those uploaded in tutorial 4.1</figcaption>
+</figure>
 </li>
 </ul>
-<h2>Steps</h2>
-<h3>Add Two More Articles</h3>
-<p><em>Crab Nebula</em> is currently alone in the <em>Astronomy</em> category. A category blog page with just one article doesn't show much, so let's add two more.</p>
+</li>
+</ol>
+<h3>Create Additional Articles</h3>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>.</li>
-<li>Click <strong>New</strong>. <strong>Result:</strong> A new-article form appears.
+<li>Click <strong>New</strong> to add a new article.<br>
 <ul>
 <li><strong>Title:</strong> <em>Jupiter</em></li>
 <li><strong>Category:</strong> <em>Astronomy</em></li>
@@ -31,74 +55,113 @@
 <li><strong>Article Text:</strong> <em>The Andromeda Galaxy is the nearest large galaxy to the Milky Way, and on a dark, clear night it's visible to the naked eye.</em></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> The <em>Astronomy</em> category now holds three articles: <em>Crab Nebula</em>, <em>Jupiter</em>, and <em>Andromeda Galaxy</em>.</li>
+<li>Click <strong>Save &amp; Close</strong>. <strong>Result:</strong> We now have three articles in the <em>Astronomy</em> category to work with.<br><br><img src="images/articles/287/article_list.png" alt="Article list showing our three articles" width="1030" height="532" loading="lazy" data-path="local-images:/articles/287/article_list.png"></li>
 </ol>
-<h3>Create a Category Blog</h3>
-<p>As demonstrated in <a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a>, create a menu item to view the category.</p>
+<h2>Steps</h2>
+<h3>Create a Category Blog Menu</h3>
+<p>Create a menu item to list our articles.</p>
 <ol>
 <li>In the <strong>Administrator Menu</strong>, click <strong>Menus &gt; Main Menu</strong>, then click <strong>New</strong>.
 <ul>
 <li><strong>Title:</strong> <em>Astronomy Articles Blog</em></li>
-<li><strong>Menu Item Type:</strong> <em>Category Blog</em></li>
+<li><strong>Menu Item Type:</strong> <em>Articles &gt; Category Blog</em></li>
 <li><strong>Category:</strong> <em>Astronomy</em></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; Close</strong>, leaving all other options at their defaults.</li>
-<li>View the site and click the <strong>Astronomy Articles Blog</strong> menu item. <strong>Result:</strong> All three articles are listed, but none has an image yet.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site and click the <strong>Astronomy Articles Blog</strong> menu item. <strong>Result:</strong> All three articles are listed with a short intro. <strong>Note:</strong> Articles appear with their full text.  <br><br><img src="images/articles/287/category_blog_page_before_intro_images.png" alt="Category blog page showing three articles listed" width="982" height="1039" loading="lazy" data-path="local-images:/articles/287/category_blog_page_before_intro_images.png"></li>
 </ol>
-<h3>Set Different Images on Crab Nebula</h3>
-<p><em>Crab Nebula</em> already has an image embedded in its text from 4.1. Here we'll give it its own intro and full article images too — and deliberately use two different photos, so you can see the two settings are independent of each other and of the article's body content.</p>
+<h3>Add Intro Images</h3>
+<p>An intro image appears before the title when an article appears in a listing, such as our category blog page. They add visual interest to the list and insight into the article.</p>
 <ol>
-<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>, then click <em>Crab Nebula</em> to open it for editing.</li>
+<li>In the <strong>Administrator Menu</strong>, click <strong>Content &gt; Articles</strong>, then click <em>Crab Nebula</em> to open it for editing.
+<ul>
 <li>Click the <strong>Images and Links</strong> tab.</li>
-<li>Under <strong>Full Article Image</strong>, click <strong>Select</strong>. <strong>Result:</strong> A popup shows the images already uploaded to the site.</li>
-<li>Select the Crab Nebula image already in the <em>Astronomy</em> folder (the same one embedded in the article's text), then click <strong>Select</strong> in the popup. <strong>Result:</strong> The image is added as the Full Article Image, with the alt text already carried over.</li>
-<li>Under <strong>Intro Image</strong>, click <strong>Select</strong>, then <strong>Upload</strong> the Crab Nebula composite image you downloaded earlier — a different photo of the same nebula, distinct from the close-up used everywhere else in this article.
-<ul>
-<li>Add alternate text, <em>Crab Nebula composite image</em>.</li>
+<li>Under <strong>Intro Image</strong>, click <strong>Select.</strong> <strong>Result:</strong> The Media Manager appears.</li>
+<li>Tick the <em>Crab_Nebula_Intro.jpg</em> checkbox then click <strong>Select</strong>. <strong>Result:</strong> The Media Manager is dismissed and the image appears in the form.</li>
+<li>Add alternate text in the field beneath the image: <em>Crab Nebula</em>.</li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
-<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> <em>Crab Nebula</em> now shows the composite image in the listing.</li>
-<li>Click into the <em>Crab Nebula</em> article. <strong>Result:</strong> The article page shows a different image at the top — the close-up Full Article Image — followed further down by the same close-up again, embedded in the body text back in 4.1.</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>Open <em>Jupiter</em> for editing.
+<ul>
+<li>Click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Intro Image</strong>, click <strong>Select.</strong> <strong>Result:</strong> The Media Manager appears.</li>
+<li>Tick the <em>Jupiter_Intro.jpg</em> checkbox then click <strong>Select</strong>. <strong>Result:</strong> The Media Manager is dismissed and the image appears in the form.</li>
+<li>Add alternate text in the field beneath the image: <em>Jupiter<br><br><img src="images/articles/287/intro_image_detail.png" alt="Intro image form detail" width="1284" height="616" loading="lazy" data-path="local-images:/articles/287/intro_image_detail.png"><br></em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>Open <em>Andromeda Galaxy</em> for editing.
+<ul>
+<li>Click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Intro Image</strong>, click <strong>Select.</strong> <strong>Result:</strong> The Media Manager appears.</li>
+<li>Tick the <em>Andromeda_Galaxy_Intro.jpg</em> checkbox then click <strong>Select</strong>. <strong>Result:</strong> The Media Manager is dismissed and the image appears in the form.</li>
+<li>Add alternate text in the field beneath the image: <em>Andromeda Galaxy</em></li>
+</ul>
+</li>
+<li><strong>Save &amp; Close</strong></li>
+<li>View the site and refresh to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> The articles now appear with intro images.<br><br>
+<figure class="image"><img src="images/articles/287/category_blog_page_with_intro_images.png" alt="Category blog with intro images" width="969" height="1316" loading="lazy" data-path="local-images:/articles/287/category_blog_page_with_intro_images.png">
+<figcaption>Category blog page intro images (two articles shown)</figcaption>
+</figure>
+<br><br></li>
+<li>Click into <em>Crab Nebula</em>. <strong>Result:</strong> The article appears as it did before. The intro image does not appear. <strong>Note:</strong> An intro image is only shown in listings like the category blog page, not on the article's own page.</li>
 </ol>
-<h3>Set Matching Images on Jupiter and Andromeda Galaxy</h3>
-<p>Using two different images, as we just did, is useful when you want a simpler preview image on a listing page and something more detailed on the article itself. Most of the time, though, the same image works fine for both — as we'll do for the remaining two articles.</p>
+<h3>Add Full Article Images</h3>
+<p>A <strong>Full Article Image</strong> is an image that appears in a consistent position at the top of an article, with the exact placement and styling determined by the site template. </p>
 <ol>
-<li>Open <em>Jupiter</em> for editing, then click the <strong>Images and Links</strong> tab.</li>
-<li>Under <strong>Intro Image</strong>, click <strong>Select</strong>, then <strong>Upload</strong> the Jupiter image you downloaded earlier.
+<li>Edit the <em>Andromeda Galaxy</em> article
 <ul>
-<li>Add alternate text, <em>Jupiter</em>.</li>
+<li>Click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Full Article Image</strong>, click <strong>Select.</strong></li>
+<li>Select the <em>Andromeda_Galaxy_Full.jpg</em></li>
+<li>Add alternate text in the field beneath the image: <em>Andromeda Galaxy</em></li>
 </ul>
 </li>
-<li>Under <strong>Full Article Image</strong>, click <strong>Select</strong>. <strong>Result:</strong> The Jupiter image you just uploaded is already there.</li>
-<li>Select it and click <strong>Select</strong> in the popup, rather than uploading it a second time. <strong>Result:</strong> The same image is now set as both the Intro Image and the Full Article Image.</li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
-<li>Open <em>Andromeda Galaxy</em> for editing, then repeat the same steps: upload the Andromeda Galaxy image you downloaded earlier as the Intro Image, then select that same image again as the Full Article Image.
+<li><strong>Save &amp; Close</strong></li>
+<li>Edit the <em>Jupiter</em> article
 <ul>
-<li>Add alternate text, <em>Andromeda Galaxy</em>.</li>
-<li><strong>Note:</strong> If an image is purely decorative and doesn't need to be read aloud by screen readers, you can check <strong>No description</strong> instead of entering alt text. Since this image is the article's main subject, we've given it real alt text instead.</li>
+<li>Click the <strong>Images and Links</strong> tab.</li>
+<li>Under <strong>Full Article Image</strong>, click <strong>Select.</strong></li>
+<li>Select the <em>Jupiter_Full.jpg</em></li>
+<li>Add alternate text in the field beneath the image: <em>Jupiter and the JUICE spacecraft.</em></li>
+<li>Enter a caption: <em>The Jupiter Icy Moons Explorer (JUICE), an interplanetary spacecraft created by the European Space Agency (ESA).</em><br><br><img src="images/articles/287/full_article_image_detail.png" alt="Full article image detail" width="1275" height="552" loading="lazy" data-path="local-images:/articles/287/full_article_image_detail.png"><br><br></li>
 </ul>
 </li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
-<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> All three articles now show an image in the listing. Click into <em>Jupiter</em> or <em>Andromeda Galaxy</em> and the same image appears again at the top — unlike <em>Crab Nebula</em>, where the listing and the article show two different photos.</li>
+<li><strong>Save &amp; Close</strong></li>
 </ol>
-<h3>Float the Intro Image</h3>
-<p>An intro image can optionally float beside the article's summary text on a category blog page instead of sitting above it.</p>
+<h3>Observe the Results</h3>
 <ol>
-<li>Open <em>Jupiter</em> for editing, then click the <strong>Images and Links</strong> tab.</li>
-<li>Look for a <strong>Float</strong> option near the Intro Image and set it to <em>Left</em> or <em>Right</em>. <strong>Note:</strong> The exact location of this option can vary by Joomla version and template.</li>
-<li>Click <strong>Save &amp; Close</strong>.</li>
-<li>View the site and return to the <strong>Astronomy Articles Blog</strong> page. <strong>Result:</strong> The <em>Jupiter</em> image now sits beside its summary text instead of stacked above it, with the text wrapping around it.</li>
+<li>View the site and refresh the <strong>Astronomy Articles Blog.</strong></li>
+<li>Open the <em>Andromeda Galaxy</em> article.
+<ul>
+<li>The article uses the same image for the <em>Intro</em> and <em>Full Article</em> images, saved as two files at different sizes.</li>
+</ul>
+</li>
+<li>Open the <em>Jupiter</em> article.
+<ul>
+<li>This article uses different <em>Intro</em> and <em>Full Article</em> images.</li>
+<li>The <em>Full Article</em> image has a caption.<br><br><img src="images/articles/287/jupiter_full_article_image_with_caption.png" alt="Jupiter full article image" width="1001" height="1046" loading="lazy" data-path="local-images:/articles/287/jupiter_full_article_image_with_caption.png"><br><br></li>
+</ul>
+</li>
+<li>Open the <em>Crab Nebula</em> article.
+<ul>
+<li>This article uses only an <em>Intro</em> image. </li>
+<li>The article contains a number of embedded images, but no <em>Full Article</em> image. </li>
+</ul>
+</li>
 </ol>
 <h2>Concepts</h2>
-<p>The intro image and full article image are independent settings. They're commonly set to the same image for simplicity, but using a different image for each can be useful — for example, a simple thumbnail on a listing page and a more detailed image on the article itself.</p>
-<p>A category blog page (and similar listings) shows an article's intro image. The article's own page shows the full article image, along with anything embedded directly in the article's text.</p>
-<p>As with embedded images, alternate text matters for accessibility. Use <strong>No description</strong> only for images that are purely decorative and add no meaningful information; see the <a href="https://webaim.org/techniques/alttext/" target="_blank" rel="noopener">WebAIM Alternative Text</a> article referenced in 4.1 for more.</p>
+<p>If an image is purely decorative and doesn't need to be read aloud by screen readers, you can check <strong>No description</strong> instead of entering alt text.</p>
+<p>The <em>Full Article Image</em> is frequently a full-width image used as a banner or hero for the article. Different templates place and style the image differently. Joomla's default Cassiopeia template positions the full article image inline with article text — for a full-width image, like the ones in this tutorial, that's not a problem.</p>
+<p>A category blog page (and similar listings) shows an article's intro image along with the full article text. In a future tutorial we'll cover how to deal with it.</p>
+<p>Both the Intro Image and Full Article Image render at whatever size you upload — unlike an image embedded directly in the article's text, neither field offers a built-in width or crop control. Thoughtful, consistent sizing across your images — a standard width for intro thumbnails, another for full-width hero images — goes a long way toward a tidy, professional-looking site.</p>
 <h2>Attribution</h2>
 <p>The images used in this tutorial came from the <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> website and comply with the licensing for each:</p>
 <ul>
-<li><a href="https://commons.wikimedia.org/wiki/File:Crab_Nebula_NGC_1952_(composite_from_Chandra,_Hubble_and_Spitzer).jpg" target="_blank" rel="noopener">Crab Nebula NGC 1952 (composite from Chandra, Hubble and Spitzer)</a> (NASA, ESA, CXC, JPL-Caltech)</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:Jupiter_rendered_with_Blender.webp" target="_blank" rel="noopener">Jupiter</a> (Wikideas1)</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:M31-Andromede-16-09-2023-Hamois.jpg" target="_blank" rel="noopener">Andromeda Galaxy</a> (<a href="https://Lucnix.be" target="_blank" rel="noopener">Luc Viatour</a>)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_(with_h-alpha).jpg" target="_blank" rel="noopener">Andromeda Galaxy (with H-alpha)</a> (Adam Evans, CC BY 2.0)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Crab_Nebula_(noao-m1guvenen3).jpg" target="_blank" rel="noopener">Crab Nebula</a> (NOIRLab, CC BY 4.0)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Jupiter_Storms_Merging.jpg" target="_blank" rel="noopener">Jupiter Storms Merging</a> (NASA/JPL-Caltech/SwRI/MSSS, public domain)</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Juice_launch_kit_cover_close-up.png" target="_blank" rel="noopener">Juice Launch Kit Cover (close-up)</a> (ESA, CC BY-SA 3.0 IGO)</li>
 </ul>
