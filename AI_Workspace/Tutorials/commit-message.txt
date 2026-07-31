@@ -1,24 +1,39 @@
-CM7.1 and CM7.2: real screenshots placed, one markup fix
+CM7.4: fix Prerequisites wording, Result-in-same-li violations, and
+markup slips after Jeff's screenshot round
 
-Jeff tested both files hands-on and placed real screenshots. No
-content corrections needed - his edits were style trims:
+Jeff added Prerequisites, screenshots, and trimmed an unnecessary
+closing section. Reviewed the result and fixed:
 
-CM7.1: confirmed as-is (already reviewed/fixed last round). Two
-screenshots placed.
+Prerequisites: the three new items (2.3, 5.1, 6.2) are accurate,
+legitimate additions - 7.4 genuinely uses the category-blog-menu-item
+mechanic, article filtering, and Read More technique they cover -
+but were written as sentence fragments rather than full clauses,
+violating the "no bare/fragment prerequisite links" rule added a
+few rounds back. Rewrote all three as complete sentences. Also fixed
+"2.3 Category Menu-Item" (stray hyphen) to match the title used
+everywhere else in the project.
 
-CM7.2: trimmed the 7.1 Prerequisites description down to "creates
-content used in this tutorial," renamed "Unpublishing Menu Items"
-to "Effect of Unpublishing Menu Items," dropped the redundant final
-section that re-demonstrated a fact the earlier section already
-covered, and combined the two category-unpublish checks (Top Story,
-World News) into one step with a shared screenshot. Four screenshots
-placed.
+Markup: a triple <br><br><br> after one screenshot, a missing
+trailing <br><br> after another (both inconsistent with the rest of
+the file's screenshots), and "Tap Clear" - the only use of "Tap"
+anywhere in the project - changed to "Click Clear."
 
-Fixed one markup slip: the first screenshot (new_menu_items.png) had
-its <img> tag pasted inside the <strong> wrapping "Save & Close,"
-with mismatched <br> spacing - inconsistent with the other three
-screenshots in the same file. Moved it outside the closing </strong>
-and matched the established <br><br> spacing. Also stripped 2 stray
-non-breaking-space characters (same artifact seen in CM4.3).
+Style Guide violation: three actions in Test It (clicking Read More,
+logging in to the frontend, clicking Subscriber Exclusives) each had
+their Result split into a separate <li> instead of staying with the
+triggering action, violating the explicit rule that Result belongs
+in the same list item as the action that caused it. Merged each
+pair back together. Also fixed along the way: lowercase "a login
+form appears," "front end" (two words, inconsistent with the rest
+of the project), "<strong>Result</strong>:" with the colon outside
+the bold tag, and a trailing space before a closing </li>.
 
-Tag balance verified clean on CM7.2 after the fix.
+Stripped 2 more stray non-breaking-space characters.
+
+Left one placement question for Jeff rather than changing it: the
+first Add Articles screenshot (save_and_add_new.png) sits at the end
+of the Read More step, before the Save & New step it appears to
+depict - may be an intentional preview, may want to move.
+
+Verified: tag balance clean, zero non-breaking spaces, no "Tap" or
+"front end" left in the file.

@@ -10,6 +10,9 @@
 <h2>Prerequisites</h2>
 <ul>
 <li><a href="1-introduction">1 Tutorial Introduction</a> covers where to run your tutorial and administrative access.</li>
+<li><a href="content-management-first-steps/category-menu-item">2.3 Category Menu Item</a> covers creating a category blog menu item, the mechanic this tutorial's Setup uses.</li>
+<li><a href="delete-archive-and-filter-articles/filter-articles">5.1 Filter Articles</a> covers filtering the articles list by category, used here to isolate the <em>Subscriber Exclusives</em> articles.</li>
+<li><a href="pagination-read-more/read-more">6.2 Read More</a> covers the Read More technique, used throughout this tutorial's articles.</li>
 </ul>
 <h2>Setup</h2>
 <h3>Create the <em>Subscriber Exclusives</em> Category</h3>
@@ -35,7 +38,7 @@
 <li><strong>Category:</strong> <em>Subscriber Exclusives</em></li>
 <li><strong>Article Text:</strong> copy and paste several paragraphs of <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener">Lorem Ipsum</a>.</li>
 <li>Position your cursor on a blank line after the first paragraph.</li>
-<li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.</li>
+<li>Select <strong>Read More</strong> from the <strong>CMS Content</strong> dropdown in the toolbar.<br><br><img src="images/articles/352/add_read_more.png" alt="Add a read-more control" width="1281" height="447" loading="lazy" data-path="local-images:/articles/352/add_read_more.png"><br><br></li>
 </ul>
 </li>
 <li>Click <strong>Save &amp; New</strong>.
@@ -74,7 +77,7 @@
 <h3>Verify the Setup and Default Permissions</h3>
 <ol>
 <li>View the site. <strong>Result:</strong> The <strong>Log in</strong> form appears, indicating you're not logged in to the frontend.</li>
-<li>Click <em>Subscriber Exclusives</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The three articles appear with introductory text and <strong>Read More</strong> links. <strong>Note:</strong> Clicking a <strong>Read More</strong> link displays the full article. The articles are currently available to any visitor on the site.</li>
+<li>Click <em>Subscriber Exclusives</em> in the <strong>Main Menu</strong>. <strong>Result:</strong> The three articles appear with introductory text and <strong>Read More</strong> links. <strong>Note:</strong> Clicking a <strong>Read More</strong> link displays the full article. The articles are currently available to any visitor on the site.<br><br><img src="images/articles/352/front_end_read_more_links.png" alt="Category blog list with read more links while not logged in" width="1341" height="751" loading="lazy" data-path="local-images:/articles/352/front_end_read_more_links.png"><br><br></li>
 </ol>
 <h3>Restrict the Articles to Registered Users</h3>
 <p>We want the public to be able to see the article titles and introduction text, but not be able to read them unless they're logged in.</p>
@@ -83,37 +86,32 @@
 <li>Filter the list for <em>Subscriber Exclusives</em>.
 <ul>
 <li>Click <strong>Filter Options</strong>.</li>
-<li>Select <em>Subscriber Exclusives</em> from the <strong>- Select Category -</strong> dropdown. <strong>Result:</strong> Only articles in the <em>Subscriber Exclusives</em> category are listed.</li>
+<li>Select <em>Subscriber Exclusives</em> from the <strong>- Select Category -</strong> dropdown. <strong>Result:</strong> Only articles in the <em>Subscriber Exclusives</em> category are listed.<br><br><img src="images/articles/352/filter_for_subscriber_exclusives.png" alt="Filtering the articles list by category" width="1028" height="789" loading="lazy" data-path="local-images:/articles/352/filter_for_subscriber_exclusives.png"><br><br></li>
 </ul>
 </li>
 <li>Tick the checkbox in the column header to select all listed articles.</li>
-<li>Pull down the <strong>Actions</strong> dropdown (near the top of the window) and select <strong>Batch</strong>. <strong>Result:</strong> A popup dialog appears.</li>
+<li>Pull down the <strong>Actions</strong> dropdown (near the top of the window) and select <strong>Batch</strong>. <strong>Result:</strong> A popup dialog appears.<br><br><img src="images/articles/352/initiating_batch_process.png" alt="Initiating a batch process on selected articles" width="1039" height="857" loading="lazy" data-path="local-images:/articles/352/initiating_batch_process.png"><br><br></li>
 <li>Under <strong>Set Access Level</strong>, choose <em>Registered</em>.</li>
-<li>Click <strong>Process</strong>.</li>
-<li>View the site and refresh the <em>Subscriber Exclusives</em> page. <strong>Result:</strong> The blog is empty.</li>
+<li>Click <strong>Process</strong>.<br><br><img src="images/articles/352/running_the_batch_process.png" alt="Running a batch to restrict access" width="1103" height="383" loading="lazy" data-path="local-images:/articles/352/running_the_batch_process.png"><br><br></li>
+<li>Click <strong>Clear</strong> to clear the filter and observe that the access level, Public or Registered, appears in the <em>Access</em> column.<br><br><img src="images/articles/352/access_level_in_articles_list.png" alt="The articles list showing the access level for each article." width="1007" height="731" loading="lazy" data-path="local-images:/articles/352/access_level_in_articles_list.png"><br><br></li>
+<li>View the site and refresh the <em>Subscriber Exclusives</em> page. <strong>Result:</strong> The blog is empty.<br><br><img src="images/articles/352/empty_blog.png" alt="Users who are not logged in see an empty blog" width="1052" height="416" loading="lazy" data-path="local-images:/articles/352/empty_blog.png"><br><br></li>
 <li>Log in to the frontend and view the blog again. <strong>Result:</strong> The <em>Subscriber Exclusives</em> articles require a user to log in to view.</li>
-<li><strong>Log out</strong>.</li>
 </ol>
 <h3>Enable Unauthorised Links</h3>
 <p>This makes restricted articles still appear in listings for logged-out users, prompting them to log in when they click through.</p>
 <ol>
 <li>Go to <strong>Content &gt; Articles</strong>.</li>
-<li>Click <strong>Options</strong> in the top toolbar.</li>
-<li>On the <strong>Articles</strong> tab, find <strong>Unauthorised Links</strong> and set it to <em>Yes</em>.</li>
-<li><strong>Save &amp; Close</strong>.</li>
-</ol>
-<h3>Configure the Menu Item</h3>
-<ol>
-<li>Go to <strong>Menus &gt; Main Menu</strong> and click <em>Subscriber Exclusives</em>.</li>
-<li>Click the <strong>Options</strong> tab (below the title).</li>
-<li>Set <strong>Unauthorised Links</strong> to <em>Yes</em> (it's near the bottom of the list).</li>
+<li>Click <strong>Options</strong> in the top toolbar.<br><br><img src="images/articles/352/article_options_button.png" alt="Location of the articles option button in the toolbar" width="956" height="341" loading="lazy" data-path="local-images:/articles/352/article_options_button.png"><br><br></li>
+<li>On the <strong>Articles</strong> tab, find <strong>Unauthorised Links</strong> and set it to <em>Yes</em>.<br><br><img src="images/articles/352/unauthorized_links_control.png" alt="Unauthorized links control" width="1042" height="297" loading="lazy" data-path="local-images:/articles/352/unauthorized_links_control.png"><br><br></li>
 <li><strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>Test It</h3>
 <ol>
 <li>View the site, and make sure you're logged out of the frontend (the <strong>Log in</strong> form should be showing a <strong>Log in</strong> button).</li>
-<li>View <em>Subscriber Exclusives</em>. <strong>Result:</strong> The articles appear with introductory text, but the <strong>Read More</strong> links prompt you to register.</li>
-<li>Click one of the <strong>Read More</strong> links to observe the behaviour.</li>
+<li>View <em>Subscriber Exclusives</em>. <strong>Result:</strong> The articles appear with introductory text, but the <strong>Read More</strong> links prompt you to register.<br><br><img src="images/articles/352/register_to_read_more.png" alt="The register-to-read-more link" width="1359" height="757" loading="lazy" data-path="local-images:/articles/352/register_to_read_more.png"><br><br></li>
+<li>Click one of the <strong>Read More</strong> links to observe the behaviour. <strong>Result:</strong> A login form appears.</li>
+<li>Log in to the frontend using the same username and password used to log in to the backend. <strong>Result:</strong> The full article appears.</li>
+<li>Click <strong>Subscriber Exclusives</strong> in the <strong>Main Menu</strong> or <strong>Breadcrumb Menu</strong>. <strong>Result:</strong> The <strong>Login Form</strong> shows that you are logged in; the read-more links are normal; an <strong>Edit</strong> link appears in the article introduction — articles can be edited in the frontend, but that is not covered here.<br><br><img src="images/articles/352/category_blog_while_logged_in.png" alt="Category Blog when logged into the frontend" width="1352" height="651" loading="lazy" data-path="local-images:/articles/352/category_blog_while_logged_in.png"><br><br></li>
 </ol>
 <h2>Concepts</h2>
 <p>Permissions on menu items and articles give you control over what visitors can access. The <em>Registered</em> permission requires visitors to be logged in.</p>
