@@ -1,39 +1,32 @@
-CM7.4: fix Prerequisites wording, Result-in-same-li violations, and
-markup slips after Jeff's screenshot round
+CM7.5: fix Result-split violation, a dimension bug, and a typo
+after Jeff's screenshots
 
-Jeff added Prerequisites, screenshots, and trimmed an unnecessary
-closing section. Reviewed the result and fixed:
+Jeff's edits replaced "close the browser tab or window" with "click
+the browser back button to return to the list" (both places) - a
+real refinement from testing, kept as-is.
 
-Prerequisites: the three new items (2.3, 5.1, 6.2) are accurate,
-legitimate additions - 7.4 genuinely uses the category-blog-menu-item
-mechanic, article filtering, and Read More technique they cover -
-but were written as sentence fragments rather than full clauses,
-violating the "no bare/fragment prerequisite links" rule added a
-few rounds back. Rewrote all three as complete sentences. Also fixed
-"2.3 Category Menu-Item" (stray hyphen) to match the title used
-everywhere else in the project.
+Fixed: the back-button action and its "Result: the article appears
+with a lock symbol" had been split into two separate <li> elements
+instead of staying together - same class of Style Guide violation
+caught in CM7.4 last round, merged back into one.
 
-Markup: a triple <br><br><br> after one screenshot, a missing
-trailing <br><br> after another (both inconsistent with the rest of
-the file's screenshots), and "Tap Clear" - the only use of "Tap"
-anywhere in the project - changed to "Click Clear."
+locked_icon_hover.png's height attribute said 377px; the real file
+is 303px. Fixed to match.
 
-Style Guide violation: three actions in Test It (clicking Read More,
-logging in to the frontend, clicking Subscriber Exclusives) each had
-their Result split into a separate <li> instead of staying with the
-triggering action, violating the explicit rule that Result belongs
-in the same list item as the action that caused it. Merged each
-pair back together. Also fixed along the way: lowercase "a login
-form appears," "front end" (two words, inconsistent with the rest
-of the project), "<strong>Result</strong>:" with the colon outside
-the bold tag, and a trailing space before a closing </li>.
+Typo in a figcaption: "an articled checked-out by someone else" ->
+"an article checked out by someone else."
 
-Stripped 2 more stray non-breaking-space characters.
+Lowercase Result text ("a check-in message appears") capitalized,
+plus a missing trailing <br><br> added after that screenshot to
+match the file's other plain-img screenshot spacing.
 
-Left one placement question for Jeff rather than changing it: the
-first Add Articles screenshot (save_and_add_new.png) sits at the end
-of the Read More step, before the Save & New step it appears to
-depict - may be an intentional preview, may want to move.
+Flagged the img/figure mix, then resolved as intentional: Jeff
+explained it traces back to Joomla's own image-insert dialog (the
+caption field alone decides which tag you get), not a deliberate
+per-image choice - fixing it means editing raw HTML, trivial for me
+but a real barrier for other editors. Decided to leave this
+inconsistency alone project-wide and added it as an explicit rule
+to the Tutorial Style Guide so it stops getting flagged.
 
-Verified: tag balance clean, zero non-breaking spaces, no "Tap" or
-"front end" left in the file.
+Verified: all three screenshot dimensions now match their real
+files, tags balanced, no stray characters.

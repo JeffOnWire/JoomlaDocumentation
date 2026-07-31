@@ -18,12 +18,15 @@
 <h2>Steps</h2>
 <ol>
 <li>Edit the article you just created (<strong>Content &gt; Articles</strong>, then click the article).</li>
-<li>Without saving or closing, close the browser tab or window. This simulates a user who is still editing the article.</li>
-<li>Open a new browser tab or window and view the article list (<strong>Content &gt; Articles</strong>). <strong>Result:</strong> The article appears with a lock symbol, indicating that it's checked out and being edited.</li>
-<li>Hover over the lock icon. <strong>Result:</strong> The message displays the user who checked out the article, and the date and time it was checked out.</li>
-<li>Click the article. <strong>Result:</strong> Joomla recognises you as the current editor and opens it for editing. <strong>Note:</strong> Other users, even other administrators, attempting to edit the article are denied access with an error message.</li>
+<li>Without saving or closing, click the browser <em>back</em> button to return to the list. This simulates a user who is still editing the article. <strong>Result:</strong> The article appears with a lock symbol, indicating that it's checked out and being edited.</li>
+<li>Hover over the lock icon. <strong>Result:</strong> The message displays the user who checked out the article, and the date and time it was checked out.<br><br><img src="images/articles/356/locked_icon_hover.png" alt="Hovering over the locked icon" width="1037" height="303" loading="lazy" data-path="local-images:/articles/356/locked_icon_hover.png"><br><br></li>
+<li>Click the article title to edit. <strong>Result:</strong> Joomla recognises you as the current editor and opens it for editing. <strong>Note:</strong> Other users, even other administrators, attempting to edit the article are denied access with an error message.<br><br>
+<figure class="image"><img src="images/articles/356/checkout_failed.png" alt="Edit attempt fails" width="1036" height="374" loading="lazy" data-path="local-images:/articles/356/checkout_failed.png">
+<figcaption>Error message that other users would see when attempting to access an article checked out by someone else.</figcaption>
+</figure>
+<br><br></li>
 <li>As the current editor, you're allowed access. Resume editing the article, then click <strong>Close</strong> to return to the article list. <strong>Note:</strong> Clicking <strong>Close</strong> or <strong>Save &amp; Close</strong> checks the article back in.</li>
-<li>Edit the article again and close the browser tab or window, as before, to simulate a user still editing the article.</li>
+<li>Edit the article again and click the back button, as before, to simulate a user still editing the article.</li>
 <li>Return to the article list and observe the lock symbol.</li>
 <li>As an administrator, you can check in the article by either:
 <ul>
@@ -31,7 +34,7 @@
 <li>checking the article checkbox, then selecting <strong>Actions &gt; Check-In</strong> (useful when checking in multiple items at once).</li>
 </ul>
 </li>
-<li>Choose either method to check the article in.</li>
+<li>Choose either method to check the article in. <strong>Result:</strong> A check-in message appears.<br><br><img src="images/articles/356/check_in_message.png" alt="Check-in message" width="1036" height="442" loading="lazy" data-path="local-images:/articles/356/check_in_message.png"><br><br></li>
 </ol>
 <h2>Concepts</h2>
 <p>Article locking is intended to prevent multiple authors from editing the same article simultaneously, where one person saving the article may overwrite another person's work.</p>

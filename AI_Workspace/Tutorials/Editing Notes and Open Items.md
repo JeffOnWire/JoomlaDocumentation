@@ -808,3 +808,14 @@ This closes out both previously-open questions (body-image removal, and the intr
 - **Stripped 2 more stray non-breaking-space characters.**
 - **Not changed, worth asking Jeff:** the first screenshot in Add Articles (save_and_add_new.png) is placed at the end of the Read More step, before the "Click Save & New" step that actually triggers what the filename describes — may be an intentional preview of where the button is, or may want to move down to sit with the Save & New step instead. Left as-is pending Jeff's call.
 - **Verified:** tag balance clean, zero remaining non-breaking spaces, no "Tap" or "front end" instances left in the file.
+
+**CM7.4 closed out.** Jeff reshot the flagged screenshot as `add_read_more.png` (single-purpose — just the Read More marker, no Save & New arrow) and added the previously-unreferenced `access_level_in_articles_list.png` to the "Click Clear... observe the access level" step, which had no screenshot before. Re-verified: both files present on disk, all eleven screenshot dimensions in the file match their real files exactly, tags balanced, no stray characters. CM7.4 committed.
+
+**CM7.5 reviewed after Jeff's real testing and screenshots.** He replaced "close the browser tab or window" with "click the browser back button to return to the list" (both places) — a real behavioral refinement from testing, kept as-is. Found and fixed:
+
+- **Style Guide violation (same class of bug as CM7.4):** the back-button action and its "Result: the article appears with a lock symbol" were split into two separate `<li>` elements instead of staying together — merged into one.
+- **Real dimension bug:** `locked_icon_hover.png`'s height attribute said 377px; the actual file is 303px tall. Fixed to match.
+- **Typo in a figcaption:** "an articled checked-out by someone else" → "an article checked out by someone else."
+- **Lowercase Result text:** "a check-in message appears" → "A check-in message appears," plus added a missing trailing `<br><br>` after that screenshot to match the spacing convention used by the file's other plain-`<img>` screenshot.
+- **Flagged, then resolved as intentional:** this file mixes plain `<img>` and `<figure>`/`<figcaption>` screenshots. Jeff explained the source: Joomla's own image-insert dialog produces one or the other depending solely on whether the caption field is filled in — not a deliberate per-image formatting choice on his part. Converting between the two would require editing raw HTML, which is trivial for me but a real barrier for any other editor without HTML knowledge. **Decided: leave this inconsistency alone project-wide, not just here.** Added as an explicit rule to the Tutorial Style Guide so it stops getting flagged as an error in future reviews.
+- **Verified:** all three screenshot dimensions now match their real files, tags balanced, no stray characters.
