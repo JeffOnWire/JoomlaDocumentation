@@ -1,33 +1,24 @@
-Two new style rules: no bare prerequisite links, no repeated
-Result text - applied project-wide
+CM7.1 and CM7.2: real screenshots placed, one markup fix
 
-Jeff's own edit to CM7.1 replaced "You must understand the content
-management tutorials under 2 First Steps" with the cleaner "2 First
-Steps - covers basics assumed in this tutorial," and asked to
-elevate that pattern everywhere it appears. He also asked that
-"Click New. Result: A new-X form appears." only state the Result
-the first time that action occurs in a tutorial.
+Jeff tested both files hands-on and placed real screenshots. No
+content corrections needed - his edits were style trims:
 
-Added both as rules to the Tutorial Style Guide, then searched the
-whole project rather than just fixing CM7.1:
+CM7.1: confirmed as-is (already reviewed/fixed last round). Two
+screenshots placed.
 
-Bare prerequisite links fixed in six files - CM1.3 Viewing the Site
-(1.1/1.2), CM10.4 Adding a New Menu (2 First Steps / 9.2 Menu Item
-Modules), CM2.3 Menu Items for a Category (2.1), CM2.5 Save to Menu
-(2.1/2.2/2.3, kept as three entries since its own intro paragraph
-calls out all three by name), CM6.2 Read More (2.1/2.2/2.3
-consolidated into one "2 First Steps" line, since CM6.2 builds its
-own fresh content rather than reusing those three), and CM9.1
-Custom Module (4.1).
+CM7.2: trimmed the 7.1 Prerequisites description down to "creates
+content used in this tutorial," renamed "Unpublishing Menu Items"
+to "Effect of Unpublishing Menu Items," dropped the redundant final
+section that re-demonstrated a fact the earlier section already
+covered, and combined the two category-unpublish checks (Top Story,
+World News) into one step with a shared screenshot. Four screenshots
+placed.
 
-Repeated-Result duplicates fixed in three files: CM2.3, CM7.4, and
-CM8.2, each had a second (or third) "Click New"/"Save & New" for
-the same form type still stating the Result.
+Fixed one markup slip: the first screenshot (new_menu_items.png) had
+its <img> tag pasted inside the <strong> wrapping "Save & Close,"
+with mismatched <br> spacing - inconsistent with the other three
+screenshots in the same file. Moved it outside the closing </strong>
+and matched the established <br><br> spacing. Also stripped 2 stray
+non-breaking-space characters (same artifact seen in CM4.3).
 
-CM8.2 and CM10.4 are legacy files still on their old placeholder
-themes (Sundial Software, Pets) - only these two style fixes were
-applied to them, no re-theming.
-
-Verified: re-ran the project-wide search for both patterns after
-the fixes - clean. Tag balance checked across all eight touched
-files.
+Tag balance verified clean on CM7.2 after the fix.
