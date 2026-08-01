@@ -28,8 +28,8 @@
 <li><strong>Name:</strong> <em>Joe Bloggs</em></li>
 <li><strong>Login Name (Username):</strong> <em>joe</em></li>
 <li><strong>Password/Confirm Password:</strong> make up a password.</li>
-<li><strong>Email:</strong> <a href="mailto:jb@joomla.test">jb@joomla.test</a> (fictitious; will not be used)</li>
-<li>Click the <strong>Assigned User Groups</strong> tab, then tick <strong>Author</strong> (<em>Registered</em> and <em>Author</em> should both be ticked).</li>
+<li><strong>Email:</strong> <a href="mailto:jb@joomla.test">jb@joomla.test</a> (fictitious; will not be used)<br><br><img src="images/articles/358/new_user_joe_bloggs.png" alt="New-user form" width="1323" height="629" loading="lazy" data-path="local-images:/articles/358/new_user_joe_bloggs.png"><br><br></li>
+<li>Click the <strong>Assigned User Groups</strong> tab, then tick <strong>Author</strong> (<em>Registered</em> and <em>Author</em> should both be ticked).<br><br><img src="images/articles/358/new_user_roles.png" alt="Picking roles Author and Registered for the new user" width="1356" height="578" loading="lazy" data-path="local-images:/articles/358/new_user_roles.png"><br><br></li>
 </ul>
 </li>
 <li>Click <strong>Save &amp; New</strong>.
@@ -41,7 +41,7 @@
 <li>Click the <strong>Assigned User Groups</strong> tab, then tick <strong>Author</strong> (<em>Registered</em> and <em>Author</em> should both be ticked).</li>
 </ul>
 </li>
-<li><strong>Save &amp; Close</strong></li>
+<li><strong>Save &amp; Close</strong><br><br><img src="images/articles/358/list_of_new_users.png" alt="List of newly added users" width="1374" height="456" loading="lazy" data-path="local-images:/articles/358/list_of_new_users.png"><br><br></li>
 </ol>
 <h2>Steps</h2>
 <p>Logging in to the backend and the frontend are two separate things. You logged in to the backend of the site (the administrative area) to perform the setup, but you are not logged in to the frontend (public-facing side) of the site.</p>
@@ -49,26 +49,31 @@
 <p>Users with Author, Editor, and Publisher accounts can log in to the frontend of the site; Administrators and Super Users can log in to both the frontend and the backend of the site.</p>
 <h3>Create an Article from the Frontend</h3>
 <ol>
-<li>Click <strong>View Site</strong> in the header. <strong>Result:</strong> The <em>Newsroom Submissions</em> menu item does not appear in the <strong>Main Menu</strong> (access was set for registered users).</li>
-<li>Log in as Joe, using the username and password you created for that account. <strong>Result:</strong> The page refreshes; the login form is replaced by a friendly message with Joe's name and a <strong>Log out</strong> button, and the <em>Newsroom Submissions</em> link appears in the main menu.</li>
-<li>Click <strong>Newsroom Submissions</strong>. <strong>Result:</strong> The article list is empty (there are no articles yet).</li>
+<li>Click <strong>View Site</strong>. <strong>Result:</strong> The <em>Newsroom Submissions</em> menu item does not appear in the <strong>Main Menu</strong> (access was set for registered users).</li>
+<li>Log in as Joe, using the username and password you created for that account. <strong>Result:</strong> The page refreshes; the login form is replaced by a friendly message with Joe's name and a <strong>Log out</strong> button, and the <em>Newsroom Submissions</em> link appears in the main menu.<br><br><img src="images/articles/358/logged_in_as_joe.png" alt="Logged in as Joe. Joe's name appears in the login form." width="1161" height="538" loading="lazy" data-path="local-images:/articles/358/logged_in_as_joe.png"><br><br></li>
+<li>Click <strong>Newsroom Submissions</strong>. <strong>Result:</strong> Any already-published Uncategorised articles are listed here. <strong>Note:</strong> If you've completed earlier tutorials in this section, you may see articles created there — this list shows every published Uncategorised article, not just ones created in this tutorial.<br><br><img src="images/articles/358/newsroom_subscriptions_first_look.png" alt="The Newsroom Subscriptions page" width="1156" height="436" loading="lazy" data-path="local-images:/articles/358/newsroom_subscriptions_first_look.png"><br><br></li>
 <li>Click <strong>New Article</strong>.
 <ul>
-<li><strong>Title:</strong> <em>Local Bakery Wins Regional Award</em></li>
+<li><strong>Title:</strong> <em>Local Bakery Wins Regional Award</em><br><br>
+<figure class="image"><img src="images/articles/358/new_article_form_front_end.png" alt="New-article form looks different in the front end." width="1153" height="653" loading="lazy" data-path="local-images:/articles/358/new_article_form_front_end.png">
+<figcaption>The new-article form in the frontend is simplified from its backend version.</figcaption>
+</figure>
+<br><br></li>
 </ul>
 </li>
-<li><strong>Save &amp; Close</strong>. <strong>Result:</strong> An alert notifies you that the article has been submitted. <strong>Note:</strong> New articles created by Authors are initially unpublished, and Authors don't have sufficient permissions to view unpublished content, so the article list remains empty.</li>
+<li><strong>Save &amp; Close</strong>. <strong>Result:</strong> An alert notifies you that the article has been submitted. <strong>Note:</strong> New articles created by Authors are initially unpublished, and Authors don't have sufficient permissions to view unpublished content, so Joe's new article doesn't appear in the list yet.<br><br><img src="images/articles/358/front_end_article_submitted.png" alt="Article-submitted alert" width="1156" height="511" loading="lazy" data-path="local-images:/articles/358/front_end_article_submitted.png"><br><br></li>
 </ol>
 <h3>Publish Joe's Article</h3>
 <ol>
 <li>Switch back to the backend, where you're logged in as an administrator, and click <strong>Content &gt; Articles</strong>.</li>
-<li>Click the <strong>Status</strong> icon next to the <em>Local Bakery Wins Regional Award</em> article. <strong>Result:</strong> The list refreshes and the status icon becomes a green checkmark.</li>
+<li>Click the <strong>Status</strong> icon next to the <em>Local Bakery Wins Regional Award</em> article. <strong>Result:</strong> The list refreshes and the status icon becomes a green checkmark.<br><br><img src="images/articles/358/publishing_joes_article.png" alt="Publishing Joe's article in the backend" width="1146" height="404" loading="lazy" data-path="local-images:/articles/358/publishing_joes_article.png"><br><br></li>
 </ol>
 <h3>Edit Joe's Article</h3>
 <ol>
 <li>Switch back to the frontend, where you're logged in as Joe, and refresh the page. <strong>Result:</strong> The <em>Local Bakery Wins Regional Award</em> article now appears, and you're free to view and edit it.</li>
-<li>Edit the article and enter a few words into the body.</li>
-<li>Create another article titled <em>Weekend Farmers Market Returns Downtown</em>. <strong>Note:</strong> As before, the article is submitted and unavailable until it's published.</li>
+<li>Edit the article and enter a few words into the body: <em>Owner has been baking for the community since the bakery opened in 2001.</em></li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Return to <strong>Newsroom Submissions</strong> and create another article titled <em>Weekend Farmers Market Returns Downtown</em>. <strong>Note:</strong> As before, the article is submitted and unavailable until it's published.</li>
 </ol>
 <h3>Switch Users</h3>
 <ol>
@@ -79,7 +84,7 @@
 <li><strong>Title:</strong> <em>New Bike Lanes Open Downtown</em></li>
 </ul>
 </li>
-<li><strong>Save &amp; Close</strong>. <strong>Result:</strong> An alert notifies you that the article has been submitted. <strong>Note:</strong> New articles created by Authors are initially unpublished, and Authors don't have sufficient permissions to view unpublished content, so the article list remains empty.</li>
+<li><strong>Save &amp; Close</strong>. <strong>Result:</strong> An alert notifies you that the article has been submitted. <strong>Note:</strong> New articles created by Authors are initially unpublished, and Authors don't have sufficient permissions to view unpublished content, so Erika's new article doesn't appear in the list yet — only Joe's published article does.</li>
 </ol>
 <h3>Publish Erika's Article</h3>
 <ol>
@@ -88,8 +93,10 @@
 </ol>
 <h3>Edit Erika's Article</h3>
 <ol>
-<li>Switch back to the frontend, where you're logged in as Erika, and refresh the page. <strong>Result:</strong> The <em>New Bike Lanes Open Downtown</em> article now appears, and you're free to view and edit it.</li>
-<li>Edit the article and enter a few words into the body.</li>
+<li>Switch back to the frontend, where you're logged in as Erika, and refresh the page. <strong>Result:</strong> The <em>New Bike Lanes Open Downtown</em> article now appears, and you're free to view and edit it.<br><br><img src="images/articles/358/erika_can_edit_her_own_article.png" alt="Only the article Erika created can be edited" width="1370" height="461" loading="lazy" data-path="local-images:/articles/358/erika_can_edit_her_own_article.png"><br><br></li>
+<li>Edit the article and enter a few words into the body: <em>Cyclists can now ride safely to downtown offices and businesses.</em></li>
+<li>Click the ellipsis icon in the toolbar and observe that there are fewer tools available in the frontend than in the backend.<br><br><img src="images/articles/358/fewer_options_front_end.png" alt="Fewer tools in the front end" width="1246" height="528" loading="lazy" data-path="local-images:/articles/358/fewer_options_front_end.png"><br><br></li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
 <p>Authors can create articles and view all published articles, but can only edit their own articles.</p>
 <h3>The Editor User Role</h3>
@@ -98,18 +105,18 @@
 <ul>
 <li>Click <strong>Users &gt; Manage</strong>.</li>
 <li>Click Erika's profile to edit it.</li>
-<li>Under the <strong>Assigned User Groups</strong> tab, uncheck <em>Author</em> and check <em>Editor</em>.</li>
+<li>Under the <strong>Assigned User Groups</strong> tab, uncheck <em>Author</em> and check <em>Editor</em>.<br><br><img src="images/articles/358/upgrade_erika_to_editor.png" alt="Upgrading Erika to Editor" width="1175" height="498" loading="lazy" data-path="local-images:/articles/358/upgrade_erika_to_editor.png"><br><br></li>
 <li>Click <strong>Save</strong> (don't close; you're coming right back).</li>
 </ul>
 </li>
-<li>Return to the frontend, where you're logged in as Erika, and refresh the <em>Newsroom Submissions</em> page. <strong>Result:</strong> The <em>Weekend Farmers Market Returns Downtown</em> article now appears as an unpublished item, along with <em>New Bike Lanes Open Downtown</em> and <em>Local Bakery Wins Regional Award</em>.</li>
+<li>Return to the frontend, where you're logged in as Erika, and refresh the <em>Newsroom Submissions</em> page. <strong>Result:</strong> The <em>Weekend Farmers Market Returns Downtown</em> article now appears as an unpublished item, along with <em>New Bike Lanes Open Downtown</em> and <em>Local Bakery Wins Regional Award</em>.<br><br><img src="images/articles/358/new_submissions_editor_view.png" alt="Editors can edit any article" width="1015" height="490" loading="lazy" data-path="local-images:/articles/358/new_submissions_editor_view.png"><br><br></li>
 <li>As an <em>Editor</em>, you're able to edit any article. Edit the <em>Weekend Farmers Market Returns Downtown</em> article:
 <ul>
-<li>Add a few words to the body.</li>
-<li>Click the <strong>Options</strong> tab. <strong>Result:</strong> The article status is <em>Unpublished</em>. <strong>Note:</strong> You're unable to change the status — clicking the dropdown does nothing.</li>
-<li><strong>Save &amp; Close</strong>.</li>
+<li>Add a few words to the body, <em>Fresh produce will be available on Saturday afternoons.</em></li>
+<li>Click the <strong>Options</strong> tab. <strong>Result:</strong> The article status is <em>Unpublished</em>. <strong>Note:</strong> You're unable to change the status — clicking the dropdown does nothing.<br><br><img src="images/articles/358/editors_unable_to_publish.png" alt="Status control is disabled for editors" width="1033" height="386" loading="lazy" data-path="local-images:/articles/358/editors_unable_to_publish.png"><br><br></li>
 </ul>
 </li>
+<li><strong>Save &amp; Close</strong>.</li>
 </ol>
 <h3>The Publisher User Role</h3>
 <ol>
@@ -124,19 +131,45 @@
 <ul>
 <li>Edit the article.</li>
 <li>Click the <strong>Options</strong> tab and change <strong>Status</strong> to <em>Published</em>.</li>
-<li><strong>Save &amp; Close</strong>.</li>
+<li>Click the <strong>Content</strong> tab and extend the toolbar. <strong>Result:</strong> More tools are available to publishers.</li>
 </ul>
 </li>
+<li><strong>Save &amp; Close</strong>.</li>
+<li>Return to the <strong>Newsroom Submissions</strong> page and observe that the <em>Weekend Farmers Market Returns Downtown</em> article no longer has the <em>Unpublished</em> tag.</li>
 <li>Log out, then log in as Joe again.</li>
-<li>Verify that you can see all three articles and can edit <em>Local Bakery Wins Regional Award</em> and <em>Weekend Farmers Market Returns Downtown</em>.</li>
+<li>Verify that you can now see and edit the <em>Weekend Farmers Market Returns Downtown</em> article.</li>
 </ol>
 <h3>Permissions for Individual Articles</h3>
 <ol>
 <li>Return to the backend, click <strong>Content &gt; Articles</strong>, then click <em>Local Bakery Wins Regional Award</em> to edit it.</li>
-<li>Click the <strong>Permissions</strong> tab. <strong>Result:</strong> All of the permissions here are inherited from settings that apply to all articles — this is the default, and the other two articles are the same. The user groups appear on the left, and the selected group's permissions appear on the right.</li>
-<li>Click <strong>Publisher</strong>. <strong>Result:</strong> Publishers can change the state (status) of an article to publish it, and they can edit the article.</li>
-<li>Click <strong>Editor</strong>. <strong>Result:</strong> Editors are allowed to edit the article, but not its state. <strong>Note:</strong> When Erika was in the Editor role, she could edit any article, but not publish them.</li>
-<li>Click <strong>Author</strong>. <strong>Result:</strong> Authors are not allowed to edit the article. <strong>Note:</strong> However, Joe and Erika (before becoming an Editor or Publisher) were able to edit their own articles — that permission is set at a higher level, in the settings for <em>all</em> articles.</li>
+<li>Click the <strong>Permissions</strong> tab. <strong>Result:</strong>
+<ul>
+<li>The user groups appear on the left, and the selected group's permissions appear on the right.</li>
+<li><em>Public</em> is highlighted on the left, the <em>Public's</em> permissions appear on the right.</li>
+<li>All of the permissions here are <em>Inherited</em> from higher level settings that apply to all articles — this is the default, and the other articles are the same. <br><br><img src="images/articles/358/article_permissions_default_public.png" alt="Article permissions for the public users" width="1294" height="579" loading="lazy" data-path="local-images:/articles/358/article_permissions_default_public.png"><br><br></li>
+</ul>
+</li>
+<li><strong>Note:</strong> <em>Public</em> users are not allowed to <em>Delete</em>, <em>Edit</em>, or <em>Edit State</em> of any articles.</li>
+<li>Click <strong>Author</strong>. <strong>Result:</strong> Authors are not allowed to edit the article. <strong>Note:</strong>
+<ul>
+<li>As <em>Authors</em> Joe and Erika were able to edit their own articles.</li>
+<li>This screen indicates they are not allowed to edit articles.</li>
+<li>The intent here is that authors are not allowed to edit <em>all</em> articles—edit articles in general.</li>
+<li>There is a higher-level permission that we will cover later in the tutorial that gives authors permission to edit their own articles.<br><br><img src="images/articles/358/article_permissions_default_author.png" alt="Permissions for default author" width="1227" height="477" loading="lazy" data-path="local-images:/articles/358/article_permissions_default_author.png"><br><br></li>
+</ul>
+</li>
+<li>Click <strong>Editor</strong>. <strong>Result:</strong> Editors are allowed to edit all articles:
+<ul>
+<li>When Erika was in the Editor role, she could edit any article.</li>
+<li>Joe as an <em>Author</em> can only edit his own.</li>
+<li>Neither Authors nor Editors can publish, or otherwise change the status of articles.<br><br><img src="images/articles/358/article_permissions_default_editor.png" alt="Permissions for default editor" width="1252" height="598" loading="lazy" data-path="local-images:/articles/358/article_permissions_default_editor.png"><br><br></li>
+</ul>
+</li>
+<li>Click <strong>Publisher</strong>. <strong>Result:</strong> Publishers <em>are</em> allowed to edit and publish (change state of) articles:
+<ul>
+<li>When Erika became a publisher, she was able to publish the <em>Weekend Farmers Market Returns Downtown</em> article.<br><br><img src="images/articles/358/article_permissions_default_publisher.png" alt="Default permissions for publisher" width="1264" height="607" loading="lazy" data-path="local-images:/articles/358/article_permissions_default_publisher.png"><br><br></li>
+</ul>
+</li>
 <li>As an administrator, you can override these inherited permissions when needed.</li>
 <li>Click <strong>Close</strong> to close the article without saving.</li>
 </ol>
@@ -144,8 +177,12 @@
 <ol>
 <li>From the <strong>Content &gt; Articles</strong> list, click the <strong>Options</strong> button in the upper right.</li>
 <li>Select <strong>Articles</strong> on the left to highlight it.</li>
-<li>Click the <strong>Permissions</strong> tab. <strong>Result:</strong> The user groups appear on the left, and the permissions of the highlighted group appear on the right.</li>
-<li>Click the <strong>Author</strong> group. <strong>Result:</strong> Authors are not allowed to edit articles generally (all articles), but they are allowed to <em>Create</em> and <em>Edit Own</em>, meaning they can create new articles and edit any articles they created. <strong>Note:</strong> This is the permission that allows Joe and Erika to edit their own articles.</li>
+<li>Click the <strong>Permissions</strong> tab. <strong>Result:</strong> The user groups appear on the left, and the permissions of the highlighted group appear on the right.
+<ul>
+<li>These are the permissions that all articles inherit from, as we saw earlier.</li>
+</ul>
+</li>
+<li>Click the <strong>Author</strong> group. <strong>Result:</strong> Authors are not allowed to edit articles generally (all articles), but they are allowed to <em>Create</em> and <em>Edit Own</em>, meaning they can create new articles and edit any articles they created. <strong>Note:</strong> This is the permission that allows Joe and Erika to edit their own articles.<br><br><img src="images/articles/358/create_and_edit_own.png" alt="All-articles permissions" width="1012" height="1007" loading="lazy" data-path="local-images:/articles/358/create_and_edit_own.png"></li>
 </ol>
 <h2>Concepts</h2>
 <p>Joomla provides a basic framework for authors, editors, and publishers to collaborate on creating and publishing content.</p>

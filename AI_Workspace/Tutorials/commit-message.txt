@@ -1,32 +1,43 @@
-CM7.5: fix Result-split violation, a dimension bug, and a typo
-after Jeff's screenshots
+CM7.6: markup/grammar fixes after Jeff's major expansion with
+eighteen screenshots
 
-Jeff's edits replaced "close the browser tab or window" with "click
-the browser back button to return to the list" (both places) - a
-real refinement from testing, kept as-is.
+Jeff substantially expanded this file: eighteen real screenshots,
+a much fuller "Permissions for Individual Articles" section that
+now also covers the Public role (not just Author/Editor/Publisher),
+and real UI details from testing (the simplified frontend
+new-article form, fewer toolbar tools for non-Publishers, the
+Content tab's expandable toolbar for Publishers). All genuine
+content improvements, kept as-is.
 
-Fixed: the back-button action and its "Result: the article appears
-with a lock symbol" had been split into two separate <li> elements
-instead of staying together - same class of Style Guide violation
-caught in CM7.4 last round, merged back into one.
+Fixed a batch of mechanical issues found in review:
 
-locked_icon_hover.png's height attribute said 377px; the real file
-is 303px. Fixed to match.
+- Same <strong>-wrapping-an-<img> bug as CM7.2 (list_of_new_users.png
+  pasted inside the Save & Close tags) - moved outside.
+- Malformed <em>/<br> nesting around the front-end New Article
+  figure, likely a WYSIWYG paste artifact - cleaned up.
+- One real dimension mismatch (newsroom_subscriptions_first_look.png,
+  labelled 1154x434, actually 1156x436) - fixed.
+- Missing trailing <br><br> after two screenshots, a quadruple
+  <br><br><br><br> after another - both fixed to match the file's
+  own spacing convention.
+- "Click on the X" appeared twice (ellipsis icon, Content tab) -
+  the only instances in the file, inconsistent with "Click X" used
+  everywhere else in the project. Fixed both.
+- "Click View the Site" -> "Click View Site" to match the actual
+  button label used elsewhere.
+- Real typos: "in then frontend" -> "in the frontend"; "not allow
+  to edit" -> "not allowed to edit"; "Result." (unbolded period,
+  no colon) -> "Result:" matching every other instance.
+- Stray spaces inside <em> tags around an article title - moved
+  outside.
+- Permission action names (Delete, Edit, Edit State) weren't
+  italicized like the rest of the section's on-screen labels
+  (Inherited, Create, Edit Own) - fixed for consistency.
+- Two "Save & Close." with the period inside the <strong> tag,
+  inconsistent with the rest of the file - fixed.
+- Style: two "enter a few words into the body, [example]" comma
+  constructions changed to colons for readability.
 
-Typo in a figcaption: "an articled checked-out by someone else" ->
-"an article checked out by someone else."
-
-Lowercase Result text ("a check-in message appears") capitalized,
-plus a missing trailing <br><br> added after that screenshot to
-match the file's other plain-img screenshot spacing.
-
-Flagged the img/figure mix, then resolved as intentional: Jeff
-explained it traces back to Joomla's own image-insert dialog (the
-caption field alone decides which tag you get), not a deliberate
-per-image choice - fixing it means editing raw HTML, trivial for me
-but a real barrier for other editors. Decided to leave this
-inconsistency alone project-wide and added it as an explicit rule
-to the Tutorial Style Guide so it stops getting flagged.
-
-Verified: all three screenshot dimensions now match their real
-files, tags balanced, no stray characters.
+Verified: all eighteen screenshot dimensions match their real
+files, tags balanced, zero non-breaking spaces, zero "Click on"
+instances remaining.
