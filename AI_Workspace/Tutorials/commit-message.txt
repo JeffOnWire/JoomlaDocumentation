@@ -1,43 +1,40 @@
-CM7.6: markup/grammar fixes after Jeff's major expansion with
-eighteen screenshots
+Section 2: apply post-redesign rules, add CM2.5 nav, new screenshot spacing
 
-Jeff substantially expanded this file: eighteen real screenshots,
-a much fuller "Permissions for Individual Articles" section that
-now also covers the Public role (not just Author/Editor/Publisher),
-and real UI details from testing (the simplified frontend
-new-article form, fewer toolbar tools for non-Publishers, the
-Content tab's expandable toolbar for Publishers). All genuine
-content improvements, kept as-is.
+CM2.1-2.5's fixture redesign finished before the log-in-once and
+Click-X-first-time rules existed. Re-reviewed against the full
+current style guide and fixed what those rules missed:
 
-Fixed a batch of mechanical issues found in review:
+- CM2.2: "Save & Close" (x4) and "Save & New" (x2) were all still
+  "Click"-prefixed; fixed so only the first of each is "Click X,"
+  every repeat is bare. "Click New again" (second sub-category)
+  changed to bare "New." to match the project's fragment-style
+  repeat convention.
+- CM2.3: real bug - Setup's own actions (create two articles) were
+  written before the login step, which was misplaced in Steps
+  after Setup instead of being Setup's first step. Fixed. Also
+  fixed a repeated "Click Save & Close" (x2) and a repeated
+  "Click New" for the second menu item form, both now bare.
+- CM2.5: real bug - no login step existed anywhere in the file.
+  Added as the first step of "Save an Article to a Menu." Also
+  fixed a repeated "Click Save & Close" that should have been bare.
 
-- Same <strong>-wrapping-an-<img> bug as CM7.2 (list_of_new_users.png
-  pasted inside the Save & Close tags) - moved outside.
-- Malformed <em>/<br> nesting around the front-end New Article
-  figure, likely a WYSIWYG paste artifact - cleaned up.
-- One real dimension mismatch (newsroom_subscriptions_first_look.png,
-  labelled 1154x434, actually 1156x436) - fixed.
-- Missing trailing <br><br> after two screenshots, a quadruple
-  <br><br><br><br> after another - both fixed to match the file's
-  own spacing convention.
-- "Click on the X" appeared twice (ellipsis icon, Content tab) -
-  the only instances in the file, inconsistent with "Click X" used
-  everywhere else in the project. Fixed both.
-- "Click View the Site" -> "Click View Site" to match the actual
-  button label used elsewhere.
-- Real typos: "in then frontend" -> "in the frontend"; "not allow
-  to edit" -> "not allowed to edit"; "Result." (unbolded period,
-  no colon) -> "Result:" matching every other instance.
-- Stray spaces inside <em> tags around an article title - moved
-  outside.
-- Permission action names (Delete, Edit, Edit State) weren't
-  italicized like the rest of the section's on-screen labels
-  (Inherited, Create, Edit Own) - fixed for consistency.
-- Two "Save & Close." with the period inside the <strong> tag,
-  inconsistent with the rest of the file - fixed.
-- Style: two "enter a few words into the body, [example]" comma
-  constructions changed to colons for readability.
+CM2.5 follow-up: added the explicit "Content > Articles" navigation
+and "Click New" step that the article half was missing (the
+category half already had both) - confirmed as a real gap, not
+intentional brevity.
 
-Verified: all eighteen screenshot dimensions match their real
-files, tags balanced, zero non-breaking spaces, zero "Click on"
-instances remaining.
+New screenshot spacing rule, piloted on Section 2 only for now:
+two <br> tags always precede an image; a plain <img> (no caption)
+gets two more <br> after it; a <figure>/<figcaption> gets none
+after. Style Guide updated. Applied to all 24 figures in
+CM2.1-2.5 (all figure/figcaption in this section - every one now
+double-<br>-before, none-after).
+
+Verified: tag balance, image dimensions against real files, and
+non-breaking spaces all clean across all five files.
+
+Not yet done: the new spacing rule hasn't been applied to any
+other section yet (including CM7's undocumented double-<br>
+convention, which predates this and doesn't match it either -
+CM7 has no trailing <br> removed). Pending Jeff's confirmation
+before rolling out further.
