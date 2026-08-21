@@ -1,13 +1,12 @@
-User Guide: create News overview page (389), add overview-page style guide
+User Guide: create Performance overview page (390)
 
-- Add overview-pages/389_News.html: new article, section overview for
-  News Feeds (guide.joomla.org/user-manual/news-feeds) - intro paragraph
-  plus links to its two articles (News Feeds, News Display). Small
-  section, no subsections needed.
-- Add style-guides/Overview_Page_Style_Guide.md, derived from the three
-  reference examples (298, 299, 369) plus two rulings from Jeff: en dash
-  (not hyphen) between link and description, and British spelling by
-  default except when quoting exact on-screen Joomla UI text verbatim.
+- Add overview-pages/390_Performance.html: new article, section overview
+  for Performance (guide.joomla.org/user-manual/performance) - intro
+  paragraph plus links to its five articles (Accessibility Checker,
+  Managing 404 Errors, Monitoring Server Health, Monitoring Site Speed,
+  Page Analysis). Flat list per style guide (below the ~6-article
+  threshold for subsections); no natural grouping clean enough to
+  justify splitting five items into subsections.
 
-No Sync-from-Joomla commit for 389 - this is a brand new article with no
-prior Joomla content to capture as a baseline.
+No Sync-from-Joomla commit for 390 - brand new article, no prior Joomla
+content to capture as a baseline.
