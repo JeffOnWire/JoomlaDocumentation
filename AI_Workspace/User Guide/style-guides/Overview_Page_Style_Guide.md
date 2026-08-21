@@ -24,8 +24,13 @@ surface new cases, and note any open questions inline until resolved.
    ```html
    <li><a href="user-manual/section-slug/article-slug">Article Title</a> – Brief description.</li>
    ```
-   - **Link text** matches the article title exactly as it appears in the
-     Joomla menu.
+   - **Link text** matches exactly what appears in the left-navigation
+     menu module on guide.joomla.org - not necessarily the article's own
+     page title/heading, which can differ (e.g. the menu says "Keep
+     Submenus Open" while the article itself covers more ground). When
+     in doubt, check the actual rendered menu rather than an article's
+     title or an overview-page table, which can render link text
+     differently (lost casing, truncated wording, etc.).
    - **Description** is 1–2 sentences that expand slightly on the title
      and tie it back to the section/subsection it's in — not a repeat of
      the title, not a full summary of the article.

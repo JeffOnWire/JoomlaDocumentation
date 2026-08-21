@@ -1,14 +1,19 @@
-User Guide: create Privacy overview page (391)
+User Guide: create Menus overview page (392)
 
-- Add overview-pages/391_Privacy.html: new article, section overview for
-  Privacy (guide.joomla.org/user-manual/privacy) - intro paragraph plus
-  links to its four articles (Privacy Outline, Privacy Setup, Privacy
-  Workflow, Cookies). Flat list per style guide, ordered as a logical
-  sequence (outline -> setup -> workflow, then the related Cookies
-  topic).
+- Add overview-pages/392_Menus.html: new article, section overview for
+  Menus (guide.joomla.org/user-manual/menus) - intro paragraph, organized
+  into three subsections since the section has 11 articles (well above
+  the ~6-article flat-list threshold):
+    - Menu Basics (3): Adding a New Menu, Menu Items, Menu Item Types
+    - Arranging and Displaying Menus (4): Menu Item Order, Menu
+      Positions, Submenus, Split Menus
+    - Specialised Menu Techniques (4): Archived Articles, Custom
+      Administrator Menu, Auto Redirect Guests to Login, Keep Submenus
+      Open
 
-  Deliberately excludes the "Privacy" stub article/menu item - Jeff
-  confirmed it shouldn't be there.
-
-No Sync-from-Joomla commit for 391 - brand new article, no prior Joomla
-content to capture as a baseline.
+- Update style-guides/Overview_Page_Style_Guide.md: clarify that link
+  text must match the actual left-navigation menu module on
+  guide.joomla.org, not an article's own page title - caught after two
+  links ("Auto Redirect Guests to Login", "Keep Submenus Open") were
+  drafted with lowercase/longer text pulled from the article/overview
+  table instead of the real menu labels, per Jeff's screenshot.
