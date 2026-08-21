@@ -1,19 +1,12 @@
-User Guide: create Smart Search overview page (393)
+User Guide: create Tags overview page (394)
 
-- Add overview-pages/393_Smart_Search.html: new article, section
-  overview for Smart Search (guide.joomla.org/user-manual/smart-search).
-  The live overview page there is an old page slated for replacement
-  with no usable article links, so the article list came from the site's
-  left navigation instead (cross-checked against each article's own
-  breadcrumb - 7 for 7 matched). Organized into two subsections since
-  the section has 7 articles (just over the ~6-article flat-list
-  threshold):
-    - Setting Up Smart Search (4): Quickstart, Options, Indexing, On
-      Large Sites
-    - Customising and Testing (3): Layout Overrides, FAQs, Test Plan
+- Add overview-pages/394_Tags.html: new article, section overview for
+  Tags (guide.joomla.org/user-manual/tags) - intro paragraph plus a link
+  to its single article, Content Tags.
+- Update style-guides/Overview_Page_Style_Guide.md: clarify that a
+  single-article section still gets a real intro and a one-item list,
+  not a special-cased shorter treatment - first section we've hit with
+  only one article.
 
-  393_Smart_Search.html previously contained the Menus (392) draft
-  content - an apparent copy/paste mix-up on Jeff's end - now replaced.
-
-No Sync-from-Joomla commit for 393 - brand new article, no prior Joomla
+No Sync-from-Joomla commit for 394 - brand new article, no prior Joomla
 content to capture as a baseline.

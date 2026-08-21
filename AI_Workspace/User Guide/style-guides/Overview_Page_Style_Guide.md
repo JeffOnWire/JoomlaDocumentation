@@ -19,7 +19,10 @@ surface new cases, and note any open questions inline until resolved.
    - one short sentence (sometimes a full paragraph) introducing it
    - a `<ul>` of article links
    Small sections (a handful of articles or fewer) skip subsections
-   entirely — just the intro followed by one flat `<ul>`.
+   entirely — just the intro followed by one flat `<ul>`. This includes
+   sections with only a single article: still write a real intro and a
+   one-item `<ul>` rather than dropping the list, for consistency with
+   every other overview page.
 3. **Article links** — one `<li>` per article:
    ```html
    <li><a href="user-manual/section-slug/article-slug">Article Title</a> – Brief description.</li>
