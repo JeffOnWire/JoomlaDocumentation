@@ -1,0 +1,11 @@
+User Guide: set up project folder and git sync workflow
+
+- Reorganize into examples/ (reference pages), overview-pages/ (future
+  section drafts), style-guides/ (future style docs)
+- Rename examples/369_Fields to 369_Fields.html for naming-convention
+  consistency with the other two example files
+- Add README.md describing the folder structure
+- Add Git Sync Workflow.md, adapted from the Tutorials subproject's
+  workflow doc, covering the Sync from Joomla / Claude edits / Pushed to
+  Joomla commit pattern for overview pages
+- Add .gitignore for editor temp files

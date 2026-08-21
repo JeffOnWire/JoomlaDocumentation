@@ -1,0 +1,4 @@
+# Editor/temp files (repo root .gitignore already covers .DS_Store etc.)
+*.tmp
+*~
+.~lock.*
