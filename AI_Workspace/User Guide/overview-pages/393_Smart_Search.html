@@ -1,24 +1,16 @@
-<p>Joomla's menu system is what connects your visitors to your site's content. This section covers everything from creating your first menu through to arranging complex, multi-level navigation, plus a handful of specialised techniques for particular situations.</p>
-<h2>Menu Basics</h2>
-<p>The building blocks of Joomla navigation: menus, the items inside them, and the types of content those items can point to.</p>
+<p>Smart Search is Joomla's built-in advanced search component. It pre-indexes your site's content so visitors get fast, filterable results instead of a slow live database search. This section covers getting it running, tuning it for larger sites, customising how results are displayed, and reference material for configuration, common questions, and testing.</p>
+<h2>Setting Up Smart Search</h2>
+<p>The core steps to get Smart Search indexing and serving results, plus the settings and considerations that matter most as your site grows.</p>
 <ul>
-<li><a href="user-manual/menus/menus-adding-a-new-menu">Adding a New Menu</a> – The three basic steps to a working menu: create the menu itself, place a menu module for it, then add the items that link to your content.</li>
-<li><a href="user-manual/menus/menus-menu-items">Menu Items</a> – What menu items are and how to add them, the basic navigation units of a Joomla site.</li>
-<li><a href="user-manual/menus/menus-menu-item-types">Menu Item Types</a> – The full range of menu item types available across Joomla's components, from Articles to Contacts, Users, and Smart Search.</li>
+<li><a href="user-manual/smart-search/smart-search-smart-search-quickstart-guide">Smart Search Quickstart</a> – Enabling the search plugins, running the indexer, and exposing search to visitors through a module or menu item.</li>
+<li><a href="user-manual/smart-search/smart-search-smart-search-configuration-options">Smart Search Options</a> – The global Search and Index configuration settings, from result display preferences to indexing weight and batch size.</li>
+<li><a href="user-manual/smart-search/smart-search-setting-up-automatic-smart-search-indexing">Smart Search Indexing</a> – Running the indexer automatically, from the toolbar or the command line, including cron jobs and memory settings for larger indexing jobs.</li>
+<li><a href="user-manual/smart-search/smart-search-smart-search-on-large-sites">Smart Search on Large Sites</a> – Avoiding timeouts on big sites with the command-line indexer, tuning batch size and memory, and knowing when a standalone search engine like Solr might suit you better.</li>
 </ul>
-<h2>Arranging and Displaying Menus</h2>
-<p>Once you have menu items, these articles cover shaping how they're ordered, nested, positioned on the page, and split across different areas of your layout.</p>
+<h2>Customising and Testing</h2>
+<p>Adjusting how results look, answers to common questions, and a test plan for confirming Smart Search keeps working as your content changes.</p>
 <ul>
-<li><a href="user-manual/menus/menus-menu-item-order">Menu Item Order</a> – Reordering menu items, and their child items along with them, by drag and drop or from a list.</li>
-<li><a href="user-manual/menus/menus-menu-positions">Menu Positions</a> – Choosing where a menu module appears on the page and switching its layout, for example from a sidebar list to a dropdown.</li>
-<li><a href="user-manual/menus/menus-submenus">Submenus</a> – Building hierarchical, parent-child menus and assigning separate modules to show the right submenu on the right pages.</li>
-<li><a href="user-manual/menus/menus-split-menus">Split Menus</a> – Breaking one menu structure across several areas of a page, so primary links sit in the header while secondary links populate a sidebar.</li>
-</ul>
-<h2>Specialised Menu Techniques</h2>
-<p>A handful of more specific menu techniques for particular situations, from restricting a menu to certain users to controlling exactly how submenus behave.</p>
-<ul>
-<li><a href="user-manual/menus/menus-menu-item-type-archived-articles">Archived Articles</a> – Setting up a menu item that lists articles you've archived rather than deleted, with filtering by month and year.</li>
-<li><a href="user-manual/menus/menus-adding-a-custom-administrator-menu">Custom Administrator Menu</a> – Building a restricted backend menu so a specific user group only sees the admin tasks it needs.</li>
-<li><a href="user-manual/menus/menus-auto-redirect-guests-to-login">Auto Redirect Guests to Login</a> – Combining a hidden, access-restricted menu with aliasing to send unauthenticated visitors straight to login before reaching the page they wanted.</li>
-<li><a href="user-manual/menus/keep-submenus-open">Keep Submenus Open</a> – A template override that keeps submenus visibly open rather than collapsed, without the usual toggle behaviour.</li>
+<li><a href="user-manual/smart-search/smart-search-customising-the-smart-search-results-page">Smart Search Layout Overrides</a> – Customising the search results page through its five layout files: default, form, results, result, and sorting.</li>
+<li><a href="user-manual/smart-search/smart-search-smart-search-frequently-asked-questions">Smart Search FAQs</a> – Answers to common questions about what Smart Search offers over basic search, and how it handles performance, multilingual sites, and faceted search.</li>
+<li><a href="user-manual/smart-search/smart-search-smart-search-content-change-test-plan">Smart Search Test Plan</a> – A testing framework covering articles, categories, contacts, news feeds, and web links, for confirming indexing keeps up as content, state, taxonomy, and access levels change.</li>
 </ul>

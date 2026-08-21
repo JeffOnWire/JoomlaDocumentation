@@ -1,19 +1,19 @@
-User Guide: create Menus overview page (392)
+User Guide: create Smart Search overview page (393)
 
-- Add overview-pages/392_Menus.html: new article, section overview for
-  Menus (guide.joomla.org/user-manual/menus) - intro paragraph, organized
-  into three subsections since the section has 11 articles (well above
-  the ~6-article flat-list threshold):
-    - Menu Basics (3): Adding a New Menu, Menu Items, Menu Item Types
-    - Arranging and Displaying Menus (4): Menu Item Order, Menu
-      Positions, Submenus, Split Menus
-    - Specialised Menu Techniques (4): Archived Articles, Custom
-      Administrator Menu, Auto Redirect Guests to Login, Keep Submenus
-      Open
+- Add overview-pages/393_Smart_Search.html: new article, section
+  overview for Smart Search (guide.joomla.org/user-manual/smart-search).
+  The live overview page there is an old page slated for replacement
+  with no usable article links, so the article list came from the site's
+  left navigation instead (cross-checked against each article's own
+  breadcrumb - 7 for 7 matched). Organized into two subsections since
+  the section has 7 articles (just over the ~6-article flat-list
+  threshold):
+    - Setting Up Smart Search (4): Quickstart, Options, Indexing, On
+      Large Sites
+    - Customising and Testing (3): Layout Overrides, FAQs, Test Plan
 
-- Update style-guides/Overview_Page_Style_Guide.md: clarify that link
-  text must match the actual left-navigation menu module on
-  guide.joomla.org, not an article's own page title - caught after two
-  links ("Auto Redirect Guests to Login", "Keep Submenus Open") were
-  drafted with lowercase/longer text pulled from the article/overview
-  table instead of the real menu labels, per Jeff's screenshot.
+  393_Smart_Search.html previously contained the Menus (392) draft
+  content - an apparent copy/paste mix-up on Jeff's end - now replaced.
+
+No Sync-from-Joomla commit for 393 - brand new article, no prior Joomla
+content to capture as a baseline.
