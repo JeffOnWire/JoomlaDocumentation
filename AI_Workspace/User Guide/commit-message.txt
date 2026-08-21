@@ -1,12 +1,14 @@
-User Guide: create Performance overview page (390)
+User Guide: create Privacy overview page (391)
 
-- Add overview-pages/390_Performance.html: new article, section overview
-  for Performance (guide.joomla.org/user-manual/performance) - intro
-  paragraph plus links to its five articles (Accessibility Checker,
-  Managing 404 Errors, Monitoring Server Health, Monitoring Site Speed,
-  Page Analysis). Flat list per style guide (below the ~6-article
-  threshold for subsections); no natural grouping clean enough to
-  justify splitting five items into subsections.
+- Add overview-pages/391_Privacy.html: new article, section overview for
+  Privacy (guide.joomla.org/user-manual/privacy) - intro paragraph plus
+  links to its four articles (Privacy Outline, Privacy Setup, Privacy
+  Workflow, Cookies). Flat list per style guide, ordered as a logical
+  sequence (outline -> setup -> workflow, then the related Cookies
+  topic).
 
-No Sync-from-Joomla commit for 390 - brand new article, no prior Joomla
+  Deliberately excludes the "Privacy" stub article/menu item - Jeff
+  confirmed it shouldn't be there.
+
+No Sync-from-Joomla commit for 391 - brand new article, no prior Joomla
 content to capture as a baseline.
