@@ -1,11 +1,13 @@
-User Guide: set up project folder and git sync workflow
+User Guide: create News overview page (389), add overview-page style guide
 
-- Reorganize into examples/ (reference pages), overview-pages/ (future
-  section drafts), style-guides/ (future style docs)
-- Rename examples/369_Fields to 369_Fields.html for naming-convention
-  consistency with the other two example files
-- Add README.md describing the folder structure
-- Add Git Sync Workflow.md, adapted from the Tutorials subproject's
-  workflow doc, covering the Sync from Joomla / Claude edits / Pushed to
-  Joomla commit pattern for overview pages
-- Add .gitignore for editor temp files
+- Add overview-pages/389_News.html: new article, section overview for
+  News Feeds (guide.joomla.org/user-manual/news-feeds) - intro paragraph
+  plus links to its two articles (News Feeds, News Display). Small
+  section, no subsections needed.
+- Add style-guides/Overview_Page_Style_Guide.md, derived from the three
+  reference examples (298, 299, 369) plus two rulings from Jeff: en dash
+  (not hyphen) between link and description, and British spelling by
+  default except when quoting exact on-screen Joomla UI text verbatim.
+
+No Sync-from-Joomla commit for 389 - this is a brand new article with no
+prior Joomla content to capture as a baseline.
