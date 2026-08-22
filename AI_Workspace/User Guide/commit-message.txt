@@ -1,13 +1,12 @@
-User Guide: create Dashboards overview page (401)
+User Guide: create Languages overview page (402)
 
-- Add overview-pages/401_Dashboards.html: new article, section overview
-  for Dashboards (guide.joomla.org/user-manual/dashboards) - intro
-  paragraph plus links to its seven articles (Home, Content, Menu,
-  Components, Users, System, Help Dashboard). Kept flat rather than
-  splitting into subsections - the articles are all peers of the same
-  kind (one dashboard per main Administrator menu, plus Home and Help),
-  so there's no natural grouping to split on.
+- Add overview-pages/402_Languages.html: new article, section overview
+  for Languages (guide.joomla.org/user-manual/languages) - intro
+  paragraph plus links to its four articles (Setup a Multilingual Site,
+  Multilingual Associations, Language Overrides, Debugging a
+  Translation). Small section, so kept flat per the style guide - no
+  subsections.
 
-No Sync-from-Joomla commit for 401 - existing Joomla page had no intro
-text, just a bare table of the seven article titles, so there was
+No Sync-from-Joomla commit for 402 - existing Joomla page had no intro
+text, just a bare table of the four article titles, so there was
 nothing to capture as a baseline.
