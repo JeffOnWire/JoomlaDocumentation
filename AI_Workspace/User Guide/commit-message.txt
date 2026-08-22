@@ -1,11 +1,10 @@
-User Guide: create Plugins overview page (405)
+User Guide: revise Languages overview intro (402)
 
-- Add overview-pages/405_Plugins.html: new article, section overview
-  for Plugins (guide.joomla.org/user-manual/plugins) - intro paragraph
-  plus links to its two articles (About Plugins, Joomla! Update
-  Notification). Very small section, so kept flat per the style guide
-  - no subsections.
-
-No Sync-from-Joomla commit for 405 - existing Joomla page had no intro
-text, just a bare table of the two article titles, so there was
-nothing to capture as a baseline.
+- Edit overview-pages/402_Languages.html: rewrote the intro paragraph
+  in response to colleague review feedback. Removed the "no extension
+  required" claim - language packs are technically extensions - and
+  told the fuller story: core language packs only translate Joomla's
+  own built-in labels/prompts, while menus, articles, and other
+  written content still need manual translation, and third-party
+  extensions need their own language files to be fully translated.
+  Dropped the "one of Joomla's strengths" framing along with it.
