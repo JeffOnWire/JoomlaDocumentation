@@ -1,21 +1,22 @@
-User Guide: rewrite Mail Templates overview page (272)
+User Guide: rewrite Scheduled Tasks overview page (359)
 
-- Rewrite overview-pages/272_Mail_Templates.html: section overview for
-  Mail Templates (guide.joomla.org/user-manual/mail-templates) - intro
-  plus flat list of its five articles (Options, Editing, Mass Mail
-  Users, Managing Template Layouts, Tags Cross-Reference). Small
-  section, kept flat per the style guide - no subsections.
+- Rewrite overview-pages/359_Scheduled_Tasks.html: section overview for
+  Scheduled Tasks (guide.joomla.org/user-manual/scheduled-tasks) - intro
+  plus flat list of its two articles (How to Schedule a Task, How to
+  Choose a Scheduler). Very small section, kept flat per the style
+  guide - no subsections.
 
-No Sync-from-Joomla baseline file existed for 272 before this - drafted
+No Sync-from-Joomla baseline file existed for 359 before this - drafted
 directly from the live site's current content and menu, per the usual
 workflow when a section hasn't been synced into overview-pages/ yet.
 
-Flag: the existing live page has real explanatory content beyond "just
-links" - what Mail Templates are, that the feature was introduced in
-Joomla 5.2, how to reach it (System Dashboard > Templates), and that
-templates can't be enabled/disabled directly (the parent extension
-controls that). The what-it-is/why-it-matters framing is folded into
-this new intro, but the more procedural detail (accessing the template
-list, what it displays, enable/disable behaviour) isn't covered by any
-of the five sub-articles and has no other home - see Claude's chat
-message for the exact wording and a suggested destination.
+Flag: the existing live page carried a reference-style catalog beyond
+"just links" - the full list of eleven built-in scheduled task types,
+which three ship enabled by default and at what frequency, and a
+technical caveat (Rotate Logs purges log files, not the action log
+database tables). Neither sub-article covers this. The what-it-is
+framing (introduced in Joomla 4.1, runs like a cronjob, accessed from
+Components) is folded into the new intro, but the task catalog and
+default-enabled details aren't covered anywhere and have no other home
+- see Claude's chat message for the exact wording and a suggested
+destination.
