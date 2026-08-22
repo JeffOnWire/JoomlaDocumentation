@@ -1,12 +1,18 @@
-User Guide: create Test Installations overview page (395)
+User Guide: create Users overview page (396)
 
-- Add overview-pages/395_Test_Installations.html: new article, section
-  overview for Test Installations
-  (guide.joomla.org/user-manual/test-installations) - intro paragraph
-  plus links to its five articles (File Permissions: Linux, File
-  Permissions: Windows, Setting up Apache/PHP/MySQL manually, Visual
-  Studio Code Primer, Visual Studio Code Extras). Flat list per style
-  guide (5 articles, below the ~6 threshold).
+- Add overview-pages/396_Users.html: new article, section overview for
+  Users (guide.joomla.org/user-manual/users) - intro paragraph, organized
+  into two subsections for the 12 articles (well above the ~6-article
+  flat-list threshold):
+    - User Accounts and Access (6): Access Control, User Registration,
+      User Profile, Guest Access, Changing User's Groups, User Actions
+      Log
+    - Login Security (6): User Password Reset, Admin Password Recovery,
+      User Password Security, WebAuthn Login, Multi-factor
+      Authentication, Login and Logout Redirects
 
-No Sync-from-Joomla commit for 395 - brand new article, no prior Joomla
+  Article list and link text/titles supplied directly by Jeff (copied
+  from the Joomla menu), so no cross-checking needed this time.
+
+No Sync-from-Joomla commit for 396 - brand new article, no prior Joomla
 content to capture as a baseline.
