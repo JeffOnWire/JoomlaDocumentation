@@ -1,20 +1,13 @@
-User Guide: create Reference overview page (397)
+User Guide: create Problems overview page (398)
 
-- Add overview-pages/397_Reference.html: new article, section overview
-  for Reference (guide.joomla.org/user-manual/reference) - intro
-  paragraph plus links to its four articles (Joomla Licenses, Joomla!
-  Copyright, What are web standards?, Where are the web pages?). Flat
-  list per style guide (4 articles, below the ~6 threshold).
+- Add overview-pages/398_Problems.html: new article, section overview
+  for Problems (guide.joomla.org/user-manual/problems) - intro paragraph
+  plus links to its six articles (Assorted Issues, Database Connection,
+  Database Table Structure, FatalError, Local Host Email, Unsupported
+  PHP Version). Kept flat rather than splitting into subsections - right
+  at the ~6-article threshold, but the topics (specific troubleshooting
+  scenarios) are cohesive enough, and don't split into a clean natural
+  grouping, that a flat list reads better than a forced split.
 
-  Intro frames the section as background/conceptual knowledge (legal
-  footing plus web fundamentals) rather than trying to find a topical
-  thread across licensing, copyright, web standards, and how Joomla
-  stores pages - deliberately the unifying idea rather than a forced
-  connection between the subjects themselves.
-
-  Kept "Joomla Licenses" and "Joomla! Copyright" as titled in the menu
-  (American spelling/punctuation) per the link-text-matches-menu rule;
-  used British "licence" only in my own descriptive prose.
-
-No Sync-from-Joomla commit for 397 - brand new article, no prior Joomla
+No Sync-from-Joomla commit for 398 - brand new article, no prior Joomla
 content to capture as a baseline.
