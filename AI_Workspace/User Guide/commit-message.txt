@@ -1,22 +1,21 @@
-User Guide: rewrite Scheduled Tasks overview page (359)
+User Guide: create Schema.org overview page (409)
 
-- Rewrite overview-pages/359_Scheduled_Tasks.html: section overview for
-  Scheduled Tasks (guide.joomla.org/user-manual/scheduled-tasks) - intro
-  plus flat list of its two articles (How to Schedule a Task, How to
-  Choose a Scheduler). Very small section, kept flat per the style
-  guide - no subsections.
+- Add overview-pages/409_Schema.org.html: new section overview for
+  Schema.org (guide.joomla.org/user-manual/schema-org) - intro plus two
+  subsections (Getting Started with Schema.org; Article Schema Types)
+  covering all nine articles. Nine articles split naturally into a
+  3-article setup group and a 6-article "one per schema type" group, so
+  subsections used per the style guide.
 
-No Sync-from-Joomla baseline file existed for 359 before this - drafted
-directly from the live site's current content and menu, per the usual
-workflow when a section hasn't been synced into overview-pages/ yet.
+No Sync-from-Joomla baseline exists for 409 because there was no prior
+overview page to sync - unlike every other section so far, the
+guide.joomla.org/user-manual/schema-org URL currently has no overview
+article at all; it lands directly on "An Introduction to Schema.org"
+(the first article in the section). This is a genuinely new article,
+not a rewrite.
 
-Flag: the existing live page carried a reference-style catalog beyond
-"just links" - the full list of eleven built-in scheduled task types,
-which three ship enabled by default and at what frequency, and a
-technical caveat (Rotate Logs purges log files, not the action log
-database tables). Neither sub-article covers this. The what-it-is
-framing (introduced in Joomla 4.1, runs like a cronjob, accessed from
-Components) is folded into the new intro, but the task catalog and
-default-enabled details aren't covered anywhere and have no other home
-- see Claude's chat message for the exact wording and a suggested
-destination.
+Implementation note for Jeff: once 409 is created and published in
+Joomla, the "Schema.org" menu item / section link will need to be
+repointed from An Introduction to Schema.org to the new overview
+article, the way every other section's heading link points at its
+overview page.
