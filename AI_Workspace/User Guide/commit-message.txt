@@ -1,18 +1,20 @@
-User Guide: create Users overview page (396)
+User Guide: create Reference overview page (397)
 
-- Add overview-pages/396_Users.html: new article, section overview for
-  Users (guide.joomla.org/user-manual/users) - intro paragraph, organized
-  into two subsections for the 12 articles (well above the ~6-article
-  flat-list threshold):
-    - User Accounts and Access (6): Access Control, User Registration,
-      User Profile, Guest Access, Changing User's Groups, User Actions
-      Log
-    - Login Security (6): User Password Reset, Admin Password Recovery,
-      User Password Security, WebAuthn Login, Multi-factor
-      Authentication, Login and Logout Redirects
+- Add overview-pages/397_Reference.html: new article, section overview
+  for Reference (guide.joomla.org/user-manual/reference) - intro
+  paragraph plus links to its four articles (Joomla Licenses, Joomla!
+  Copyright, What are web standards?, Where are the web pages?). Flat
+  list per style guide (4 articles, below the ~6 threshold).
 
-  Article list and link text/titles supplied directly by Jeff (copied
-  from the Joomla menu), so no cross-checking needed this time.
+  Intro frames the section as background/conceptual knowledge (legal
+  footing plus web fundamentals) rather than trying to find a topical
+  thread across licensing, copyright, web standards, and how Joomla
+  stores pages - deliberately the unifying idea rather than a forced
+  connection between the subjects themselves.
 
-No Sync-from-Joomla commit for 396 - brand new article, no prior Joomla
+  Kept "Joomla Licenses" and "Joomla! Copyright" as titled in the menu
+  (American spelling/punctuation) per the link-text-matches-menu rule;
+  used British "licence" only in my own descriptive prose.
+
+No Sync-from-Joomla commit for 397 - brand new article, no prior Joomla
 content to capture as a baseline.
