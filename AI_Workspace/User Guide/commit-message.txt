@@ -1,10 +1,17 @@
-User Guide: revise Languages overview intro (402)
+User Guide: create SEO overview page (406)
 
-- Edit overview-pages/402_Languages.html: rewrote the intro paragraph
-  in response to colleague review feedback. Removed the "no extension
-  required" claim - language packs are technically extensions - and
-  told the fuller story: core language packs only translate Joomla's
-  own built-in labels/prompts, while menus, articles, and other
-  written content still need manual translation, and third-party
-  extensions need their own language files to be fully translated.
-  Dropped the "one of Joomla's strengths" framing along with it.
+- Add overview-pages/406_SEO.html: new article, section overview for
+  SEO (guide.joomla.org/user-manual/seo) - intro paragraph, split into
+  two subsections: "SEO Practice" (SEO Basics, Monitoring SEO, Using A
+  Sitemap) covering general SEO content/tracking work, and "Search
+  Engine Friendly URLs" (Search Engine Friendly URLs, SEF URLs on
+  Apache, SEF URLs on Nginx) covering the URL-rewriting configuration
+  and its server-specific setup. Six articles split cleanly along the
+  same lines as Media (403): everyday practice vs configuration.
+
+  Note: Schema.org is a separate section in the left nav (sibling to
+  SEO, not a subsection of it) - not included here.
+
+No Sync-from-Joomla commit for 406 - existing Joomla page had no intro
+text, just a bare table of the six article titles, so there was
+nothing to capture as a baseline.
