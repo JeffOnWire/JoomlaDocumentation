@@ -1,12 +1,12 @@
-User Guide: create Tags overview page (394)
+User Guide: create Test Installations overview page (395)
 
-- Add overview-pages/394_Tags.html: new article, section overview for
-  Tags (guide.joomla.org/user-manual/tags) - intro paragraph plus a link
-  to its single article, Content Tags.
-- Update style-guides/Overview_Page_Style_Guide.md: clarify that a
-  single-article section still gets a real intro and a one-item list,
-  not a special-cased shorter treatment - first section we've hit with
-  only one article.
+- Add overview-pages/395_Test_Installations.html: new article, section
+  overview for Test Installations
+  (guide.joomla.org/user-manual/test-installations) - intro paragraph
+  plus links to its five articles (File Permissions: Linux, File
+  Permissions: Windows, Setting up Apache/PHP/MySQL manually, Visual
+  Studio Code Primer, Visual Studio Code Extras). Flat list per style
+  guide (5 articles, below the ~6 threshold).
 
-No Sync-from-Joomla commit for 394 - brand new article, no prior Joomla
+No Sync-from-Joomla commit for 395 - brand new article, no prior Joomla
 content to capture as a baseline.
