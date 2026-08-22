@@ -1,15 +1,11 @@
-User Guide: create Media overview page (403)
+User Guide: create Plugins overview page (405)
 
-- Add overview-pages/403_Media.html: new article, section overview for
-  Media (guide.joomla.org/user-manual/media) - intro paragraph, split
-  into two subsections: "Working with Media" (Managing Media, Upload
-  Delete Rename, Image Crop Resize Rotate) covering everyday file
-  tasks, and "Media Configuration" (Media File Locations, Media:
-  Options, Uploading SVG files) covering admin storage/upload
-  settings. Six articles split cleanly into day-to-day vs configuration,
-  unlike Problems (398) which stayed flat at the same count with no
-  clean grouping.
+- Add overview-pages/405_Plugins.html: new article, section overview
+  for Plugins (guide.joomla.org/user-manual/plugins) - intro paragraph
+  plus links to its two articles (About Plugins, Joomla! Update
+  Notification). Very small section, so kept flat per the style guide
+  - no subsections.
 
-No Sync-from-Joomla commit for 403 - existing Joomla page had no intro
-text, just a bare table of the six article titles, so there was
+No Sync-from-Joomla commit for 405 - existing Joomla page had no intro
+text, just a bare table of the two article titles, so there was
 nothing to capture as a baseline.
